@@ -1,0 +1,75 @@
+{
+	"metadata": [
+		{
+			"src": [
+				{
+					"files": [ "*.csproj" ],
+					"src": "..",
+					"cwd": ".",
+					"exclude": [
+						"**/obj/**",
+						"**/bin/**",
+						"_site/**"
+					]
+				}
+			],
+			"dest": "api"
+		}
+	],
+	"build": {
+		"content": [
+			{
+				"files": [
+					"api/**.yml"
+				],
+				"cwd": "obj"
+			},
+			{
+				"files": [
+					"api/*.md",
+					"articles/**.md",
+					"toc.yml",
+					"*.md"
+				],
+				"exclude": [
+					"obj/**",
+					"_site/**"
+				]
+			}
+		],
+		"resource": [
+			{
+				"files": [
+					"images/**"
+				],
+				"exclude": [
+					"obj/**",
+					"_site/**"
+				]
+			}
+		],
+		"overwrite": [
+			{
+				"files": [
+					"apidoc/**.md"
+				],
+				"exclude": [
+					"obj/**",
+					"_site/**"
+				]
+			}
+		],
+		"dest": "../../docs",
+		"globalMetadataFiles": [],
+		"globalMetadata": {
+			"_appTitle": "Yort.AfterPay.InStore",
+			"_appFooter": "Copyright (c) 2017 Troy Willmot"
+		},
+		"fileMetadataFiles": [],
+		"template": [ "statictoc", "memberpage/2.24.0/content" ],
+		"postProcessors": [],
+		"noLangKeyword": false,
+		"keepFileLink": false,
+		"cleanupCacheHistory": false
+	}
+}

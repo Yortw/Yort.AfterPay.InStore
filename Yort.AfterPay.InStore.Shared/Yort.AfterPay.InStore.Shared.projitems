@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>56ecbf28-81bd-4068-97b9-d9aa7bd0b903</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Yort.AfterPay.InStore</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AfterPayApiError.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AfterPayClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AfterPayConfiguration.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AfterPayCurrencies.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AfterPayDeviceRegistration.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AfterPayDeviceRegistrationRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AfterPayInviteRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AfterPayMoney.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AfterPayOrderItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AfterPaySystemClock.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AfterPayToken.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AfterPayTokenRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AssemblyInfoCommon.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IAfterPayClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IAfterPayClock.cs" />
+  </ItemGroup>
+</Project>
