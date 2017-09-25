@@ -3,17 +3,20 @@
 		{
 			"src": [
 				{
-					"files": [ "*.csproj" ],
-					"src": "..",
+					"files": [ "**.cs" ],
+					"src": "../",
 					"cwd": ".",
 					"exclude": [
 						"**/obj/**",
 						"**/bin/**",
-						"_site/**"
+						"**Tests**"
 					]
 				}
 			],
-			"dest": "api"
+			"dest": "api",
+			"properties": {
+				"TargetFramework": "net40"
+			}
 		}
 	],
 	"build": {
@@ -43,19 +46,17 @@
 					"images/**"
 				],
 				"exclude": [
-					"obj/**",
-					"_site/**"
+					"obj/**"
 				]
 			}
 		],
 		"overwrite": [
 			{
 				"files": [
-					"apidoc/**.md"
+					"api/**.md"
 				],
 				"exclude": [
-					"obj/**",
-					"_site/**"
+					"obj/**"
 				]
 			}
 		],

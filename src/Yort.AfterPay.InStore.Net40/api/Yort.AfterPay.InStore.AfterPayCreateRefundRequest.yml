@@ -1,0 +1,701 @@
+### YamlMime:ManagedReference
+items:
+- uid: Yort.AfterPay.InStore.AfterPayCreateRefundRequest
+  commentId: T:Yort.AfterPay.InStore.AfterPayCreateRefundRequest
+  id: AfterPayCreateRefundRequest
+  parent: Yort.AfterPay.InStore
+  children:
+  - Yort.AfterPay.InStore.AfterPayCreateRefundRequest.Amount
+  - Yort.AfterPay.InStore.AfterPayCreateRefundRequest.MerchantReference
+  - Yort.AfterPay.InStore.AfterPayCreateRefundRequest.OrderId
+  - Yort.AfterPay.InStore.AfterPayCreateRefundRequest.OrderMerchantReference
+  - Yort.AfterPay.InStore.AfterPayCreateRefundRequest.RequestedAt
+  - Yort.AfterPay.InStore.AfterPayCreateRefundRequest.RequestId
+  langs:
+  - csharp
+  - vb
+  name: AfterPayCreateRefundRequest
+  nameWithType: AfterPayCreateRefundRequest
+  fullName: Yort.AfterPay.InStore.AfterPayCreateRefundRequest
+  type: Class
+  source:
+    id: AfterPayCreateRefundRequest
+    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayCreateRefundRequest.cs
+    startLine: 16
+  assemblies:
+  - Yort.AfterPay.InStore
+  namespace: Yort.AfterPay.InStore
+  summary: "\nRepresents a request to refund part or all of a previously placed order.\n"
+  remarks: "\n<p>For more information see; https://docs.afterpay.com.au/instore-api-v1.html#create-refund </p>\n"
+  example: []
+  syntax:
+    content: public class AfterPayCreateRefundRequest
+    content.vb: Public Class AfterPayCreateRefundRequest
+  seealso:
+  - linkId: Yort.AfterPay.InStore.AfterPayRefund
+    commentId: T:Yort.AfterPay.InStore.AfterPayRefund
+  - linkId: Yort.AfterPay.InStore.AfterPayOrder
+    commentId: T:Yort.AfterPay.InStore.AfterPayOrder
+  - linkId: Yort.AfterPay.InStore.AfterPayMoney
+    commentId: T:Yort.AfterPay.InStore.AfterPayMoney
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.RequestId
+  commentId: P:Yort.AfterPay.InStore.AfterPayCreateRefundRequest.RequestId
+  id: RequestId
+  parent: Yort.AfterPay.InStore.AfterPayCreateRefundRequest
+  langs:
+  - csharp
+  - vb
+  name: RequestId
+  nameWithType: AfterPayCreateRefundRequest.RequestId
+  fullName: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.RequestId
+  type: Property
+  source:
+    id: RequestId
+    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayCreateRefundRequest.cs
+    startLine: 21
+  assemblies:
+  - Yort.AfterPay.InStore
+  namespace: Yort.AfterPay.InStore
+  summary: "\nA unique id for this request.  Defaults to a new GUID value.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty("requestId")]
+
+      public string RequestId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("requestId")>
+
+      Public Property RequestId As String
+  overload: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.RequestId*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: requestId
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.RequestedAt
+  commentId: P:Yort.AfterPay.InStore.AfterPayCreateRefundRequest.RequestedAt
+  id: RequestedAt
+  parent: Yort.AfterPay.InStore.AfterPayCreateRefundRequest
+  langs:
+  - csharp
+  - vb
+  name: RequestedAt
+  nameWithType: AfterPayCreateRefundRequest.RequestedAt
+  fullName: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.RequestedAt
+  type: Property
+  source:
+    id: RequestedAt
+    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayCreateRefundRequest.cs
+    startLine: 26
+  assemblies:
+  - Yort.AfterPay.InStore
+  namespace: Yort.AfterPay.InStore
+  summary: "\nThe date and time this request was created.  Defaults to the now property of <xref href=\"Yort.AfterPay.InStore.AfterPayConfiguration.SystemClock\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty("requestedAt")]
+
+      public DateTimeOffset RequestedAt { get; set; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: >-
+      <JsonProperty("requestedAt")>
+
+      Public Property RequestedAt As DateTimeOffset
+  overload: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.RequestedAt*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: requestedAt
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.MerchantReference
+  commentId: P:Yort.AfterPay.InStore.AfterPayCreateRefundRequest.MerchantReference
+  id: MerchantReference
+  parent: Yort.AfterPay.InStore.AfterPayCreateRefundRequest
+  langs:
+  - csharp
+  - vb
+  name: MerchantReference
+  nameWithType: AfterPayCreateRefundRequest.MerchantReference
+  fullName: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.MerchantReference
+  type: Property
+  source:
+    id: MerchantReference
+    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayCreateRefundRequest.cs
+    startLine: 31
+  assemblies:
+  - Yort.AfterPay.InStore
+  namespace: Yort.AfterPay.InStore
+  summary: "\nAn id linking this refund to an object in the point of sale system, e.g. the POS docket or receipt number the return/refund is being done on.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty("merchantReference")]
+
+      public string MerchantReference { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("merchantReference")>
+
+      Public Property MerchantReference As String
+  overload: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.MerchantReference*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: merchantReference
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.OrderId
+  commentId: P:Yort.AfterPay.InStore.AfterPayCreateRefundRequest.OrderId
+  id: OrderId
+  parent: Yort.AfterPay.InStore.AfterPayCreateRefundRequest
+  langs:
+  - csharp
+  - vb
+  name: OrderId
+  nameWithType: AfterPayCreateRefundRequest.OrderId
+  fullName: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.OrderId
+  type: Property
+  source:
+    id: OrderId
+    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayCreateRefundRequest.cs
+    startLine: 36
+  assemblies:
+  - Yort.AfterPay.InStore
+  namespace: Yort.AfterPay.InStore
+  summary: "\nThe unique AfterPay id for the order to refund against (from <xref href=\"Yort.AfterPay.InStore.AfterPayOrder.OrderId\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty("orderId")]
+
+      public string OrderId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("orderId")>
+
+      Public Property OrderId As String
+  overload: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.OrderId*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: orderId
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.OrderMerchantReference
+  commentId: P:Yort.AfterPay.InStore.AfterPayCreateRefundRequest.OrderMerchantReference
+  id: OrderMerchantReference
+  parent: Yort.AfterPay.InStore.AfterPayCreateRefundRequest
+  langs:
+  - csharp
+  - vb
+  name: OrderMerchantReference
+  nameWithType: AfterPayCreateRefundRequest.OrderMerchantReference
+  fullName: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.OrderMerchantReference
+  type: Property
+  source:
+    id: OrderMerchantReference
+    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayCreateRefundRequest.cs
+    startLine: 44
+  assemblies:
+  - Yort.AfterPay.InStore
+  namespace: Yort.AfterPay.InStore
+  summary: "\nAn optional value specifying the merchant reference used to create the original order (from <xref href=\"Yort.AfterPay.InStore.AfterPayOrder.MerchantReference\" data-throw-if-not-resolved=\"false\"></xref>).\n"
+  remarks: "\n<p>If a non-null value is provided for this property then it must match the merchant reference on the original order or an error will occur. If a null value is provided then no check is performed on the merchant reference.</p>\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty("orderMerchantReference")]
+
+      public string OrderMerchantReference { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("orderMerchantReference")>
+
+      Public Property OrderMerchantReference As String
+  overload: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.OrderMerchantReference*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: orderMerchantReference
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.Amount
+  commentId: P:Yort.AfterPay.InStore.AfterPayCreateRefundRequest.Amount
+  id: Amount
+  parent: Yort.AfterPay.InStore.AfterPayCreateRefundRequest
+  langs:
+  - csharp
+  - vb
+  name: Amount
+  nameWithType: AfterPayCreateRefundRequest.Amount
+  fullName: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.Amount
+  type: Property
+  source:
+    id: Amount
+    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayCreateRefundRequest.cs
+    startLine: 49
+  assemblies:
+  - Yort.AfterPay.InStore
+  namespace: Yort.AfterPay.InStore
+  summary: "\nThe refund amount. The refund amount can not exceed the outstanding amount of the associated order, or an error will be returned.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty("amount")]
+
+      public AfterPayMoney Amount { get; set; }
+    parameters: []
+    return:
+      type: Yort.AfterPay.InStore.AfterPayMoney
+    content.vb: >-
+      <JsonProperty("amount")>
+
+      Public Property Amount As AfterPayMoney
+  overload: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.Amount*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: amount
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Yort.AfterPay.InStore.AfterPayRefund
+  commentId: T:Yort.AfterPay.InStore.AfterPayRefund
+  isExternal: false
+  name: AfterPayRefund
+  nameWithType: AfterPayRefund
+  fullName: Yort.AfterPay.InStore.AfterPayRefund
+- uid: Yort.AfterPay.InStore.AfterPayOrder
+  commentId: T:Yort.AfterPay.InStore.AfterPayOrder
+  isExternal: false
+  name: AfterPayOrder
+  nameWithType: AfterPayOrder
+  fullName: Yort.AfterPay.InStore.AfterPayOrder
+- uid: Yort.AfterPay.InStore.AfterPayMoney
+  commentId: T:Yort.AfterPay.InStore.AfterPayMoney
+  parent: Yort.AfterPay.InStore
+  isExternal: false
+  name: AfterPayMoney
+  nameWithType: AfterPayMoney
+  fullName: Yort.AfterPay.InStore.AfterPayMoney
+- uid: Yort.AfterPay.InStore
+  commentId: N:Yort.AfterPay.InStore
+  isExternal: false
+  name: Yort.AfterPay.InStore
+  nameWithType: Yort.AfterPay.InStore
+  fullName: Yort.AfterPay.InStore
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.RequestId*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayCreateRefundRequest.RequestId
+  isExternal: false
+  name: RequestId
+  nameWithType: AfterPayCreateRefundRequest.RequestId
+  fullName: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.RequestId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.SystemClock
+  commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.SystemClock
+- uid: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.RequestedAt*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayCreateRefundRequest.RequestedAt
+  isExternal: false
+  name: RequestedAt
+  nameWithType: AfterPayCreateRefundRequest.RequestedAt
+  fullName: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.RequestedAt
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.MerchantReference*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayCreateRefundRequest.MerchantReference
+  isExternal: false
+  name: MerchantReference
+  nameWithType: AfterPayCreateRefundRequest.MerchantReference
+  fullName: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.MerchantReference
+- uid: Yort.AfterPay.InStore.AfterPayOrder.OrderId
+  commentId: P:Yort.AfterPay.InStore.AfterPayOrder.OrderId
+- uid: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.OrderId*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayCreateRefundRequest.OrderId
+  isExternal: false
+  name: OrderId
+  nameWithType: AfterPayCreateRefundRequest.OrderId
+  fullName: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.OrderId
+- uid: Yort.AfterPay.InStore.AfterPayOrder.MerchantReference
+  commentId: P:Yort.AfterPay.InStore.AfterPayOrder.MerchantReference
+- uid: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.OrderMerchantReference*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayCreateRefundRequest.OrderMerchantReference
+  isExternal: false
+  name: OrderMerchantReference
+  nameWithType: AfterPayCreateRefundRequest.OrderMerchantReference
+  fullName: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.OrderMerchantReference
+- uid: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.Amount*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayCreateRefundRequest.Amount
+  isExternal: false
+  name: Amount
+  nameWithType: AfterPayCreateRefundRequest.Amount
+  fullName: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.Amount

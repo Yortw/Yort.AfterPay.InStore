@@ -1,0 +1,100 @@
+### YamlMime:ManagedReference
+items:
+- uid: Yort.AfterPay.InStore.IAfterPaySystemClock
+  commentId: T:Yort.AfterPay.InStore.IAfterPaySystemClock
+  id: IAfterPaySystemClock
+  parent: Yort.AfterPay.InStore
+  children:
+  - Yort.AfterPay.InStore.IAfterPaySystemClock.Now
+  langs:
+  - csharp
+  - vb
+  name: IAfterPaySystemClock
+  nameWithType: IAfterPaySystemClock
+  fullName: Yort.AfterPay.InStore.IAfterPaySystemClock
+  type: Interface
+  source:
+    id: IAfterPaySystemClock
+    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\IAfterPayClock.cs
+    startLine: 10
+  assemblies:
+  - Yort.AfterPay.InStore
+  namespace: Yort.AfterPay.InStore
+  summary: "\nInterface for components that can return the current date and time.\n"
+  example: []
+  syntax:
+    content: public interface IAfterPaySystemClock
+    content.vb: Public Interface IAfterPaySystemClock
+  see:
+  - linkId: Yort.AfterPay.InStore.AfterPaySystemClock
+    commentId: T:Yort.AfterPay.InStore.AfterPaySystemClock
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Yort.AfterPay.InStore.IAfterPaySystemClock.Now
+  commentId: P:Yort.AfterPay.InStore.IAfterPaySystemClock.Now
+  id: Now
+  parent: Yort.AfterPay.InStore.IAfterPaySystemClock
+  langs:
+  - csharp
+  - vb
+  name: Now
+  nameWithType: IAfterPaySystemClock.Now
+  fullName: Yort.AfterPay.InStore.IAfterPaySystemClock.Now
+  type: Property
+  source:
+    id: Now
+    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\IAfterPayClock.cs
+    startLine: 15
+  assemblies:
+  - Yort.AfterPay.InStore
+  namespace: Yort.AfterPay.InStore
+  summary: "\nReturns the current date and time as a <xref href=\"System.DateTimeOffset\" data-throw-if-not-resolved=\"false\"></xref> value.\n"
+  example: []
+  syntax:
+    content: DateTimeOffset Now { get; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: ReadOnly Property Now As DateTimeOffset
+  overload: Yort.AfterPay.InStore.IAfterPaySystemClock.Now*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: Yort.AfterPay.InStore.AfterPaySystemClock
+  commentId: T:Yort.AfterPay.InStore.AfterPaySystemClock
+  parent: Yort.AfterPay.InStore
+  isExternal: false
+  name: AfterPaySystemClock
+  nameWithType: AfterPaySystemClock
+  fullName: Yort.AfterPay.InStore.AfterPaySystemClock
+- uid: Yort.AfterPay.InStore
+  commentId: N:Yort.AfterPay.InStore
+  isExternal: false
+  name: Yort.AfterPay.InStore
+  nameWithType: Yort.AfterPay.InStore
+  fullName: Yort.AfterPay.InStore
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Yort.AfterPay.InStore.IAfterPaySystemClock.Now*
+  commentId: Overload:Yort.AfterPay.InStore.IAfterPaySystemClock.Now
+  isExternal: false
+  name: Now
+  nameWithType: IAfterPaySystemClock.Now
+  fullName: Yort.AfterPay.InStore.IAfterPaySystemClock.Now
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System

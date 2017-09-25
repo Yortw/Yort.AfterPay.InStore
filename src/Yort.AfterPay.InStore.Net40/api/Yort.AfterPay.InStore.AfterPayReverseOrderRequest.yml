@@ -1,0 +1,479 @@
+### YamlMime:ManagedReference
+items:
+- uid: Yort.AfterPay.InStore.AfterPayReverseOrderRequest
+  commentId: T:Yort.AfterPay.InStore.AfterPayReverseOrderRequest
+  id: AfterPayReverseOrderRequest
+  parent: Yort.AfterPay.InStore
+  children:
+  - Yort.AfterPay.InStore.AfterPayReverseOrderRequest.RequestedAt
+  - Yort.AfterPay.InStore.AfterPayReverseOrderRequest.ReversingRequestId
+  langs:
+  - csharp
+  - vb
+  name: AfterPayReverseOrderRequest
+  nameWithType: AfterPayReverseOrderRequest
+  fullName: Yort.AfterPay.InStore.AfterPayReverseOrderRequest
+  type: Class
+  source:
+    id: AfterPayReverseOrderRequest
+    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayReverseOrderRequest.cs
+    startLine: 15
+  assemblies:
+  - Yort.AfterPay.InStore
+  namespace: Yort.AfterPay.InStore
+  summary: "\nRepresents a request to reverse an order that was previously attempted in the AfterPay system.\n"
+  remarks: "\n<p>Orders should only be reversed when errors have occurred and the state of the order is unknown. For more information see; https://docs.afterpay.com.au/instore-api-v1.html#idempotent-requests and https://docs.afterpay.com.au/instore-api-v1.html#reverse-order</p>\n"
+  example: []
+  syntax:
+    content: public class AfterPayReverseOrderRequest
+    content.vb: Public Class AfterPayReverseOrderRequest
+  seealso:
+  - linkId: Yort.AfterPay.InStore.AfterPayOrderReversal
+    commentId: T:Yort.AfterPay.InStore.AfterPayOrderReversal
+  - linkId: Yort.AfterPay.InStore.AfterPayCreateOrderRequest
+    commentId: T:Yort.AfterPay.InStore.AfterPayCreateOrderRequest
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Yort.AfterPay.InStore.AfterPayReverseOrderRequest.RequestedAt
+  commentId: P:Yort.AfterPay.InStore.AfterPayReverseOrderRequest.RequestedAt
+  id: RequestedAt
+  parent: Yort.AfterPay.InStore.AfterPayReverseOrderRequest
+  langs:
+  - csharp
+  - vb
+  name: RequestedAt
+  nameWithType: AfterPayReverseOrderRequest.RequestedAt
+  fullName: Yort.AfterPay.InStore.AfterPayReverseOrderRequest.RequestedAt
+  type: Property
+  source:
+    id: RequestedAt
+    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayReverseOrderRequest.cs
+    startLine: 20
+  assemblies:
+  - Yort.AfterPay.InStore
+  namespace: Yort.AfterPay.InStore
+  summary: "\nThe date and time at which the request is being made. Defaults to the now property of <xref href=\"Yort.AfterPay.InStore.AfterPayConfiguration.SystemClock\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty("requestedAt")]
+
+      public DateTimeOffset RequestedAt { get; set; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: >-
+      <JsonProperty("requestedAt")>
+
+      Public Property RequestedAt As DateTimeOffset
+  overload: Yort.AfterPay.InStore.AfterPayReverseOrderRequest.RequestedAt*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: requestedAt
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayReverseOrderRequest.ReversingRequestId
+  commentId: P:Yort.AfterPay.InStore.AfterPayReverseOrderRequest.ReversingRequestId
+  id: ReversingRequestId
+  parent: Yort.AfterPay.InStore.AfterPayReverseOrderRequest
+  langs:
+  - csharp
+  - vb
+  name: ReversingRequestId
+  nameWithType: AfterPayReverseOrderRequest.ReversingRequestId
+  fullName: Yort.AfterPay.InStore.AfterPayReverseOrderRequest.ReversingRequestId
+  type: Property
+  source:
+    id: ReversingRequestId
+    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayReverseOrderRequest.cs
+    startLine: 25
+  assemblies:
+  - Yort.AfterPay.InStore
+  namespace: Yort.AfterPay.InStore
+  summary: "\nRepresents a unique id for this request. Defaults to a new GUID value.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty("reversingRequestId")]
+
+      public string ReversingRequestId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("reversingRequestId")>
+
+      Public Property ReversingRequestId As String
+  overload: Yort.AfterPay.InStore.AfterPayReverseOrderRequest.ReversingRequestId*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: reversingRequestId
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Yort.AfterPay.InStore.AfterPayOrderReversal
+  commentId: T:Yort.AfterPay.InStore.AfterPayOrderReversal
+  isExternal: false
+  name: AfterPayOrderReversal
+  nameWithType: AfterPayOrderReversal
+  fullName: Yort.AfterPay.InStore.AfterPayOrderReversal
+- uid: Yort.AfterPay.InStore.AfterPayCreateOrderRequest
+  commentId: T:Yort.AfterPay.InStore.AfterPayCreateOrderRequest
+  isExternal: false
+  name: AfterPayCreateOrderRequest
+  nameWithType: AfterPayCreateOrderRequest
+  fullName: Yort.AfterPay.InStore.AfterPayCreateOrderRequest
+- uid: Yort.AfterPay.InStore
+  commentId: N:Yort.AfterPay.InStore
+  isExternal: false
+  name: Yort.AfterPay.InStore
+  nameWithType: Yort.AfterPay.InStore
+  fullName: Yort.AfterPay.InStore
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.SystemClock
+  commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.SystemClock
+- uid: Yort.AfterPay.InStore.AfterPayReverseOrderRequest.RequestedAt*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayReverseOrderRequest.RequestedAt
+  isExternal: false
+  name: RequestedAt
+  nameWithType: AfterPayReverseOrderRequest.RequestedAt
+  fullName: Yort.AfterPay.InStore.AfterPayReverseOrderRequest.RequestedAt
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Yort.AfterPay.InStore.AfterPayReverseOrderRequest.ReversingRequestId*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayReverseOrderRequest.ReversingRequestId
+  isExternal: false
+  name: ReversingRequestId
+  nameWithType: AfterPayReverseOrderRequest.ReversingRequestId
+  fullName: Yort.AfterPay.InStore.AfterPayReverseOrderRequest.ReversingRequestId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

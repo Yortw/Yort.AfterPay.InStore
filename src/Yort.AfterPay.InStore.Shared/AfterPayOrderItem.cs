@@ -11,6 +11,7 @@ namespace Yort.AfterPay.InStore
 	/// <remarks>
 	/// <para>See https://docs.afterpay.com.au/instore-api-v1.html#item-object for more information.</para>
 	/// </remarks>
+	/// <seealso cref="AfterPayMoney"/>
 	public class AfterPayOrderItem
 	{
 		/// <summary>

@@ -1,0 +1,673 @@
+### YamlMime:ManagedReference
+items:
+- uid: Yort.AfterPay.InStore.AfterPayToken
+  commentId: T:Yort.AfterPay.InStore.AfterPayToken
+  id: AfterPayToken
+  parent: Yort.AfterPay.InStore
+  children:
+  - Yort.AfterPay.InStore.AfterPayToken.ExpiresAt
+  - Yort.AfterPay.InStore.AfterPayToken.ExpiresIn
+  - Yort.AfterPay.InStore.AfterPayToken.IsExpired
+  - Yort.AfterPay.InStore.AfterPayToken.IsExpired(Yort.AfterPay.InStore.IAfterPaySystemClock)
+  - Yort.AfterPay.InStore.AfterPayToken.IssuedAt
+  - Yort.AfterPay.InStore.AfterPayToken.Token
+  langs:
+  - csharp
+  - vb
+  name: AfterPayToken
+  nameWithType: AfterPayToken
+  fullName: Yort.AfterPay.InStore.AfterPayToken
+  type: Class
+  source:
+    id: AfterPayToken
+    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayToken.cs
+    startLine: 14
+  assemblies:
+  - Yort.AfterPay.InStore
+  namespace: Yort.AfterPay.InStore
+  summary: "\nRepresents an authorisation token returned from the AfterPay API.\n"
+  example: []
+  syntax:
+    content: public class AfterPayToken
+    content.vb: Public Class AfterPayToken
+  seealso:
+  - linkId: Yort.AfterPay.InStore.AfterPayTokenRequest
+    commentId: T:Yort.AfterPay.InStore.AfterPayTokenRequest
+  - linkId: Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest
+    commentId: T:Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest
+  - linkId: Yort.AfterPay.InStore.AfterPayDeviceRegistration
+    commentId: T:Yort.AfterPay.InStore.AfterPayDeviceRegistration
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Yort.AfterPay.InStore.AfterPayToken.Token
+  commentId: P:Yort.AfterPay.InStore.AfterPayToken.Token
+  id: Token
+  parent: Yort.AfterPay.InStore.AfterPayToken
+  langs:
+  - csharp
+  - vb
+  name: Token
+  nameWithType: AfterPayToken.Token
+  fullName: Yort.AfterPay.InStore.AfterPayToken.Token
+  type: Property
+  source:
+    id: Token
+    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayToken.cs
+    startLine: 19
+  assemblies:
+  - Yort.AfterPay.InStore
+  namespace: Yort.AfterPay.InStore
+  summary: "\nThe bearer token returned by the API that can be used to authorise further requests.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty("token")]
+
+      public string Token { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("token")>
+
+      Public Property Token As String
+  overload: Yort.AfterPay.InStore.AfterPayToken.Token*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: token
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayToken.ExpiresIn
+  commentId: P:Yort.AfterPay.InStore.AfterPayToken.ExpiresIn
+  id: ExpiresIn
+  parent: Yort.AfterPay.InStore.AfterPayToken
+  langs:
+  - csharp
+  - vb
+  name: ExpiresIn
+  nameWithType: AfterPayToken.ExpiresIn
+  fullName: Yort.AfterPay.InStore.AfterPayToken.ExpiresIn
+  type: Property
+  source:
+    id: ExpiresIn
+    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayToken.cs
+    startLine: 24
+  assemblies:
+  - Yort.AfterPay.InStore
+  namespace: Yort.AfterPay.InStore
+  summary: "\nThe number of seconds for which this token is valid from the time it was issued.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty("expiresIn")]
+
+      public long ExpiresIn { get; set; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: >-
+      <JsonProperty("expiresIn")>
+
+      Public Property ExpiresIn As Long
+  overload: Yort.AfterPay.InStore.AfterPayToken.ExpiresIn*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: expiresIn
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayToken.IssuedAt
+  commentId: P:Yort.AfterPay.InStore.AfterPayToken.IssuedAt
+  id: IssuedAt
+  parent: Yort.AfterPay.InStore.AfterPayToken
+  langs:
+  - csharp
+  - vb
+  name: IssuedAt
+  nameWithType: AfterPayToken.IssuedAt
+  fullName: Yort.AfterPay.InStore.AfterPayToken.IssuedAt
+  type: Property
+  source:
+    id: IssuedAt
+    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayToken.cs
+    startLine: 33
+  assemblies:
+  - Yort.AfterPay.InStore
+  namespace: Yort.AfterPay.InStore
+  summary: "\nRepresents (roughly) the date and time at which this token was issued.\n"
+  remarks: "\n<p>This value is set using the <xref href=\"Yort.AfterPay.InStore.AfterPayConfiguration.SystemClock\" data-throw-if-not-resolved=\"false\"></xref> at the time the response is received.</p>\n"
+  example: []
+  syntax:
+    content: public DateTimeOffset IssuedAt { get; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: Public ReadOnly Property IssuedAt As DateTimeOffset
+  overload: Yort.AfterPay.InStore.AfterPayToken.IssuedAt*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Yort.AfterPay.InStore.AfterPayToken.ExpiresAt
+  commentId: P:Yort.AfterPay.InStore.AfterPayToken.ExpiresAt
+  id: ExpiresAt
+  parent: Yort.AfterPay.InStore.AfterPayToken
+  langs:
+  - csharp
+  - vb
+  name: ExpiresAt
+  nameWithType: AfterPayToken.ExpiresAt
+  fullName: Yort.AfterPay.InStore.AfterPayToken.ExpiresAt
+  type: Property
+  source:
+    id: ExpiresAt
+    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayToken.cs
+    startLine: 38
+  assemblies:
+  - Yort.AfterPay.InStore
+  namespace: Yort.AfterPay.InStore
+  summary: "\nReturns the date and time at which this token expires, calculated from <xref href=\"Yort.AfterPay.InStore.AfterPayToken.IssuedAt\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Yort.AfterPay.InStore.AfterPayToken.ExpiresIn\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public DateTimeOffset ExpiresAt { get; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: Public ReadOnly Property ExpiresAt As DateTimeOffset
+  overload: Yort.AfterPay.InStore.AfterPayToken.ExpiresAt*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Yort.AfterPay.InStore.AfterPayToken.IsExpired
+  commentId: M:Yort.AfterPay.InStore.AfterPayToken.IsExpired
+  id: IsExpired
+  parent: Yort.AfterPay.InStore.AfterPayToken
+  langs:
+  - csharp
+  - vb
+  name: IsExpired()
+  nameWithType: AfterPayToken.IsExpired()
+  fullName: Yort.AfterPay.InStore.AfterPayToken.IsExpired()
+  type: Method
+  source:
+    id: IsExpired
+    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayToken.cs
+    startLine: 46
+  assemblies:
+  - Yort.AfterPay.InStore
+  namespace: Yort.AfterPay.InStore
+  summary: "\nReturns true if the token has expired based on the current system clock and the calculated <xref href=\"Yort.AfterPay.InStore.AfterPayToken.ExpiresAt\" data-throw-if-not-resolved=\"false\"></xref> value.\n"
+  remarks: "\n<p>This overload uses the <xref href=\"Yort.AfterPay.InStore.AfterPayConfiguration.SystemClock\" data-throw-if-not-resolved=\"false\"></xref> property to retrieve the current date and time.</p>\n"
+  example: []
+  syntax:
+    content: public bool IsExpired()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsExpired As Boolean
+  overload: Yort.AfterPay.InStore.AfterPayToken.IsExpired*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayToken.IsExpired(Yort.AfterPay.InStore.IAfterPaySystemClock)
+  commentId: M:Yort.AfterPay.InStore.AfterPayToken.IsExpired(Yort.AfterPay.InStore.IAfterPaySystemClock)
+  id: IsExpired(Yort.AfterPay.InStore.IAfterPaySystemClock)
+  parent: Yort.AfterPay.InStore.AfterPayToken
+  langs:
+  - csharp
+  - vb
+  name: IsExpired(IAfterPaySystemClock)
+  nameWithType: AfterPayToken.IsExpired(IAfterPaySystemClock)
+  fullName: Yort.AfterPay.InStore.AfterPayToken.IsExpired(Yort.AfterPay.InStore.IAfterPaySystemClock)
+  type: Method
+  source:
+    id: IsExpired
+    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayToken.cs
+    startLine: 56
+  assemblies:
+  - Yort.AfterPay.InStore
+  namespace: Yort.AfterPay.InStore
+  summary: "\nReturns true if the token has expired based on the current system clock and the calculated <xref href=\"Yort.AfterPay.InStore.AfterPayToken.ExpiresAt\" data-throw-if-not-resolved=\"false\"></xref> value.\n"
+  example: []
+  syntax:
+    content: public bool IsExpired(IAfterPaySystemClock systemClock)
+    parameters:
+    - id: systemClock
+      type: Yort.AfterPay.InStore.IAfterPaySystemClock
+      description: A <xref href="Yort.AfterPay.InStore.IAfterPaySystemClock" data-throw-if-not-resolved="false"></xref> implementation to use when retrieving the current date and time.
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsExpired(systemClock As IAfterPaySystemClock) As Boolean
+  overload: Yort.AfterPay.InStore.AfterPayToken.IsExpired*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">systemClock</code> is null.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Yort.AfterPay.InStore.AfterPayTokenRequest
+  commentId: T:Yort.AfterPay.InStore.AfterPayTokenRequest
+  isExternal: false
+  name: AfterPayTokenRequest
+  nameWithType: AfterPayTokenRequest
+  fullName: Yort.AfterPay.InStore.AfterPayTokenRequest
+- uid: Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest
+  commentId: T:Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest
+  isExternal: false
+  name: AfterPayDeviceRegistrationRequest
+  nameWithType: AfterPayDeviceRegistrationRequest
+  fullName: Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest
+- uid: Yort.AfterPay.InStore.AfterPayDeviceRegistration
+  commentId: T:Yort.AfterPay.InStore.AfterPayDeviceRegistration
+  isExternal: false
+  name: AfterPayDeviceRegistration
+  nameWithType: AfterPayDeviceRegistration
+  fullName: Yort.AfterPay.InStore.AfterPayDeviceRegistration
+- uid: Yort.AfterPay.InStore
+  commentId: N:Yort.AfterPay.InStore
+  isExternal: false
+  name: Yort.AfterPay.InStore
+  nameWithType: Yort.AfterPay.InStore
+  fullName: Yort.AfterPay.InStore
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Yort.AfterPay.InStore.AfterPayToken.Token*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayToken.Token
+  isExternal: false
+  name: Token
+  nameWithType: AfterPayToken.Token
+  fullName: Yort.AfterPay.InStore.AfterPayToken.Token
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Yort.AfterPay.InStore.AfterPayToken.ExpiresIn*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayToken.ExpiresIn
+  isExternal: false
+  name: ExpiresIn
+  nameWithType: AfterPayToken.ExpiresIn
+  fullName: Yort.AfterPay.InStore.AfterPayToken.ExpiresIn
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.SystemClock
+  commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.SystemClock
+- uid: Yort.AfterPay.InStore.AfterPayToken.IssuedAt*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayToken.IssuedAt
+  isExternal: false
+  name: IssuedAt
+  nameWithType: AfterPayToken.IssuedAt
+  fullName: Yort.AfterPay.InStore.AfterPayToken.IssuedAt
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Yort.AfterPay.InStore.AfterPayToken.IssuedAt
+  commentId: P:Yort.AfterPay.InStore.AfterPayToken.IssuedAt
+- uid: Yort.AfterPay.InStore.AfterPayToken.ExpiresIn
+  commentId: P:Yort.AfterPay.InStore.AfterPayToken.ExpiresIn
+- uid: Yort.AfterPay.InStore.AfterPayToken.ExpiresAt*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayToken.ExpiresAt
+  isExternal: false
+  name: ExpiresAt
+  nameWithType: AfterPayToken.ExpiresAt
+  fullName: Yort.AfterPay.InStore.AfterPayToken.ExpiresAt
+- uid: Yort.AfterPay.InStore.AfterPayToken.ExpiresAt
+  commentId: P:Yort.AfterPay.InStore.AfterPayToken.ExpiresAt
+- uid: Yort.AfterPay.InStore.AfterPayToken.IsExpired*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayToken.IsExpired
+  isExternal: false
+  name: IsExpired
+  nameWithType: AfterPayToken.IsExpired
+  fullName: Yort.AfterPay.InStore.AfterPayToken.IsExpired
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Yort.AfterPay.InStore.IAfterPaySystemClock
+  commentId: T:Yort.AfterPay.InStore.IAfterPaySystemClock
+  parent: Yort.AfterPay.InStore
+  isExternal: false
+  name: IAfterPaySystemClock
+  nameWithType: IAfterPaySystemClock
+  fullName: Yort.AfterPay.InStore.IAfterPaySystemClock
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException

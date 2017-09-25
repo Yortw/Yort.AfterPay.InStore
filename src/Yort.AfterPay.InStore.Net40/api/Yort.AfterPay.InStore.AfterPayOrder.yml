@@ -1,0 +1,884 @@
+### YamlMime:ManagedReference
+items:
+- uid: Yort.AfterPay.InStore.AfterPayOrder
+  commentId: T:Yort.AfterPay.InStore.AfterPayOrder
+  id: AfterPayOrder
+  parent: Yort.AfterPay.InStore
+  children:
+  - Yort.AfterPay.InStore.AfterPayOrder.Amount
+  - Yort.AfterPay.InStore.AfterPayOrder.MerchantReference
+  - Yort.AfterPay.InStore.AfterPayOrder.OrderedAt
+  - Yort.AfterPay.InStore.AfterPayOrder.OrderId
+  - Yort.AfterPay.InStore.AfterPayOrder.OrderItems
+  - Yort.AfterPay.InStore.AfterPayOrder.PreapprovalCode
+  - Yort.AfterPay.InStore.AfterPayOrder.RequestedAt
+  - Yort.AfterPay.InStore.AfterPayOrder.RequestId
+  langs:
+  - csharp
+  - vb
+  name: AfterPayOrder
+  nameWithType: AfterPayOrder
+  fullName: Yort.AfterPay.InStore.AfterPayOrder
+  type: Class
+  source:
+    id: AfterPayOrder
+    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayOrder.cs
+    startLine: 13
+  assemblies:
+  - Yort.AfterPay.InStore
+  namespace: Yort.AfterPay.InStore
+  summary: "\nRepresents an order created within the AfterPay system via a <xref href=\"Yort.AfterPay.InStore.AfterPayCreateOrderRequest\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public class AfterPayOrder
+    content.vb: Public Class AfterPayOrder
+  seealso:
+  - linkId: Yort.AfterPay.InStore.AfterPayCreateOrderRequest
+    commentId: T:Yort.AfterPay.InStore.AfterPayCreateOrderRequest
+  - linkId: Yort.AfterPay.InStore.AfterPayOrderItem
+    commentId: T:Yort.AfterPay.InStore.AfterPayOrderItem
+  - linkId: Yort.AfterPay.InStore.AfterPayMoney
+    commentId: T:Yort.AfterPay.InStore.AfterPayMoney
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Yort.AfterPay.InStore.AfterPayOrder.OrderId
+  commentId: P:Yort.AfterPay.InStore.AfterPayOrder.OrderId
+  id: OrderId
+  parent: Yort.AfterPay.InStore.AfterPayOrder
+  langs:
+  - csharp
+  - vb
+  name: OrderId
+  nameWithType: AfterPayOrder.OrderId
+  fullName: Yort.AfterPay.InStore.AfterPayOrder.OrderId
+  type: Property
+  source:
+    id: OrderId
+    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayOrder.cs
+    startLine: 18
+  assemblies:
+  - Yort.AfterPay.InStore
+  namespace: Yort.AfterPay.InStore
+  summary: "\nThe unique id of this order within the AfterPay system.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty("orderId")]
+
+      public string OrderId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("orderId")>
+
+      Public Property OrderId As String
+  overload: Yort.AfterPay.InStore.AfterPayOrder.OrderId*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: orderId
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayOrder.OrderedAt
+  commentId: P:Yort.AfterPay.InStore.AfterPayOrder.OrderedAt
+  id: OrderedAt
+  parent: Yort.AfterPay.InStore.AfterPayOrder
+  langs:
+  - csharp
+  - vb
+  name: OrderedAt
+  nameWithType: AfterPayOrder.OrderedAt
+  fullName: Yort.AfterPay.InStore.AfterPayOrder.OrderedAt
+  type: Property
+  source:
+    id: OrderedAt
+    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayOrder.cs
+    startLine: 23
+  assemblies:
+  - Yort.AfterPay.InStore
+  namespace: Yort.AfterPay.InStore
+  summary: "\nThe date and time this order was created in the AfterPay system.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty("orderedAt")]
+
+      public DateTimeOffset OrderedAt { get; set; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: >-
+      <JsonProperty("orderedAt")>
+
+      Public Property OrderedAt As DateTimeOffset
+  overload: Yort.AfterPay.InStore.AfterPayOrder.OrderedAt*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: orderedAt
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayOrder.RequestId
+  commentId: P:Yort.AfterPay.InStore.AfterPayOrder.RequestId
+  id: RequestId
+  parent: Yort.AfterPay.InStore.AfterPayOrder
+  langs:
+  - csharp
+  - vb
+  name: RequestId
+  nameWithType: AfterPayOrder.RequestId
+  fullName: Yort.AfterPay.InStore.AfterPayOrder.RequestId
+  type: Property
+  source:
+    id: RequestId
+    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayOrder.cs
+    startLine: 28
+  assemblies:
+  - Yort.AfterPay.InStore
+  namespace: Yort.AfterPay.InStore
+  summary: "\nThe unique request id of the <xref href=\"Yort.AfterPay.InStore.AfterPayCreateOrderRequest\" data-throw-if-not-resolved=\"false\"></xref> that created this order.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty("requestId")]
+
+      public string RequestId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("requestId")>
+
+      Public Property RequestId As String
+  overload: Yort.AfterPay.InStore.AfterPayOrder.RequestId*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: requestId
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayOrder.RequestedAt
+  commentId: P:Yort.AfterPay.InStore.AfterPayOrder.RequestedAt
+  id: RequestedAt
+  parent: Yort.AfterPay.InStore.AfterPayOrder
+  langs:
+  - csharp
+  - vb
+  name: RequestedAt
+  nameWithType: AfterPayOrder.RequestedAt
+  fullName: Yort.AfterPay.InStore.AfterPayOrder.RequestedAt
+  type: Property
+  source:
+    id: RequestedAt
+    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayOrder.cs
+    startLine: 33
+  assemblies:
+  - Yort.AfterPay.InStore
+  namespace: Yort.AfterPay.InStore
+  summary: "\nThe request date and time from the <xref href=\"Yort.AfterPay.InStore.AfterPayCreateOrderRequest\" data-throw-if-not-resolved=\"false\"></xref> that created this order.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty("requestedAt")]
+
+      public DateTimeOffset RequestedAt { get; set; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: >-
+      <JsonProperty("requestedAt")>
+
+      Public Property RequestedAt As DateTimeOffset
+  overload: Yort.AfterPay.InStore.AfterPayOrder.RequestedAt*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: requestedAt
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayOrder.PreapprovalCode
+  commentId: P:Yort.AfterPay.InStore.AfterPayOrder.PreapprovalCode
+  id: PreapprovalCode
+  parent: Yort.AfterPay.InStore.AfterPayOrder
+  langs:
+  - csharp
+  - vb
+  name: PreapprovalCode
+  nameWithType: AfterPayOrder.PreapprovalCode
+  fullName: Yort.AfterPay.InStore.AfterPayOrder.PreapprovalCode
+  type: Property
+  source:
+    id: PreapprovalCode
+    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayOrder.cs
+    startLine: 38
+  assemblies:
+  - Yort.AfterPay.InStore
+  namespace: Yort.AfterPay.InStore
+  summary: "\nThe pre-approval alphanumeric code obtained from the customer that was used to authorise payment for this order.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty("preApprovalCode")]
+
+      public string PreapprovalCode { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("preApprovalCode")>
+
+      Public Property PreapprovalCode As String
+  overload: Yort.AfterPay.InStore.AfterPayOrder.PreapprovalCode*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: preApprovalCode
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayOrder.Amount
+  commentId: P:Yort.AfterPay.InStore.AfterPayOrder.Amount
+  id: Amount
+  parent: Yort.AfterPay.InStore.AfterPayOrder
+  langs:
+  - csharp
+  - vb
+  name: Amount
+  nameWithType: AfterPayOrder.Amount
+  fullName: Yort.AfterPay.InStore.AfterPayOrder.Amount
+  type: Property
+  source:
+    id: Amount
+    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayOrder.cs
+    startLine: 43
+  assemblies:
+  - Yort.AfterPay.InStore
+  namespace: Yort.AfterPay.InStore
+  summary: "\nThe payment required for this order as a <xref href=\"Yort.AfterPay.InStore.AfterPayMoney\" data-throw-if-not-resolved=\"false\"></xref> instace.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty("amount")]
+
+      public AfterPayMoney Amount { get; set; }
+    parameters: []
+    return:
+      type: Yort.AfterPay.InStore.AfterPayMoney
+    content.vb: >-
+      <JsonProperty("amount")>
+
+      Public Property Amount As AfterPayMoney
+  overload: Yort.AfterPay.InStore.AfterPayOrder.Amount*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: amount
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayOrder.MerchantReference
+  commentId: P:Yort.AfterPay.InStore.AfterPayOrder.MerchantReference
+  id: MerchantReference
+  parent: Yort.AfterPay.InStore.AfterPayOrder
+  langs:
+  - csharp
+  - vb
+  name: MerchantReference
+  nameWithType: AfterPayOrder.MerchantReference
+  fullName: Yort.AfterPay.InStore.AfterPayOrder.MerchantReference
+  type: Property
+  source:
+    id: MerchantReference
+    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayOrder.cs
+    startLine: 48
+  assemblies:
+  - Yort.AfterPay.InStore
+  namespace: Yort.AfterPay.InStore
+  summary: "\nThe merchant reference provided on the <xref href=\"Yort.AfterPay.InStore.AfterPayCreateOrderRequest\" data-throw-if-not-resolved=\"false\"></xref> instance that created this order.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty("merchantReference")]
+
+      public string MerchantReference { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("merchantReference")>
+
+      Public Property MerchantReference As String
+  overload: Yort.AfterPay.InStore.AfterPayOrder.MerchantReference*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: merchantReference
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayOrder.OrderItems
+  commentId: P:Yort.AfterPay.InStore.AfterPayOrder.OrderItems
+  id: OrderItems
+  parent: Yort.AfterPay.InStore.AfterPayOrder
+  langs:
+  - csharp
+  - vb
+  name: OrderItems
+  nameWithType: AfterPayOrder.OrderItems
+  fullName: Yort.AfterPay.InStore.AfterPayOrder.OrderItems
+  type: Property
+  source:
+    id: OrderItems
+    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayOrder.cs
+    startLine: 53
+  assemblies:
+  - Yort.AfterPay.InStore
+  namespace: Yort.AfterPay.InStore
+  summary: "\nThe items that were included on this order, taken from the original <xref href=\"Yort.AfterPay.InStore.AfterPayCreateOrderRequest\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty("orderItems")]
+
+      public IEnumerable<AfterPayOrderItem> OrderItems { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{Yort.AfterPay.InStore.AfterPayOrderItem}
+    content.vb: >-
+      <JsonProperty("orderItems")>
+
+      Public Property OrderItems As IEnumerable(Of AfterPayOrderItem)
+  overload: Yort.AfterPay.InStore.AfterPayOrder.OrderItems*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: orderItems
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Yort.AfterPay.InStore.AfterPayCreateOrderRequest
+  commentId: T:Yort.AfterPay.InStore.AfterPayCreateOrderRequest
+  isExternal: false
+  name: AfterPayCreateOrderRequest
+  nameWithType: AfterPayCreateOrderRequest
+  fullName: Yort.AfterPay.InStore.AfterPayCreateOrderRequest
+- uid: Yort.AfterPay.InStore.AfterPayOrderItem
+  commentId: T:Yort.AfterPay.InStore.AfterPayOrderItem
+  isExternal: false
+  name: AfterPayOrderItem
+  nameWithType: AfterPayOrderItem
+  fullName: Yort.AfterPay.InStore.AfterPayOrderItem
+- uid: Yort.AfterPay.InStore.AfterPayMoney
+  commentId: T:Yort.AfterPay.InStore.AfterPayMoney
+  parent: Yort.AfterPay.InStore
+  isExternal: false
+  name: AfterPayMoney
+  nameWithType: AfterPayMoney
+  fullName: Yort.AfterPay.InStore.AfterPayMoney
+- uid: Yort.AfterPay.InStore
+  commentId: N:Yort.AfterPay.InStore
+  isExternal: false
+  name: Yort.AfterPay.InStore
+  nameWithType: Yort.AfterPay.InStore
+  fullName: Yort.AfterPay.InStore
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Yort.AfterPay.InStore.AfterPayOrder.OrderId*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayOrder.OrderId
+  isExternal: false
+  name: OrderId
+  nameWithType: AfterPayOrder.OrderId
+  fullName: Yort.AfterPay.InStore.AfterPayOrder.OrderId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Yort.AfterPay.InStore.AfterPayOrder.OrderedAt*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayOrder.OrderedAt
+  isExternal: false
+  name: OrderedAt
+  nameWithType: AfterPayOrder.OrderedAt
+  fullName: Yort.AfterPay.InStore.AfterPayOrder.OrderedAt
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Yort.AfterPay.InStore.AfterPayOrder.RequestId*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayOrder.RequestId
+  isExternal: false
+  name: RequestId
+  nameWithType: AfterPayOrder.RequestId
+  fullName: Yort.AfterPay.InStore.AfterPayOrder.RequestId
+- uid: Yort.AfterPay.InStore.AfterPayOrder.RequestedAt*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayOrder.RequestedAt
+  isExternal: false
+  name: RequestedAt
+  nameWithType: AfterPayOrder.RequestedAt
+  fullName: Yort.AfterPay.InStore.AfterPayOrder.RequestedAt
+- uid: Yort.AfterPay.InStore.AfterPayOrder.PreapprovalCode*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayOrder.PreapprovalCode
+  isExternal: false
+  name: PreapprovalCode
+  nameWithType: AfterPayOrder.PreapprovalCode
+  fullName: Yort.AfterPay.InStore.AfterPayOrder.PreapprovalCode
+- uid: Yort.AfterPay.InStore.AfterPayOrder.Amount*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayOrder.Amount
+  isExternal: false
+  name: Amount
+  nameWithType: AfterPayOrder.Amount
+  fullName: Yort.AfterPay.InStore.AfterPayOrder.Amount
+- uid: Yort.AfterPay.InStore.AfterPayOrder.MerchantReference*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayOrder.MerchantReference
+  isExternal: false
+  name: MerchantReference
+  nameWithType: AfterPayOrder.MerchantReference
+  fullName: Yort.AfterPay.InStore.AfterPayOrder.MerchantReference
+- uid: Yort.AfterPay.InStore.AfterPayOrder.OrderItems*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayOrder.OrderItems
+  isExternal: false
+  name: OrderItems
+  nameWithType: AfterPayOrder.OrderItems
+  fullName: Yort.AfterPay.InStore.AfterPayOrder.OrderItems
+- uid: System.Collections.Generic.IEnumerable{Yort.AfterPay.InStore.AfterPayOrderItem}
+  commentId: T:System.Collections.Generic.IEnumerable{Yort.AfterPay.InStore.AfterPayOrderItem}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<AfterPayOrderItem>
+  nameWithType: IEnumerable<AfterPayOrderItem>
+  fullName: System.Collections.Generic.IEnumerable<Yort.AfterPay.InStore.AfterPayOrderItem>
+  nameWithType.vb: IEnumerable(Of AfterPayOrderItem)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Yort.AfterPay.InStore.AfterPayOrderItem)
+  name.vb: IEnumerable(Of AfterPayOrderItem)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Yort.AfterPay.InStore.AfterPayOrderItem
+    name: AfterPayOrderItem
+    nameWithType: AfterPayOrderItem
+    fullName: Yort.AfterPay.InStore.AfterPayOrderItem
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Yort.AfterPay.InStore.AfterPayOrderItem
+    name: AfterPayOrderItem
+    nameWithType: AfterPayOrderItem
+    fullName: Yort.AfterPay.InStore.AfterPayOrderItem
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
