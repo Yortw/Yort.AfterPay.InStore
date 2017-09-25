@@ -18,10 +18,10 @@ items:
   type: Class
   source:
     id: AfterPayOrderItem
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayOrderItem.cs
-    startLine: 14
+    path: ''
+    startLine: 537
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nRepresents an item being sold or returned as part of an AfterPay API transaction.\n"
   remarks: "\n<p>See https://docs.afterpay.com.au/instore-api-v1.html#item-object for more information.</p>\n"
@@ -61,32 +61,20 @@ items:
   type: Property
   source:
     id: Name
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayOrderItem.cs
-    startLine: 19
+    path: ''
+    startLine: 542
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nA brief description or name for the product.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("name")]
-
-      public string Name { get; set; }
+    content: public string Name { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <JsonProperty("name")>
-
-      Public Property Name As String
+    content.vb: Public Property Name As String
   overload: Yort.AfterPay.InStore.AfterPayOrderItem.Name*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: name
   modifiers.csharp:
   - public
   - get
@@ -106,32 +94,20 @@ items:
   type: Property
   source:
     id: Sku
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayOrderItem.cs
-    startLine: 24
+    path: ''
+    startLine: 547
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nThe unique stock-keeping-unit code for this product.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("sku")]
-
-      public string Sku { get; set; }
+    content: public string Sku { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <JsonProperty("sku")>
-
-      Public Property Sku As String
+    content.vb: Public Property Sku As String
   overload: Yort.AfterPay.InStore.AfterPayOrderItem.Sku*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: sku
   modifiers.csharp:
   - public
   - get
@@ -151,32 +127,20 @@ items:
   type: Property
   source:
     id: Quantity
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayOrderItem.cs
-    startLine: 29
+    path: ''
+    startLine: 552
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nThe number of units, volume or amount of this product used.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("quantity")]
-
-      public decimal Quantity { get; set; }
+    content: public decimal Quantity { get; set; }
     parameters: []
     return:
       type: System.Decimal
-    content.vb: >-
-      <JsonProperty("quantity")>
-
-      Public Property Quantity As Decimal
+    content.vb: Public Property Quantity As Decimal
   overload: Yort.AfterPay.InStore.AfterPayOrderItem.Quantity*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: quantity
   modifiers.csharp:
   - public
   - get
@@ -196,32 +160,20 @@ items:
   type: Property
   source:
     id: Price
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayOrderItem.cs
-    startLine: 34
+    path: ''
+    startLine: 557
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nThe unit price of a whole unit of this item.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("price")]
-
-      public AfterPayMoney Price { get; set; }
+    content: public AfterPayMoney Price { get; set; }
     parameters: []
     return:
       type: Yort.AfterPay.InStore.AfterPayMoney
-    content.vb: >-
-      <JsonProperty("price")>
-
-      Public Property Price As AfterPayMoney
+    content.vb: Public Property Price As AfterPayMoney
   overload: Yort.AfterPay.InStore.AfterPayOrderItem.Price*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: price
   modifiers.csharp:
   - public
   - get

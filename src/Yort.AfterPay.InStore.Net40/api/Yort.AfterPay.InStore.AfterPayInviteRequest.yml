@@ -16,10 +16,10 @@ items:
   type: Class
   source:
     id: AfterPayInviteRequest
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayInviteRequest.cs
-    startLine: 10
+    path: ''
+    startLine: 316
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nRepresents a request to the AfterPay API to invite a customer to join AfterPay and/or create a payment barcode.\n"
   example: []
@@ -55,32 +55,20 @@ items:
   type: Property
   source:
     id: MobileNumber
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayInviteRequest.cs
-    startLine: 15
+    path: ''
+    startLine: 321
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nThe mobile phone number to send the invite to (as an SMS message).\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("mobile")]
-
-      public string MobileNumber { get; set; }
+    content: public string MobileNumber { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <JsonProperty("mobile")>
-
-      Public Property MobileNumber As String
+    content.vb: Public Property MobileNumber As String
   overload: Yort.AfterPay.InStore.AfterPayInviteRequest.MobileNumber*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: mobile
   modifiers.csharp:
   - public
   - get
@@ -100,32 +88,20 @@ items:
   type: Property
   source:
     id: ExpectedAmount
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayInviteRequest.cs
-    startLine: 20
+    path: ''
+    startLine: 326
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nThe amount of payment requested from the customer.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("expectedAmount")]
-
-      public AfterPayMoney ExpectedAmount { get; set; }
+    content: public AfterPayMoney ExpectedAmount { get; set; }
     parameters: []
     return:
       type: Yort.AfterPay.InStore.AfterPayMoney
-    content.vb: >-
-      <JsonProperty("expectedAmount")>
-
-      Public Property ExpectedAmount As AfterPayMoney
+    content.vb: Public Property ExpectedAmount As AfterPayMoney
   overload: Yort.AfterPay.InStore.AfterPayInviteRequest.ExpectedAmount*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: expectedAmount
   modifiers.csharp:
   - public
   - get

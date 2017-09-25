@@ -17,10 +17,10 @@ items:
   type: Class
   source:
     id: AfterPayDeviceRegistrationRequest
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayDeviceRegistrationRequest.cs
-    startLine: 14
+    path: ''
+    startLine: 272
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nRepresents a request to perform one-time registration of a device with the AfterPay REST API.\n"
   remarks: "\n<p>For more information on the AfterPay authentication and authorisation system, see; https://docs.afterpay.com.au/instore-api-v1.html#device-authentication </p>\n"
@@ -60,32 +60,20 @@ items:
   type: Property
   source:
     id: Secret
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayDeviceRegistrationRequest.cs
-    startLine: 19
+    path: ''
+    startLine: 277
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nThe secret value provided by AfterPay for the device to be registered.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("secret")]
-
-      public string Secret { get; set; }
+    content: public string Secret { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <JsonProperty("secret")>
-
-      Public Property Secret As String
+    content.vb: Public Property Secret As String
   overload: Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest.Secret*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: secret
   modifiers.csharp:
   - public
   - get
@@ -105,32 +93,20 @@ items:
   type: Property
   source:
     id: Name
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayDeviceRegistrationRequest.cs
-    startLine: 24
+    path: ''
+    startLine: 282
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nThe name of the device to be registered as known to AfterPay.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("name")]
-
-      public string Name { get; set; }
+    content: public string Name { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <JsonProperty("name")>
-
-      Public Property Name As String
+    content.vb: Public Property Name As String
   overload: Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest.Name*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: name
   modifiers.csharp:
   - public
   - get
@@ -150,33 +126,21 @@ items:
   type: Property
   source:
     id: Attributes
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayDeviceRegistrationRequest.cs
-    startLine: 44
+    path: ''
+    startLine: 302
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nOptional attributes to be included with the registration, or null for none.\n"
   remarks: "\n<p>Use an anonmyous type to set additional properties, i.e</p>\n<pre><code>var request = new AfterPayDeviceRegistrationRequest()\n{\n	Secret = &quot;123&quot;,\n	DeviceName = &quot;MyDevice&quot;,\n	Attributes = new \n	{\n		Branch = &quot;Downtown Sydney&quot;,\n		SerialNumber = &quot;A1B2C3&quot;\n	}\n}</code></pre>\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("attributes")]
-
-      public object Attributes { get; set; }
+    content: public object Attributes { get; set; }
     parameters: []
     return:
       type: System.Object
-    content.vb: >-
-      <JsonProperty("attributes")>
-
-      Public Property Attributes As Object
+    content.vb: Public Property Attributes As Object
   overload: Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest.Attributes*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: attributes
   modifiers.csharp:
   - public
   - get

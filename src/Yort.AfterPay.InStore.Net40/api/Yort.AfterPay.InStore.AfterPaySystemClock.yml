@@ -16,13 +16,13 @@ items:
   type: Class
   source:
     id: AfterPaySystemClock
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPaySystemClock.cs
-    startLine: 13
+    path: ''
+    startLine: 709
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nRepresents the default system clock used by the Yort.AfterPay.Instore library to retrieve the current date and time.\n"
-  remarks: "\n<p>This implementation simply wraps the <xref href=\"System.DateTimeOffset.Now\" data-throw-if-not-resolved=\"false\"></xref> property and relies on the underlying system clock for accuracy.</p>\n<p>This class has a private constructor and cannot be created by user code. To obtain and instance use the static <xref href=\"Yort.AfterPay.InStore.AfterPaySystemClock.DefaultInstance\" data-throw-if-not-resolved=\"false\"></xref> property.</p>\n"
+  remarks: "\n<p>This implementation simply wraps the <see cref=\"!:DateTimeOffset.Now\"></see> property and relies on the underlying system clock for accuracy.</p>\n<p>This class has a private constructor and cannot be created by user code. To obtain and instance use the static <xref href=\"Yort.AfterPay.InStore.AfterPaySystemClock.DefaultInstance\" data-throw-if-not-resolved=\"false\"></xref> property.</p>\n"
   example: []
   syntax:
     content: 'public sealed class AfterPaySystemClock : IAfterPaySystemClock'
@@ -62,10 +62,10 @@ items:
   type: Property
   source:
     id: Now
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPaySystemClock.cs
-    startLine: 26
+    path: ''
+    startLine: 722
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nReturns the current date and time from the system clock.\n"
   example: []
@@ -73,7 +73,7 @@ items:
     content: public DateTimeOffset Now { get; }
     parameters: []
     return:
-      type: System.DateTimeOffset
+      type: DateTimeOffset
     content.vb: Public ReadOnly Property Now As DateTimeOffset
   overload: Yort.AfterPay.InStore.AfterPaySystemClock.Now*
   see:
@@ -100,10 +100,10 @@ items:
   type: Property
   source:
     id: DefaultInstance
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPaySystemClock.cs
-    startLine: 45
+    path: ''
+    startLine: 741
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nReturns an instance of this clock.\n"
   remarks: "\n<p>The instance returned by this method is cached after the first call to reduce allocations, so all subsquent calls will receive the same shared instance. \nHowever the property is not thread-safe and two threads calling the method simultanously for the first time may receive different instances. \nThis should not cause a problem as clients should not (and are instructed not to) compare instances or rely on shared instances.</p>\n"
@@ -124,8 +124,6 @@ items:
   - Shared
   - ReadOnly
 references:
-- uid: System.DateTimeOffset.Now
-  commentId: P:System.DateTimeOffset.Now
 - uid: Yort.AfterPay.InStore.AfterPaySystemClock.DefaultInstance
   commentId: P:Yort.AfterPay.InStore.AfterPaySystemClock.DefaultInstance
 - uid: Yort.AfterPay.InStore
@@ -433,6 +431,8 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: System.DateTimeOffset.Now
+  commentId: P:System.DateTimeOffset.Now
 - uid: Yort.AfterPay.InStore.AfterPaySystemClock.Now*
   commentId: Overload:Yort.AfterPay.InStore.AfterPaySystemClock.Now
   isExternal: false
@@ -446,13 +446,11 @@ references:
   name: Now
   nameWithType: IAfterPaySystemClock.Now
   fullName: Yort.AfterPay.InStore.IAfterPaySystemClock.Now
-- uid: System.DateTimeOffset
-  commentId: T:System.DateTimeOffset
-  parent: System
+- uid: DateTimeOffset
   isExternal: true
   name: DateTimeOffset
   nameWithType: DateTimeOffset
-  fullName: System.DateTimeOffset
+  fullName: DateTimeOffset
 - uid: Yort.AfterPay.InStore.AfterPaySystemClock.DefaultInstance*
   commentId: Overload:Yort.AfterPay.InStore.AfterPaySystemClock.DefaultInstance
   isExternal: false

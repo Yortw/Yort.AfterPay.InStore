@@ -16,10 +16,10 @@ items:
   type: Class
   source:
     id: AfterPayCurrencies
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayCurrencies.cs
-    startLine: 9
+    path: ''
+    startLine: 220
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nProvides constants for currency codes known to be used by the AfterPay API.\n"
   example: []
@@ -56,10 +56,10 @@ items:
   type: Field
   source:
     id: AustralianDollars
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayCurrencies.cs
-    startLine: 14
+    path: ''
+    startLine: 225
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nReturns &quot;AUD&quot; for Australian currency.\n"
   example: []
@@ -87,10 +87,10 @@ items:
   type: Field
   source:
     id: NewZealandDollars
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayCurrencies.cs
-    startLine: 18
+    path: ''
+    startLine: 229
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nReturns &quot;NZD&quot; for New Zealand currency.\n"
   example: []

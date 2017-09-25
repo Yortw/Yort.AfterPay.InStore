@@ -16,10 +16,10 @@ items:
   type: Class
   source:
     id: AfterPayDeviceRegistration
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayDeviceRegistration.cs
-    startLine: 11
+    path: ''
+    startLine: 243
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nRepresents a successful response to a request to register a device <xref href=\"Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest\" data-throw-if-not-resolved=\"false\"></xref>.\n"
   example: []
@@ -58,32 +58,20 @@ items:
   type: Property
   source:
     id: DeviceId
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayDeviceRegistration.cs
-    startLine: 16
+    path: ''
+    startLine: 248
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nThe unique id of the now registered device.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("deviceId")]
-
-      public string DeviceId { get; set; }
+    content: public string DeviceId { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <JsonProperty("deviceId")>
-
-      Public Property DeviceId As String
+    content.vb: Public Property DeviceId As String
   overload: Yort.AfterPay.InStore.AfterPayDeviceRegistration.DeviceId*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: deviceId
   modifiers.csharp:
   - public
   - get
@@ -103,35 +91,23 @@ items:
   type: Property
   source:
     id: Key
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayDeviceRegistration.cs
-    startLine: 22
+    path: ''
+    startLine: 254
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nThe secret key required to obtain an authorisation token for this device.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("key")]
-
-      public string Key { get; set; }
+    content: public string Key { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <JsonProperty("key")>
-
-      Public Property Key As String
+    content.vb: Public Property Key As String
   overload: Yort.AfterPay.InStore.AfterPayDeviceRegistration.Key*
   seealso:
   - linkId: Yort.AfterPay.InStore.AfterPayTokenRequest
     commentId: T:Yort.AfterPay.InStore.AfterPayTokenRequest
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: key
   modifiers.csharp:
   - public
   - get

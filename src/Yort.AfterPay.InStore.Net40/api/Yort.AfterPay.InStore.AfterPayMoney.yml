@@ -23,10 +23,10 @@ items:
   type: Struct
   source:
     id: AfterPayMoney
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayMoney.cs
-    startLine: 19
+    path: ''
+    startLine: 349
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nRepresents a monetary or financial value in the AfterPay API as a tuple containing a numeric value and a string representing the associated currency.\n"
   remarks: "\n<p>This is an immutable value type. To set the value or currency you must use the <xref href=\"Yort.AfterPay.InStore.AfterPayMoney.%23ctor(System.Decimal%2cSystem.String)\" data-throw-if-not-resolved=\"false\"></xref> constructor.</p>\n<p>Instances created using the default construtor will return a zero value with the <xref href=\"Yort.AfterPay.InStore.AfterPayMoney.Currency\" data-throw-if-not-resolved=\"false\"></xref> property returning the value of <xref href=\"Yort.AfterPay.InStore.AfterPayCurrencies.AustralianDollars\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>See https://docs.afterpay.com.au/instore-api-v1.html#money-object for more information.</p>\n"
@@ -40,7 +40,7 @@ items:
   - linkId: Yort.AfterPay.InStore.AfterPayCurrencies
     commentId: T:Yort.AfterPay.InStore.AfterPayCurrencies
   implements:
-  - System.IEquatable{Yort.AfterPay.InStore.AfterPayMoney}
+  - IEquatable{Yort.AfterPay.InStore.AfterPayMoney}
   inheritedMembers:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
@@ -64,10 +64,10 @@ items:
   type: Constructor
   source:
     id: .ctor
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayMoney.cs
-    startLine: 33
+    path: ''
+    startLine: 363
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nConstructs a new instance using the specified amount and currency.\n"
   example: []
@@ -106,35 +106,23 @@ items:
   type: Property
   source:
     id: Amount
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayMoney.cs
-    startLine: 43
+    path: ''
+    startLine: 373
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nReturns the numeric amount of this monetary value in the currency specified by <xref href=\"Yort.AfterPay.InStore.AfterPayMoney.Currency\" data-throw-if-not-resolved=\"false\"></xref>.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("amount")]
-
-      public decimal Amount { get; }
+    content: public decimal Amount { get; }
     parameters: []
     return:
       type: System.Decimal
-    content.vb: >-
-      <JsonProperty("amount")>
-
-      Public ReadOnly Property Amount As Decimal
+    content.vb: Public ReadOnly Property Amount As Decimal
   overload: Yort.AfterPay.InStore.AfterPayMoney.Amount*
   seealso:
   - linkId: Yort.AfterPay.InStore.AfterPayMoney.Currency
     commentId: P:Yort.AfterPay.InStore.AfterPayMoney.Currency
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: amount
   modifiers.csharp:
   - public
   - get
@@ -154,35 +142,23 @@ items:
   type: Property
   source:
     id: Currency
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayMoney.cs
-    startLine: 50
+    path: ''
+    startLine: 380
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nSpecifies the currency of the <xref href=\"Yort.AfterPay.InStore.AfterPayMoney.Amount\" data-throw-if-not-resolved=\"false\"></xref>/\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("currency")]
-
-      public string Currency { get; }
+    content: public string Currency { get; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <JsonProperty("currency")>
-
-      Public ReadOnly Property Currency As String
+    content.vb: Public ReadOnly Property Currency As String
   overload: Yort.AfterPay.InStore.AfterPayMoney.Currency*
   seealso:
   - linkId: Yort.AfterPay.InStore.AfterPayMoney.Amount
     commentId: P:Yort.AfterPay.InStore.AfterPayMoney.Amount
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: currency
   modifiers.csharp:
   - public
   - get
@@ -202,10 +178,10 @@ items:
   type: Method
   source:
     id: ToString
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayMoney.cs
-    startLine: 57
+    path: ''
+    startLine: 387
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nReturns the <xref href=\"Yort.AfterPay.InStore.AfterPayMoney.Amount\" data-throw-if-not-resolved=\"false\"></xref> property formatted as a currency using the current thread culture (which may or may not match the currency defined by <xref href=\"Yort.AfterPay.InStore.AfterPayMoney.Currency\" data-throw-if-not-resolved=\"false\"></xref>).\n"
   example: []
@@ -236,10 +212,10 @@ items:
   type: Method
   source:
     id: GetHashCode
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayMoney.cs
-    startLine: 68
+    path: ''
+    startLine: 398
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nReturns the hashcode for this instance.\n"
   example: []
@@ -270,10 +246,10 @@ items:
   type: Method
   source:
     id: Equals
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayMoney.cs
-    startLine: 84
+    path: ''
+    startLine: 414
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nCompares this instance to an object value and returns true if they are both <xref href=\"Yort.AfterPay.InStore.AfterPayMoney\" data-throw-if-not-resolved=\"false\"></xref> instances that are considered equal, otherwise false.\n"
   remarks: "\n<p>If <code data-dev-comment-type=\"paramref\" class=\"paramref\">obj</code> is null or not an instance of <xref href=\"Yort.AfterPay.InStore.AfterPayMoney\" data-throw-if-not-resolved=\"false\"></xref> then false is returned, otherwise the result of <xref href=\"Yort.AfterPay.InStore.AfterPayMoney.Equals(Yort.AfterPay.InStore.AfterPayMoney)\" data-throw-if-not-resolved=\"false\"></xref> is returned.</p>\n"
@@ -309,10 +285,10 @@ items:
   type: Method
   source:
     id: Equals
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayMoney.cs
-    startLine: 100
+    path: ''
+    startLine: 430
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nReturns true if this instance is considered equal to <code data-dev-comment-type=\"paramref\" class=\"paramref\">other</code>, otherwise returns false.\n"
   remarks: "\n<p>Equality is determined by comparing the <xref href=\"Yort.AfterPay.InStore.AfterPayMoney.Amount\" data-throw-if-not-resolved=\"false\"></xref> properties for an exact match and the <xref href=\"Yort.AfterPay.InStore.AfterPayMoney.Currency\" data-throw-if-not-resolved=\"false\"></xref> properties for an ordinal, case-insensitive match.</p>\n"
@@ -328,8 +304,6 @@ items:
       description: True if the two instances are considered equal.
     content.vb: Public Function Equals(other As AfterPayMoney) As Boolean
   overload: Yort.AfterPay.InStore.AfterPayMoney.Equals*
-  implements:
-  - System.IEquatable{Yort.AfterPay.InStore.AfterPayMoney}.Equals(Yort.AfterPay.InStore.AfterPayMoney)
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -347,10 +321,10 @@ items:
   type: Operator
   source:
     id: op_Equality
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayMoney.cs
-    startLine: 114
+    path: ''
+    startLine: 444
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nPerforms equality checking on <xref href=\"Yort.AfterPay.InStore.AfterPayMoney\" data-throw-if-not-resolved=\"false\"></xref> instances.\n"
   remarks: "\n<p>Equality is determined by comparing the <xref href=\"Yort.AfterPay.InStore.AfterPayMoney.Amount\" data-throw-if-not-resolved=\"false\"></xref> properties for an exact match and the <xref href=\"Yort.AfterPay.InStore.AfterPayMoney.Currency\" data-throw-if-not-resolved=\"false\"></xref> properties for an ordinal, case-insensitive match.</p>\n"
@@ -388,10 +362,10 @@ items:
   type: Operator
   source:
     id: op_Inequality
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayMoney.cs
-    startLine: 127
+    path: ''
+    startLine: 457
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nPerforms inequality checking on <xref href=\"Yort.AfterPay.InStore.AfterPayMoney\" data-throw-if-not-resolved=\"false\"></xref> instances.\n"
   remarks: Inverts the result of an == comparison.
@@ -435,21 +409,20 @@ references:
   name: Yort.AfterPay.InStore
   nameWithType: Yort.AfterPay.InStore
   fullName: Yort.AfterPay.InStore
-- uid: System.IEquatable{Yort.AfterPay.InStore.AfterPayMoney}
-  commentId: T:System.IEquatable{Yort.AfterPay.InStore.AfterPayMoney}
-  parent: System
-  definition: System.IEquatable`1
+- uid: IEquatable{Yort.AfterPay.InStore.AfterPayMoney}
+  commentId: '!:IEquatable{Yort.AfterPay.InStore.AfterPayMoney}'
+  definition: IEquatable`1
   name: IEquatable<AfterPayMoney>
   nameWithType: IEquatable<AfterPayMoney>
-  fullName: System.IEquatable<Yort.AfterPay.InStore.AfterPayMoney>
+  fullName: IEquatable<Yort.AfterPay.InStore.AfterPayMoney>
   nameWithType.vb: IEquatable(Of AfterPayMoney)
-  fullName.vb: System.IEquatable(Of Yort.AfterPay.InStore.AfterPayMoney)
+  fullName.vb: IEquatable(Of Yort.AfterPay.InStore.AfterPayMoney)
   name.vb: IEquatable(Of AfterPayMoney)
   spec.csharp:
-  - uid: System.IEquatable`1
+  - uid: IEquatable`1
     name: IEquatable
     nameWithType: IEquatable
-    fullName: System.IEquatable
+    fullName: IEquatable
     isExternal: true
   - name: <
     nameWithType: <
@@ -462,10 +435,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: System.IEquatable`1
+  - uid: IEquatable`1
     name: IEquatable
     nameWithType: IEquatable
-    fullName: System.IEquatable
+    fullName: IEquatable
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
@@ -622,51 +595,45 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.IEquatable`1
-  commentId: T:System.IEquatable`1
+- uid: IEquatable`1
+  commentId: '!:IEquatable`1'
   isExternal: true
-  name: IEquatable<T>
-  nameWithType: IEquatable<T>
-  fullName: System.IEquatable<T>
-  nameWithType.vb: IEquatable(Of T)
-  fullName.vb: System.IEquatable(Of T)
-  name.vb: IEquatable(Of T)
+  name: IEquatable<>
+  nameWithType: IEquatable<>
+  fullName: IEquatable<>
+  nameWithType.vb: IEquatable(Of )
+  fullName.vb: IEquatable(Of )
+  name.vb: IEquatable(Of )
   spec.csharp:
-  - uid: System.IEquatable`1
+  - uid: IEquatable`1
     name: IEquatable
     nameWithType: IEquatable
-    fullName: System.IEquatable
+    fullName: IEquatable
     isExternal: true
   - name: <
     nameWithType: <
     fullName: <
-  - name: T
-    nameWithType: T
-    fullName: T
+  - name: ''
+    nameWithType: ''
+    fullName: ''
   - name: '>'
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: System.IEquatable`1
+  - uid: IEquatable`1
     name: IEquatable
     nameWithType: IEquatable
-    fullName: System.IEquatable
+    fullName: IEquatable
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - name: T
-    nameWithType: T
-    fullName: T
+  - name: ''
+    nameWithType: ''
+    fullName: ''
   - name: )
     nameWithType: )
     fullName: )
-- uid: System
-  commentId: N:System
-  isExternal: false
-  name: System
-  nameWithType: System
-  fullName: System
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -674,6 +641,12 @@ references:
   name: Object
   nameWithType: Object
   fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
 - uid: Yort.AfterPay.InStore.AfterPayMoney.#ctor*
   commentId: Overload:Yort.AfterPay.InStore.AfterPayMoney.#ctor
   isExternal: false
@@ -863,85 +836,6 @@ references:
   name: Boolean
   nameWithType: Boolean
   fullName: System.Boolean
-- uid: System.IEquatable{Yort.AfterPay.InStore.AfterPayMoney}.Equals(Yort.AfterPay.InStore.AfterPayMoney)
-  commentId: M:System.IEquatable{Yort.AfterPay.InStore.AfterPayMoney}.Equals(Yort.AfterPay.InStore.AfterPayMoney)
-  parent: System.IEquatable{Yort.AfterPay.InStore.AfterPayMoney}
-  definition: System.IEquatable`1.Equals(`0)
-  name: Equals(AfterPayMoney)
-  nameWithType: IEquatable<AfterPayMoney>.Equals(AfterPayMoney)
-  fullName: System.IEquatable<Yort.AfterPay.InStore.AfterPayMoney>.Equals(Yort.AfterPay.InStore.AfterPayMoney)
-  nameWithType.vb: IEquatable(Of AfterPayMoney).Equals(AfterPayMoney)
-  fullName.vb: System.IEquatable(Of Yort.AfterPay.InStore.AfterPayMoney).Equals(Yort.AfterPay.InStore.AfterPayMoney)
-  spec.csharp:
-  - uid: System.IEquatable`1.Equals(`0)
-    name: Equals
-    nameWithType: IEquatable<AfterPayMoney>.Equals
-    fullName: System.IEquatable<Yort.AfterPay.InStore.AfterPayMoney>.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: Yort.AfterPay.InStore.AfterPayMoney
-    name: AfterPayMoney
-    nameWithType: AfterPayMoney
-    fullName: Yort.AfterPay.InStore.AfterPayMoney
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.IEquatable`1.Equals(`0)
-    name: Equals
-    nameWithType: IEquatable(Of AfterPayMoney).Equals
-    fullName: System.IEquatable(Of Yort.AfterPay.InStore.AfterPayMoney).Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: Yort.AfterPay.InStore.AfterPayMoney
-    name: AfterPayMoney
-    nameWithType: AfterPayMoney
-    fullName: Yort.AfterPay.InStore.AfterPayMoney
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.IEquatable`1.Equals(`0)
-  commentId: M:System.IEquatable`1.Equals(`0)
-  isExternal: true
-  name: Equals(T)
-  nameWithType: IEquatable<T>.Equals(T)
-  fullName: System.IEquatable<T>.Equals(T)
-  nameWithType.vb: IEquatable(Of T).Equals(T)
-  fullName.vb: System.IEquatable(Of T).Equals(T)
-  spec.csharp:
-  - uid: System.IEquatable`1.Equals(`0)
-    name: Equals
-    nameWithType: IEquatable<T>.Equals
-    fullName: System.IEquatable<T>.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.IEquatable`1.Equals(`0)
-    name: Equals
-    nameWithType: IEquatable(Of T).Equals
-    fullName: System.IEquatable(Of T).Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: Yort.AfterPay.InStore.AfterPayMoney.op_Equality*
   commentId: Overload:Yort.AfterPay.InStore.AfterPayMoney.op_Equality
   isExternal: false

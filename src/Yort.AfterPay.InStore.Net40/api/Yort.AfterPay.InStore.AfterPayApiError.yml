@@ -18,10 +18,10 @@ items:
   type: Class
   source:
     id: AfterPayApiError
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayApiError.cs
-    startLine: 13
+    path: ''
+    startLine: 35
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nRepresents an error response from the AfterPay API.\n"
   remarks: "\n<p>See the AfterPay documentation for more information; https://docs.afterpay.com.au/instore-api-v1.html#errors</p>\n"
@@ -58,32 +58,20 @@ items:
   type: Property
   source:
     id: HttpStatusCode
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayApiError.cs
-    startLine: 18
+    path: ''
+    startLine: 40
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nThe HTTP status code that was sent in the response that contained this data.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("httpStatusCode")]
-
-      public int HttpStatusCode { get; set; }
+    content: public int HttpStatusCode { get; set; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: >-
-      <JsonProperty("httpStatusCode")>
-
-      Public Property HttpStatusCode As Integer
+    content.vb: Public Property HttpStatusCode As Integer
   overload: Yort.AfterPay.InStore.AfterPayApiError.HttpStatusCode*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: httpStatusCode
   modifiers.csharp:
   - public
   - get
@@ -103,32 +91,20 @@ items:
   type: Property
   source:
     id: ErrorId
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayApiError.cs
-    startLine: 24
+    path: ''
+    startLine: 46
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nA string containing a unique error ID.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("errorId")]
-
-      public string ErrorId { get; set; }
+    content: public string ErrorId { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <JsonProperty("errorId")>
-
-      Public Property ErrorId As String
+    content.vb: Public Property ErrorId As String
   overload: Yort.AfterPay.InStore.AfterPayApiError.ErrorId*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: errorId
   modifiers.csharp:
   - public
   - get
@@ -148,32 +124,20 @@ items:
   type: Property
   source:
     id: ErrorCode
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayApiError.cs
-    startLine: 30
+    path: ''
+    startLine: 52
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nA string representing the type of error returned, e.g. invalid_object, transaction_error, or server_error.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("errorCode")]
-
-      public string ErrorCode { get; set; }
+    content: public string ErrorCode { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <JsonProperty("errorCode")>
-
-      Public Property ErrorCode As String
+    content.vb: Public Property ErrorCode As String
   overload: Yort.AfterPay.InStore.AfterPayApiError.ErrorCode*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: errorCode
   modifiers.csharp:
   - public
   - get
@@ -193,32 +157,20 @@ items:
   type: Property
   source:
     id: Message
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayApiError.cs
-    startLine: 36
+    path: ''
+    startLine: 58
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nA string containing a human-readable message giving more details about the error. For card errors, these messages can be shown to your users.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("message")]
-
-      public string Message { get; set; }
+    content: public string Message { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <JsonProperty("message")>
-
-      Public Property Message As String
+    content.vb: Public Property Message As String
   overload: Yort.AfterPay.InStore.AfterPayApiError.Message*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: message
   modifiers.csharp:
   - public
   - get

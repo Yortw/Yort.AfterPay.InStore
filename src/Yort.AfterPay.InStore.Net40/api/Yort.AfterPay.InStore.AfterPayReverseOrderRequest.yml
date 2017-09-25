@@ -16,10 +16,10 @@ items:
   type: Class
   source:
     id: AfterPayReverseOrderRequest
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayReverseOrderRequest.cs
-    startLine: 15
+    path: ''
+    startLine: 654
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nRepresents a request to reverse an order that was previously attempted in the AfterPay system.\n"
   remarks: "\n<p>Orders should only be reversed when errors have occurred and the state of the order is unknown. For more information see; https://docs.afterpay.com.au/instore-api-v1.html#idempotent-requests and https://docs.afterpay.com.au/instore-api-v1.html#reverse-order</p>\n"
@@ -61,32 +61,20 @@ items:
   type: Property
   source:
     id: RequestedAt
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayReverseOrderRequest.cs
-    startLine: 20
+    path: ''
+    startLine: 659
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nThe date and time at which the request is being made. Defaults to the now property of <xref href=\"Yort.AfterPay.InStore.AfterPayConfiguration.SystemClock\" data-throw-if-not-resolved=\"false\"></xref>.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("requestedAt")]
-
-      public DateTimeOffset RequestedAt { get; set; }
+    content: public DateTimeOffset RequestedAt { get; set; }
     parameters: []
     return:
-      type: System.DateTimeOffset
-    content.vb: >-
-      <JsonProperty("requestedAt")>
-
-      Public Property RequestedAt As DateTimeOffset
+      type: DateTimeOffset
+    content.vb: Public Property RequestedAt As DateTimeOffset
   overload: Yort.AfterPay.InStore.AfterPayReverseOrderRequest.RequestedAt*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: requestedAt
   modifiers.csharp:
   - public
   - get
@@ -106,32 +94,20 @@ items:
   type: Property
   source:
     id: ReversingRequestId
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayReverseOrderRequest.cs
-    startLine: 25
+    path: ''
+    startLine: 664
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nRepresents a unique id for this request. Defaults to a new GUID value.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("reversingRequestId")]
-
-      public string ReversingRequestId { get; set; }
+    content: public string ReversingRequestId { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <JsonProperty("reversingRequestId")>
-
-      Public Property ReversingRequestId As String
+    content.vb: Public Property ReversingRequestId As String
   overload: Yort.AfterPay.InStore.AfterPayReverseOrderRequest.ReversingRequestId*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: reversingRequestId
   modifiers.csharp:
   - public
   - get
@@ -457,13 +433,11 @@ references:
   name: RequestedAt
   nameWithType: AfterPayReverseOrderRequest.RequestedAt
   fullName: Yort.AfterPay.InStore.AfterPayReverseOrderRequest.RequestedAt
-- uid: System.DateTimeOffset
-  commentId: T:System.DateTimeOffset
-  parent: System
+- uid: DateTimeOffset
   isExternal: true
   name: DateTimeOffset
   nameWithType: DateTimeOffset
-  fullName: System.DateTimeOffset
+  fullName: DateTimeOffset
 - uid: Yort.AfterPay.InStore.AfterPayReverseOrderRequest.ReversingRequestId*
   commentId: Overload:Yort.AfterPay.InStore.AfterPayReverseOrderRequest.ReversingRequestId
   isExternal: false

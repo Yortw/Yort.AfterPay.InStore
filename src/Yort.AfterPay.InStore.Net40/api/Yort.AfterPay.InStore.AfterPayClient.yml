@@ -14,10 +14,10 @@ items:
   type: Class
   source:
     id: AfterPayClient
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayClient.cs
-    startLine: 9
+    path: ''
+    startLine: 71
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nThe main class used to access the AfterPay API, holding relevant configuration and providing methods for each REST API end point.\n"
   example: []

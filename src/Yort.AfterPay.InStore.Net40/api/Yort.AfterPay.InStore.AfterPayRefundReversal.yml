@@ -16,10 +16,10 @@ items:
   type: Class
   source:
     id: AfterPayRefundReversal
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayRefundReversal.cs
-    startLine: 11
+    path: ''
+    startLine: 624
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nRepresents a reversed refund in the AfterPay system.\n"
   example: []
@@ -58,32 +58,20 @@ items:
   type: Property
   source:
     id: ReverseId
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayRefundReversal.cs
-    startLine: 16
+    path: ''
+    startLine: 629
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nThe unique id of the reversal.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("reverseId")]
-
-      public string ReverseId { get; set; }
+    content: public string ReverseId { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <JsonProperty("reverseId")>
-
-      Public Property ReverseId As String
+    content.vb: Public Property ReverseId As String
   overload: Yort.AfterPay.InStore.AfterPayRefundReversal.ReverseId*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: reverseId
   modifiers.csharp:
   - public
   - get
@@ -103,32 +91,20 @@ items:
   type: Property
   source:
     id: ReversedAt
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayRefundReversal.cs
-    startLine: 22
+    path: ''
+    startLine: 635
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nThe date and time at which the reversal was created.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("reversedAt")]
-
-      public DateTimeOffset ReversedAt { get; set; }
+    content: public DateTimeOffset ReversedAt { get; set; }
     parameters: []
     return:
-      type: System.DateTimeOffset
-    content.vb: >-
-      <JsonProperty("reversedAt")>
-
-      Public Property ReversedAt As DateTimeOffset
+      type: DateTimeOffset
+    content.vb: Public Property ReversedAt As DateTimeOffset
   overload: Yort.AfterPay.InStore.AfterPayRefundReversal.ReversedAt*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: reversedAt
   modifiers.csharp:
   - public
   - get
@@ -459,10 +435,8 @@ references:
   name: ReversedAt
   nameWithType: AfterPayRefundReversal.ReversedAt
   fullName: Yort.AfterPay.InStore.AfterPayRefundReversal.ReversedAt
-- uid: System.DateTimeOffset
-  commentId: T:System.DateTimeOffset
-  parent: System
+- uid: DateTimeOffset
   isExternal: true
   name: DateTimeOffset
   nameWithType: DateTimeOffset
-  fullName: System.DateTimeOffset
+  fullName: DateTimeOffset

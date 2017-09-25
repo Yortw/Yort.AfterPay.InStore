@@ -15,10 +15,10 @@ items:
   type: Interface
   source:
     id: IAfterPaySystemClock
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\IAfterPayClock.cs
-    startLine: 10
+    path: ''
+    startLine: 894
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nInterface for components that can return the current date and time.\n"
   example: []
@@ -47,18 +47,18 @@ items:
   type: Property
   source:
     id: Now
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\IAfterPayClock.cs
-    startLine: 15
+    path: ''
+    startLine: 899
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
-  summary: "\nReturns the current date and time as a <xref href=\"System.DateTimeOffset\" data-throw-if-not-resolved=\"false\"></xref> value.\n"
+  summary: "\nReturns the current date and time as a <see cref=\"!:DateTimeOffset\"></see> value.\n"
   example: []
   syntax:
     content: DateTimeOffset Now { get; }
     parameters: []
     return:
-      type: System.DateTimeOffset
+      type: DateTimeOffset
     content.vb: ReadOnly Property Now As DateTimeOffset
   overload: Yort.AfterPay.InStore.IAfterPaySystemClock.Now*
   modifiers.csharp:
@@ -79,22 +79,14 @@ references:
   name: Yort.AfterPay.InStore
   nameWithType: Yort.AfterPay.InStore
   fullName: Yort.AfterPay.InStore
-- uid: System.DateTimeOffset
-  commentId: T:System.DateTimeOffset
-  parent: System
-  isExternal: true
-  name: DateTimeOffset
-  nameWithType: DateTimeOffset
-  fullName: System.DateTimeOffset
 - uid: Yort.AfterPay.InStore.IAfterPaySystemClock.Now*
   commentId: Overload:Yort.AfterPay.InStore.IAfterPaySystemClock.Now
   isExternal: false
   name: Now
   nameWithType: IAfterPaySystemClock.Now
   fullName: Yort.AfterPay.InStore.IAfterPaySystemClock.Now
-- uid: System
-  commentId: N:System
-  isExternal: false
-  name: System
-  nameWithType: System
-  fullName: System
+- uid: DateTimeOffset
+  isExternal: true
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: DateTimeOffset

@@ -15,10 +15,10 @@ items:
   type: Class
   source:
     id: AfterPayTokenRequest
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayTokenRequest.cs
-    startLine: 13
+    path: ''
+    startLine: 824
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nRepresents a request to the AfterPay API for a new security token used to authorise further requests.\n"
   example: []
@@ -61,32 +61,20 @@ items:
   type: Property
   source:
     id: Key
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayTokenRequest.cs
-    startLine: 18
+    path: ''
+    startLine: 829
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nThe secret key previously received when the requesting device was registered.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("key")]
-
-      public string Key { get; set; }
+    content: public string Key { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <JsonProperty("key")>
-
-      Public Property Key As String
+    content.vb: Public Property Key As String
   overload: Yort.AfterPay.InStore.AfterPayTokenRequest.Key*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: key
   modifiers.csharp:
   - public
   - get

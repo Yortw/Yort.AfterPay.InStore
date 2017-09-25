@@ -16,10 +16,10 @@ items:
   type: Class
   source:
     id: AfterPayRefund
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayRefund.cs
-    startLine: 11
+    path: ''
+    startLine: 598
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nRepresents a refund that has been successfully created with the AfterPay system.\n"
   example: []
@@ -58,32 +58,20 @@ items:
   type: Property
   source:
     id: RefundId
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayRefund.cs
-    startLine: 16
+    path: ''
+    startLine: 603
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nThe unique id of the refund created within the AfterPay system.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("refundId")]
-
-      public string RefundId { get; set; }
+    content: public string RefundId { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <JsonProperty("refundId")>
-
-      Public Property RefundId As String
+    content.vb: Public Property RefundId As String
   overload: Yort.AfterPay.InStore.AfterPayRefund.RefundId*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: refundId
   modifiers.csharp:
   - public
   - get
@@ -103,32 +91,20 @@ items:
   type: Property
   source:
     id: RefundedAt
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayRefund.cs
-    startLine: 22
+    path: ''
+    startLine: 609
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nThe date and time at which the refund was created within the AfterPay system.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("refundedAt")]
-
-      public DateTimeOffset RefundedAt { get; set; }
+    content: public DateTimeOffset RefundedAt { get; set; }
     parameters: []
     return:
-      type: System.DateTimeOffset
-    content.vb: >-
-      <JsonProperty("refundedAt")>
-
-      Public Property RefundedAt As DateTimeOffset
+      type: DateTimeOffset
+    content.vb: Public Property RefundedAt As DateTimeOffset
   overload: Yort.AfterPay.InStore.AfterPayRefund.RefundedAt*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: refundedAt
   modifiers.csharp:
   - public
   - get
@@ -459,10 +435,8 @@ references:
   name: RefundedAt
   nameWithType: AfterPayRefund.RefundedAt
   fullName: Yort.AfterPay.InStore.AfterPayRefund.RefundedAt
-- uid: System.DateTimeOffset
-  commentId: T:System.DateTimeOffset
-  parent: System
+- uid: DateTimeOffset
   isExternal: true
   name: DateTimeOffset
   nameWithType: DateTimeOffset
-  fullName: System.DateTimeOffset
+  fullName: DateTimeOffset

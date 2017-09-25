@@ -34,7 +34,7 @@ items:
   fullName: Yort.AfterPay.InStore
   type: Namespace
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
 references:
 - uid: Yort.AfterPay.InStore.AfterPayApiError
   commentId: T:Yort.AfterPay.InStore.AfterPayApiError
@@ -66,12 +66,6 @@ references:
   name: AfterPayCreateRefundRequest
   nameWithType: AfterPayCreateRefundRequest
   fullName: Yort.AfterPay.InStore.AfterPayCreateRefundRequest
-- uid: Yort.AfterPay.InStore.AfterPayOrder
-  commentId: T:Yort.AfterPay.InStore.AfterPayOrder
-  isExternal: false
-  name: AfterPayOrder
-  nameWithType: AfterPayOrder
-  fullName: Yort.AfterPay.InStore.AfterPayOrder
 - uid: Yort.AfterPay.InStore.AfterPayCurrencies
   commentId: T:Yort.AfterPay.InStore.AfterPayCurrencies
   isExternal: false
@@ -103,12 +97,24 @@ references:
   name: AfterPayMoney
   nameWithType: AfterPayMoney
   fullName: Yort.AfterPay.InStore.AfterPayMoney
+- uid: Yort.AfterPay.InStore.AfterPayOrder
+  commentId: T:Yort.AfterPay.InStore.AfterPayOrder
+  isExternal: false
+  name: AfterPayOrder
+  nameWithType: AfterPayOrder
+  fullName: Yort.AfterPay.InStore.AfterPayOrder
 - uid: Yort.AfterPay.InStore.AfterPayOrderItem
   commentId: T:Yort.AfterPay.InStore.AfterPayOrderItem
   isExternal: false
   name: AfterPayOrderItem
   nameWithType: AfterPayOrderItem
   fullName: Yort.AfterPay.InStore.AfterPayOrderItem
+- uid: Yort.AfterPay.InStore.AfterPayOrderReversal
+  commentId: T:Yort.AfterPay.InStore.AfterPayOrderReversal
+  isExternal: false
+  name: AfterPayOrderReversal
+  nameWithType: AfterPayOrderReversal
+  fullName: Yort.AfterPay.InStore.AfterPayOrderReversal
 - uid: Yort.AfterPay.InStore.AfterPayRefund
   commentId: T:Yort.AfterPay.InStore.AfterPayRefund
   isExternal: false
@@ -127,12 +133,6 @@ references:
   name: AfterPayReverseOrderRequest
   nameWithType: AfterPayReverseOrderRequest
   fullName: Yort.AfterPay.InStore.AfterPayReverseOrderRequest
-- uid: Yort.AfterPay.InStore.AfterPayOrderReversal
-  commentId: T:Yort.AfterPay.InStore.AfterPayOrderReversal
-  isExternal: false
-  name: AfterPayOrderReversal
-  nameWithType: AfterPayOrderReversal
-  fullName: Yort.AfterPay.InStore.AfterPayOrderReversal
 - uid: Yort.AfterPay.InStore.AfterPayReverseRefundRequest
   commentId: T:Yort.AfterPay.InStore.AfterPayReverseRefundRequest
   isExternal: false

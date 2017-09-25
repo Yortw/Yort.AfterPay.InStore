@@ -20,10 +20,10 @@ items:
   type: Class
   source:
     id: AfterPayToken
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayToken.cs
-    startLine: 14
+    path: ''
+    startLine: 761
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nRepresents an authorisation token returned from the AfterPay API.\n"
   example: []
@@ -66,32 +66,20 @@ items:
   type: Property
   source:
     id: Token
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayToken.cs
-    startLine: 19
+    path: ''
+    startLine: 766
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nThe bearer token returned by the API that can be used to authorise further requests.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("token")]
-
-      public string Token { get; set; }
+    content: public string Token { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <JsonProperty("token")>
-
-      Public Property Token As String
+    content.vb: Public Property Token As String
   overload: Yort.AfterPay.InStore.AfterPayToken.Token*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: token
   modifiers.csharp:
   - public
   - get
@@ -111,32 +99,20 @@ items:
   type: Property
   source:
     id: ExpiresIn
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayToken.cs
-    startLine: 24
+    path: ''
+    startLine: 771
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nThe number of seconds for which this token is valid from the time it was issued.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("expiresIn")]
-
-      public long ExpiresIn { get; set; }
+    content: public long ExpiresIn { get; set; }
     parameters: []
     return:
       type: System.Int64
-    content.vb: >-
-      <JsonProperty("expiresIn")>
-
-      Public Property ExpiresIn As Long
+    content.vb: Public Property ExpiresIn As Long
   overload: Yort.AfterPay.InStore.AfterPayToken.ExpiresIn*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: expiresIn
   modifiers.csharp:
   - public
   - get
@@ -156,10 +132,10 @@ items:
   type: Property
   source:
     id: IssuedAt
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayToken.cs
-    startLine: 33
+    path: ''
+    startLine: 780
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nRepresents (roughly) the date and time at which this token was issued.\n"
   remarks: "\n<p>This value is set using the <xref href=\"Yort.AfterPay.InStore.AfterPayConfiguration.SystemClock\" data-throw-if-not-resolved=\"false\"></xref> at the time the response is received.</p>\n"
@@ -168,7 +144,7 @@ items:
     content: public DateTimeOffset IssuedAt { get; }
     parameters: []
     return:
-      type: System.DateTimeOffset
+      type: DateTimeOffset
     content.vb: Public ReadOnly Property IssuedAt As DateTimeOffset
   overload: Yort.AfterPay.InStore.AfterPayToken.IssuedAt*
   modifiers.csharp:
@@ -190,10 +166,10 @@ items:
   type: Property
   source:
     id: ExpiresAt
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayToken.cs
-    startLine: 38
+    path: ''
+    startLine: 785
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nReturns the date and time at which this token expires, calculated from <xref href=\"Yort.AfterPay.InStore.AfterPayToken.IssuedAt\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Yort.AfterPay.InStore.AfterPayToken.ExpiresIn\" data-throw-if-not-resolved=\"false\"></xref>.\n"
   example: []
@@ -201,7 +177,7 @@ items:
     content: public DateTimeOffset ExpiresAt { get; }
     parameters: []
     return:
-      type: System.DateTimeOffset
+      type: DateTimeOffset
     content.vb: Public ReadOnly Property ExpiresAt As DateTimeOffset
   overload: Yort.AfterPay.InStore.AfterPayToken.ExpiresAt*
   modifiers.csharp:
@@ -223,10 +199,10 @@ items:
   type: Method
   source:
     id: IsExpired
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayToken.cs
-    startLine: 46
+    path: ''
+    startLine: 793
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nReturns true if the token has expired based on the current system clock and the calculated <xref href=\"Yort.AfterPay.InStore.AfterPayToken.ExpiresAt\" data-throw-if-not-resolved=\"false\"></xref> value.\n"
   remarks: "\n<p>This overload uses the <xref href=\"Yort.AfterPay.InStore.AfterPayConfiguration.SystemClock\" data-throw-if-not-resolved=\"false\"></xref> property to retrieve the current date and time.</p>\n"
@@ -254,10 +230,10 @@ items:
   type: Method
   source:
     id: IsExpired
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayToken.cs
-    startLine: 56
+    path: ''
+    startLine: 803
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nReturns true if the token has expired based on the current system clock and the calculated <xref href=\"Yort.AfterPay.InStore.AfterPayToken.ExpiresAt\" data-throw-if-not-resolved=\"false\"></xref> value.\n"
   example: []
@@ -630,13 +606,11 @@ references:
   name: IssuedAt
   nameWithType: AfterPayToken.IssuedAt
   fullName: Yort.AfterPay.InStore.AfterPayToken.IssuedAt
-- uid: System.DateTimeOffset
-  commentId: T:System.DateTimeOffset
-  parent: System
+- uid: DateTimeOffset
   isExternal: true
   name: DateTimeOffset
   nameWithType: DateTimeOffset
-  fullName: System.DateTimeOffset
+  fullName: DateTimeOffset
 - uid: Yort.AfterPay.InStore.AfterPayToken.IssuedAt
   commentId: P:Yort.AfterPay.InStore.AfterPayToken.IssuedAt
 - uid: Yort.AfterPay.InStore.AfterPayToken.ExpiresIn

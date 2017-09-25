@@ -15,10 +15,10 @@ items:
   type: Class
   source:
     id: AfterPayConfiguration
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayConfiguration.cs
-    startLine: 9
+    path: ''
+    startLine: 84
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nInstances of this class represent configuration options for <xref href=\"Yort.AfterPay.InStore.IAfterPayClient\" data-throw-if-not-resolved=\"false\"></xref> instances. The static members of this class provide global configuration common to all instances.\n"
   example: []
@@ -54,10 +54,10 @@ items:
   type: Property
   source:
     id: SystemClock
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayConfiguration.cs
-    startLine: 24
+    path: ''
+    startLine: 99
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nSets or returns an implementation of <xref href=\"Yort.AfterPay.InStore.IAfterPaySystemClock\" data-throw-if-not-resolved=\"false\"></xref> that will be used by the library to determine the current date and time.\n"
   remarks: "\n<p>If not clock is explicitly set, or if the property is set to null, then <xref href=\"Yort.AfterPay.InStore.AfterPaySystemClock.DefaultInstance\" data-throw-if-not-resolved=\"false\"></xref> will be used (and returned as the current value of the property).</p>\n<p>This property can be used to provide a mocked clock for unit testing, or to provide a clock adjusted by a calculated offset via an NTP client etc. if the system clock cannot be relied upon for accuracy.</p>\n<p>This is a static property and the value set here affects all clients/objects from the Yort.AfterPay.InStore API unless otherwise specified.</p>\n"

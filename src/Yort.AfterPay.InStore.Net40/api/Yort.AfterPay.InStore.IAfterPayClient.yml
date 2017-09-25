@@ -14,10 +14,10 @@ items:
   type: Interface
   source:
     id: IAfterPayClient
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\IAfterPayClient.cs
-    startLine: 9
+    path: ''
+    startLine: 880
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nAn interface for <xref href=\"Yort.AfterPay.InStore.AfterPayClient\" data-throw-if-not-resolved=\"false\"></xref> to allow mocking the client for test purposes. \n"
   example: []

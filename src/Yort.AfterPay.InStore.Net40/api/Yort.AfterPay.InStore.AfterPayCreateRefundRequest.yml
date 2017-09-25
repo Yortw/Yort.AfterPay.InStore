@@ -20,10 +20,10 @@ items:
   type: Class
   source:
     id: AfterPayCreateRefundRequest
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayCreateRefundRequest.cs
-    startLine: 16
+    path: ''
+    startLine: 174
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nRepresents a request to refund part or all of a previously placed order.\n"
   remarks: "\n<p>For more information see; https://docs.afterpay.com.au/instore-api-v1.html#create-refund </p>\n"
@@ -67,32 +67,20 @@ items:
   type: Property
   source:
     id: RequestId
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayCreateRefundRequest.cs
-    startLine: 21
+    path: ''
+    startLine: 179
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nA unique id for this request.  Defaults to a new GUID value.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("requestId")]
-
-      public string RequestId { get; set; }
+    content: public string RequestId { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <JsonProperty("requestId")>
-
-      Public Property RequestId As String
+    content.vb: Public Property RequestId As String
   overload: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.RequestId*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: requestId
   modifiers.csharp:
   - public
   - get
@@ -112,32 +100,20 @@ items:
   type: Property
   source:
     id: RequestedAt
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayCreateRefundRequest.cs
-    startLine: 26
+    path: ''
+    startLine: 184
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nThe date and time this request was created.  Defaults to the now property of <xref href=\"Yort.AfterPay.InStore.AfterPayConfiguration.SystemClock\" data-throw-if-not-resolved=\"false\"></xref>.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("requestedAt")]
-
-      public DateTimeOffset RequestedAt { get; set; }
+    content: public DateTimeOffset RequestedAt { get; set; }
     parameters: []
     return:
-      type: System.DateTimeOffset
-    content.vb: >-
-      <JsonProperty("requestedAt")>
-
-      Public Property RequestedAt As DateTimeOffset
+      type: DateTimeOffset
+    content.vb: Public Property RequestedAt As DateTimeOffset
   overload: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.RequestedAt*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: requestedAt
   modifiers.csharp:
   - public
   - get
@@ -157,32 +133,20 @@ items:
   type: Property
   source:
     id: MerchantReference
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayCreateRefundRequest.cs
-    startLine: 31
+    path: ''
+    startLine: 189
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nAn id linking this refund to an object in the point of sale system, e.g. the POS docket or receipt number the return/refund is being done on.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("merchantReference")]
-
-      public string MerchantReference { get; set; }
+    content: public string MerchantReference { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <JsonProperty("merchantReference")>
-
-      Public Property MerchantReference As String
+    content.vb: Public Property MerchantReference As String
   overload: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.MerchantReference*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: merchantReference
   modifiers.csharp:
   - public
   - get
@@ -202,32 +166,20 @@ items:
   type: Property
   source:
     id: OrderId
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayCreateRefundRequest.cs
-    startLine: 36
+    path: ''
+    startLine: 194
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nThe unique AfterPay id for the order to refund against (from <xref href=\"Yort.AfterPay.InStore.AfterPayOrder.OrderId\" data-throw-if-not-resolved=\"false\"></xref>.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("orderId")]
-
-      public string OrderId { get; set; }
+    content: public string OrderId { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <JsonProperty("orderId")>
-
-      Public Property OrderId As String
+    content.vb: Public Property OrderId As String
   overload: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.OrderId*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: orderId
   modifiers.csharp:
   - public
   - get
@@ -247,33 +199,21 @@ items:
   type: Property
   source:
     id: OrderMerchantReference
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayCreateRefundRequest.cs
-    startLine: 44
+    path: ''
+    startLine: 202
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nAn optional value specifying the merchant reference used to create the original order (from <xref href=\"Yort.AfterPay.InStore.AfterPayOrder.MerchantReference\" data-throw-if-not-resolved=\"false\"></xref>).\n"
   remarks: "\n<p>If a non-null value is provided for this property then it must match the merchant reference on the original order or an error will occur. If a null value is provided then no check is performed on the merchant reference.</p>\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("orderMerchantReference")]
-
-      public string OrderMerchantReference { get; set; }
+    content: public string OrderMerchantReference { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <JsonProperty("orderMerchantReference")>
-
-      Public Property OrderMerchantReference As String
+    content.vb: Public Property OrderMerchantReference As String
   overload: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.OrderMerchantReference*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: orderMerchantReference
   modifiers.csharp:
   - public
   - get
@@ -293,32 +233,20 @@ items:
   type: Property
   source:
     id: Amount
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayCreateRefundRequest.cs
-    startLine: 49
+    path: ''
+    startLine: 207
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nThe refund amount. The refund amount can not exceed the outstanding amount of the associated order, or an error will be returned.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("amount")]
-
-      public AfterPayMoney Amount { get; set; }
+    content: public AfterPayMoney Amount { get; set; }
     parameters: []
     return:
       type: Yort.AfterPay.InStore.AfterPayMoney
-    content.vb: >-
-      <JsonProperty("amount")>
-
-      Public Property Amount As AfterPayMoney
+    content.vb: Public Property Amount As AfterPayMoney
   overload: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.Amount*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: amount
   modifiers.csharp:
   - public
   - get
@@ -664,13 +592,11 @@ references:
   name: RequestedAt
   nameWithType: AfterPayCreateRefundRequest.RequestedAt
   fullName: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.RequestedAt
-- uid: System.DateTimeOffset
-  commentId: T:System.DateTimeOffset
-  parent: System
+- uid: DateTimeOffset
   isExternal: true
   name: DateTimeOffset
   nameWithType: DateTimeOffset
-  fullName: System.DateTimeOffset
+  fullName: DateTimeOffset
 - uid: Yort.AfterPay.InStore.AfterPayCreateRefundRequest.MerchantReference*
   commentId: Overload:Yort.AfterPay.InStore.AfterPayCreateRefundRequest.MerchantReference
   isExternal: false

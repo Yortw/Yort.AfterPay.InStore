@@ -22,10 +22,10 @@ items:
   type: Class
   source:
     id: AfterPayOrder
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayOrder.cs
-    startLine: 13
+    path: ''
+    startLine: 479
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nRepresents an order created within the AfterPay system via a <xref href=\"Yort.AfterPay.InStore.AfterPayCreateOrderRequest\" data-throw-if-not-resolved=\"false\"></xref>.\n"
   example: []
@@ -68,32 +68,20 @@ items:
   type: Property
   source:
     id: OrderId
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayOrder.cs
-    startLine: 18
+    path: ''
+    startLine: 484
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nThe unique id of this order within the AfterPay system.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("orderId")]
-
-      public string OrderId { get; set; }
+    content: public string OrderId { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <JsonProperty("orderId")>
-
-      Public Property OrderId As String
+    content.vb: Public Property OrderId As String
   overload: Yort.AfterPay.InStore.AfterPayOrder.OrderId*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: orderId
   modifiers.csharp:
   - public
   - get
@@ -113,32 +101,20 @@ items:
   type: Property
   source:
     id: OrderedAt
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayOrder.cs
-    startLine: 23
+    path: ''
+    startLine: 489
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nThe date and time this order was created in the AfterPay system.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("orderedAt")]
-
-      public DateTimeOffset OrderedAt { get; set; }
+    content: public DateTimeOffset OrderedAt { get; set; }
     parameters: []
     return:
-      type: System.DateTimeOffset
-    content.vb: >-
-      <JsonProperty("orderedAt")>
-
-      Public Property OrderedAt As DateTimeOffset
+      type: DateTimeOffset
+    content.vb: Public Property OrderedAt As DateTimeOffset
   overload: Yort.AfterPay.InStore.AfterPayOrder.OrderedAt*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: orderedAt
   modifiers.csharp:
   - public
   - get
@@ -158,32 +134,20 @@ items:
   type: Property
   source:
     id: RequestId
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayOrder.cs
-    startLine: 28
+    path: ''
+    startLine: 494
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nThe unique request id of the <xref href=\"Yort.AfterPay.InStore.AfterPayCreateOrderRequest\" data-throw-if-not-resolved=\"false\"></xref> that created this order.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("requestId")]
-
-      public string RequestId { get; set; }
+    content: public string RequestId { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <JsonProperty("requestId")>
-
-      Public Property RequestId As String
+    content.vb: Public Property RequestId As String
   overload: Yort.AfterPay.InStore.AfterPayOrder.RequestId*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: requestId
   modifiers.csharp:
   - public
   - get
@@ -203,32 +167,20 @@ items:
   type: Property
   source:
     id: RequestedAt
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayOrder.cs
-    startLine: 33
+    path: ''
+    startLine: 499
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nThe request date and time from the <xref href=\"Yort.AfterPay.InStore.AfterPayCreateOrderRequest\" data-throw-if-not-resolved=\"false\"></xref> that created this order.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("requestedAt")]
-
-      public DateTimeOffset RequestedAt { get; set; }
+    content: public DateTimeOffset RequestedAt { get; set; }
     parameters: []
     return:
-      type: System.DateTimeOffset
-    content.vb: >-
-      <JsonProperty("requestedAt")>
-
-      Public Property RequestedAt As DateTimeOffset
+      type: DateTimeOffset
+    content.vb: Public Property RequestedAt As DateTimeOffset
   overload: Yort.AfterPay.InStore.AfterPayOrder.RequestedAt*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: requestedAt
   modifiers.csharp:
   - public
   - get
@@ -248,32 +200,20 @@ items:
   type: Property
   source:
     id: PreapprovalCode
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayOrder.cs
-    startLine: 38
+    path: ''
+    startLine: 504
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nThe pre-approval alphanumeric code obtained from the customer that was used to authorise payment for this order.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("preApprovalCode")]
-
-      public string PreapprovalCode { get; set; }
+    content: public string PreapprovalCode { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <JsonProperty("preApprovalCode")>
-
-      Public Property PreapprovalCode As String
+    content.vb: Public Property PreapprovalCode As String
   overload: Yort.AfterPay.InStore.AfterPayOrder.PreapprovalCode*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: preApprovalCode
   modifiers.csharp:
   - public
   - get
@@ -293,32 +233,20 @@ items:
   type: Property
   source:
     id: Amount
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayOrder.cs
-    startLine: 43
+    path: ''
+    startLine: 509
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nThe payment required for this order as a <xref href=\"Yort.AfterPay.InStore.AfterPayMoney\" data-throw-if-not-resolved=\"false\"></xref> instace.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("amount")]
-
-      public AfterPayMoney Amount { get; set; }
+    content: public AfterPayMoney Amount { get; set; }
     parameters: []
     return:
       type: Yort.AfterPay.InStore.AfterPayMoney
-    content.vb: >-
-      <JsonProperty("amount")>
-
-      Public Property Amount As AfterPayMoney
+    content.vb: Public Property Amount As AfterPayMoney
   overload: Yort.AfterPay.InStore.AfterPayOrder.Amount*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: amount
   modifiers.csharp:
   - public
   - get
@@ -338,32 +266,20 @@ items:
   type: Property
   source:
     id: MerchantReference
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayOrder.cs
-    startLine: 48
+    path: ''
+    startLine: 514
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nThe merchant reference provided on the <xref href=\"Yort.AfterPay.InStore.AfterPayCreateOrderRequest\" data-throw-if-not-resolved=\"false\"></xref> instance that created this order.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("merchantReference")]
-
-      public string MerchantReference { get; set; }
+    content: public string MerchantReference { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <JsonProperty("merchantReference")>
-
-      Public Property MerchantReference As String
+    content.vb: Public Property MerchantReference As String
   overload: Yort.AfterPay.InStore.AfterPayOrder.MerchantReference*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: merchantReference
   modifiers.csharp:
   - public
   - get
@@ -383,32 +299,20 @@ items:
   type: Property
   source:
     id: OrderItems
-    path: C:\Projects\GitHub\Yort.AfterPay.InStore\src\Yort.AfterPay.InStore.Shared\AfterPayOrder.cs
-    startLine: 53
+    path: ''
+    startLine: 519
   assemblies:
-  - Yort.AfterPay.InStore
+  - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nThe items that were included on this order, taken from the original <xref href=\"Yort.AfterPay.InStore.AfterPayCreateOrderRequest\" data-throw-if-not-resolved=\"false\"></xref>.\n"
   example: []
   syntax:
-    content: >-
-      [JsonProperty("orderItems")]
-
-      public IEnumerable<AfterPayOrderItem> OrderItems { get; set; }
+    content: public IEnumerable<AfterPayOrderItem> OrderItems { get; set; }
     parameters: []
     return:
-      type: System.Collections.Generic.IEnumerable{Yort.AfterPay.InStore.AfterPayOrderItem}
-    content.vb: >-
-      <JsonProperty("orderItems")>
-
-      Public Property OrderItems As IEnumerable(Of AfterPayOrderItem)
+      type: IEnumerable{Yort.AfterPay.InStore.AfterPayOrderItem}
+    content.vb: Public Property OrderItems As IEnumerable(Of AfterPayOrderItem)
   overload: Yort.AfterPay.InStore.AfterPayOrder.OrderItems*
-  attributes:
-  - type: Newtonsoft.Json.JsonPropertyAttribute
-    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: orderItems
   modifiers.csharp:
   - public
   - get
@@ -752,13 +656,11 @@ references:
   name: OrderedAt
   nameWithType: AfterPayOrder.OrderedAt
   fullName: Yort.AfterPay.InStore.AfterPayOrder.OrderedAt
-- uid: System.DateTimeOffset
-  commentId: T:System.DateTimeOffset
-  parent: System
+- uid: DateTimeOffset
   isExternal: true
   name: DateTimeOffset
   nameWithType: DateTimeOffset
-  fullName: System.DateTimeOffset
+  fullName: DateTimeOffset
 - uid: Yort.AfterPay.InStore.AfterPayOrder.RequestId*
   commentId: Overload:Yort.AfterPay.InStore.AfterPayOrder.RequestId
   isExternal: false
@@ -795,21 +697,20 @@ references:
   name: OrderItems
   nameWithType: AfterPayOrder.OrderItems
   fullName: Yort.AfterPay.InStore.AfterPayOrder.OrderItems
-- uid: System.Collections.Generic.IEnumerable{Yort.AfterPay.InStore.AfterPayOrderItem}
-  commentId: T:System.Collections.Generic.IEnumerable{Yort.AfterPay.InStore.AfterPayOrderItem}
-  parent: System.Collections.Generic
-  definition: System.Collections.Generic.IEnumerable`1
+- uid: IEnumerable{Yort.AfterPay.InStore.AfterPayOrderItem}
+  commentId: '!:IEnumerable{Yort.AfterPay.InStore.AfterPayOrderItem}'
+  definition: IEnumerable`1
   name: IEnumerable<AfterPayOrderItem>
   nameWithType: IEnumerable<AfterPayOrderItem>
-  fullName: System.Collections.Generic.IEnumerable<Yort.AfterPay.InStore.AfterPayOrderItem>
+  fullName: IEnumerable<Yort.AfterPay.InStore.AfterPayOrderItem>
   nameWithType.vb: IEnumerable(Of AfterPayOrderItem)
-  fullName.vb: System.Collections.Generic.IEnumerable(Of Yort.AfterPay.InStore.AfterPayOrderItem)
+  fullName.vb: IEnumerable(Of Yort.AfterPay.InStore.AfterPayOrderItem)
   name.vb: IEnumerable(Of AfterPayOrderItem)
   spec.csharp:
-  - uid: System.Collections.Generic.IEnumerable`1
+  - uid: IEnumerable`1
     name: IEnumerable
     nameWithType: IEnumerable
-    fullName: System.Collections.Generic.IEnumerable
+    fullName: IEnumerable
     isExternal: true
   - name: <
     nameWithType: <
@@ -822,10 +723,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: System.Collections.Generic.IEnumerable`1
+  - uid: IEnumerable`1
     name: IEnumerable
     nameWithType: IEnumerable
-    fullName: System.Collections.Generic.IEnumerable
+    fullName: IEnumerable
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
@@ -837,48 +738,41 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Collections.Generic.IEnumerable`1
-  commentId: T:System.Collections.Generic.IEnumerable`1
+- uid: IEnumerable`1
   isExternal: true
-  name: IEnumerable<T>
-  nameWithType: IEnumerable<T>
-  fullName: System.Collections.Generic.IEnumerable<T>
-  nameWithType.vb: IEnumerable(Of T)
-  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
-  name.vb: IEnumerable(Of T)
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
   spec.csharp:
-  - uid: System.Collections.Generic.IEnumerable`1
+  - uid: IEnumerable`1
     name: IEnumerable
     nameWithType: IEnumerable
-    fullName: System.Collections.Generic.IEnumerable
+    fullName: IEnumerable
     isExternal: true
   - name: <
     nameWithType: <
     fullName: <
-  - name: T
-    nameWithType: T
-    fullName: T
+  - name: ''
+    nameWithType: ''
+    fullName: ''
   - name: '>'
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: System.Collections.Generic.IEnumerable`1
+  - uid: IEnumerable`1
     name: IEnumerable
     nameWithType: IEnumerable
-    fullName: System.Collections.Generic.IEnumerable
+    fullName: IEnumerable
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - name: T
-    nameWithType: T
-    fullName: T
+  - name: ''
+    nameWithType: ''
+    fullName: ''
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Collections.Generic
-  commentId: N:System.Collections.Generic
-  isExternal: false
-  name: System.Collections.Generic
-  nameWithType: System.Collections.Generic
-  fullName: System.Collections.Generic
