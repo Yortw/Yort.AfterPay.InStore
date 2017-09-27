@@ -9,6 +9,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yort.AfterPay.InStore.Net40
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Yort.AfterPay.InStore.Shared", "Yort.AfterPay.InStore.Shared\Yort.AfterPay.InStore.Shared.shproj", "{56ECBF28-81BD-4068-97B9-D9AA7BD0B903}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yort.AfterPay.InStore.Tests", "Yort.AfterPay.InStore.Tests\Yort.AfterPay.InStore.Tests.csproj", "{B4F20FB0-704A-4C3F-9AF3-673C057070D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9197F386-BE6A-4E8E-BC46-24B8D8DCD93B}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Yort.AfterPay.InStore.Shared\Yort.AfterPay.InStore.Shared.projitems*{56ecbf28-81bd-4068-97b9-d9aa7bd0b903}*SharedItemsImports = 13
@@ -27,6 +34,10 @@ Global
 		{D712D9D2-6495-4190-9B96-1D33DC2E64B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D712D9D2-6495-4190-9B96-1D33DC2E64B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D712D9D2-6495-4190-9B96-1D33DC2E64B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4F20FB0-704A-4C3F-9AF3-673C057070D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4F20FB0-704A-4C3F-9AF3-673C057070D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4F20FB0-704A-4C3F-9AF3-673C057070D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4F20FB0-704A-4C3F-9AF3-673C057070D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

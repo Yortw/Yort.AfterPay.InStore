@@ -61,18 +61,348 @@ references:
   commentId: Overload:Yort.AfterPay.InStore.AfterPayApiError.Message
   fullName: Yort.AfterPay.InStore.AfterPayApiError.Message
   nameWithType: AfterPayApiError.Message
+- uid: Yort.AfterPay.InStore.AfterPayApiException
+  name: AfterPayApiException
+  href: api/Yort.AfterPay.InStore.AfterPayApiException.html
+  commentId: T:Yort.AfterPay.InStore.AfterPayApiException
+  fullName: Yort.AfterPay.InStore.AfterPayApiException
+  nameWithType: AfterPayApiException
+- uid: Yort.AfterPay.InStore.AfterPayApiException.#ctor
+  name: AfterPayApiException()
+  href: api/Yort.AfterPay.InStore.AfterPayApiException.-ctor.html#Yort_AfterPay_InStore_AfterPayApiException__ctor
+  commentId: M:Yort.AfterPay.InStore.AfterPayApiException.#ctor
+  fullName: Yort.AfterPay.InStore.AfterPayApiException.AfterPayApiException()
+  nameWithType: AfterPayApiException.AfterPayApiException()
+- uid: Yort.AfterPay.InStore.AfterPayApiException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: AfterPayApiException(SerializationInfo, StreamingContext)
+  href: api/Yort.AfterPay.InStore.AfterPayApiException.-ctor.html#Yort_AfterPay_InStore_AfterPayApiException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:Yort.AfterPay.InStore.AfterPayApiException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: Yort.AfterPay.InStore.AfterPayApiException.AfterPayApiException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: AfterPayApiException.AfterPayApiException(SerializationInfo, StreamingContext)
+- uid: Yort.AfterPay.InStore.AfterPayApiException.#ctor(System.String)
+  name: AfterPayApiException(String)
+  href: api/Yort.AfterPay.InStore.AfterPayApiException.-ctor.html#Yort_AfterPay_InStore_AfterPayApiException__ctor_System_String_
+  commentId: M:Yort.AfterPay.InStore.AfterPayApiException.#ctor(System.String)
+  fullName: Yort.AfterPay.InStore.AfterPayApiException.AfterPayApiException(System.String)
+  nameWithType: AfterPayApiException.AfterPayApiException(String)
+- uid: Yort.AfterPay.InStore.AfterPayApiException.#ctor(System.String,Exception)
+  name: AfterPayApiException(String, Exception)
+  href: api/Yort.AfterPay.InStore.AfterPayApiException.-ctor.html#Yort_AfterPay_InStore_AfterPayApiException__ctor_System_String_Exception_
+  commentId: M:Yort.AfterPay.InStore.AfterPayApiException.#ctor(System.String,Exception)
+  fullName: Yort.AfterPay.InStore.AfterPayApiException.AfterPayApiException(System.String, Exception)
+  nameWithType: AfterPayApiException.AfterPayApiException(String, Exception)
+- uid: Yort.AfterPay.InStore.AfterPayApiException.#ctor(Yort.AfterPay.InStore.AfterPayApiError)
+  name: AfterPayApiException(AfterPayApiError)
+  href: api/Yort.AfterPay.InStore.AfterPayApiException.-ctor.html#Yort_AfterPay_InStore_AfterPayApiException__ctor_Yort_AfterPay_InStore_AfterPayApiError_
+  commentId: M:Yort.AfterPay.InStore.AfterPayApiException.#ctor(Yort.AfterPay.InStore.AfterPayApiError)
+  fullName: Yort.AfterPay.InStore.AfterPayApiException.AfterPayApiException(Yort.AfterPay.InStore.AfterPayApiError)
+  nameWithType: AfterPayApiException.AfterPayApiException(AfterPayApiError)
+- uid: Yort.AfterPay.InStore.AfterPayApiException.#ctor(Yort.AfterPay.InStore.AfterPayApiError,Exception)
+  name: AfterPayApiException(AfterPayApiError, Exception)
+  href: api/Yort.AfterPay.InStore.AfterPayApiException.-ctor.html#Yort_AfterPay_InStore_AfterPayApiException__ctor_Yort_AfterPay_InStore_AfterPayApiError_Exception_
+  commentId: M:Yort.AfterPay.InStore.AfterPayApiException.#ctor(Yort.AfterPay.InStore.AfterPayApiError,Exception)
+  fullName: Yort.AfterPay.InStore.AfterPayApiException.AfterPayApiException(Yort.AfterPay.InStore.AfterPayApiError, Exception)
+  nameWithType: AfterPayApiException.AfterPayApiException(AfterPayApiError, Exception)
+- uid: Yort.AfterPay.InStore.AfterPayApiException.#ctor*
+  name: AfterPayApiException
+  href: api/Yort.AfterPay.InStore.AfterPayApiException.-ctor.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayApiException.#ctor
+  fullName: Yort.AfterPay.InStore.AfterPayApiException.AfterPayApiException
+  nameWithType: AfterPayApiException.AfterPayApiException
+- uid: Yort.AfterPay.InStore.AfterPayApiException.ErrorCode
+  name: ErrorCode
+  href: api/Yort.AfterPay.InStore.AfterPayApiException.ErrorCode.html#Yort_AfterPay_InStore_AfterPayApiException_ErrorCode
+  commentId: P:Yort.AfterPay.InStore.AfterPayApiException.ErrorCode
+  fullName: Yort.AfterPay.InStore.AfterPayApiException.ErrorCode
+  nameWithType: AfterPayApiException.ErrorCode
+- uid: Yort.AfterPay.InStore.AfterPayApiException.ErrorCode*
+  name: ErrorCode
+  href: api/Yort.AfterPay.InStore.AfterPayApiException.ErrorCode.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayApiException.ErrorCode
+  fullName: Yort.AfterPay.InStore.AfterPayApiException.ErrorCode
+  nameWithType: AfterPayApiException.ErrorCode
+- uid: Yort.AfterPay.InStore.AfterPayApiException.ErrorId
+  name: ErrorId
+  href: api/Yort.AfterPay.InStore.AfterPayApiException.ErrorId.html#Yort_AfterPay_InStore_AfterPayApiException_ErrorId
+  commentId: P:Yort.AfterPay.InStore.AfterPayApiException.ErrorId
+  fullName: Yort.AfterPay.InStore.AfterPayApiException.ErrorId
+  nameWithType: AfterPayApiException.ErrorId
+- uid: Yort.AfterPay.InStore.AfterPayApiException.ErrorId*
+  name: ErrorId
+  href: api/Yort.AfterPay.InStore.AfterPayApiException.ErrorId.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayApiException.ErrorId
+  fullName: Yort.AfterPay.InStore.AfterPayApiException.ErrorId
+  nameWithType: AfterPayApiException.ErrorId
+- uid: Yort.AfterPay.InStore.AfterPayApiException.HttpStatusCode
+  name: HttpStatusCode
+  href: api/Yort.AfterPay.InStore.AfterPayApiException.HttpStatusCode.html#Yort_AfterPay_InStore_AfterPayApiException_HttpStatusCode
+  commentId: P:Yort.AfterPay.InStore.AfterPayApiException.HttpStatusCode
+  fullName: Yort.AfterPay.InStore.AfterPayApiException.HttpStatusCode
+  nameWithType: AfterPayApiException.HttpStatusCode
+- uid: Yort.AfterPay.InStore.AfterPayApiException.HttpStatusCode*
+  name: HttpStatusCode
+  href: api/Yort.AfterPay.InStore.AfterPayApiException.HttpStatusCode.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayApiException.HttpStatusCode
+  fullName: Yort.AfterPay.InStore.AfterPayApiException.HttpStatusCode
+  nameWithType: AfterPayApiException.HttpStatusCode
+- uid: Yort.AfterPay.InStore.AfterPayCallContext
+  name: AfterPayCallContext
+  href: api/Yort.AfterPay.InStore.AfterPayCallContext.html
+  commentId: T:Yort.AfterPay.InStore.AfterPayCallContext
+  fullName: Yort.AfterPay.InStore.AfterPayCallContext
+  nameWithType: AfterPayCallContext
+- uid: Yort.AfterPay.InStore.AfterPayCallContext.OperatorId
+  name: OperatorId
+  href: api/Yort.AfterPay.InStore.AfterPayCallContext.OperatorId.html#Yort_AfterPay_InStore_AfterPayCallContext_OperatorId
+  commentId: P:Yort.AfterPay.InStore.AfterPayCallContext.OperatorId
+  fullName: Yort.AfterPay.InStore.AfterPayCallContext.OperatorId
+  nameWithType: AfterPayCallContext.OperatorId
+- uid: Yort.AfterPay.InStore.AfterPayCallContext.OperatorId*
+  name: OperatorId
+  href: api/Yort.AfterPay.InStore.AfterPayCallContext.OperatorId.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayCallContext.OperatorId
+  fullName: Yort.AfterPay.InStore.AfterPayCallContext.OperatorId
+  nameWithType: AfterPayCallContext.OperatorId
 - uid: Yort.AfterPay.InStore.AfterPayClient
   name: AfterPayClient
   href: api/Yort.AfterPay.InStore.AfterPayClient.html
   commentId: T:Yort.AfterPay.InStore.AfterPayClient
   fullName: Yort.AfterPay.InStore.AfterPayClient
   nameWithType: AfterPayClient
+- uid: Yort.AfterPay.InStore.AfterPayClient.#ctor(Yort.AfterPay.InStore.AfterPayConfiguration)
+  name: AfterPayClient(AfterPayConfiguration)
+  href: api/Yort.AfterPay.InStore.AfterPayClient.-ctor.html#Yort_AfterPay_InStore_AfterPayClient__ctor_Yort_AfterPay_InStore_AfterPayConfiguration_
+  commentId: M:Yort.AfterPay.InStore.AfterPayClient.#ctor(Yort.AfterPay.InStore.AfterPayConfiguration)
+  fullName: Yort.AfterPay.InStore.AfterPayClient.AfterPayClient(Yort.AfterPay.InStore.AfterPayConfiguration)
+  nameWithType: AfterPayClient.AfterPayClient(AfterPayConfiguration)
+- uid: Yort.AfterPay.InStore.AfterPayClient.#ctor*
+  name: AfterPayClient
+  href: api/Yort.AfterPay.InStore.AfterPayClient.-ctor.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayClient.#ctor
+  fullName: Yort.AfterPay.InStore.AfterPayClient.AfterPayClient
+  nameWithType: AfterPayClient.AfterPayClient
+- uid: Yort.AfterPay.InStore.AfterPayClient.CreateOrder(Yort.AfterPay.InStore.AfterPayCreateOrderRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  name: CreateOrder(AfterPayCreateOrderRequest, AfterPayCallContext)
+  href: api/Yort.AfterPay.InStore.AfterPayClient.CreateOrder.html#Yort_AfterPay_InStore_AfterPayClient_CreateOrder_Yort_AfterPay_InStore_AfterPayCreateOrderRequest_Yort_AfterPay_InStore_AfterPayCallContext_
+  commentId: M:Yort.AfterPay.InStore.AfterPayClient.CreateOrder(Yort.AfterPay.InStore.AfterPayCreateOrderRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  fullName: Yort.AfterPay.InStore.AfterPayClient.CreateOrder(Yort.AfterPay.InStore.AfterPayCreateOrderRequest, Yort.AfterPay.InStore.AfterPayCallContext)
+  nameWithType: AfterPayClient.CreateOrder(AfterPayCreateOrderRequest, AfterPayCallContext)
+- uid: Yort.AfterPay.InStore.AfterPayClient.CreateOrder*
+  name: CreateOrder
+  href: api/Yort.AfterPay.InStore.AfterPayClient.CreateOrder.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayClient.CreateOrder
+  fullName: Yort.AfterPay.InStore.AfterPayClient.CreateOrder
+  nameWithType: AfterPayClient.CreateOrder
+- uid: Yort.AfterPay.InStore.AfterPayClient.DisposeManagedResources
+  name: DisposeManagedResources()
+  href: api/Yort.AfterPay.InStore.AfterPayClient.DisposeManagedResources.html#Yort_AfterPay_InStore_AfterPayClient_DisposeManagedResources
+  commentId: M:Yort.AfterPay.InStore.AfterPayClient.DisposeManagedResources
+  fullName: Yort.AfterPay.InStore.AfterPayClient.DisposeManagedResources()
+  nameWithType: AfterPayClient.DisposeManagedResources()
+- uid: Yort.AfterPay.InStore.AfterPayClient.DisposeManagedResources*
+  name: DisposeManagedResources
+  href: api/Yort.AfterPay.InStore.AfterPayClient.DisposeManagedResources.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayClient.DisposeManagedResources
+  fullName: Yort.AfterPay.InStore.AfterPayClient.DisposeManagedResources
+  nameWithType: AfterPayClient.DisposeManagedResources
+- uid: Yort.AfterPay.InStore.AfterPayClient.Ping
+  name: Ping()
+  href: api/Yort.AfterPay.InStore.AfterPayClient.Ping.html#Yort_AfterPay_InStore_AfterPayClient_Ping
+  commentId: M:Yort.AfterPay.InStore.AfterPayClient.Ping
+  fullName: Yort.AfterPay.InStore.AfterPayClient.Ping()
+  nameWithType: AfterPayClient.Ping()
+- uid: Yort.AfterPay.InStore.AfterPayClient.Ping*
+  name: Ping
+  href: api/Yort.AfterPay.InStore.AfterPayClient.Ping.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayClient.Ping
+  fullName: Yort.AfterPay.InStore.AfterPayClient.Ping
+  nameWithType: AfterPayClient.Ping
+- uid: Yort.AfterPay.InStore.AfterPayClient.PreapprovalEnquiry(Yort.AfterPay.InStore.AfterPayPreapprovalRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  name: PreapprovalEnquiry(AfterPayPreapprovalRequest, AfterPayCallContext)
+  href: api/Yort.AfterPay.InStore.AfterPayClient.PreapprovalEnquiry.html#Yort_AfterPay_InStore_AfterPayClient_PreapprovalEnquiry_Yort_AfterPay_InStore_AfterPayPreapprovalRequest_Yort_AfterPay_InStore_AfterPayCallContext_
+  commentId: M:Yort.AfterPay.InStore.AfterPayClient.PreapprovalEnquiry(Yort.AfterPay.InStore.AfterPayPreapprovalRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  fullName: Yort.AfterPay.InStore.AfterPayClient.PreapprovalEnquiry(Yort.AfterPay.InStore.AfterPayPreapprovalRequest, Yort.AfterPay.InStore.AfterPayCallContext)
+  nameWithType: AfterPayClient.PreapprovalEnquiry(AfterPayPreapprovalRequest, AfterPayCallContext)
+- uid: Yort.AfterPay.InStore.AfterPayClient.PreapprovalEnquiry*
+  name: PreapprovalEnquiry
+  href: api/Yort.AfterPay.InStore.AfterPayClient.PreapprovalEnquiry.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayClient.PreapprovalEnquiry
+  fullName: Yort.AfterPay.InStore.AfterPayClient.PreapprovalEnquiry
+  nameWithType: AfterPayClient.PreapprovalEnquiry
+- uid: Yort.AfterPay.InStore.AfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  name: RefundOrder(AfterPayRefundRequest, AfterPayCallContext)
+  href: api/Yort.AfterPay.InStore.AfterPayClient.RefundOrder.html#Yort_AfterPay_InStore_AfterPayClient_RefundOrder_Yort_AfterPay_InStore_AfterPayRefundRequest_Yort_AfterPay_InStore_AfterPayCallContext_
+  commentId: M:Yort.AfterPay.InStore.AfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  fullName: Yort.AfterPay.InStore.AfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest, Yort.AfterPay.InStore.AfterPayCallContext)
+  nameWithType: AfterPayClient.RefundOrder(AfterPayRefundRequest, AfterPayCallContext)
+- uid: Yort.AfterPay.InStore.AfterPayClient.RefundOrder*
+  name: RefundOrder
+  href: api/Yort.AfterPay.InStore.AfterPayClient.RefundOrder.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayClient.RefundOrder
+  fullName: Yort.AfterPay.InStore.AfterPayClient.RefundOrder
+  nameWithType: AfterPayClient.RefundOrder
+- uid: Yort.AfterPay.InStore.AfterPayClient.RegisterDevice(Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest)
+  name: RegisterDevice(AfterPayDeviceRegistrationRequest)
+  href: api/Yort.AfterPay.InStore.AfterPayClient.RegisterDevice.html#Yort_AfterPay_InStore_AfterPayClient_RegisterDevice_Yort_AfterPay_InStore_AfterPayDeviceRegistrationRequest_
+  commentId: M:Yort.AfterPay.InStore.AfterPayClient.RegisterDevice(Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest)
+  fullName: Yort.AfterPay.InStore.AfterPayClient.RegisterDevice(Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest)
+  nameWithType: AfterPayClient.RegisterDevice(AfterPayDeviceRegistrationRequest)
+- uid: Yort.AfterPay.InStore.AfterPayClient.RegisterDevice*
+  name: RegisterDevice
+  href: api/Yort.AfterPay.InStore.AfterPayClient.RegisterDevice.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayClient.RegisterDevice
+  fullName: Yort.AfterPay.InStore.AfterPayClient.RegisterDevice
+  nameWithType: AfterPayClient.RegisterDevice
+- uid: Yort.AfterPay.InStore.AfterPayClient.ReverseOrder(Yort.AfterPay.InStore.AfterPayReverseOrderRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  name: ReverseOrder(AfterPayReverseOrderRequest, AfterPayCallContext)
+  href: api/Yort.AfterPay.InStore.AfterPayClient.ReverseOrder.html#Yort_AfterPay_InStore_AfterPayClient_ReverseOrder_Yort_AfterPay_InStore_AfterPayReverseOrderRequest_Yort_AfterPay_InStore_AfterPayCallContext_
+  commentId: M:Yort.AfterPay.InStore.AfterPayClient.ReverseOrder(Yort.AfterPay.InStore.AfterPayReverseOrderRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  fullName: Yort.AfterPay.InStore.AfterPayClient.ReverseOrder(Yort.AfterPay.InStore.AfterPayReverseOrderRequest, Yort.AfterPay.InStore.AfterPayCallContext)
+  nameWithType: AfterPayClient.ReverseOrder(AfterPayReverseOrderRequest, AfterPayCallContext)
+- uid: Yort.AfterPay.InStore.AfterPayClient.ReverseOrder*
+  name: ReverseOrder
+  href: api/Yort.AfterPay.InStore.AfterPayClient.ReverseOrder.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayClient.ReverseOrder
+  fullName: Yort.AfterPay.InStore.AfterPayClient.ReverseOrder
+  nameWithType: AfterPayClient.ReverseOrder
+- uid: Yort.AfterPay.InStore.AfterPayClient.ReverseRefund(Yort.AfterPay.InStore.AfterPayReverseRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  name: ReverseRefund(AfterPayReverseRefundRequest, AfterPayCallContext)
+  href: api/Yort.AfterPay.InStore.AfterPayClient.ReverseRefund.html#Yort_AfterPay_InStore_AfterPayClient_ReverseRefund_Yort_AfterPay_InStore_AfterPayReverseRefundRequest_Yort_AfterPay_InStore_AfterPayCallContext_
+  commentId: M:Yort.AfterPay.InStore.AfterPayClient.ReverseRefund(Yort.AfterPay.InStore.AfterPayReverseRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  fullName: Yort.AfterPay.InStore.AfterPayClient.ReverseRefund(Yort.AfterPay.InStore.AfterPayReverseRefundRequest, Yort.AfterPay.InStore.AfterPayCallContext)
+  nameWithType: AfterPayClient.ReverseRefund(AfterPayReverseRefundRequest, AfterPayCallContext)
+- uid: Yort.AfterPay.InStore.AfterPayClient.ReverseRefund*
+  name: ReverseRefund
+  href: api/Yort.AfterPay.InStore.AfterPayClient.ReverseRefund.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayClient.ReverseRefund
+  fullName: Yort.AfterPay.InStore.AfterPayClient.ReverseRefund
+  nameWithType: AfterPayClient.ReverseRefund
+- uid: Yort.AfterPay.InStore.AfterPayClient.SendInvite(Yort.AfterPay.InStore.AfterPayInviteRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  name: SendInvite(AfterPayInviteRequest, AfterPayCallContext)
+  href: api/Yort.AfterPay.InStore.AfterPayClient.SendInvite.html#Yort_AfterPay_InStore_AfterPayClient_SendInvite_Yort_AfterPay_InStore_AfterPayInviteRequest_Yort_AfterPay_InStore_AfterPayCallContext_
+  commentId: M:Yort.AfterPay.InStore.AfterPayClient.SendInvite(Yort.AfterPay.InStore.AfterPayInviteRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  fullName: Yort.AfterPay.InStore.AfterPayClient.SendInvite(Yort.AfterPay.InStore.AfterPayInviteRequest, Yort.AfterPay.InStore.AfterPayCallContext)
+  nameWithType: AfterPayClient.SendInvite(AfterPayInviteRequest, AfterPayCallContext)
+- uid: Yort.AfterPay.InStore.AfterPayClient.SendInvite*
+  name: SendInvite
+  href: api/Yort.AfterPay.InStore.AfterPayClient.SendInvite.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayClient.SendInvite
+  fullName: Yort.AfterPay.InStore.AfterPayClient.SendInvite
+  nameWithType: AfterPayClient.SendInvite
 - uid: Yort.AfterPay.InStore.AfterPayConfiguration
   name: AfterPayConfiguration
   href: api/Yort.AfterPay.InStore.AfterPayConfiguration.html
   commentId: T:Yort.AfterPay.InStore.AfterPayConfiguration
   fullName: Yort.AfterPay.InStore.AfterPayConfiguration
   nameWithType: AfterPayConfiguration
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.#ctor
+  name: AfterPayConfiguration()
+  href: api/Yort.AfterPay.InStore.AfterPayConfiguration.-ctor.html#Yort_AfterPay_InStore_AfterPayConfiguration__ctor
+  commentId: M:Yort.AfterPay.InStore.AfterPayConfiguration.#ctor
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.AfterPayConfiguration()
+  nameWithType: AfterPayConfiguration.AfterPayConfiguration()
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.#ctor*
+  name: AfterPayConfiguration
+  href: api/Yort.AfterPay.InStore.AfterPayConfiguration.-ctor.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayConfiguration.#ctor
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.AfterPayConfiguration
+  nameWithType: AfterPayConfiguration.AfterPayConfiguration
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.DeviceId
+  name: DeviceId
+  href: api/Yort.AfterPay.InStore.AfterPayConfiguration.DeviceId.html#Yort_AfterPay_InStore_AfterPayConfiguration_DeviceId
+  commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.DeviceId
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.DeviceId
+  nameWithType: AfterPayConfiguration.DeviceId
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.DeviceId*
+  name: DeviceId
+  href: api/Yort.AfterPay.InStore.AfterPayConfiguration.DeviceId.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayConfiguration.DeviceId
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.DeviceId
+  nameWithType: AfterPayConfiguration.DeviceId
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.DeviceKey
+  name: DeviceKey
+  href: api/Yort.AfterPay.InStore.AfterPayConfiguration.DeviceKey.html#Yort_AfterPay_InStore_AfterPayConfiguration_DeviceKey
+  commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.DeviceKey
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.DeviceKey
+  nameWithType: AfterPayConfiguration.DeviceKey
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.DeviceKey*
+  name: DeviceKey
+  href: api/Yort.AfterPay.InStore.AfterPayConfiguration.DeviceKey.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayConfiguration.DeviceKey
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.DeviceKey
+  nameWithType: AfterPayConfiguration.DeviceKey
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.Environment
+  name: Environment
+  href: api/Yort.AfterPay.InStore.AfterPayConfiguration.Environment.html#Yort_AfterPay_InStore_AfterPayConfiguration_Environment
+  commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.Environment
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.Environment
+  nameWithType: AfterPayConfiguration.Environment
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.Environment*
+  name: Environment
+  href: api/Yort.AfterPay.InStore.AfterPayConfiguration.Environment.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayConfiguration.Environment
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.Environment
+  nameWithType: AfterPayConfiguration.Environment
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.HttpClient
+  name: HttpClient
+  href: api/Yort.AfterPay.InStore.AfterPayConfiguration.HttpClient.html#Yort_AfterPay_InStore_AfterPayConfiguration_HttpClient
+  commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.HttpClient
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.HttpClient
+  nameWithType: AfterPayConfiguration.HttpClient
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.HttpClient*
+  name: HttpClient
+  href: api/Yort.AfterPay.InStore.AfterPayConfiguration.HttpClient.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayConfiguration.HttpClient
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.HttpClient
+  nameWithType: AfterPayConfiguration.HttpClient
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries
+  name: MaximumRetries
+  href: api/Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries.html#Yort_AfterPay_InStore_AfterPayConfiguration_MaximumRetries
+  commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries
+  nameWithType: AfterPayConfiguration.MaximumRetries
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries*
+  name: MaximumRetries
+  href: api/Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries
+  nameWithType: AfterPayConfiguration.MaximumRetries
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.ProductName
+  name: ProductName
+  href: api/Yort.AfterPay.InStore.AfterPayConfiguration.ProductName.html#Yort_AfterPay_InStore_AfterPayConfiguration_ProductName
+  commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.ProductName
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.ProductName
+  nameWithType: AfterPayConfiguration.ProductName
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.ProductName*
+  name: ProductName
+  href: api/Yort.AfterPay.InStore.AfterPayConfiguration.ProductName.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayConfiguration.ProductName
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.ProductName
+  nameWithType: AfterPayConfiguration.ProductName
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.ProductVersion
+  name: ProductVersion
+  href: api/Yort.AfterPay.InStore.AfterPayConfiguration.ProductVersion.html#Yort_AfterPay_InStore_AfterPayConfiguration_ProductVersion
+  commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.ProductVersion
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.ProductVersion
+  nameWithType: AfterPayConfiguration.ProductVersion
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.ProductVersion*
+  name: ProductVersion
+  href: api/Yort.AfterPay.InStore.AfterPayConfiguration.ProductVersion.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayConfiguration.ProductVersion
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.ProductVersion
+  nameWithType: AfterPayConfiguration.ProductVersion
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.RetryDelaySeconds
+  name: RetryDelaySeconds
+  href: api/Yort.AfterPay.InStore.AfterPayConfiguration.RetryDelaySeconds.html#Yort_AfterPay_InStore_AfterPayConfiguration_RetryDelaySeconds
+  commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.RetryDelaySeconds
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.RetryDelaySeconds
+  nameWithType: AfterPayConfiguration.RetryDelaySeconds
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.RetryDelaySeconds*
+  name: RetryDelaySeconds
+  href: api/Yort.AfterPay.InStore.AfterPayConfiguration.RetryDelaySeconds.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayConfiguration.RetryDelaySeconds
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.RetryDelaySeconds
+  nameWithType: AfterPayConfiguration.RetryDelaySeconds
 - uid: Yort.AfterPay.InStore.AfterPayConfiguration.SystemClock
   name: SystemClock
   href: api/Yort.AfterPay.InStore.AfterPayConfiguration.SystemClock.html#Yort_AfterPay_InStore_AfterPayConfiguration_SystemClock
@@ -85,6 +415,30 @@ references:
   commentId: Overload:Yort.AfterPay.InStore.AfterPayConfiguration.SystemClock
   fullName: Yort.AfterPay.InStore.AfterPayConfiguration.SystemClock
   nameWithType: AfterPayConfiguration.SystemClock
+- uid: Yort.AfterPay.InStore.AfterPayConstants
+  name: AfterPayConstants
+  href: api/Yort.AfterPay.InStore.AfterPayConstants.html
+  commentId: T:Yort.AfterPay.InStore.AfterPayConstants
+  fullName: Yort.AfterPay.InStore.AfterPayConstants
+  nameWithType: AfterPayConstants
+- uid: Yort.AfterPay.InStore.AfterPayConstants.JsonMediaType
+  name: JsonMediaType
+  href: api/Yort.AfterPay.InStore.AfterPayConstants.JsonMediaType.html#Yort_AfterPay_InStore_AfterPayConstants_JsonMediaType
+  commentId: F:Yort.AfterPay.InStore.AfterPayConstants.JsonMediaType
+  fullName: Yort.AfterPay.InStore.AfterPayConstants.JsonMediaType
+  nameWithType: AfterPayConstants.JsonMediaType
+- uid: Yort.AfterPay.InStore.AfterPayConstants.ProductionRootUrl
+  name: ProductionRootUrl
+  href: api/Yort.AfterPay.InStore.AfterPayConstants.ProductionRootUrl.html#Yort_AfterPay_InStore_AfterPayConstants_ProductionRootUrl
+  commentId: F:Yort.AfterPay.InStore.AfterPayConstants.ProductionRootUrl
+  fullName: Yort.AfterPay.InStore.AfterPayConstants.ProductionRootUrl
+  nameWithType: AfterPayConstants.ProductionRootUrl
+- uid: Yort.AfterPay.InStore.AfterPayConstants.SandboxRootUrl
+  name: SandboxRootUrl
+  href: api/Yort.AfterPay.InStore.AfterPayConstants.SandboxRootUrl.html#Yort_AfterPay_InStore_AfterPayConstants_SandboxRootUrl
+  commentId: F:Yort.AfterPay.InStore.AfterPayConstants.SandboxRootUrl
+  fullName: Yort.AfterPay.InStore.AfterPayConstants.SandboxRootUrl
+  nameWithType: AfterPayConstants.SandboxRootUrl
 - uid: Yort.AfterPay.InStore.AfterPayCreateOrderRequest
   name: AfterPayCreateOrderRequest
   href: api/Yort.AfterPay.InStore.AfterPayCreateOrderRequest.html
@@ -331,6 +685,24 @@ references:
   commentId: Overload:Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest.Secret
   fullName: Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest.Secret
   nameWithType: AfterPayDeviceRegistrationRequest.Secret
+- uid: Yort.AfterPay.InStore.AfterPayEnvironment
+  name: AfterPayEnvironment
+  href: api/Yort.AfterPay.InStore.AfterPayEnvironment.html
+  commentId: T:Yort.AfterPay.InStore.AfterPayEnvironment
+  fullName: Yort.AfterPay.InStore.AfterPayEnvironment
+  nameWithType: AfterPayEnvironment
+- uid: Yort.AfterPay.InStore.AfterPayEnvironment.Production
+  name: Production
+  href: api/Yort.AfterPay.InStore.AfterPayEnvironment.Production.html#Yort_AfterPay_InStore_AfterPayEnvironment_Production
+  commentId: F:Yort.AfterPay.InStore.AfterPayEnvironment.Production
+  fullName: Yort.AfterPay.InStore.AfterPayEnvironment.Production
+  nameWithType: AfterPayEnvironment.Production
+- uid: Yort.AfterPay.InStore.AfterPayEnvironment.Sandbox
+  name: Sandbox
+  href: api/Yort.AfterPay.InStore.AfterPayEnvironment.Sandbox.html#Yort_AfterPay_InStore_AfterPayEnvironment_Sandbox
+  commentId: F:Yort.AfterPay.InStore.AfterPayEnvironment.Sandbox
+  fullName: Yort.AfterPay.InStore.AfterPayEnvironment.Sandbox
+  nameWithType: AfterPayEnvironment.Sandbox
 - uid: Yort.AfterPay.InStore.AfterPayInviteRequest
   name: AfterPayInviteRequest
   href: api/Yort.AfterPay.InStore.AfterPayInviteRequest.html
@@ -655,6 +1027,66 @@ references:
   commentId: Overload:Yort.AfterPay.InStore.AfterPayOrderReversal.ReverseId
   fullName: Yort.AfterPay.InStore.AfterPayOrderReversal.ReverseId
   nameWithType: AfterPayOrderReversal.ReverseId
+- uid: Yort.AfterPay.InStore.AfterPayPreapprovalRequest
+  name: AfterPayPreapprovalRequest
+  href: api/Yort.AfterPay.InStore.AfterPayPreapprovalRequest.html
+  commentId: T:Yort.AfterPay.InStore.AfterPayPreapprovalRequest
+  fullName: Yort.AfterPay.InStore.AfterPayPreapprovalRequest
+  nameWithType: AfterPayPreapprovalRequest
+- uid: Yort.AfterPay.InStore.AfterPayPreapprovalRequest.PreapprovalCode
+  name: PreapprovalCode
+  href: api/Yort.AfterPay.InStore.AfterPayPreapprovalRequest.PreapprovalCode.html#Yort_AfterPay_InStore_AfterPayPreapprovalRequest_PreapprovalCode
+  commentId: P:Yort.AfterPay.InStore.AfterPayPreapprovalRequest.PreapprovalCode
+  fullName: Yort.AfterPay.InStore.AfterPayPreapprovalRequest.PreapprovalCode
+  nameWithType: AfterPayPreapprovalRequest.PreapprovalCode
+- uid: Yort.AfterPay.InStore.AfterPayPreapprovalRequest.PreapprovalCode*
+  name: PreapprovalCode
+  href: api/Yort.AfterPay.InStore.AfterPayPreapprovalRequest.PreapprovalCode.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayPreapprovalRequest.PreapprovalCode
+  fullName: Yort.AfterPay.InStore.AfterPayPreapprovalRequest.PreapprovalCode
+  nameWithType: AfterPayPreapprovalRequest.PreapprovalCode
+- uid: Yort.AfterPay.InStore.AfterPayPreapprovalResponse
+  name: AfterPayPreapprovalResponse
+  href: api/Yort.AfterPay.InStore.AfterPayPreapprovalResponse.html
+  commentId: T:Yort.AfterPay.InStore.AfterPayPreapprovalResponse
+  fullName: Yort.AfterPay.InStore.AfterPayPreapprovalResponse
+  nameWithType: AfterPayPreapprovalResponse
+- uid: Yort.AfterPay.InStore.AfterPayPreapprovalResponse.Amount
+  name: Amount
+  href: api/Yort.AfterPay.InStore.AfterPayPreapprovalResponse.Amount.html#Yort_AfterPay_InStore_AfterPayPreapprovalResponse_Amount
+  commentId: P:Yort.AfterPay.InStore.AfterPayPreapprovalResponse.Amount
+  fullName: Yort.AfterPay.InStore.AfterPayPreapprovalResponse.Amount
+  nameWithType: AfterPayPreapprovalResponse.Amount
+- uid: Yort.AfterPay.InStore.AfterPayPreapprovalResponse.Amount*
+  name: Amount
+  href: api/Yort.AfterPay.InStore.AfterPayPreapprovalResponse.Amount.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayPreapprovalResponse.Amount
+  fullName: Yort.AfterPay.InStore.AfterPayPreapprovalResponse.Amount
+  nameWithType: AfterPayPreapprovalResponse.Amount
+- uid: Yort.AfterPay.InStore.AfterPayPreapprovalResponse.ExpiresAt
+  name: ExpiresAt
+  href: api/Yort.AfterPay.InStore.AfterPayPreapprovalResponse.ExpiresAt.html#Yort_AfterPay_InStore_AfterPayPreapprovalResponse_ExpiresAt
+  commentId: P:Yort.AfterPay.InStore.AfterPayPreapprovalResponse.ExpiresAt
+  fullName: Yort.AfterPay.InStore.AfterPayPreapprovalResponse.ExpiresAt
+  nameWithType: AfterPayPreapprovalResponse.ExpiresAt
+- uid: Yort.AfterPay.InStore.AfterPayPreapprovalResponse.ExpiresAt*
+  name: ExpiresAt
+  href: api/Yort.AfterPay.InStore.AfterPayPreapprovalResponse.ExpiresAt.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayPreapprovalResponse.ExpiresAt
+  fullName: Yort.AfterPay.InStore.AfterPayPreapprovalResponse.ExpiresAt
+  nameWithType: AfterPayPreapprovalResponse.ExpiresAt
+- uid: Yort.AfterPay.InStore.AfterPayPreapprovalResponse.Minimum
+  name: Minimum
+  href: api/Yort.AfterPay.InStore.AfterPayPreapprovalResponse.Minimum.html#Yort_AfterPay_InStore_AfterPayPreapprovalResponse_Minimum
+  commentId: P:Yort.AfterPay.InStore.AfterPayPreapprovalResponse.Minimum
+  fullName: Yort.AfterPay.InStore.AfterPayPreapprovalResponse.Minimum
+  nameWithType: AfterPayPreapprovalResponse.Minimum
+- uid: Yort.AfterPay.InStore.AfterPayPreapprovalResponse.Minimum*
+  name: Minimum
+  href: api/Yort.AfterPay.InStore.AfterPayPreapprovalResponse.Minimum.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayPreapprovalResponse.Minimum
+  fullName: Yort.AfterPay.InStore.AfterPayPreapprovalResponse.Minimum
+  nameWithType: AfterPayPreapprovalResponse.Minimum
 - uid: Yort.AfterPay.InStore.AfterPayRefund
   name: AfterPayRefund
   href: api/Yort.AfterPay.InStore.AfterPayRefund.html
@@ -685,6 +1117,84 @@ references:
   commentId: Overload:Yort.AfterPay.InStore.AfterPayRefund.RefundId
   fullName: Yort.AfterPay.InStore.AfterPayRefund.RefundId
   nameWithType: AfterPayRefund.RefundId
+- uid: Yort.AfterPay.InStore.AfterPayRefundRequest
+  name: AfterPayRefundRequest
+  href: api/Yort.AfterPay.InStore.AfterPayRefundRequest.html
+  commentId: T:Yort.AfterPay.InStore.AfterPayRefundRequest
+  fullName: Yort.AfterPay.InStore.AfterPayRefundRequest
+  nameWithType: AfterPayRefundRequest
+- uid: Yort.AfterPay.InStore.AfterPayRefundRequest.Amount
+  name: Amount
+  href: api/Yort.AfterPay.InStore.AfterPayRefundRequest.Amount.html#Yort_AfterPay_InStore_AfterPayRefundRequest_Amount
+  commentId: P:Yort.AfterPay.InStore.AfterPayRefundRequest.Amount
+  fullName: Yort.AfterPay.InStore.AfterPayRefundRequest.Amount
+  nameWithType: AfterPayRefundRequest.Amount
+- uid: Yort.AfterPay.InStore.AfterPayRefundRequest.Amount*
+  name: Amount
+  href: api/Yort.AfterPay.InStore.AfterPayRefundRequest.Amount.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayRefundRequest.Amount
+  fullName: Yort.AfterPay.InStore.AfterPayRefundRequest.Amount
+  nameWithType: AfterPayRefundRequest.Amount
+- uid: Yort.AfterPay.InStore.AfterPayRefundRequest.MerchantReference
+  name: MerchantReference
+  href: api/Yort.AfterPay.InStore.AfterPayRefundRequest.MerchantReference.html#Yort_AfterPay_InStore_AfterPayRefundRequest_MerchantReference
+  commentId: P:Yort.AfterPay.InStore.AfterPayRefundRequest.MerchantReference
+  fullName: Yort.AfterPay.InStore.AfterPayRefundRequest.MerchantReference
+  nameWithType: AfterPayRefundRequest.MerchantReference
+- uid: Yort.AfterPay.InStore.AfterPayRefundRequest.MerchantReference*
+  name: MerchantReference
+  href: api/Yort.AfterPay.InStore.AfterPayRefundRequest.MerchantReference.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayRefundRequest.MerchantReference
+  fullName: Yort.AfterPay.InStore.AfterPayRefundRequest.MerchantReference
+  nameWithType: AfterPayRefundRequest.MerchantReference
+- uid: Yort.AfterPay.InStore.AfterPayRefundRequest.OrderId
+  name: OrderId
+  href: api/Yort.AfterPay.InStore.AfterPayRefundRequest.OrderId.html#Yort_AfterPay_InStore_AfterPayRefundRequest_OrderId
+  commentId: P:Yort.AfterPay.InStore.AfterPayRefundRequest.OrderId
+  fullName: Yort.AfterPay.InStore.AfterPayRefundRequest.OrderId
+  nameWithType: AfterPayRefundRequest.OrderId
+- uid: Yort.AfterPay.InStore.AfterPayRefundRequest.OrderId*
+  name: OrderId
+  href: api/Yort.AfterPay.InStore.AfterPayRefundRequest.OrderId.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayRefundRequest.OrderId
+  fullName: Yort.AfterPay.InStore.AfterPayRefundRequest.OrderId
+  nameWithType: AfterPayRefundRequest.OrderId
+- uid: Yort.AfterPay.InStore.AfterPayRefundRequest.OrderMerchantReference
+  name: OrderMerchantReference
+  href: api/Yort.AfterPay.InStore.AfterPayRefundRequest.OrderMerchantReference.html#Yort_AfterPay_InStore_AfterPayRefundRequest_OrderMerchantReference
+  commentId: P:Yort.AfterPay.InStore.AfterPayRefundRequest.OrderMerchantReference
+  fullName: Yort.AfterPay.InStore.AfterPayRefundRequest.OrderMerchantReference
+  nameWithType: AfterPayRefundRequest.OrderMerchantReference
+- uid: Yort.AfterPay.InStore.AfterPayRefundRequest.OrderMerchantReference*
+  name: OrderMerchantReference
+  href: api/Yort.AfterPay.InStore.AfterPayRefundRequest.OrderMerchantReference.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayRefundRequest.OrderMerchantReference
+  fullName: Yort.AfterPay.InStore.AfterPayRefundRequest.OrderMerchantReference
+  nameWithType: AfterPayRefundRequest.OrderMerchantReference
+- uid: Yort.AfterPay.InStore.AfterPayRefundRequest.RequestedAt
+  name: RequestedAt
+  href: api/Yort.AfterPay.InStore.AfterPayRefundRequest.RequestedAt.html#Yort_AfterPay_InStore_AfterPayRefundRequest_RequestedAt
+  commentId: P:Yort.AfterPay.InStore.AfterPayRefundRequest.RequestedAt
+  fullName: Yort.AfterPay.InStore.AfterPayRefundRequest.RequestedAt
+  nameWithType: AfterPayRefundRequest.RequestedAt
+- uid: Yort.AfterPay.InStore.AfterPayRefundRequest.RequestedAt*
+  name: RequestedAt
+  href: api/Yort.AfterPay.InStore.AfterPayRefundRequest.RequestedAt.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayRefundRequest.RequestedAt
+  fullName: Yort.AfterPay.InStore.AfterPayRefundRequest.RequestedAt
+  nameWithType: AfterPayRefundRequest.RequestedAt
+- uid: Yort.AfterPay.InStore.AfterPayRefundRequest.RequestId
+  name: RequestId
+  href: api/Yort.AfterPay.InStore.AfterPayRefundRequest.RequestId.html#Yort_AfterPay_InStore_AfterPayRefundRequest_RequestId
+  commentId: P:Yort.AfterPay.InStore.AfterPayRefundRequest.RequestId
+  fullName: Yort.AfterPay.InStore.AfterPayRefundRequest.RequestId
+  nameWithType: AfterPayRefundRequest.RequestId
+- uid: Yort.AfterPay.InStore.AfterPayRefundRequest.RequestId*
+  name: RequestId
+  href: api/Yort.AfterPay.InStore.AfterPayRefundRequest.RequestId.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayRefundRequest.RequestId
+  fullName: Yort.AfterPay.InStore.AfterPayRefundRequest.RequestId
+  nameWithType: AfterPayRefundRequest.RequestId
 - uid: Yort.AfterPay.InStore.AfterPayRefundReversal
   name: AfterPayRefundReversal
   href: api/Yort.AfterPay.InStore.AfterPayRefundReversal.html
@@ -901,6 +1411,102 @@ references:
   commentId: T:Yort.AfterPay.InStore.IAfterPayClient
   fullName: Yort.AfterPay.InStore.IAfterPayClient
   nameWithType: IAfterPayClient
+- uid: Yort.AfterPay.InStore.IAfterPayClient.CreateOrder(Yort.AfterPay.InStore.AfterPayCreateOrderRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  name: CreateOrder(AfterPayCreateOrderRequest, AfterPayCallContext)
+  href: api/Yort.AfterPay.InStore.IAfterPayClient.CreateOrder.html#Yort_AfterPay_InStore_IAfterPayClient_CreateOrder_Yort_AfterPay_InStore_AfterPayCreateOrderRequest_Yort_AfterPay_InStore_AfterPayCallContext_
+  commentId: M:Yort.AfterPay.InStore.IAfterPayClient.CreateOrder(Yort.AfterPay.InStore.AfterPayCreateOrderRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  fullName: Yort.AfterPay.InStore.IAfterPayClient.CreateOrder(Yort.AfterPay.InStore.AfterPayCreateOrderRequest, Yort.AfterPay.InStore.AfterPayCallContext)
+  nameWithType: IAfterPayClient.CreateOrder(AfterPayCreateOrderRequest, AfterPayCallContext)
+- uid: Yort.AfterPay.InStore.IAfterPayClient.CreateOrder*
+  name: CreateOrder
+  href: api/Yort.AfterPay.InStore.IAfterPayClient.CreateOrder.html
+  commentId: Overload:Yort.AfterPay.InStore.IAfterPayClient.CreateOrder
+  fullName: Yort.AfterPay.InStore.IAfterPayClient.CreateOrder
+  nameWithType: IAfterPayClient.CreateOrder
+- uid: Yort.AfterPay.InStore.IAfterPayClient.Ping
+  name: Ping()
+  href: api/Yort.AfterPay.InStore.IAfterPayClient.Ping.html#Yort_AfterPay_InStore_IAfterPayClient_Ping
+  commentId: M:Yort.AfterPay.InStore.IAfterPayClient.Ping
+  fullName: Yort.AfterPay.InStore.IAfterPayClient.Ping()
+  nameWithType: IAfterPayClient.Ping()
+- uid: Yort.AfterPay.InStore.IAfterPayClient.Ping*
+  name: Ping
+  href: api/Yort.AfterPay.InStore.IAfterPayClient.Ping.html
+  commentId: Overload:Yort.AfterPay.InStore.IAfterPayClient.Ping
+  fullName: Yort.AfterPay.InStore.IAfterPayClient.Ping
+  nameWithType: IAfterPayClient.Ping
+- uid: Yort.AfterPay.InStore.IAfterPayClient.PreapprovalEnquiry(Yort.AfterPay.InStore.AfterPayPreapprovalRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  name: PreapprovalEnquiry(AfterPayPreapprovalRequest, AfterPayCallContext)
+  href: api/Yort.AfterPay.InStore.IAfterPayClient.PreapprovalEnquiry.html#Yort_AfterPay_InStore_IAfterPayClient_PreapprovalEnquiry_Yort_AfterPay_InStore_AfterPayPreapprovalRequest_Yort_AfterPay_InStore_AfterPayCallContext_
+  commentId: M:Yort.AfterPay.InStore.IAfterPayClient.PreapprovalEnquiry(Yort.AfterPay.InStore.AfterPayPreapprovalRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  fullName: Yort.AfterPay.InStore.IAfterPayClient.PreapprovalEnquiry(Yort.AfterPay.InStore.AfterPayPreapprovalRequest, Yort.AfterPay.InStore.AfterPayCallContext)
+  nameWithType: IAfterPayClient.PreapprovalEnquiry(AfterPayPreapprovalRequest, AfterPayCallContext)
+- uid: Yort.AfterPay.InStore.IAfterPayClient.PreapprovalEnquiry*
+  name: PreapprovalEnquiry
+  href: api/Yort.AfterPay.InStore.IAfterPayClient.PreapprovalEnquiry.html
+  commentId: Overload:Yort.AfterPay.InStore.IAfterPayClient.PreapprovalEnquiry
+  fullName: Yort.AfterPay.InStore.IAfterPayClient.PreapprovalEnquiry
+  nameWithType: IAfterPayClient.PreapprovalEnquiry
+- uid: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  name: RefundOrder(AfterPayRefundRequest, AfterPayCallContext)
+  href: api/Yort.AfterPay.InStore.IAfterPayClient.RefundOrder.html#Yort_AfterPay_InStore_IAfterPayClient_RefundOrder_Yort_AfterPay_InStore_AfterPayRefundRequest_Yort_AfterPay_InStore_AfterPayCallContext_
+  commentId: M:Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  fullName: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest, Yort.AfterPay.InStore.AfterPayCallContext)
+  nameWithType: IAfterPayClient.RefundOrder(AfterPayRefundRequest, AfterPayCallContext)
+- uid: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder*
+  name: RefundOrder
+  href: api/Yort.AfterPay.InStore.IAfterPayClient.RefundOrder.html
+  commentId: Overload:Yort.AfterPay.InStore.IAfterPayClient.RefundOrder
+  fullName: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder
+  nameWithType: IAfterPayClient.RefundOrder
+- uid: Yort.AfterPay.InStore.IAfterPayClient.RegisterDevice(Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest)
+  name: RegisterDevice(AfterPayDeviceRegistrationRequest)
+  href: api/Yort.AfterPay.InStore.IAfterPayClient.RegisterDevice.html#Yort_AfterPay_InStore_IAfterPayClient_RegisterDevice_Yort_AfterPay_InStore_AfterPayDeviceRegistrationRequest_
+  commentId: M:Yort.AfterPay.InStore.IAfterPayClient.RegisterDevice(Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest)
+  fullName: Yort.AfterPay.InStore.IAfterPayClient.RegisterDevice(Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest)
+  nameWithType: IAfterPayClient.RegisterDevice(AfterPayDeviceRegistrationRequest)
+- uid: Yort.AfterPay.InStore.IAfterPayClient.RegisterDevice*
+  name: RegisterDevice
+  href: api/Yort.AfterPay.InStore.IAfterPayClient.RegisterDevice.html
+  commentId: Overload:Yort.AfterPay.InStore.IAfterPayClient.RegisterDevice
+  fullName: Yort.AfterPay.InStore.IAfterPayClient.RegisterDevice
+  nameWithType: IAfterPayClient.RegisterDevice
+- uid: Yort.AfterPay.InStore.IAfterPayClient.ReverseOrder(Yort.AfterPay.InStore.AfterPayReverseOrderRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  name: ReverseOrder(AfterPayReverseOrderRequest, AfterPayCallContext)
+  href: api/Yort.AfterPay.InStore.IAfterPayClient.ReverseOrder.html#Yort_AfterPay_InStore_IAfterPayClient_ReverseOrder_Yort_AfterPay_InStore_AfterPayReverseOrderRequest_Yort_AfterPay_InStore_AfterPayCallContext_
+  commentId: M:Yort.AfterPay.InStore.IAfterPayClient.ReverseOrder(Yort.AfterPay.InStore.AfterPayReverseOrderRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  fullName: Yort.AfterPay.InStore.IAfterPayClient.ReverseOrder(Yort.AfterPay.InStore.AfterPayReverseOrderRequest, Yort.AfterPay.InStore.AfterPayCallContext)
+  nameWithType: IAfterPayClient.ReverseOrder(AfterPayReverseOrderRequest, AfterPayCallContext)
+- uid: Yort.AfterPay.InStore.IAfterPayClient.ReverseOrder*
+  name: ReverseOrder
+  href: api/Yort.AfterPay.InStore.IAfterPayClient.ReverseOrder.html
+  commentId: Overload:Yort.AfterPay.InStore.IAfterPayClient.ReverseOrder
+  fullName: Yort.AfterPay.InStore.IAfterPayClient.ReverseOrder
+  nameWithType: IAfterPayClient.ReverseOrder
+- uid: Yort.AfterPay.InStore.IAfterPayClient.ReverseRefund(Yort.AfterPay.InStore.AfterPayReverseRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  name: ReverseRefund(AfterPayReverseRefundRequest, AfterPayCallContext)
+  href: api/Yort.AfterPay.InStore.IAfterPayClient.ReverseRefund.html#Yort_AfterPay_InStore_IAfterPayClient_ReverseRefund_Yort_AfterPay_InStore_AfterPayReverseRefundRequest_Yort_AfterPay_InStore_AfterPayCallContext_
+  commentId: M:Yort.AfterPay.InStore.IAfterPayClient.ReverseRefund(Yort.AfterPay.InStore.AfterPayReverseRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  fullName: Yort.AfterPay.InStore.IAfterPayClient.ReverseRefund(Yort.AfterPay.InStore.AfterPayReverseRefundRequest, Yort.AfterPay.InStore.AfterPayCallContext)
+  nameWithType: IAfterPayClient.ReverseRefund(AfterPayReverseRefundRequest, AfterPayCallContext)
+- uid: Yort.AfterPay.InStore.IAfterPayClient.ReverseRefund*
+  name: ReverseRefund
+  href: api/Yort.AfterPay.InStore.IAfterPayClient.ReverseRefund.html
+  commentId: Overload:Yort.AfterPay.InStore.IAfterPayClient.ReverseRefund
+  fullName: Yort.AfterPay.InStore.IAfterPayClient.ReverseRefund
+  nameWithType: IAfterPayClient.ReverseRefund
+- uid: Yort.AfterPay.InStore.IAfterPayClient.SendInvite(Yort.AfterPay.InStore.AfterPayInviteRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  name: SendInvite(AfterPayInviteRequest, AfterPayCallContext)
+  href: api/Yort.AfterPay.InStore.IAfterPayClient.SendInvite.html#Yort_AfterPay_InStore_IAfterPayClient_SendInvite_Yort_AfterPay_InStore_AfterPayInviteRequest_Yort_AfterPay_InStore_AfterPayCallContext_
+  commentId: M:Yort.AfterPay.InStore.IAfterPayClient.SendInvite(Yort.AfterPay.InStore.AfterPayInviteRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  fullName: Yort.AfterPay.InStore.IAfterPayClient.SendInvite(Yort.AfterPay.InStore.AfterPayInviteRequest, Yort.AfterPay.InStore.AfterPayCallContext)
+  nameWithType: IAfterPayClient.SendInvite(AfterPayInviteRequest, AfterPayCallContext)
+- uid: Yort.AfterPay.InStore.IAfterPayClient.SendInvite*
+  name: SendInvite
+  href: api/Yort.AfterPay.InStore.IAfterPayClient.SendInvite.html
+  commentId: Overload:Yort.AfterPay.InStore.IAfterPayClient.SendInvite
+  fullName: Yort.AfterPay.InStore.IAfterPayClient.SendInvite
+  nameWithType: IAfterPayClient.SendInvite
 - uid: Yort.AfterPay.InStore.IAfterPaySystemClock
   name: IAfterPaySystemClock
   href: api/Yort.AfterPay.InStore.IAfterPaySystemClock.html

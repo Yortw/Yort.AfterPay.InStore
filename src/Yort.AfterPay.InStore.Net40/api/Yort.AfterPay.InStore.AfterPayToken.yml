@@ -21,7 +21,7 @@ items:
   source:
     id: AfterPayToken
     path: ''
-    startLine: 761
+    startLine: 1887
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -67,7 +67,7 @@ items:
   source:
     id: Token
     path: ''
-    startLine: 766
+    startLine: 1892
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -100,7 +100,7 @@ items:
   source:
     id: ExpiresIn
     path: ''
-    startLine: 771
+    startLine: 1897
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -133,7 +133,7 @@ items:
   source:
     id: IssuedAt
     path: ''
-    startLine: 780
+    startLine: 1906
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -141,18 +141,18 @@ items:
   remarks: "\n<p>This value is set using the <xref href=\"Yort.AfterPay.InStore.AfterPayConfiguration.SystemClock\" data-throw-if-not-resolved=\"false\"></xref> at the time the response is received.</p>\n"
   example: []
   syntax:
-    content: public DateTimeOffset IssuedAt { get; }
+    content: public DateTimeOffset IssuedAt { get; set; }
     parameters: []
     return:
       type: DateTimeOffset
-    content.vb: Public ReadOnly Property IssuedAt As DateTimeOffset
+    content.vb: Public Property IssuedAt As DateTimeOffset
   overload: Yort.AfterPay.InStore.AfterPayToken.IssuedAt*
   modifiers.csharp:
   - public
   - get
+  - set
   modifiers.vb:
   - Public
-  - ReadOnly
 - uid: Yort.AfterPay.InStore.AfterPayToken.ExpiresAt
   commentId: P:Yort.AfterPay.InStore.AfterPayToken.ExpiresAt
   id: ExpiresAt
@@ -167,7 +167,7 @@ items:
   source:
     id: ExpiresAt
     path: ''
-    startLine: 785
+    startLine: 1911
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -200,7 +200,7 @@ items:
   source:
     id: IsExpired
     path: ''
-    startLine: 793
+    startLine: 1919
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -231,7 +231,7 @@ items:
   source:
     id: IsExpired
     path: ''
-    startLine: 803
+    startLine: 1929
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -264,6 +264,7 @@ references:
   fullName: Yort.AfterPay.InStore.AfterPayTokenRequest
 - uid: Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest
   commentId: T:Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest
+  parent: Yort.AfterPay.InStore
   isExternal: false
   name: AfterPayDeviceRegistrationRequest
   nameWithType: AfterPayDeviceRegistrationRequest

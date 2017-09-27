@@ -10,8 +10,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)AfterPayApiError.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AfterPayApiException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AfterPayCallContext.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AfterPayClient.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AfterPayConfiguration.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AfterPayConstants.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AfterPayCreateOrderRequest.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AfterPayCreateRefundRequest.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AfterPayOrder.cs" />
@@ -21,7 +24,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)AfterPayInviteRequest.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AfterPayMoney.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AfterPayOrderItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AfterPayPreapprovalRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AfterPayPreapprovalResponse.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AfterPayRefund.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AfterPayRefundRequest.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AfterPayRefundReversal.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AfterPayReverseOrderRequest.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AfterPayOrderReversal.cs" />
@@ -32,5 +38,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)AssemblyInfoCommon.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IAfterPayClient.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IAfterPayClock.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AfterPayEnvironment.cs" />
   </ItemGroup>
 </Project>

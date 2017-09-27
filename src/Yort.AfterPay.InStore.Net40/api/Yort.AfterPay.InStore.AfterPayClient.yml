@@ -4,7 +4,17 @@ items:
   commentId: T:Yort.AfterPay.InStore.AfterPayClient
   id: AfterPayClient
   parent: Yort.AfterPay.InStore
-  children: []
+  children:
+  - Yort.AfterPay.InStore.AfterPayClient.#ctor(Yort.AfterPay.InStore.AfterPayConfiguration)
+  - Yort.AfterPay.InStore.AfterPayClient.CreateOrder(Yort.AfterPay.InStore.AfterPayCreateOrderRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  - Yort.AfterPay.InStore.AfterPayClient.DisposeManagedResources
+  - Yort.AfterPay.InStore.AfterPayClient.Ping
+  - Yort.AfterPay.InStore.AfterPayClient.PreapprovalEnquiry(Yort.AfterPay.InStore.AfterPayPreapprovalRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  - Yort.AfterPay.InStore.AfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  - Yort.AfterPay.InStore.AfterPayClient.RegisterDevice(Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest)
+  - Yort.AfterPay.InStore.AfterPayClient.ReverseOrder(Yort.AfterPay.InStore.AfterPayReverseOrderRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  - Yort.AfterPay.InStore.AfterPayClient.ReverseRefund(Yort.AfterPay.InStore.AfterPayReverseRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  - Yort.AfterPay.InStore.AfterPayClient.SendInvite(Yort.AfterPay.InStore.AfterPayInviteRequest,Yort.AfterPay.InStore.AfterPayCallContext)
   langs:
   - csharp
   - vb
@@ -15,36 +25,500 @@ items:
   source:
     id: AfterPayClient
     path: ''
-    startLine: 71
+    startLine: 414
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nThe main class used to access the AfterPay API, holding relevant configuration and providing methods for each REST API end point.\n"
+  remarks: "\n<p>Disposing objects of this type will dispose the internal <see cref=\"!:HttpClient\"></see> only if it was created internally. \nIf the <see cref=\"!:HttpClient\"></see> was provided by <xref href=\"Yort.AfterPay.InStore.AfterPayConfiguration.HttpClient\" data-throw-if-not-resolved=\"false\"></xref> then it will not be disposed as it may have been shared with other <xref href=\"Yort.AfterPay.InStore.AfterPayClient\" data-throw-if-not-resolved=\"false\"></xref> instances.</p>\n"
   example: []
   syntax:
-    content: 'public class AfterPayClient : IAfterPayClient'
+    content: 'public sealed class AfterPayClient : Trashy.DisposableManagedOnlyBase, IAfterPayClient'
     content.vb: >-
-      Public Class AfterPayClient
+      Public NotInheritable Class AfterPayClient
+          Inherits Trashy.DisposableManagedOnlyBase
           Implements IAfterPayClient
   inheritance:
   - System.Object
   implements:
   - Yort.AfterPay.InStore.IAfterPayClient
-  inheritedMembers:
-  - System.Object.ToString
-  - System.Object.Equals(System.Object)
-  - System.Object.Equals(System.Object,System.Object)
-  - System.Object.ReferenceEquals(System.Object,System.Object)
-  - System.Object.GetHashCode
-  - System.Object.GetType
-  - System.Object.MemberwiseClone
   modifiers.csharp:
   - public
+  - sealed
   - class
   modifiers.vb:
   - Public
+  - NotInheritable
   - Class
+- uid: Yort.AfterPay.InStore.AfterPayClient.#ctor(Yort.AfterPay.InStore.AfterPayConfiguration)
+  commentId: M:Yort.AfterPay.InStore.AfterPayClient.#ctor(Yort.AfterPay.InStore.AfterPayConfiguration)
+  id: '#ctor(Yort.AfterPay.InStore.AfterPayConfiguration)'
+  parent: Yort.AfterPay.InStore.AfterPayClient
+  langs:
+  - csharp
+  - vb
+  name: AfterPayClient(AfterPayConfiguration)
+  nameWithType: AfterPayClient.AfterPayClient(AfterPayConfiguration)
+  fullName: Yort.AfterPay.InStore.AfterPayClient.AfterPayClient(Yort.AfterPay.InStore.AfterPayConfiguration)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 434
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.AfterPay.InStore
+  summary: "\nConstructs a new instance using the configuration provided.\n"
+  example: []
+  syntax:
+    content: public AfterPayClient(AfterPayConfiguration configuration)
+    parameters:
+    - id: configuration
+      type: Yort.AfterPay.InStore.AfterPayConfiguration
+      description: An instance of <xref href="Yort.AfterPay.InStore.AfterPayConfiguration" data-throw-if-not-resolved="false"></xref> that contains configuration details for this client.
+    content.vb: Public Sub New(configuration As AfterPayConfiguration)
+  overload: Yort.AfterPay.InStore.AfterPayClient.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">configuration</code> is null.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayClient.RegisterDevice(Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest)
+  commentId: M:Yort.AfterPay.InStore.AfterPayClient.RegisterDevice(Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest)
+  id: RegisterDevice(Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest)
+  parent: Yort.AfterPay.InStore.AfterPayClient
+  langs:
+  - csharp
+  - vb
+  name: RegisterDevice(AfterPayDeviceRegistrationRequest)
+  nameWithType: AfterPayClient.RegisterDevice(AfterPayDeviceRegistrationRequest)
+  fullName: Yort.AfterPay.InStore.AfterPayClient.RegisterDevice(Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest)
+  type: Method
+  source:
+    id: RegisterDevice
+    path: ''
+    startLine: 456
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.AfterPay.InStore
+  summary: "\nPerforms one time registration of a new point of sale device (API client) with the AfterPay API.\n"
+  example: []
+  syntax:
+    content: public Task<AfterPayDeviceRegistration> RegisterDevice(AfterPayDeviceRegistrationRequest request)
+    parameters:
+    - id: request
+      type: Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest
+      description: A <xref href="Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest" data-throw-if-not-resolved="false"></xref> containing details of the device to register.
+    return:
+      type: Task{Yort.AfterPay.InStore.AfterPayDeviceRegistration}
+      description: A <xref href="Yort.AfterPay.InStore.AfterPayDeviceRegistration" data-throw-if-not-resolved="false"></xref> containing details returned by AfterPay for a successful registration.
+    content.vb: Public Function RegisterDevice(request As AfterPayDeviceRegistrationRequest) As Task(Of AfterPayDeviceRegistration)
+  overload: Yort.AfterPay.InStore.AfterPayClient.RegisterDevice*
+  exceptions:
+  - type: Yort.AfterPay.InStore.AfterPayApiException
+    commentId: T:Yort.AfterPay.InStore.AfterPayApiException
+    description: Thrown if the request is rejected by the AfterPay API.
+  implements:
+  - Yort.AfterPay.InStore.IAfterPayClient.RegisterDevice(Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayClient.Ping
+  commentId: M:Yort.AfterPay.InStore.AfterPayClient.Ping
+  id: Ping
+  parent: Yort.AfterPay.InStore.AfterPayClient
+  langs:
+  - csharp
+  - vb
+  name: Ping()
+  nameWithType: AfterPayClient.Ping()
+  fullName: Yort.AfterPay.InStore.AfterPayClient.Ping()
+  type: Method
+  source:
+    id: Ping
+    path: ''
+    startLine: 476
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.AfterPay.InStore
+  summary: "\nSends a ping request to the AfterPay API to confirm a connection can be made.\n"
+  example: []
+  syntax:
+    content: public Task<bool> Ping()
+    return:
+      type: Task{System.Boolean}
+    content.vb: Public Function Ping As Task(Of Boolean)
+  overload: Yort.AfterPay.InStore.AfterPayClient.Ping*
+  implements:
+  - Yort.AfterPay.InStore.IAfterPayClient.Ping
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayClient.SendInvite(Yort.AfterPay.InStore.AfterPayInviteRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  commentId: M:Yort.AfterPay.InStore.AfterPayClient.SendInvite(Yort.AfterPay.InStore.AfterPayInviteRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  id: SendInvite(Yort.AfterPay.InStore.AfterPayInviteRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  parent: Yort.AfterPay.InStore.AfterPayClient
+  langs:
+  - csharp
+  - vb
+  name: SendInvite(AfterPayInviteRequest, AfterPayCallContext)
+  nameWithType: AfterPayClient.SendInvite(AfterPayInviteRequest, AfterPayCallContext)
+  fullName: Yort.AfterPay.InStore.AfterPayClient.SendInvite(Yort.AfterPay.InStore.AfterPayInviteRequest, Yort.AfterPay.InStore.AfterPayCallContext)
+  type: Method
+  source:
+    id: SendInvite
+    path: ''
+    startLine: 494
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.AfterPay.InStore
+  summary: "\nSends an invitational SMS message to a customer&apos;s mobile phone.\n"
+  example: []
+  syntax:
+    content: public Task<bool> SendInvite(AfterPayInviteRequest request, AfterPayCallContext requestContext)
+    parameters:
+    - id: request
+      type: Yort.AfterPay.InStore.AfterPayInviteRequest
+      description: A <xref href="Yort.AfterPay.InStore.AfterPayInviteRequest" data-throw-if-not-resolved="false"></xref> instance containing details of the invite to send.
+    - id: requestContext
+      type: Yort.AfterPay.InStore.AfterPayCallContext
+      description: A <xref href="Yort.AfterPay.InStore.AfterPayCallContext" data-throw-if-not-resolved="false"></xref> instance describing additional information for the request.
+    return:
+      type: Task{System.Boolean}
+      description: True if the invite was sent successfully, otherwise false.
+    content.vb: Public Function SendInvite(request As AfterPayInviteRequest, requestContext As AfterPayCallContext) As Task(Of Boolean)
+  overload: Yort.AfterPay.InStore.AfterPayClient.SendInvite*
+  exceptions:
+  - type: Yort.AfterPay.InStore.AfterPayApiException
+    commentId: T:Yort.AfterPay.InStore.AfterPayApiException
+    description: Thrown if the request is rejected by the AfterPay API.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">request</code> or <code data-dev-comment-type="paramref" class="paramref">requestContext</code> is null.
+  - type: System.UnauthorizedAccessException
+    commentId: T:System.UnauthorizedAccessException
+    description: Thrown if the system cannot obtain an authorisation token from AfterPay before making the request.
+  implements:
+  - Yort.AfterPay.InStore.IAfterPayClient.SendInvite(Yort.AfterPay.InStore.AfterPayInviteRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayClient.PreapprovalEnquiry(Yort.AfterPay.InStore.AfterPayPreapprovalRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  commentId: M:Yort.AfterPay.InStore.AfterPayClient.PreapprovalEnquiry(Yort.AfterPay.InStore.AfterPayPreapprovalRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  id: PreapprovalEnquiry(Yort.AfterPay.InStore.AfterPayPreapprovalRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  parent: Yort.AfterPay.InStore.AfterPayClient
+  langs:
+  - csharp
+  - vb
+  name: PreapprovalEnquiry(AfterPayPreapprovalRequest, AfterPayCallContext)
+  nameWithType: AfterPayClient.PreapprovalEnquiry(AfterPayPreapprovalRequest, AfterPayCallContext)
+  fullName: Yort.AfterPay.InStore.AfterPayClient.PreapprovalEnquiry(Yort.AfterPay.InStore.AfterPayPreapprovalRequest, Yort.AfterPay.InStore.AfterPayCallContext)
+  type: Method
+  source:
+    id: PreapprovalEnquiry
+    path: ''
+    startLine: 517
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.AfterPay.InStore
+  summary: "\nRequests information about a pre-approval code generated by a customer.\n"
+  example: []
+  syntax:
+    content: public Task<AfterPayPreapprovalResponse> PreapprovalEnquiry(AfterPayPreapprovalRequest request, AfterPayCallContext requestContext)
+    parameters:
+    - id: request
+      type: Yort.AfterPay.InStore.AfterPayPreapprovalRequest
+      description: A <xref href="Yort.AfterPay.InStore.AfterPayPreapprovalRequest" data-throw-if-not-resolved="false"></xref> containing details of the pre-approval code to enquire about.
+    - id: requestContext
+      type: Yort.AfterPay.InStore.AfterPayCallContext
+      description: A <xref href="Yort.AfterPay.InStore.AfterPayCallContext" data-throw-if-not-resolved="false"></xref> instance containing additional details required to make the request.
+    return:
+      type: Task{Yort.AfterPay.InStore.AfterPayPreapprovalResponse}
+      description: A <xref href="Yort.AfterPay.InStore.AfterPayPreapprovalResponse" data-throw-if-not-resolved="false"></xref> instance containing information about the pre-approval code specified.
+    content.vb: Public Function PreapprovalEnquiry(request As AfterPayPreapprovalRequest, requestContext As AfterPayCallContext) As Task(Of AfterPayPreapprovalResponse)
+  overload: Yort.AfterPay.InStore.AfterPayClient.PreapprovalEnquiry*
+  exceptions:
+  - type: Yort.AfterPay.InStore.AfterPayApiException
+    commentId: T:Yort.AfterPay.InStore.AfterPayApiException
+    description: Thrown if the request is rejected by the AfterPay API.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">request</code> or <code data-dev-comment-type="paramref" class="paramref">requestContext</code> is null.
+  - type: System.UnauthorizedAccessException
+    commentId: T:System.UnauthorizedAccessException
+    description: Thrown if the system cannot obtain an authorisation token from AfterPay before making the request.
+  implements:
+  - Yort.AfterPay.InStore.IAfterPayClient.PreapprovalEnquiry(Yort.AfterPay.InStore.AfterPayPreapprovalRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayClient.CreateOrder(Yort.AfterPay.InStore.AfterPayCreateOrderRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  commentId: M:Yort.AfterPay.InStore.AfterPayClient.CreateOrder(Yort.AfterPay.InStore.AfterPayCreateOrderRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  id: CreateOrder(Yort.AfterPay.InStore.AfterPayCreateOrderRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  parent: Yort.AfterPay.InStore.AfterPayClient
+  langs:
+  - csharp
+  - vb
+  name: CreateOrder(AfterPayCreateOrderRequest, AfterPayCallContext)
+  nameWithType: AfterPayClient.CreateOrder(AfterPayCreateOrderRequest, AfterPayCallContext)
+  fullName: Yort.AfterPay.InStore.AfterPayClient.CreateOrder(Yort.AfterPay.InStore.AfterPayCreateOrderRequest, Yort.AfterPay.InStore.AfterPayCallContext)
+  type: Method
+  source:
+    id: CreateOrder
+    path: ''
+    startLine: 547
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.AfterPay.InStore
+  summary: "\nCreates a new AfterPay order, which is basically a request for payment using a pre-approval code.\n"
+  remarks: "\n<p>This method will keep retrying until success, or a non-409 response error is received. If an exception of any type other than <xref href=\"Yort.AfterPay.InStore.AfterPayApiException\" data-throw-if-not-resolved=\"false\"></xref>, <see cref=\"!:UnauthorizedAccessException\"></see>, <see cref=\"!:ArgumentNullException\"></see> is thrown by this method, a reversal should be queued.</p>\n<p>This method will automatically retry on timeout up to <xref href=\"Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries\" data-throw-if-not-resolved=\"false\"></xref>. If the last retry times out, a <see cref=\"!:TimeoutException\"></see> will be thrown. On a 409 response it will retry until any other error or response is received.</p>\n"
+  example: []
+  syntax:
+    content: public Task<AfterPayOrder> CreateOrder(AfterPayCreateOrderRequest request, AfterPayCallContext requestContext)
+    parameters:
+    - id: request
+      type: Yort.AfterPay.InStore.AfterPayCreateOrderRequest
+      description: A <xref href="Yort.AfterPay.InStore.AfterPayCreateOrderRequest" data-throw-if-not-resolved="false"></xref> containing details of the order to be created.
+    - id: requestContext
+      type: Yort.AfterPay.InStore.AfterPayCallContext
+      description: A <xref href="Yort.AfterPay.InStore.AfterPayCallContext" data-throw-if-not-resolved="false"></xref> instance containing additional details required to make the request.
+    return:
+      type: Task{Yort.AfterPay.InStore.AfterPayOrder}
+      description: An <xref href="Yort.AfterPay.InStore.AfterPayOrder" data-throw-if-not-resolved="false"></xref> created within the AfterPay system.
+    content.vb: Public Function CreateOrder(request As AfterPayCreateOrderRequest, requestContext As AfterPayCallContext) As Task(Of AfterPayOrder)
+  overload: Yort.AfterPay.InStore.AfterPayClient.CreateOrder*
+  exceptions:
+  - type: Yort.AfterPay.InStore.AfterPayApiException
+    commentId: T:Yort.AfterPay.InStore.AfterPayApiException
+    description: Thrown if the request is rejected by the AfterPay API.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">request</code> or <code data-dev-comment-type="paramref" class="paramref">requestContext</code> is null.
+  - type: System.UnauthorizedAccessException
+    commentId: T:System.UnauthorizedAccessException
+    description: Thrown if the system cannot obtain an authorisation token from AfterPay before making the request.
+  - type: System.TimeoutException
+    commentId: T:System.TimeoutException
+    description: Thrown if the request times out on the last retry attempt.
+  seealso:
+  - linkId: Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries
+    commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries
+  - linkId: Yort.AfterPay.InStore.AfterPayConfiguration.RetryDelaySeconds
+    commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.RetryDelaySeconds
+  implements:
+  - Yort.AfterPay.InStore.IAfterPayClient.CreateOrder(Yort.AfterPay.InStore.AfterPayCreateOrderRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayClient.ReverseOrder(Yort.AfterPay.InStore.AfterPayReverseOrderRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  commentId: M:Yort.AfterPay.InStore.AfterPayClient.ReverseOrder(Yort.AfterPay.InStore.AfterPayReverseOrderRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  id: ReverseOrder(Yort.AfterPay.InStore.AfterPayReverseOrderRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  parent: Yort.AfterPay.InStore.AfterPayClient
+  langs:
+  - csharp
+  - vb
+  name: ReverseOrder(AfterPayReverseOrderRequest, AfterPayCallContext)
+  nameWithType: AfterPayClient.ReverseOrder(AfterPayReverseOrderRequest, AfterPayCallContext)
+  fullName: Yort.AfterPay.InStore.AfterPayClient.ReverseOrder(Yort.AfterPay.InStore.AfterPayReverseOrderRequest, Yort.AfterPay.InStore.AfterPayCallContext)
+  type: Method
+  source:
+    id: ReverseOrder
+    path: ''
+    startLine: 573
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.AfterPay.InStore
+  summary: "\nRequests an order previously placed be reversed.\n"
+  remarks: "\n<p>This method is intended to ensure an order is cancelled when it&apos;s status is/was unknown at the time the customer was present. It should not be used for refunds, see <xref href=\"Yort.AfterPay.InStore.AfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest%2cYort.AfterPay.InStore.AfterPayCallContext)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>This method will keep retrying until success, or a non-409 response error is received. If an exception of any type other than <xref href=\"Yort.AfterPay.InStore.AfterPayApiException\" data-throw-if-not-resolved=\"false\"></xref>, <see cref=\"!:UnauthorizedAccessException\"></see>, <see cref=\"!:ArgumentNullException\"></see> is thrown by this method, a reversal should be retried later.</p>\n<p>This method will automatically retry on timeout up to <xref href=\"Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries\" data-throw-if-not-resolved=\"false\"></xref>. If the last retry times out, a <see cref=\"!:TimeoutException\"></see> will be thrown. On a 409 response it will retry until any other error or response is received.</p>\n"
+  example: []
+  syntax:
+    content: public Task<AfterPayOrderReversal> ReverseOrder(AfterPayReverseOrderRequest request, AfterPayCallContext requestContext)
+    parameters:
+    - id: request
+      type: Yort.AfterPay.InStore.AfterPayReverseOrderRequest
+      description: A <xref href="Yort.AfterPay.InStore.AfterPayReverseOrderRequest" data-throw-if-not-resolved="false"></xref> containing details of the order to be reversed.
+    - id: requestContext
+      type: Yort.AfterPay.InStore.AfterPayCallContext
+      description: A <xref href="Yort.AfterPay.InStore.AfterPayCallContext" data-throw-if-not-resolved="false"></xref> instance containing additional details required to make the request.
+    return:
+      type: Task{Yort.AfterPay.InStore.AfterPayOrderReversal}
+      description: An <xref href="Yort.AfterPay.InStore.AfterPayOrderReversal" data-throw-if-not-resolved="false"></xref> containing details of the reversed order within the AfterPay system.
+    content.vb: Public Function ReverseOrder(request As AfterPayReverseOrderRequest, requestContext As AfterPayCallContext) As Task(Of AfterPayOrderReversal)
+  overload: Yort.AfterPay.InStore.AfterPayClient.ReverseOrder*
+  exceptions:
+  - type: Yort.AfterPay.InStore.AfterPayApiException
+    commentId: T:Yort.AfterPay.InStore.AfterPayApiException
+    description: Thrown if the request is rejected by the AfterPay API.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">request</code> or <code data-dev-comment-type="paramref" class="paramref">requestContext</code> is null.
+  - type: System.UnauthorizedAccessException
+    commentId: T:System.UnauthorizedAccessException
+    description: Thrown if the system cannot obtain an authorisation token from AfterPay before making the request.
+  - type: System.TimeoutException
+    commentId: T:System.TimeoutException
+    description: Thrown if the request times out on the last retry attempt.
+  implements:
+  - Yort.AfterPay.InStore.IAfterPayClient.ReverseOrder(Yort.AfterPay.InStore.AfterPayReverseOrderRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  commentId: M:Yort.AfterPay.InStore.AfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  id: RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  parent: Yort.AfterPay.InStore.AfterPayClient
+  langs:
+  - csharp
+  - vb
+  name: RefundOrder(AfterPayRefundRequest, AfterPayCallContext)
+  nameWithType: AfterPayClient.RefundOrder(AfterPayRefundRequest, AfterPayCallContext)
+  fullName: Yort.AfterPay.InStore.AfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest, Yort.AfterPay.InStore.AfterPayCallContext)
+  type: Method
+  source:
+    id: RefundOrder
+    path: ''
+    startLine: 598
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.AfterPay.InStore
+  summary: "\nCreates a refund against a previously created order.\n"
+  remarks: "\n<p>This method will keep retrying until success, or a non-409 response error is received. If an exception of any type other than <xref href=\"Yort.AfterPay.InStore.AfterPayApiException\" data-throw-if-not-resolved=\"false\"></xref>, <see cref=\"!:UnauthorizedAccessException\"></see>, <see cref=\"!:ArgumentNullException\"></see> is thrown by this method, a reversal should be queued.</p>\n<p>This method will automatically retry on timeout up to <xref href=\"Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries\" data-throw-if-not-resolved=\"false\"></xref>. If the last retry times out, a <see cref=\"!:TimeoutException\"></see> will be thrown. On a 409 response it will retry until any other error or response is received.</p>\n"
+  example: []
+  syntax:
+    content: public Task<AfterPayRefund> RefundOrder(AfterPayRefundRequest request, AfterPayCallContext requestContext)
+    parameters:
+    - id: request
+      type: Yort.AfterPay.InStore.AfterPayRefundRequest
+      description: A <xref href="Yort.AfterPay.InStore.AfterPayRefundRequest" data-throw-if-not-resolved="false"></xref> containing details of the refund to create.
+    - id: requestContext
+      type: Yort.AfterPay.InStore.AfterPayCallContext
+      description: A <xref href="Yort.AfterPay.InStore.AfterPayCallContext" data-throw-if-not-resolved="false"></xref> instance containing additional details required to make the request.
+    return:
+      type: Task{Yort.AfterPay.InStore.AfterPayRefund}
+      description: An <xref href="Yort.AfterPay.InStore.AfterPayRefund" data-throw-if-not-resolved="false"></xref> containing details of the refund created within the AfterPay system.
+    content.vb: Public Function RefundOrder(request As AfterPayRefundRequest, requestContext As AfterPayCallContext) As Task(Of AfterPayRefund)
+  overload: Yort.AfterPay.InStore.AfterPayClient.RefundOrder*
+  exceptions:
+  - type: Yort.AfterPay.InStore.AfterPayApiException
+    commentId: T:Yort.AfterPay.InStore.AfterPayApiException
+    description: Thrown if the request is rejected by the AfterPay API.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">request</code> or <code data-dev-comment-type="paramref" class="paramref">requestContext</code> is null.
+  - type: System.UnauthorizedAccessException
+    commentId: T:System.UnauthorizedAccessException
+    description: Thrown if the system cannot obtain an authorisation token from AfterPay before making the request.
+  - type: System.TimeoutException
+    commentId: T:System.TimeoutException
+    description: Thrown if the request times out on the last retry attempt.
+  implements:
+  - Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayClient.ReverseRefund(Yort.AfterPay.InStore.AfterPayReverseRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  commentId: M:Yort.AfterPay.InStore.AfterPayClient.ReverseRefund(Yort.AfterPay.InStore.AfterPayReverseRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  id: ReverseRefund(Yort.AfterPay.InStore.AfterPayReverseRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  parent: Yort.AfterPay.InStore.AfterPayClient
+  langs:
+  - csharp
+  - vb
+  name: ReverseRefund(AfterPayReverseRefundRequest, AfterPayCallContext)
+  nameWithType: AfterPayClient.ReverseRefund(AfterPayReverseRefundRequest, AfterPayCallContext)
+  fullName: Yort.AfterPay.InStore.AfterPayClient.ReverseRefund(Yort.AfterPay.InStore.AfterPayReverseRefundRequest, Yort.AfterPay.InStore.AfterPayCallContext)
+  type: Method
+  source:
+    id: ReverseRefund
+    path: ''
+    startLine: 624
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.AfterPay.InStore
+  summary: "\nCreates a refund reversal against a previously created refund.\n"
+  remarks: "\n<p>This method is intended to ensure a refuund is cancelled when it&apos;s status is/was unknown at the time the customer was present. For more information see https://docs.afterpay.com.au/instore-api-v1.html#refund-reversal </p>\n<p>This method will keep retrying until success, or a non-409 response error is received. If an exception of any type other than <xref href=\"Yort.AfterPay.InStore.AfterPayApiException\" data-throw-if-not-resolved=\"false\"></xref>, <see cref=\"!:UnauthorizedAccessException\"></see>, <see cref=\"!:ArgumentNullException\"></see> is thrown by this method, a reversal should be retried later.</p>\n<p>This method will automatically retry on timeout up to <xref href=\"Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries\" data-throw-if-not-resolved=\"false\"></xref>. If the last retry times out, a <see cref=\"!:TimeoutException\"></see> will be thrown. On a 409 response it will retry until any other error or response is received.</p>\n"
+  example: []
+  syntax:
+    content: public Task<AfterPayRefundReversal> ReverseRefund(AfterPayReverseRefundRequest request, AfterPayCallContext requestContext)
+    parameters:
+    - id: request
+      type: Yort.AfterPay.InStore.AfterPayReverseRefundRequest
+      description: A <xref href="Yort.AfterPay.InStore.AfterPayReverseRefundRequest" data-throw-if-not-resolved="false"></xref> containing details of the refund reversal to create.
+    - id: requestContext
+      type: Yort.AfterPay.InStore.AfterPayCallContext
+      description: A <xref href="Yort.AfterPay.InStore.AfterPayCallContext" data-throw-if-not-resolved="false"></xref> instance containing additional details required to make the request.
+    return:
+      type: Task{Yort.AfterPay.InStore.AfterPayRefundReversal}
+      description: An <xref href="Yort.AfterPay.InStore.AfterPayRefundReversal" data-throw-if-not-resolved="false"></xref> containing details of the refund reversal created within the AfterPay system.
+    content.vb: Public Function ReverseRefund(request As AfterPayReverseRefundRequest, requestContext As AfterPayCallContext) As Task(Of AfterPayRefundReversal)
+  overload: Yort.AfterPay.InStore.AfterPayClient.ReverseRefund*
+  exceptions:
+  - type: Yort.AfterPay.InStore.AfterPayApiException
+    commentId: T:Yort.AfterPay.InStore.AfterPayApiException
+    description: Thrown if the request is rejected by the AfterPay API.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">request</code> or <code data-dev-comment-type="paramref" class="paramref">requestContext</code> is null.
+  - type: System.UnauthorizedAccessException
+    commentId: T:System.UnauthorizedAccessException
+    description: Thrown if the system cannot obtain an authorisation token from AfterPay before making the request.
+  - type: System.TimeoutException
+    commentId: T:System.TimeoutException
+    description: Thrown if the request times out on the last retry attempt.
+  implements:
+  - Yort.AfterPay.InStore.IAfterPayClient.ReverseRefund(Yort.AfterPay.InStore.AfterPayReverseRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayClient.DisposeManagedResources
+  commentId: M:Yort.AfterPay.InStore.AfterPayClient.DisposeManagedResources
+  id: DisposeManagedResources
+  parent: Yort.AfterPay.InStore.AfterPayClient
+  langs:
+  - csharp
+  - vb
+  name: DisposeManagedResources()
+  nameWithType: AfterPayClient.DisposeManagedResources()
+  fullName: Yort.AfterPay.InStore.AfterPayClient.DisposeManagedResources()
+  type: Method
+  source:
+    id: DisposeManagedResources
+    path: ''
+    startLine: 845
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.AfterPay.InStore
+  summary: "\nDisposes the internal <see cref=\"!:HttpClient\"></see> but only if it was created by this class, will not dispose it if it was passed via <xref href=\"Yort.AfterPay.InStore.AfterPayConfiguration.HttpClient\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: protected override void DisposeManagedResources()
+    content.vb: Protected Overrides Sub DisposeManagedResources
+  overload: Yort.AfterPay.InStore.AfterPayClient.DisposeManagedResources*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
 references:
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.HttpClient
+  commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.HttpClient
+- uid: Yort.AfterPay.InStore.AfterPayClient
+  commentId: T:Yort.AfterPay.InStore.AfterPayClient
+  isExternal: false
+  name: AfterPayClient
+  nameWithType: AfterPayClient
+  fullName: Yort.AfterPay.InStore.AfterPayClient
 - uid: Yort.AfterPay.InStore
   commentId: N:Yort.AfterPay.InStore
   isExternal: false
@@ -65,288 +539,889 @@ references:
   name: IAfterPayClient
   nameWithType: IAfterPayClient
   fullName: Yort.AfterPay.InStore.IAfterPayClient
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  name: ToString()
-  nameWithType: Object.ToString()
-  fullName: System.Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.Equals(System.Object)
-  commentId: M:System.Object.Equals(System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object)
-  nameWithType: Object.Equals(Object)
-  fullName: System.Object.Equals(System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.Equals(System.Object,System.Object)
-  commentId: M:System.Object.Equals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object, Object)
-  nameWithType: Object.Equals(Object, Object)
-  fullName: System.Object.Equals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: ReferenceEquals(Object, Object)
-  nameWithType: Object.ReferenceEquals(Object, Object)
-  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.GetHashCode
-  commentId: M:System.Object.GetHashCode
-  parent: System.Object
-  isExternal: true
-  name: GetHashCode()
-  nameWithType: Object.GetHashCode()
-  fullName: System.Object.GetHashCode()
-  spec.csharp:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.GetType
-  commentId: M:System.Object.GetType
-  parent: System.Object
-  isExternal: true
-  name: GetType()
-  nameWithType: Object.GetType()
-  fullName: System.Object.GetType()
-  spec.csharp:
-  - uid: System.Object.GetType
-    name: GetType
-    nameWithType: Object.GetType
-    fullName: System.Object.GetType
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.GetType
-    name: GetType
-    nameWithType: Object.GetType
-    fullName: System.Object.GetType
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.MemberwiseClone
-  commentId: M:System.Object.MemberwiseClone
-  parent: System.Object
-  isExternal: true
-  name: MemberwiseClone()
-  nameWithType: Object.MemberwiseClone()
-  fullName: System.Object.MemberwiseClone()
-  spec.csharp:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: System
   commentId: N:System
   isExternal: false
   name: System
   nameWithType: System
   fullName: System
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration
+  commentId: T:Yort.AfterPay.InStore.AfterPayConfiguration
+  parent: Yort.AfterPay.InStore
+  isExternal: false
+  name: AfterPayConfiguration
+  nameWithType: AfterPayConfiguration
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration
+- uid: Yort.AfterPay.InStore.AfterPayClient.#ctor*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayClient.#ctor
+  isExternal: false
+  name: AfterPayClient
+  nameWithType: AfterPayClient.AfterPayClient
+  fullName: Yort.AfterPay.InStore.AfterPayClient.AfterPayClient
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest
+  commentId: T:Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest
+  parent: Yort.AfterPay.InStore
+  isExternal: false
+  name: AfterPayDeviceRegistrationRequest
+  nameWithType: AfterPayDeviceRegistrationRequest
+  fullName: Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest
+- uid: Yort.AfterPay.InStore.AfterPayDeviceRegistration
+  commentId: T:Yort.AfterPay.InStore.AfterPayDeviceRegistration
+  isExternal: false
+  name: AfterPayDeviceRegistration
+  nameWithType: AfterPayDeviceRegistration
+  fullName: Yort.AfterPay.InStore.AfterPayDeviceRegistration
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.DeviceId
+  commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.DeviceId
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.DeviceKey
+  commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.DeviceKey
+- uid: Yort.AfterPay.InStore.AfterPayClient.RegisterDevice*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayClient.RegisterDevice
+  isExternal: false
+  name: RegisterDevice
+  nameWithType: AfterPayClient.RegisterDevice
+  fullName: Yort.AfterPay.InStore.AfterPayClient.RegisterDevice
+- uid: Yort.AfterPay.InStore.IAfterPayClient.RegisterDevice(Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest)
+  commentId: M:Yort.AfterPay.InStore.IAfterPayClient.RegisterDevice(Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest)
+  parent: Yort.AfterPay.InStore.IAfterPayClient
+  isExternal: false
+  name: RegisterDevice(AfterPayDeviceRegistrationRequest)
+  nameWithType: IAfterPayClient.RegisterDevice(AfterPayDeviceRegistrationRequest)
+  fullName: Yort.AfterPay.InStore.IAfterPayClient.RegisterDevice(Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest)
+  spec.csharp:
+  - uid: Yort.AfterPay.InStore.IAfterPayClient.RegisterDevice(Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest)
+    name: RegisterDevice
+    nameWithType: IAfterPayClient.RegisterDevice
+    fullName: Yort.AfterPay.InStore.IAfterPayClient.RegisterDevice
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest
+    name: AfterPayDeviceRegistrationRequest
+    nameWithType: AfterPayDeviceRegistrationRequest
+    fullName: Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Yort.AfterPay.InStore.IAfterPayClient.RegisterDevice(Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest)
+    name: RegisterDevice
+    nameWithType: IAfterPayClient.RegisterDevice
+    fullName: Yort.AfterPay.InStore.IAfterPayClient.RegisterDevice
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest
+    name: AfterPayDeviceRegistrationRequest
+    nameWithType: AfterPayDeviceRegistrationRequest
+    fullName: Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Yort.AfterPay.InStore.AfterPayApiException
+  commentId: T:Yort.AfterPay.InStore.AfterPayApiException
+  isExternal: false
+  name: AfterPayApiException
+  nameWithType: AfterPayApiException
+  fullName: Yort.AfterPay.InStore.AfterPayApiException
+- uid: Task{Yort.AfterPay.InStore.AfterPayDeviceRegistration}
+  commentId: '!:Task{Yort.AfterPay.InStore.AfterPayDeviceRegistration}'
+  definition: Task`1
+  name: Task<AfterPayDeviceRegistration>
+  nameWithType: Task<AfterPayDeviceRegistration>
+  fullName: Task<Yort.AfterPay.InStore.AfterPayDeviceRegistration>
+  nameWithType.vb: Task(Of AfterPayDeviceRegistration)
+  fullName.vb: Task(Of Yort.AfterPay.InStore.AfterPayDeviceRegistration)
+  name.vb: Task(Of AfterPayDeviceRegistration)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Yort.AfterPay.InStore.AfterPayDeviceRegistration
+    name: AfterPayDeviceRegistration
+    nameWithType: AfterPayDeviceRegistration
+    fullName: Yort.AfterPay.InStore.AfterPayDeviceRegistration
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Yort.AfterPay.InStore.AfterPayDeviceRegistration
+    name: AfterPayDeviceRegistration
+    nameWithType: AfterPayDeviceRegistration
+    fullName: Yort.AfterPay.InStore.AfterPayDeviceRegistration
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Yort.AfterPay.InStore.AfterPayClient.Ping*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayClient.Ping
+  isExternal: false
+  name: Ping
+  nameWithType: AfterPayClient.Ping
+  fullName: Yort.AfterPay.InStore.AfterPayClient.Ping
+- uid: Yort.AfterPay.InStore.IAfterPayClient.Ping
+  commentId: M:Yort.AfterPay.InStore.IAfterPayClient.Ping
+  parent: Yort.AfterPay.InStore.IAfterPayClient
+  isExternal: false
+  name: Ping()
+  nameWithType: IAfterPayClient.Ping()
+  fullName: Yort.AfterPay.InStore.IAfterPayClient.Ping()
+  spec.csharp:
+  - uid: Yort.AfterPay.InStore.IAfterPayClient.Ping
+    name: Ping
+    nameWithType: IAfterPayClient.Ping
+    fullName: Yort.AfterPay.InStore.IAfterPayClient.Ping
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Yort.AfterPay.InStore.IAfterPayClient.Ping
+    name: Ping
+    nameWithType: IAfterPayClient.Ping
+    fullName: Yort.AfterPay.InStore.IAfterPayClient.Ping
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task{System.Boolean}
+  commentId: '!:Task{System.Boolean}'
+  definition: Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Yort.AfterPay.InStore.AfterPayInviteRequest
+  commentId: T:Yort.AfterPay.InStore.AfterPayInviteRequest
+  parent: Yort.AfterPay.InStore
+  isExternal: false
+  name: AfterPayInviteRequest
+  nameWithType: AfterPayInviteRequest
+  fullName: Yort.AfterPay.InStore.AfterPayInviteRequest
+- uid: Yort.AfterPay.InStore.AfterPayCallContext
+  commentId: T:Yort.AfterPay.InStore.AfterPayCallContext
+  parent: Yort.AfterPay.InStore
+  isExternal: false
+  name: AfterPayCallContext
+  nameWithType: AfterPayCallContext
+  fullName: Yort.AfterPay.InStore.AfterPayCallContext
+- uid: Yort.AfterPay.InStore.AfterPayClient.SendInvite*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayClient.SendInvite
+  isExternal: false
+  name: SendInvite
+  nameWithType: AfterPayClient.SendInvite
+  fullName: Yort.AfterPay.InStore.AfterPayClient.SendInvite
+- uid: Yort.AfterPay.InStore.IAfterPayClient.SendInvite(Yort.AfterPay.InStore.AfterPayInviteRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  commentId: M:Yort.AfterPay.InStore.IAfterPayClient.SendInvite(Yort.AfterPay.InStore.AfterPayInviteRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  parent: Yort.AfterPay.InStore.IAfterPayClient
+  isExternal: false
+  name: SendInvite(AfterPayInviteRequest, AfterPayCallContext)
+  nameWithType: IAfterPayClient.SendInvite(AfterPayInviteRequest, AfterPayCallContext)
+  fullName: Yort.AfterPay.InStore.IAfterPayClient.SendInvite(Yort.AfterPay.InStore.AfterPayInviteRequest, Yort.AfterPay.InStore.AfterPayCallContext)
+  spec.csharp:
+  - uid: Yort.AfterPay.InStore.IAfterPayClient.SendInvite(Yort.AfterPay.InStore.AfterPayInviteRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+    name: SendInvite
+    nameWithType: IAfterPayClient.SendInvite
+    fullName: Yort.AfterPay.InStore.IAfterPayClient.SendInvite
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.AfterPay.InStore.AfterPayInviteRequest
+    name: AfterPayInviteRequest
+    nameWithType: AfterPayInviteRequest
+    fullName: Yort.AfterPay.InStore.AfterPayInviteRequest
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Yort.AfterPay.InStore.AfterPayCallContext
+    name: AfterPayCallContext
+    nameWithType: AfterPayCallContext
+    fullName: Yort.AfterPay.InStore.AfterPayCallContext
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Yort.AfterPay.InStore.IAfterPayClient.SendInvite(Yort.AfterPay.InStore.AfterPayInviteRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+    name: SendInvite
+    nameWithType: IAfterPayClient.SendInvite
+    fullName: Yort.AfterPay.InStore.IAfterPayClient.SendInvite
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.AfterPay.InStore.AfterPayInviteRequest
+    name: AfterPayInviteRequest
+    nameWithType: AfterPayInviteRequest
+    fullName: Yort.AfterPay.InStore.AfterPayInviteRequest
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Yort.AfterPay.InStore.AfterPayCallContext
+    name: AfterPayCallContext
+    nameWithType: AfterPayCallContext
+    fullName: Yort.AfterPay.InStore.AfterPayCallContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.UnauthorizedAccessException
+  commentId: T:System.UnauthorizedAccessException
+- uid: Yort.AfterPay.InStore.AfterPayPreapprovalRequest
+  commentId: T:Yort.AfterPay.InStore.AfterPayPreapprovalRequest
+  parent: Yort.AfterPay.InStore
+  isExternal: false
+  name: AfterPayPreapprovalRequest
+  nameWithType: AfterPayPreapprovalRequest
+  fullName: Yort.AfterPay.InStore.AfterPayPreapprovalRequest
+- uid: Yort.AfterPay.InStore.AfterPayPreapprovalResponse
+  commentId: T:Yort.AfterPay.InStore.AfterPayPreapprovalResponse
+  isExternal: false
+  name: AfterPayPreapprovalResponse
+  nameWithType: AfterPayPreapprovalResponse
+  fullName: Yort.AfterPay.InStore.AfterPayPreapprovalResponse
+- uid: Yort.AfterPay.InStore.AfterPayClient.PreapprovalEnquiry*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayClient.PreapprovalEnquiry
+  isExternal: false
+  name: PreapprovalEnquiry
+  nameWithType: AfterPayClient.PreapprovalEnquiry
+  fullName: Yort.AfterPay.InStore.AfterPayClient.PreapprovalEnquiry
+- uid: Yort.AfterPay.InStore.IAfterPayClient.PreapprovalEnquiry(Yort.AfterPay.InStore.AfterPayPreapprovalRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  commentId: M:Yort.AfterPay.InStore.IAfterPayClient.PreapprovalEnquiry(Yort.AfterPay.InStore.AfterPayPreapprovalRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  parent: Yort.AfterPay.InStore.IAfterPayClient
+  isExternal: false
+  name: PreapprovalEnquiry(AfterPayPreapprovalRequest, AfterPayCallContext)
+  nameWithType: IAfterPayClient.PreapprovalEnquiry(AfterPayPreapprovalRequest, AfterPayCallContext)
+  fullName: Yort.AfterPay.InStore.IAfterPayClient.PreapprovalEnquiry(Yort.AfterPay.InStore.AfterPayPreapprovalRequest, Yort.AfterPay.InStore.AfterPayCallContext)
+  spec.csharp:
+  - uid: Yort.AfterPay.InStore.IAfterPayClient.PreapprovalEnquiry(Yort.AfterPay.InStore.AfterPayPreapprovalRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+    name: PreapprovalEnquiry
+    nameWithType: IAfterPayClient.PreapprovalEnquiry
+    fullName: Yort.AfterPay.InStore.IAfterPayClient.PreapprovalEnquiry
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.AfterPay.InStore.AfterPayPreapprovalRequest
+    name: AfterPayPreapprovalRequest
+    nameWithType: AfterPayPreapprovalRequest
+    fullName: Yort.AfterPay.InStore.AfterPayPreapprovalRequest
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Yort.AfterPay.InStore.AfterPayCallContext
+    name: AfterPayCallContext
+    nameWithType: AfterPayCallContext
+    fullName: Yort.AfterPay.InStore.AfterPayCallContext
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Yort.AfterPay.InStore.IAfterPayClient.PreapprovalEnquiry(Yort.AfterPay.InStore.AfterPayPreapprovalRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+    name: PreapprovalEnquiry
+    nameWithType: IAfterPayClient.PreapprovalEnquiry
+    fullName: Yort.AfterPay.InStore.IAfterPayClient.PreapprovalEnquiry
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.AfterPay.InStore.AfterPayPreapprovalRequest
+    name: AfterPayPreapprovalRequest
+    nameWithType: AfterPayPreapprovalRequest
+    fullName: Yort.AfterPay.InStore.AfterPayPreapprovalRequest
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Yort.AfterPay.InStore.AfterPayCallContext
+    name: AfterPayCallContext
+    nameWithType: AfterPayCallContext
+    fullName: Yort.AfterPay.InStore.AfterPayCallContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task{Yort.AfterPay.InStore.AfterPayPreapprovalResponse}
+  commentId: '!:Task{Yort.AfterPay.InStore.AfterPayPreapprovalResponse}'
+  definition: Task`1
+  name: Task<AfterPayPreapprovalResponse>
+  nameWithType: Task<AfterPayPreapprovalResponse>
+  fullName: Task<Yort.AfterPay.InStore.AfterPayPreapprovalResponse>
+  nameWithType.vb: Task(Of AfterPayPreapprovalResponse)
+  fullName.vb: Task(Of Yort.AfterPay.InStore.AfterPayPreapprovalResponse)
+  name.vb: Task(Of AfterPayPreapprovalResponse)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Yort.AfterPay.InStore.AfterPayPreapprovalResponse
+    name: AfterPayPreapprovalResponse
+    nameWithType: AfterPayPreapprovalResponse
+    fullName: Yort.AfterPay.InStore.AfterPayPreapprovalResponse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Yort.AfterPay.InStore.AfterPayPreapprovalResponse
+    name: AfterPayPreapprovalResponse
+    nameWithType: AfterPayPreapprovalResponse
+    fullName: Yort.AfterPay.InStore.AfterPayPreapprovalResponse
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries
+  commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries
+- uid: Yort.AfterPay.InStore.AfterPayCreateOrderRequest
+  commentId: T:Yort.AfterPay.InStore.AfterPayCreateOrderRequest
+  parent: Yort.AfterPay.InStore
+  isExternal: false
+  name: AfterPayCreateOrderRequest
+  nameWithType: AfterPayCreateOrderRequest
+  fullName: Yort.AfterPay.InStore.AfterPayCreateOrderRequest
+- uid: Yort.AfterPay.InStore.AfterPayOrder
+  commentId: T:Yort.AfterPay.InStore.AfterPayOrder
+  isExternal: false
+  name: AfterPayOrder
+  nameWithType: AfterPayOrder
+  fullName: Yort.AfterPay.InStore.AfterPayOrder
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.RetryDelaySeconds
+  commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.RetryDelaySeconds
+- uid: Yort.AfterPay.InStore.AfterPayClient.CreateOrder*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayClient.CreateOrder
+  isExternal: false
+  name: CreateOrder
+  nameWithType: AfterPayClient.CreateOrder
+  fullName: Yort.AfterPay.InStore.AfterPayClient.CreateOrder
+- uid: Yort.AfterPay.InStore.IAfterPayClient.CreateOrder(Yort.AfterPay.InStore.AfterPayCreateOrderRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  commentId: M:Yort.AfterPay.InStore.IAfterPayClient.CreateOrder(Yort.AfterPay.InStore.AfterPayCreateOrderRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  parent: Yort.AfterPay.InStore.IAfterPayClient
+  isExternal: false
+  name: CreateOrder(AfterPayCreateOrderRequest, AfterPayCallContext)
+  nameWithType: IAfterPayClient.CreateOrder(AfterPayCreateOrderRequest, AfterPayCallContext)
+  fullName: Yort.AfterPay.InStore.IAfterPayClient.CreateOrder(Yort.AfterPay.InStore.AfterPayCreateOrderRequest, Yort.AfterPay.InStore.AfterPayCallContext)
+  spec.csharp:
+  - uid: Yort.AfterPay.InStore.IAfterPayClient.CreateOrder(Yort.AfterPay.InStore.AfterPayCreateOrderRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+    name: CreateOrder
+    nameWithType: IAfterPayClient.CreateOrder
+    fullName: Yort.AfterPay.InStore.IAfterPayClient.CreateOrder
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.AfterPay.InStore.AfterPayCreateOrderRequest
+    name: AfterPayCreateOrderRequest
+    nameWithType: AfterPayCreateOrderRequest
+    fullName: Yort.AfterPay.InStore.AfterPayCreateOrderRequest
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Yort.AfterPay.InStore.AfterPayCallContext
+    name: AfterPayCallContext
+    nameWithType: AfterPayCallContext
+    fullName: Yort.AfterPay.InStore.AfterPayCallContext
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Yort.AfterPay.InStore.IAfterPayClient.CreateOrder(Yort.AfterPay.InStore.AfterPayCreateOrderRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+    name: CreateOrder
+    nameWithType: IAfterPayClient.CreateOrder
+    fullName: Yort.AfterPay.InStore.IAfterPayClient.CreateOrder
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.AfterPay.InStore.AfterPayCreateOrderRequest
+    name: AfterPayCreateOrderRequest
+    nameWithType: AfterPayCreateOrderRequest
+    fullName: Yort.AfterPay.InStore.AfterPayCreateOrderRequest
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Yort.AfterPay.InStore.AfterPayCallContext
+    name: AfterPayCallContext
+    nameWithType: AfterPayCallContext
+    fullName: Yort.AfterPay.InStore.AfterPayCallContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.TimeoutException
+  commentId: T:System.TimeoutException
+- uid: Task{Yort.AfterPay.InStore.AfterPayOrder}
+  commentId: '!:Task{Yort.AfterPay.InStore.AfterPayOrder}'
+  definition: Task`1
+  name: Task<AfterPayOrder>
+  nameWithType: Task<AfterPayOrder>
+  fullName: Task<Yort.AfterPay.InStore.AfterPayOrder>
+  nameWithType.vb: Task(Of AfterPayOrder)
+  fullName.vb: Task(Of Yort.AfterPay.InStore.AfterPayOrder)
+  name.vb: Task(Of AfterPayOrder)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Yort.AfterPay.InStore.AfterPayOrder
+    name: AfterPayOrder
+    nameWithType: AfterPayOrder
+    fullName: Yort.AfterPay.InStore.AfterPayOrder
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Yort.AfterPay.InStore.AfterPayOrder
+    name: AfterPayOrder
+    nameWithType: AfterPayOrder
+    fullName: Yort.AfterPay.InStore.AfterPayOrder
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Yort.AfterPay.InStore.AfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  commentId: M:Yort.AfterPay.InStore.AfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+- uid: Yort.AfterPay.InStore.AfterPayReverseOrderRequest
+  commentId: T:Yort.AfterPay.InStore.AfterPayReverseOrderRequest
+  parent: Yort.AfterPay.InStore
+  isExternal: false
+  name: AfterPayReverseOrderRequest
+  nameWithType: AfterPayReverseOrderRequest
+  fullName: Yort.AfterPay.InStore.AfterPayReverseOrderRequest
+- uid: Yort.AfterPay.InStore.AfterPayOrderReversal
+  commentId: T:Yort.AfterPay.InStore.AfterPayOrderReversal
+  isExternal: false
+  name: AfterPayOrderReversal
+  nameWithType: AfterPayOrderReversal
+  fullName: Yort.AfterPay.InStore.AfterPayOrderReversal
+- uid: Yort.AfterPay.InStore.AfterPayClient.ReverseOrder*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayClient.ReverseOrder
+  isExternal: false
+  name: ReverseOrder
+  nameWithType: AfterPayClient.ReverseOrder
+  fullName: Yort.AfterPay.InStore.AfterPayClient.ReverseOrder
+- uid: Yort.AfterPay.InStore.IAfterPayClient.ReverseOrder(Yort.AfterPay.InStore.AfterPayReverseOrderRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  commentId: M:Yort.AfterPay.InStore.IAfterPayClient.ReverseOrder(Yort.AfterPay.InStore.AfterPayReverseOrderRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  parent: Yort.AfterPay.InStore.IAfterPayClient
+  isExternal: false
+  name: ReverseOrder(AfterPayReverseOrderRequest, AfterPayCallContext)
+  nameWithType: IAfterPayClient.ReverseOrder(AfterPayReverseOrderRequest, AfterPayCallContext)
+  fullName: Yort.AfterPay.InStore.IAfterPayClient.ReverseOrder(Yort.AfterPay.InStore.AfterPayReverseOrderRequest, Yort.AfterPay.InStore.AfterPayCallContext)
+  spec.csharp:
+  - uid: Yort.AfterPay.InStore.IAfterPayClient.ReverseOrder(Yort.AfterPay.InStore.AfterPayReverseOrderRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+    name: ReverseOrder
+    nameWithType: IAfterPayClient.ReverseOrder
+    fullName: Yort.AfterPay.InStore.IAfterPayClient.ReverseOrder
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.AfterPay.InStore.AfterPayReverseOrderRequest
+    name: AfterPayReverseOrderRequest
+    nameWithType: AfterPayReverseOrderRequest
+    fullName: Yort.AfterPay.InStore.AfterPayReverseOrderRequest
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Yort.AfterPay.InStore.AfterPayCallContext
+    name: AfterPayCallContext
+    nameWithType: AfterPayCallContext
+    fullName: Yort.AfterPay.InStore.AfterPayCallContext
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Yort.AfterPay.InStore.IAfterPayClient.ReverseOrder(Yort.AfterPay.InStore.AfterPayReverseOrderRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+    name: ReverseOrder
+    nameWithType: IAfterPayClient.ReverseOrder
+    fullName: Yort.AfterPay.InStore.IAfterPayClient.ReverseOrder
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.AfterPay.InStore.AfterPayReverseOrderRequest
+    name: AfterPayReverseOrderRequest
+    nameWithType: AfterPayReverseOrderRequest
+    fullName: Yort.AfterPay.InStore.AfterPayReverseOrderRequest
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Yort.AfterPay.InStore.AfterPayCallContext
+    name: AfterPayCallContext
+    nameWithType: AfterPayCallContext
+    fullName: Yort.AfterPay.InStore.AfterPayCallContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task{Yort.AfterPay.InStore.AfterPayOrderReversal}
+  commentId: '!:Task{Yort.AfterPay.InStore.AfterPayOrderReversal}'
+  definition: Task`1
+  name: Task<AfterPayOrderReversal>
+  nameWithType: Task<AfterPayOrderReversal>
+  fullName: Task<Yort.AfterPay.InStore.AfterPayOrderReversal>
+  nameWithType.vb: Task(Of AfterPayOrderReversal)
+  fullName.vb: Task(Of Yort.AfterPay.InStore.AfterPayOrderReversal)
+  name.vb: Task(Of AfterPayOrderReversal)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Yort.AfterPay.InStore.AfterPayOrderReversal
+    name: AfterPayOrderReversal
+    nameWithType: AfterPayOrderReversal
+    fullName: Yort.AfterPay.InStore.AfterPayOrderReversal
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Yort.AfterPay.InStore.AfterPayOrderReversal
+    name: AfterPayOrderReversal
+    nameWithType: AfterPayOrderReversal
+    fullName: Yort.AfterPay.InStore.AfterPayOrderReversal
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Yort.AfterPay.InStore.AfterPayRefundRequest
+  commentId: T:Yort.AfterPay.InStore.AfterPayRefundRequest
+  parent: Yort.AfterPay.InStore
+  isExternal: false
+  name: AfterPayRefundRequest
+  nameWithType: AfterPayRefundRequest
+  fullName: Yort.AfterPay.InStore.AfterPayRefundRequest
+- uid: Yort.AfterPay.InStore.AfterPayRefund
+  commentId: T:Yort.AfterPay.InStore.AfterPayRefund
+  isExternal: false
+  name: AfterPayRefund
+  nameWithType: AfterPayRefund
+  fullName: Yort.AfterPay.InStore.AfterPayRefund
+- uid: Yort.AfterPay.InStore.AfterPayClient.RefundOrder*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayClient.RefundOrder
+  isExternal: false
+  name: RefundOrder
+  nameWithType: AfterPayClient.RefundOrder
+  fullName: Yort.AfterPay.InStore.AfterPayClient.RefundOrder
+- uid: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  commentId: M:Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  parent: Yort.AfterPay.InStore.IAfterPayClient
+  isExternal: false
+  name: RefundOrder(AfterPayRefundRequest, AfterPayCallContext)
+  nameWithType: IAfterPayClient.RefundOrder(AfterPayRefundRequest, AfterPayCallContext)
+  fullName: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest, Yort.AfterPay.InStore.AfterPayCallContext)
+  spec.csharp:
+  - uid: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+    name: RefundOrder
+    nameWithType: IAfterPayClient.RefundOrder
+    fullName: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.AfterPay.InStore.AfterPayRefundRequest
+    name: AfterPayRefundRequest
+    nameWithType: AfterPayRefundRequest
+    fullName: Yort.AfterPay.InStore.AfterPayRefundRequest
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Yort.AfterPay.InStore.AfterPayCallContext
+    name: AfterPayCallContext
+    nameWithType: AfterPayCallContext
+    fullName: Yort.AfterPay.InStore.AfterPayCallContext
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+    name: RefundOrder
+    nameWithType: IAfterPayClient.RefundOrder
+    fullName: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.AfterPay.InStore.AfterPayRefundRequest
+    name: AfterPayRefundRequest
+    nameWithType: AfterPayRefundRequest
+    fullName: Yort.AfterPay.InStore.AfterPayRefundRequest
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Yort.AfterPay.InStore.AfterPayCallContext
+    name: AfterPayCallContext
+    nameWithType: AfterPayCallContext
+    fullName: Yort.AfterPay.InStore.AfterPayCallContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task{Yort.AfterPay.InStore.AfterPayRefund}
+  commentId: '!:Task{Yort.AfterPay.InStore.AfterPayRefund}'
+  definition: Task`1
+  name: Task<AfterPayRefund>
+  nameWithType: Task<AfterPayRefund>
+  fullName: Task<Yort.AfterPay.InStore.AfterPayRefund>
+  nameWithType.vb: Task(Of AfterPayRefund)
+  fullName.vb: Task(Of Yort.AfterPay.InStore.AfterPayRefund)
+  name.vb: Task(Of AfterPayRefund)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Yort.AfterPay.InStore.AfterPayRefund
+    name: AfterPayRefund
+    nameWithType: AfterPayRefund
+    fullName: Yort.AfterPay.InStore.AfterPayRefund
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Yort.AfterPay.InStore.AfterPayRefund
+    name: AfterPayRefund
+    nameWithType: AfterPayRefund
+    fullName: Yort.AfterPay.InStore.AfterPayRefund
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Yort.AfterPay.InStore.AfterPayReverseRefundRequest
+  commentId: T:Yort.AfterPay.InStore.AfterPayReverseRefundRequest
+  parent: Yort.AfterPay.InStore
+  isExternal: false
+  name: AfterPayReverseRefundRequest
+  nameWithType: AfterPayReverseRefundRequest
+  fullName: Yort.AfterPay.InStore.AfterPayReverseRefundRequest
+- uid: Yort.AfterPay.InStore.AfterPayRefundReversal
+  commentId: T:Yort.AfterPay.InStore.AfterPayRefundReversal
+  isExternal: false
+  name: AfterPayRefundReversal
+  nameWithType: AfterPayRefundReversal
+  fullName: Yort.AfterPay.InStore.AfterPayRefundReversal
+- uid: Yort.AfterPay.InStore.AfterPayClient.ReverseRefund*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayClient.ReverseRefund
+  isExternal: false
+  name: ReverseRefund
+  nameWithType: AfterPayClient.ReverseRefund
+  fullName: Yort.AfterPay.InStore.AfterPayClient.ReverseRefund
+- uid: Yort.AfterPay.InStore.IAfterPayClient.ReverseRefund(Yort.AfterPay.InStore.AfterPayReverseRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  commentId: M:Yort.AfterPay.InStore.IAfterPayClient.ReverseRefund(Yort.AfterPay.InStore.AfterPayReverseRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  parent: Yort.AfterPay.InStore.IAfterPayClient
+  isExternal: false
+  name: ReverseRefund(AfterPayReverseRefundRequest, AfterPayCallContext)
+  nameWithType: IAfterPayClient.ReverseRefund(AfterPayReverseRefundRequest, AfterPayCallContext)
+  fullName: Yort.AfterPay.InStore.IAfterPayClient.ReverseRefund(Yort.AfterPay.InStore.AfterPayReverseRefundRequest, Yort.AfterPay.InStore.AfterPayCallContext)
+  spec.csharp:
+  - uid: Yort.AfterPay.InStore.IAfterPayClient.ReverseRefund(Yort.AfterPay.InStore.AfterPayReverseRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+    name: ReverseRefund
+    nameWithType: IAfterPayClient.ReverseRefund
+    fullName: Yort.AfterPay.InStore.IAfterPayClient.ReverseRefund
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.AfterPay.InStore.AfterPayReverseRefundRequest
+    name: AfterPayReverseRefundRequest
+    nameWithType: AfterPayReverseRefundRequest
+    fullName: Yort.AfterPay.InStore.AfterPayReverseRefundRequest
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Yort.AfterPay.InStore.AfterPayCallContext
+    name: AfterPayCallContext
+    nameWithType: AfterPayCallContext
+    fullName: Yort.AfterPay.InStore.AfterPayCallContext
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Yort.AfterPay.InStore.IAfterPayClient.ReverseRefund(Yort.AfterPay.InStore.AfterPayReverseRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+    name: ReverseRefund
+    nameWithType: IAfterPayClient.ReverseRefund
+    fullName: Yort.AfterPay.InStore.IAfterPayClient.ReverseRefund
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Yort.AfterPay.InStore.AfterPayReverseRefundRequest
+    name: AfterPayReverseRefundRequest
+    nameWithType: AfterPayReverseRefundRequest
+    fullName: Yort.AfterPay.InStore.AfterPayReverseRefundRequest
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Yort.AfterPay.InStore.AfterPayCallContext
+    name: AfterPayCallContext
+    nameWithType: AfterPayCallContext
+    fullName: Yort.AfterPay.InStore.AfterPayCallContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task{Yort.AfterPay.InStore.AfterPayRefundReversal}
+  commentId: '!:Task{Yort.AfterPay.InStore.AfterPayRefundReversal}'
+  definition: Task`1
+  name: Task<AfterPayRefundReversal>
+  nameWithType: Task<AfterPayRefundReversal>
+  fullName: Task<Yort.AfterPay.InStore.AfterPayRefundReversal>
+  nameWithType.vb: Task(Of AfterPayRefundReversal)
+  fullName.vb: Task(Of Yort.AfterPay.InStore.AfterPayRefundReversal)
+  name.vb: Task(Of AfterPayRefundReversal)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Yort.AfterPay.InStore.AfterPayRefundReversal
+    name: AfterPayRefundReversal
+    nameWithType: AfterPayRefundReversal
+    fullName: Yort.AfterPay.InStore.AfterPayRefundReversal
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Yort.AfterPay.InStore.AfterPayRefundReversal
+    name: AfterPayRefundReversal
+    nameWithType: AfterPayRefundReversal
+    fullName: Yort.AfterPay.InStore.AfterPayRefundReversal
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Yort.AfterPay.InStore.AfterPayClient.DisposeManagedResources*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayClient.DisposeManagedResources
+  isExternal: false
+  name: DisposeManagedResources
+  nameWithType: AfterPayClient.DisposeManagedResources
+  fullName: Yort.AfterPay.InStore.AfterPayClient.DisposeManagedResources

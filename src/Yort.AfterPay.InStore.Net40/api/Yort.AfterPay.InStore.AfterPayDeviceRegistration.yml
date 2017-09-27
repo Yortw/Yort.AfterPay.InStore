@@ -17,7 +17,7 @@ items:
   source:
     id: AfterPayDeviceRegistration
     path: ''
-    startLine: 243
+    startLine: 1247
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -59,7 +59,7 @@ items:
   source:
     id: DeviceId
     path: ''
-    startLine: 248
+    startLine: 1252
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -92,7 +92,7 @@ items:
   source:
     id: Key
     path: ''
-    startLine: 254
+    startLine: 1258
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -117,6 +117,7 @@ items:
 references:
 - uid: Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest
   commentId: T:Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest
+  parent: Yort.AfterPay.InStore
   isExternal: false
   name: AfterPayDeviceRegistrationRequest
   nameWithType: AfterPayDeviceRegistrationRequest

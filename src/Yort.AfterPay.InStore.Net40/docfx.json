@@ -5,11 +5,12 @@
 				{
 					"files": [ "**.cs" ],
 					"src": "..",
-					"exclude": [
-						"**/obj/**",
-						"**/bin/**",
-						"**Tests**"
-					]
+									"exclude": [
+										"**/obj/**",
+										"**/bin/**",
+										"**Tests**",
+										"**Mock**"
+									]
 				}
 			],
 			"dest": "api",

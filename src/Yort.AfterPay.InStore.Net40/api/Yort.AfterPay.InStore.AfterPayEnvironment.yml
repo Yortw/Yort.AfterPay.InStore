@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: Yort.AfterPay.InStore.AfterPayEnvironment
+  commentId: T:Yort.AfterPay.InStore.AfterPayEnvironment
+  id: AfterPayEnvironment
+  parent: Yort.AfterPay.InStore
+  children:
+  - Yort.AfterPay.InStore.AfterPayEnvironment.Production
+  - Yort.AfterPay.InStore.AfterPayEnvironment.Sandbox
+  langs:
+  - csharp
+  - vb
+  name: AfterPayEnvironment
+  nameWithType: AfterPayEnvironment
+  fullName: Yort.AfterPay.InStore.AfterPayEnvironment
+  type: Enum
+  source:
+    id: AfterPayEnvironment
+    path: ''
+    startLine: 1319
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.AfterPay.InStore
+  summary: "\nA enum providing a list of environments for the AfterPay API.\n"
+  example: []
+  syntax:
+    content: public enum AfterPayEnvironment
+    content.vb: Public Enum AfterPayEnvironment
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Yort.AfterPay.InStore.AfterPayEnvironment.Sandbox
+  commentId: F:Yort.AfterPay.InStore.AfterPayEnvironment.Sandbox
+  id: Sandbox
+  parent: Yort.AfterPay.InStore.AfterPayEnvironment
+  langs:
+  - csharp
+  - vb
+  name: Sandbox
+  nameWithType: AfterPayEnvironment.Sandbox
+  fullName: Yort.AfterPay.InStore.AfterPayEnvironment.Sandbox
+  type: Field
+  source:
+    id: Sandbox
+    path: ''
+    startLine: 1324
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.AfterPay.InStore
+  summary: "\nThe test/sandbox API.\n"
+  example: []
+  syntax:
+    content: Sandbox = 0
+    return:
+      type: Yort.AfterPay.InStore.AfterPayEnvironment
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Yort.AfterPay.InStore.AfterPayEnvironment.Production
+  commentId: F:Yort.AfterPay.InStore.AfterPayEnvironment.Production
+  id: Production
+  parent: Yort.AfterPay.InStore.AfterPayEnvironment
+  langs:
+  - csharp
+  - vb
+  name: Production
+  nameWithType: AfterPayEnvironment.Production
+  fullName: Yort.AfterPay.InStore.AfterPayEnvironment.Production
+  type: Field
+  source:
+    id: Production
+    path: ''
+    startLine: 1328
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.AfterPay.InStore
+  summary: "\nThe live/production API.\n"
+  example: []
+  syntax:
+    content: Production = 1
+    return:
+      type: Yort.AfterPay.InStore.AfterPayEnvironment
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Yort.AfterPay.InStore
+  commentId: N:Yort.AfterPay.InStore
+  isExternal: false
+  name: Yort.AfterPay.InStore
+  nameWithType: Yort.AfterPay.InStore
+  fullName: Yort.AfterPay.InStore
+- uid: Yort.AfterPay.InStore.AfterPayEnvironment
+  commentId: T:Yort.AfterPay.InStore.AfterPayEnvironment
+  parent: Yort.AfterPay.InStore
+  isExternal: false
+  name: AfterPayEnvironment
+  nameWithType: AfterPayEnvironment
+  fullName: Yort.AfterPay.InStore.AfterPayEnvironment

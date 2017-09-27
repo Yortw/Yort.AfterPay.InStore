@@ -17,10 +17,12 @@
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DocumentationFile>bin\Release\netstandard2.0\Yort.AfterPay.InStore.NetStandard20.xml</DocumentationFile>
+    <DefineConstants>TRACE;RELEASE;NETSTANDARD2_0;SUPPORTS_TLS12;SUPPORTS_TASKDELAY</DefineConstants>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>bin\Debug\netstandard2.0\Yort.AfterPay.InStore.NetStandard20.xml</DocumentationFile>
+    <DefineConstants>TRACE;DEBUG;NETSTANDARD2_0;SUPPORTS_TLS12;SUPPORTS_TASKDELAY</DefineConstants>
   </PropertyGroup>
 
   <Import Project="..\Yort.AfterPay.InStore.Shared\Yort.AfterPay.InStore.Shared.projitems" Label="Shared" />
@@ -29,6 +31,22 @@
     <PackageReference Include="Ladon.Net" Version="1.0.1" />
     <PackageReference Include="Mozzarella" Version="1.0.1" />
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="Yort.Trashy" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="ErrorMessageResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ErrorMessageResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="ErrorMessageResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ErrorMessageResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>

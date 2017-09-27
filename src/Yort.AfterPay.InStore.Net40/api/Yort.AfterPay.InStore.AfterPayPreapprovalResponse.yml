@@ -1,0 +1,483 @@
+### YamlMime:ManagedReference
+items:
+- uid: Yort.AfterPay.InStore.AfterPayPreapprovalResponse
+  commentId: T:Yort.AfterPay.InStore.AfterPayPreapprovalResponse
+  id: AfterPayPreapprovalResponse
+  parent: Yort.AfterPay.InStore
+  children:
+  - Yort.AfterPay.InStore.AfterPayPreapprovalResponse.Amount
+  - Yort.AfterPay.InStore.AfterPayPreapprovalResponse.ExpiresAt
+  - Yort.AfterPay.InStore.AfterPayPreapprovalResponse.Minimum
+  langs:
+  - csharp
+  - vb
+  name: AfterPayPreapprovalResponse
+  nameWithType: AfterPayPreapprovalResponse
+  fullName: Yort.AfterPay.InStore.AfterPayPreapprovalResponse
+  type: Class
+  source:
+    id: AfterPayPreapprovalResponse
+    path: ''
+    startLine: 1644
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.AfterPay.InStore
+  summary: "\nRepresents the response from AfterPay to a <xref href=\"Yort.AfterPay.InStore.AfterPayPreapprovalRequest\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public class AfterPayPreapprovalResponse
+    content.vb: Public Class AfterPayPreapprovalResponse
+  seealso:
+  - linkId: Yort.AfterPay.InStore.AfterPayPreapprovalRequest
+    commentId: T:Yort.AfterPay.InStore.AfterPayPreapprovalRequest
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Yort.AfterPay.InStore.AfterPayPreapprovalResponse.Amount
+  commentId: P:Yort.AfterPay.InStore.AfterPayPreapprovalResponse.Amount
+  id: Amount
+  parent: Yort.AfterPay.InStore.AfterPayPreapprovalResponse
+  langs:
+  - csharp
+  - vb
+  name: Amount
+  nameWithType: AfterPayPreapprovalResponse.Amount
+  fullName: Yort.AfterPay.InStore.AfterPayPreapprovalResponse.Amount
+  type: Property
+  source:
+    id: Amount
+    path: ''
+    startLine: 1649
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.AfterPay.InStore
+  summary: "\nThe maximum amount that can be charged against this pre-approval.\n"
+  example: []
+  syntax:
+    content: public AfterPayMoney Amount { get; set; }
+    parameters: []
+    return:
+      type: Yort.AfterPay.InStore.AfterPayMoney
+    content.vb: Public Property Amount As AfterPayMoney
+  overload: Yort.AfterPay.InStore.AfterPayPreapprovalResponse.Amount*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayPreapprovalResponse.Minimum
+  commentId: P:Yort.AfterPay.InStore.AfterPayPreapprovalResponse.Minimum
+  id: Minimum
+  parent: Yort.AfterPay.InStore.AfterPayPreapprovalResponse
+  langs:
+  - csharp
+  - vb
+  name: Minimum
+  nameWithType: AfterPayPreapprovalResponse.Minimum
+  fullName: Yort.AfterPay.InStore.AfterPayPreapprovalResponse.Minimum
+  type: Property
+  source:
+    id: Minimum
+    path: ''
+    startLine: 1655
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.AfterPay.InStore
+  summary: "\nThe minimum amount that can be charged against this pre-approval.\n"
+  example: []
+  syntax:
+    content: public AfterPayMoney Minimum { get; set; }
+    parameters: []
+    return:
+      type: Yort.AfterPay.InStore.AfterPayMoney
+    content.vb: Public Property Minimum As AfterPayMoney
+  overload: Yort.AfterPay.InStore.AfterPayPreapprovalResponse.Minimum*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayPreapprovalResponse.ExpiresAt
+  commentId: P:Yort.AfterPay.InStore.AfterPayPreapprovalResponse.ExpiresAt
+  id: ExpiresAt
+  parent: Yort.AfterPay.InStore.AfterPayPreapprovalResponse
+  langs:
+  - csharp
+  - vb
+  name: ExpiresAt
+  nameWithType: AfterPayPreapprovalResponse.ExpiresAt
+  fullName: Yort.AfterPay.InStore.AfterPayPreapprovalResponse.ExpiresAt
+  type: Property
+  source:
+    id: ExpiresAt
+    path: ''
+    startLine: 1661
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.AfterPay.InStore
+  summary: "\nThe date and time at which the pre-approval code expires and can no longer be used.\n"
+  example: []
+  syntax:
+    content: public DateTimeOffset ExpiresAt { get; set; }
+    parameters: []
+    return:
+      type: DateTimeOffset
+    content.vb: Public Property ExpiresAt As DateTimeOffset
+  overload: Yort.AfterPay.InStore.AfterPayPreapprovalResponse.ExpiresAt*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Yort.AfterPay.InStore.AfterPayPreapprovalRequest
+  commentId: T:Yort.AfterPay.InStore.AfterPayPreapprovalRequest
+  parent: Yort.AfterPay.InStore
+  isExternal: false
+  name: AfterPayPreapprovalRequest
+  nameWithType: AfterPayPreapprovalRequest
+  fullName: Yort.AfterPay.InStore.AfterPayPreapprovalRequest
+- uid: Yort.AfterPay.InStore
+  commentId: N:Yort.AfterPay.InStore
+  isExternal: false
+  name: Yort.AfterPay.InStore
+  nameWithType: Yort.AfterPay.InStore
+  fullName: Yort.AfterPay.InStore
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Yort.AfterPay.InStore.AfterPayPreapprovalResponse.Amount*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayPreapprovalResponse.Amount
+  isExternal: false
+  name: Amount
+  nameWithType: AfterPayPreapprovalResponse.Amount
+  fullName: Yort.AfterPay.InStore.AfterPayPreapprovalResponse.Amount
+- uid: Yort.AfterPay.InStore.AfterPayMoney
+  commentId: T:Yort.AfterPay.InStore.AfterPayMoney
+  parent: Yort.AfterPay.InStore
+  isExternal: false
+  name: AfterPayMoney
+  nameWithType: AfterPayMoney
+  fullName: Yort.AfterPay.InStore.AfterPayMoney
+- uid: Yort.AfterPay.InStore.AfterPayPreapprovalResponse.Minimum*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayPreapprovalResponse.Minimum
+  isExternal: false
+  name: Minimum
+  nameWithType: AfterPayPreapprovalResponse.Minimum
+  fullName: Yort.AfterPay.InStore.AfterPayPreapprovalResponse.Minimum
+- uid: Yort.AfterPay.InStore.AfterPayPreapprovalResponse.ExpiresAt*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayPreapprovalResponse.ExpiresAt
+  isExternal: false
+  name: ExpiresAt
+  nameWithType: AfterPayPreapprovalResponse.ExpiresAt
+  fullName: Yort.AfterPay.InStore.AfterPayPreapprovalResponse.ExpiresAt
+- uid: DateTimeOffset
+  isExternal: true
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: DateTimeOffset

@@ -5,19 +5,26 @@ items:
   id: Yort.AfterPay.InStore
   children:
   - Yort.AfterPay.InStore.AfterPayApiError
+  - Yort.AfterPay.InStore.AfterPayApiException
+  - Yort.AfterPay.InStore.AfterPayCallContext
   - Yort.AfterPay.InStore.AfterPayClient
   - Yort.AfterPay.InStore.AfterPayConfiguration
+  - Yort.AfterPay.InStore.AfterPayConstants
   - Yort.AfterPay.InStore.AfterPayCreateOrderRequest
   - Yort.AfterPay.InStore.AfterPayCreateRefundRequest
   - Yort.AfterPay.InStore.AfterPayCurrencies
   - Yort.AfterPay.InStore.AfterPayDeviceRegistration
   - Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest
+  - Yort.AfterPay.InStore.AfterPayEnvironment
   - Yort.AfterPay.InStore.AfterPayInviteRequest
   - Yort.AfterPay.InStore.AfterPayMoney
   - Yort.AfterPay.InStore.AfterPayOrder
   - Yort.AfterPay.InStore.AfterPayOrderItem
   - Yort.AfterPay.InStore.AfterPayOrderReversal
+  - Yort.AfterPay.InStore.AfterPayPreapprovalRequest
+  - Yort.AfterPay.InStore.AfterPayPreapprovalResponse
   - Yort.AfterPay.InStore.AfterPayRefund
+  - Yort.AfterPay.InStore.AfterPayRefundRequest
   - Yort.AfterPay.InStore.AfterPayRefundReversal
   - Yort.AfterPay.InStore.AfterPayReverseOrderRequest
   - Yort.AfterPay.InStore.AfterPayReverseRefundRequest
@@ -38,10 +45,24 @@ items:
 references:
 - uid: Yort.AfterPay.InStore.AfterPayApiError
   commentId: T:Yort.AfterPay.InStore.AfterPayApiError
+  parent: Yort.AfterPay.InStore
   isExternal: false
   name: AfterPayApiError
   nameWithType: AfterPayApiError
   fullName: Yort.AfterPay.InStore.AfterPayApiError
+- uid: Yort.AfterPay.InStore.AfterPayApiException
+  commentId: T:Yort.AfterPay.InStore.AfterPayApiException
+  isExternal: false
+  name: AfterPayApiException
+  nameWithType: AfterPayApiException
+  fullName: Yort.AfterPay.InStore.AfterPayApiException
+- uid: Yort.AfterPay.InStore.AfterPayCallContext
+  commentId: T:Yort.AfterPay.InStore.AfterPayCallContext
+  parent: Yort.AfterPay.InStore
+  isExternal: false
+  name: AfterPayCallContext
+  nameWithType: AfterPayCallContext
+  fullName: Yort.AfterPay.InStore.AfterPayCallContext
 - uid: Yort.AfterPay.InStore.AfterPayClient
   commentId: T:Yort.AfterPay.InStore.AfterPayClient
   isExternal: false
@@ -50,12 +71,20 @@ references:
   fullName: Yort.AfterPay.InStore.AfterPayClient
 - uid: Yort.AfterPay.InStore.AfterPayConfiguration
   commentId: T:Yort.AfterPay.InStore.AfterPayConfiguration
+  parent: Yort.AfterPay.InStore
   isExternal: false
   name: AfterPayConfiguration
   nameWithType: AfterPayConfiguration
   fullName: Yort.AfterPay.InStore.AfterPayConfiguration
+- uid: Yort.AfterPay.InStore.AfterPayConstants
+  commentId: T:Yort.AfterPay.InStore.AfterPayConstants
+  isExternal: false
+  name: AfterPayConstants
+  nameWithType: AfterPayConstants
+  fullName: Yort.AfterPay.InStore.AfterPayConstants
 - uid: Yort.AfterPay.InStore.AfterPayCreateOrderRequest
   commentId: T:Yort.AfterPay.InStore.AfterPayCreateOrderRequest
+  parent: Yort.AfterPay.InStore
   isExternal: false
   name: AfterPayCreateOrderRequest
   nameWithType: AfterPayCreateOrderRequest
@@ -80,12 +109,21 @@ references:
   fullName: Yort.AfterPay.InStore.AfterPayDeviceRegistration
 - uid: Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest
   commentId: T:Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest
+  parent: Yort.AfterPay.InStore
   isExternal: false
   name: AfterPayDeviceRegistrationRequest
   nameWithType: AfterPayDeviceRegistrationRequest
   fullName: Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest
+- uid: Yort.AfterPay.InStore.AfterPayEnvironment
+  commentId: T:Yort.AfterPay.InStore.AfterPayEnvironment
+  parent: Yort.AfterPay.InStore
+  isExternal: false
+  name: AfterPayEnvironment
+  nameWithType: AfterPayEnvironment
+  fullName: Yort.AfterPay.InStore.AfterPayEnvironment
 - uid: Yort.AfterPay.InStore.AfterPayInviteRequest
   commentId: T:Yort.AfterPay.InStore.AfterPayInviteRequest
+  parent: Yort.AfterPay.InStore
   isExternal: false
   name: AfterPayInviteRequest
   nameWithType: AfterPayInviteRequest
@@ -115,12 +153,32 @@ references:
   name: AfterPayOrderReversal
   nameWithType: AfterPayOrderReversal
   fullName: Yort.AfterPay.InStore.AfterPayOrderReversal
+- uid: Yort.AfterPay.InStore.AfterPayPreapprovalRequest
+  commentId: T:Yort.AfterPay.InStore.AfterPayPreapprovalRequest
+  parent: Yort.AfterPay.InStore
+  isExternal: false
+  name: AfterPayPreapprovalRequest
+  nameWithType: AfterPayPreapprovalRequest
+  fullName: Yort.AfterPay.InStore.AfterPayPreapprovalRequest
+- uid: Yort.AfterPay.InStore.AfterPayPreapprovalResponse
+  commentId: T:Yort.AfterPay.InStore.AfterPayPreapprovalResponse
+  isExternal: false
+  name: AfterPayPreapprovalResponse
+  nameWithType: AfterPayPreapprovalResponse
+  fullName: Yort.AfterPay.InStore.AfterPayPreapprovalResponse
 - uid: Yort.AfterPay.InStore.AfterPayRefund
   commentId: T:Yort.AfterPay.InStore.AfterPayRefund
   isExternal: false
   name: AfterPayRefund
   nameWithType: AfterPayRefund
   fullName: Yort.AfterPay.InStore.AfterPayRefund
+- uid: Yort.AfterPay.InStore.AfterPayRefundRequest
+  commentId: T:Yort.AfterPay.InStore.AfterPayRefundRequest
+  parent: Yort.AfterPay.InStore
+  isExternal: false
+  name: AfterPayRefundRequest
+  nameWithType: AfterPayRefundRequest
+  fullName: Yort.AfterPay.InStore.AfterPayRefundRequest
 - uid: Yort.AfterPay.InStore.AfterPayRefundReversal
   commentId: T:Yort.AfterPay.InStore.AfterPayRefundReversal
   isExternal: false
@@ -129,12 +187,14 @@ references:
   fullName: Yort.AfterPay.InStore.AfterPayRefundReversal
 - uid: Yort.AfterPay.InStore.AfterPayReverseOrderRequest
   commentId: T:Yort.AfterPay.InStore.AfterPayReverseOrderRequest
+  parent: Yort.AfterPay.InStore
   isExternal: false
   name: AfterPayReverseOrderRequest
   nameWithType: AfterPayReverseOrderRequest
   fullName: Yort.AfterPay.InStore.AfterPayReverseOrderRequest
 - uid: Yort.AfterPay.InStore.AfterPayReverseRefundRequest
   commentId: T:Yort.AfterPay.InStore.AfterPayReverseRefundRequest
+  parent: Yort.AfterPay.InStore
   isExternal: false
   name: AfterPayReverseRefundRequest
   nameWithType: AfterPayReverseRefundRequest

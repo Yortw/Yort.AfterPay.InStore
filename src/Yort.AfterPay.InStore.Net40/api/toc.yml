@@ -4,10 +4,16 @@
   items:
   - uid: Yort.AfterPay.InStore.AfterPayApiError
     name: AfterPayApiError
+  - uid: Yort.AfterPay.InStore.AfterPayApiException
+    name: AfterPayApiException
+  - uid: Yort.AfterPay.InStore.AfterPayCallContext
+    name: AfterPayCallContext
   - uid: Yort.AfterPay.InStore.AfterPayClient
     name: AfterPayClient
   - uid: Yort.AfterPay.InStore.AfterPayConfiguration
     name: AfterPayConfiguration
+  - uid: Yort.AfterPay.InStore.AfterPayConstants
+    name: AfterPayConstants
   - uid: Yort.AfterPay.InStore.AfterPayCreateOrderRequest
     name: AfterPayCreateOrderRequest
   - uid: Yort.AfterPay.InStore.AfterPayCreateRefundRequest
@@ -18,6 +24,8 @@
     name: AfterPayDeviceRegistration
   - uid: Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest
     name: AfterPayDeviceRegistrationRequest
+  - uid: Yort.AfterPay.InStore.AfterPayEnvironment
+    name: AfterPayEnvironment
   - uid: Yort.AfterPay.InStore.AfterPayInviteRequest
     name: AfterPayInviteRequest
   - uid: Yort.AfterPay.InStore.AfterPayMoney
@@ -28,8 +36,14 @@
     name: AfterPayOrderItem
   - uid: Yort.AfterPay.InStore.AfterPayOrderReversal
     name: AfterPayOrderReversal
+  - uid: Yort.AfterPay.InStore.AfterPayPreapprovalRequest
+    name: AfterPayPreapprovalRequest
+  - uid: Yort.AfterPay.InStore.AfterPayPreapprovalResponse
+    name: AfterPayPreapprovalResponse
   - uid: Yort.AfterPay.InStore.AfterPayRefund
     name: AfterPayRefund
+  - uid: Yort.AfterPay.InStore.AfterPayRefundRequest
+    name: AfterPayRefundRequest
   - uid: Yort.AfterPay.InStore.AfterPayRefundReversal
     name: AfterPayRefundReversal
   - uid: Yort.AfterPay.InStore.AfterPayReverseOrderRequest

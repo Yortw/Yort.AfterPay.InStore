@@ -16,7 +16,7 @@ items:
   source:
     id: AfterPayTokenRequest
     path: ''
-    startLine: 824
+    startLine: 1950
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -62,7 +62,7 @@ items:
   source:
     id: Key
     path: ''
-    startLine: 829
+    startLine: 1955
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -90,6 +90,7 @@ references:
   fullName: Yort.AfterPay.InStore.AfterPayToken
 - uid: Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest
   commentId: T:Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest
+  parent: Yort.AfterPay.InStore
   isExternal: false
   name: AfterPayDeviceRegistrationRequest
   nameWithType: AfterPayDeviceRegistrationRequest

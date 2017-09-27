@@ -17,7 +17,7 @@ items:
   source:
     id: AfterPayReverseOrderRequest
     path: ''
-    startLine: 654
+    startLine: 1780
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -62,7 +62,7 @@ items:
   source:
     id: RequestedAt
     path: ''
-    startLine: 659
+    startLine: 1785
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -95,7 +95,7 @@ items:
   source:
     id: ReversingRequestId
     path: ''
-    startLine: 664
+    startLine: 1790
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -123,6 +123,7 @@ references:
   fullName: Yort.AfterPay.InStore.AfterPayOrderReversal
 - uid: Yort.AfterPay.InStore.AfterPayCreateOrderRequest
   commentId: T:Yort.AfterPay.InStore.AfterPayCreateOrderRequest
+  parent: Yort.AfterPay.InStore
   isExternal: false
   name: AfterPayCreateOrderRequest
   nameWithType: AfterPayCreateOrderRequest

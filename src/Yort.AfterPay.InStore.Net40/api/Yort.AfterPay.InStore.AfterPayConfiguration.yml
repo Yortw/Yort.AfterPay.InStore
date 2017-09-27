@@ -5,6 +5,15 @@ items:
   id: AfterPayConfiguration
   parent: Yort.AfterPay.InStore
   children:
+  - Yort.AfterPay.InStore.AfterPayConfiguration.#ctor
+  - Yort.AfterPay.InStore.AfterPayConfiguration.DeviceId
+  - Yort.AfterPay.InStore.AfterPayConfiguration.DeviceKey
+  - Yort.AfterPay.InStore.AfterPayConfiguration.Environment
+  - Yort.AfterPay.InStore.AfterPayConfiguration.HttpClient
+  - Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries
+  - Yort.AfterPay.InStore.AfterPayConfiguration.ProductName
+  - Yort.AfterPay.InStore.AfterPayConfiguration.ProductVersion
+  - Yort.AfterPay.InStore.AfterPayConfiguration.RetryDelaySeconds
   - Yort.AfterPay.InStore.AfterPayConfiguration.SystemClock
   langs:
   - csharp
@@ -16,15 +25,15 @@ items:
   source:
     id: AfterPayConfiguration
     path: ''
-    startLine: 84
+    startLine: 874
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nInstances of this class represent configuration options for <xref href=\"Yort.AfterPay.InStore.IAfterPayClient\" data-throw-if-not-resolved=\"false\"></xref> instances. The static members of this class provide global configuration common to all instances.\n"
   example: []
   syntax:
-    content: public class AfterPayConfiguration
-    content.vb: Public Class AfterPayConfiguration
+    content: public sealed class AfterPayConfiguration
+    content.vb: Public NotInheritable Class AfterPayConfiguration
   inheritance:
   - System.Object
   inheritedMembers:
@@ -37,10 +46,344 @@ items:
   - System.Object.MemberwiseClone
   modifiers.csharp:
   - public
+  - sealed
   - class
   modifiers.vb:
   - Public
+  - NotInheritable
   - Class
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.#ctor
+  commentId: M:Yort.AfterPay.InStore.AfterPayConfiguration.#ctor
+  id: '#ctor'
+  parent: Yort.AfterPay.InStore.AfterPayConfiguration
+  langs:
+  - csharp
+  - vb
+  name: AfterPayConfiguration()
+  nameWithType: AfterPayConfiguration.AfterPayConfiguration()
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.AfterPayConfiguration()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 898
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.AfterPay.InStore
+  summary: "\nDefault contructor, creates a new instance.\n"
+  remarks: "\n<p>Instances of this type become immmutable once passed to a <xref href=\"Yort.AfterPay.InStore.AfterPayClient\" data-throw-if-not-resolved=\"false\"></xref> instance. Trying to set properties after this has occurred will result in an <see cref=\"!:InvalidOperationException\"></see>.</p>\n"
+  example: []
+  syntax:
+    content: public AfterPayConfiguration()
+    content.vb: Public Sub New
+  overload: Yort.AfterPay.InStore.AfterPayConfiguration.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.Environment
+  commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.Environment
+  id: Environment
+  parent: Yort.AfterPay.InStore.AfterPayConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Environment
+  nameWithType: AfterPayConfiguration.Environment
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.Environment
+  type: Property
+  source:
+    id: Environment
+    path: ''
+    startLine: 907
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.AfterPay.InStore
+  summary: "\nSets or returns the AfterPay API environment to be used.\n"
+  example: []
+  syntax:
+    content: public AfterPayEnvironment Environment { get; set; }
+    parameters: []
+    return:
+      type: Yort.AfterPay.InStore.AfterPayEnvironment
+    content.vb: Public Property Environment As AfterPayEnvironment
+  overload: Yort.AfterPay.InStore.AfterPayConfiguration.Environment*
+  exceptions:
+  - type: System.InvalidProgramException
+    commentId: T:System.InvalidProgramException
+    description: Thrown if this property is modified after it has been passed to a <xref href="Yort.AfterPay.InStore.AfterPayClient" data-throw-if-not-resolved="false"></xref> instance.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.HttpClient
+  commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.HttpClient
+  id: HttpClient
+  parent: Yort.AfterPay.InStore.AfterPayConfiguration
+  langs:
+  - csharp
+  - vb
+  name: HttpClient
+  nameWithType: AfterPayConfiguration.HttpClient
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.HttpClient
+  type: Property
+  source:
+    id: HttpClient
+    path: ''
+    startLine: 926
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.AfterPay.InStore
+  summary: "\nSets or returns an <xref href=\"Yort.AfterPay.InStore.AfterPayConfiguration.HttpClient\" data-throw-if-not-resolved=\"false\"></xref> instance used to make calls to the AfterPay API. If null/unset, the system will create it&apos;s own instance on first use.\n"
+  remarks: "\n<p>The library reserves the right to modify the provided client, such as setting default headers. A client can be shared amongst configuration object, but should not be shared/use outside of other <xref href=\"Yort.AfterPay.InStore.AfterPayClient\" data-throw-if-not-resolved=\"false\"></xref> instaces.\nThe primary purpose of this method is to allow a client with injected handlers to be used. If you do not need to inject custom handlers, then leave this blank.</p>\n"
+  example: []
+  syntax:
+    content: public HttpClient HttpClient { get; set; }
+    parameters: []
+    return:
+      type: HttpClient
+    content.vb: Public Property HttpClient As HttpClient
+  overload: Yort.AfterPay.InStore.AfterPayConfiguration.HttpClient*
+  exceptions:
+  - type: System.InvalidProgramException
+    commentId: T:System.InvalidProgramException
+    description: Thrown if this property is modified after it has been passed to a <xref href="Yort.AfterPay.InStore.AfterPayClient" data-throw-if-not-resolved="false"></xref> instance.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.ProductName
+  commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.ProductName
+  id: ProductName
+  parent: Yort.AfterPay.InStore.AfterPayConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ProductName
+  nameWithType: AfterPayConfiguration.ProductName
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.ProductName
+  type: Property
+  source:
+    id: ProductName
+    path: ''
+    startLine: 944
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.AfterPay.InStore
+  summary: "\nSets or returns the product name that will be used as part of the user agent string when calling the AfterPay API.\n"
+  remarks: "\n<p>If null, empty string or only whitespace the name of the Yort.Afterpay.Instore assembly being used will be substituted as a default.</p>\n"
+  example: []
+  syntax:
+    content: public string ProductName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ProductName As String
+  overload: Yort.AfterPay.InStore.AfterPayConfiguration.ProductName*
+  exceptions:
+  - type: System.InvalidProgramException
+    commentId: T:System.InvalidProgramException
+    description: Thrown if this property is modified after it has been passed to a <xref href="Yort.AfterPay.InStore.AfterPayClient" data-throw-if-not-resolved="false"></xref> instance.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.ProductVersion
+  commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.ProductVersion
+  id: ProductVersion
+  parent: Yort.AfterPay.InStore.AfterPayConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ProductVersion
+  nameWithType: AfterPayConfiguration.ProductVersion
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.ProductVersion
+  type: Property
+  source:
+    id: ProductVersion
+    path: ''
+    startLine: 962
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.AfterPay.InStore
+  summary: "\nSets or returns the version number of the <xref href=\"Yort.AfterPay.InStore.AfterPayConfiguration.ProductName\" data-throw-if-not-resolved=\"false\"></xref> name that will be used as part of the user agent string when calling the AfterPay API.\n"
+  remarks: "\n<p>If null, empty string or only whitespace the version of the Yort.Afterpay.Instore assembly being used will be substituted as a default.</p>\n"
+  example: []
+  syntax:
+    content: public string ProductVersion { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ProductVersion As String
+  overload: Yort.AfterPay.InStore.AfterPayConfiguration.ProductVersion*
+  exceptions:
+  - type: System.InvalidProgramException
+    commentId: T:System.InvalidProgramException
+    description: Thrown if this property is modified after it has been passed to a <xref href="Yort.AfterPay.InStore.AfterPayClient" data-throw-if-not-resolved="false"></xref> instance.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.DeviceId
+  commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.DeviceId
+  id: DeviceId
+  parent: Yort.AfterPay.InStore.AfterPayConfiguration
+  langs:
+  - csharp
+  - vb
+  name: DeviceId
+  nameWithType: AfterPayConfiguration.DeviceId
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.DeviceId
+  type: Property
+  source:
+    id: DeviceId
+    path: ''
+    startLine: 980
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.AfterPay.InStore
+  summary: "\nSets or returns the id this device previously registered with AfterPay, used to obtain authorisation tokens.\n"
+  remarks: "\n<p>Leave null if you will be registering a new device. After registration is successful you can retrieve the id from this property.</p>\n"
+  example: []
+  syntax:
+    content: public string DeviceId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DeviceId As String
+  overload: Yort.AfterPay.InStore.AfterPayConfiguration.DeviceId*
+  exceptions:
+  - type: System.InvalidProgramException
+    commentId: T:System.InvalidProgramException
+    description: Thrown if this property is modified after it has been passed to a <xref href="Yort.AfterPay.InStore.AfterPayClient" data-throw-if-not-resolved="false"></xref> instance.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.DeviceKey
+  commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.DeviceKey
+  id: DeviceKey
+  parent: Yort.AfterPay.InStore.AfterPayConfiguration
+  langs:
+  - csharp
+  - vb
+  name: DeviceKey
+  nameWithType: AfterPayConfiguration.DeviceKey
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.DeviceKey
+  type: Property
+  source:
+    id: DeviceKey
+    path: ''
+    startLine: 998
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.AfterPay.InStore
+  summary: "\nSets or returns the secret key of this device used to obtain authorisation tokens.\n"
+  remarks: "\n<p>Leave null if you will be registering a new device. After registration is successful you can retrieve the key from this property.</p>\n"
+  example: []
+  syntax:
+    content: public string DeviceKey { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DeviceKey As String
+  overload: Yort.AfterPay.InStore.AfterPayConfiguration.DeviceKey*
+  exceptions:
+  - type: System.InvalidProgramException
+    commentId: T:System.InvalidProgramException
+    description: Thrown if this property is modified after it has been passed to a <xref href="Yort.AfterPay.InStore.AfterPayClient" data-throw-if-not-resolved="false"></xref> instance.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries
+  commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries
+  id: MaximumRetries
+  parent: Yort.AfterPay.InStore.AfterPayConfiguration
+  langs:
+  - csharp
+  - vb
+  name: MaximumRetries
+  nameWithType: AfterPayConfiguration.MaximumRetries
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries
+  type: Property
+  source:
+    id: MaximumRetries
+    path: ''
+    startLine: 1016
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.AfterPay.InStore
+  summary: "\nThe maximum number of automatic retries to perform when a create transaction (order/refund/order reversal/refund reversal etc) times out.\n"
+  remarks: "\n<p>This property defaults to a value of 4.</p>\n"
+  example: []
+  syntax:
+    content: public int MaximumRetries { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MaximumRetries As Integer
+  overload: Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries*
+  exceptions:
+  - type: System.InvalidProgramException
+    commentId: T:System.InvalidProgramException
+    description: Thrown if this property is modified after it has been passed to a <xref href="Yort.AfterPay.InStore.AfterPayClient" data-throw-if-not-resolved="false"></xref> instance.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.RetryDelaySeconds
+  commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.RetryDelaySeconds
+  id: RetryDelaySeconds
+  parent: Yort.AfterPay.InStore.AfterPayConfiguration
+  langs:
+  - csharp
+  - vb
+  name: RetryDelaySeconds
+  nameWithType: AfterPayConfiguration.RetryDelaySeconds
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.RetryDelaySeconds
+  type: Property
+  source:
+    id: RetryDelaySeconds
+    path: ''
+    startLine: 1036
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.AfterPay.InStore
+  summary: "\nSets or returns the number of seconds to wait before attempting a retry.\n"
+  remarks: "\n<p>When a transactional call (CreateOrder/Refund etc) times out the system will perform a retry (based on the <xref href=\"Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries\" data-throw-if-not-resolved=\"false\"></xref> setting). \nIf that retry attempt returns a 409 conflict response indicating the first request is still in progres, \nthen the system will wait this many seconds before the next retry. See https://docs.afterpay.com.au/instore-api-v1.html#distributed-state-considerations and https://docs.afterpay.com.au/instore-api-v1.html#create-order for more details.</p>\n"
+  example: []
+  syntax:
+    content: public int RetryDelaySeconds { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property RetryDelaySeconds As Integer
+  overload: Yort.AfterPay.InStore.AfterPayConfiguration.RetryDelaySeconds*
+  exceptions:
+  - type: System.InvalidProgramException
+    commentId: T:System.InvalidProgramException
+    description: Thrown if this property is modified after it has been passed to a <xref href="Yort.AfterPay.InStore.AfterPayClient" data-throw-if-not-resolved="false"></xref> instance.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
 - uid: Yort.AfterPay.InStore.AfterPayConfiguration.SystemClock
   commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.SystemClock
   id: SystemClock
@@ -55,7 +398,7 @@ items:
   source:
     id: SystemClock
     path: ''
-    startLine: 99
+    startLine: 1077
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -383,6 +726,101 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Yort.AfterPay.InStore.AfterPayClient
+  commentId: T:Yort.AfterPay.InStore.AfterPayClient
+  isExternal: false
+  name: AfterPayClient
+  nameWithType: AfterPayClient
+  fullName: Yort.AfterPay.InStore.AfterPayClient
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.#ctor*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayConfiguration.#ctor
+  isExternal: false
+  name: AfterPayConfiguration
+  nameWithType: AfterPayConfiguration.AfterPayConfiguration
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.AfterPayConfiguration
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.Environment*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayConfiguration.Environment
+  isExternal: false
+  name: Environment
+  nameWithType: AfterPayConfiguration.Environment
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.Environment
+- uid: System.InvalidProgramException
+  commentId: T:System.InvalidProgramException
+- uid: Yort.AfterPay.InStore.AfterPayEnvironment
+  commentId: T:Yort.AfterPay.InStore.AfterPayEnvironment
+  parent: Yort.AfterPay.InStore
+  isExternal: false
+  name: AfterPayEnvironment
+  nameWithType: AfterPayEnvironment
+  fullName: Yort.AfterPay.InStore.AfterPayEnvironment
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.HttpClient
+  commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.HttpClient
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.HttpClient*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayConfiguration.HttpClient
+  isExternal: false
+  name: HttpClient
+  nameWithType: AfterPayConfiguration.HttpClient
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.HttpClient
+- uid: HttpClient
+  commentId: '!:HttpClient'
+  isExternal: true
+  name: HttpClient
+  nameWithType: HttpClient
+  fullName: HttpClient
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.ProductName*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayConfiguration.ProductName
+  isExternal: false
+  name: ProductName
+  nameWithType: AfterPayConfiguration.ProductName
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.ProductName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.ProductName
+  commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.ProductName
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.ProductVersion*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayConfiguration.ProductVersion
+  isExternal: false
+  name: ProductVersion
+  nameWithType: AfterPayConfiguration.ProductVersion
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.ProductVersion
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.DeviceId*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayConfiguration.DeviceId
+  isExternal: false
+  name: DeviceId
+  nameWithType: AfterPayConfiguration.DeviceId
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.DeviceId
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.DeviceKey*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayConfiguration.DeviceKey
+  isExternal: false
+  name: DeviceKey
+  nameWithType: AfterPayConfiguration.DeviceKey
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.DeviceKey
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries
+  isExternal: false
+  name: MaximumRetries
+  nameWithType: AfterPayConfiguration.MaximumRetries
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries
+  commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.RetryDelaySeconds*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayConfiguration.RetryDelaySeconds
+  isExternal: false
+  name: RetryDelaySeconds
+  nameWithType: AfterPayConfiguration.RetryDelaySeconds
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.RetryDelaySeconds
 - uid: Yort.AfterPay.InStore.IAfterPaySystemClock
   commentId: T:Yort.AfterPay.InStore.IAfterPaySystemClock
   parent: Yort.AfterPay.InStore

@@ -31,7 +31,7 @@ namespace Yort.AfterPay.InStore
 		/// <remarks>
 		/// <para>This value is set using the <see cref="AfterPayConfiguration.SystemClock"/> at the time the response is received.</para>
 		/// </remarks>
-		public DateTimeOffset IssuedAt { get; internal set; } = AfterPayConfiguration.SystemClock.Now;
+		public DateTimeOffset IssuedAt { get; set; } = AfterPayConfiguration.SystemClock.Now;
 
 		/// <summary>
 		/// Returns the date and time at which this token expires, calculated from <see cref="IssuedAt"/> and <see cref="ExpiresIn"/>.
@@ -58,7 +58,7 @@ namespace Yort.AfterPay.InStore
 		{
 			systemClock.GuardNull(nameof(systemClock));
 
-			return AfterPayConfiguration.SystemClock.Now >= ExpiresAt; 
+			return systemClock.Now >= ExpiresAt; 
 		}
 	}
 }
