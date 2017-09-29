@@ -396,11 +396,12 @@ namespace Yort.AfterPay.InStore
 
 			try
 			{
-				//Required for .Net 4.0/4.5 on older operating systems, such as XP,
-				//in order to establish an https connection.
-#if SUPPORTS_TLS12
-				System.Net.ServicePointManager.SecurityProtocol = System.Net.SecurityProtocolType.Ssl3 | System.Net.SecurityProtocolType.Tls | System.Net.SecurityProtocolType.Tls11 | System.Net.SecurityProtocolType.Tls12;
-#endif
+				//TLS 1.2 is required for AfterPay servers.
+				//.Net 4.0 doesn't contain the TLS enum value, but converting the expected numeric value (3072)
+				//to the enum type works, so long as either a later .Net version is installed, or the machine 
+				//has had registry edits & patches to enable that protocol. Either way, we need to ensure TLS 1.2 is turned on
+				//in System.Net.ServicePointManager.SecurityProtocol.
+				System.Net.ServicePointManager.SecurityProtocol = System.Net.ServicePointManager.SecurityProtocol | (System.Net.SecurityProtocolType)3072;
 			}
 			//Ignore any exceptions that might be thrown from poorly/partially implemented Net Standard 2.0.
 			catch (PlatformNotSupportedException) { }

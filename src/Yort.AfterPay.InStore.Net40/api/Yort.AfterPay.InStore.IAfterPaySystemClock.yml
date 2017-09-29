@@ -16,7 +16,7 @@ items:
   source:
     id: IAfterPaySystemClock
     path: ''
-    startLine: 2052
+    startLine: 2053
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -48,7 +48,7 @@ items:
   source:
     id: Now
     path: ''
-    startLine: 2057
+    startLine: 2058
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore

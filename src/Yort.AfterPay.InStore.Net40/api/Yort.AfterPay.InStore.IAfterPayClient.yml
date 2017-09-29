@@ -23,7 +23,7 @@ items:
   source:
     id: IAfterPayClient
     path: ''
-    startLine: 1964
+    startLine: 1965
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -52,7 +52,7 @@ items:
   source:
     id: RegisterDevice
     path: ''
-    startLine: 1973
+    startLine: 1974
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -87,7 +87,7 @@ items:
   source:
     id: Ping
     path: ''
-    startLine: 1978
+    startLine: 1979
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -113,7 +113,7 @@ items:
   source:
     id: SendInvite
     path: ''
-    startLine: 1986
+    startLine: 1987
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -147,7 +147,7 @@ items:
   source:
     id: PreapprovalEnquiry
     path: ''
-    startLine: 1994
+    startLine: 1995
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -181,7 +181,7 @@ items:
   source:
     id: CreateOrder
     path: ''
-    startLine: 2002
+    startLine: 2003
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -215,7 +215,7 @@ items:
   source:
     id: ReverseOrder
     path: ''
-    startLine: 2015
+    startLine: 2016
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -257,7 +257,7 @@ items:
   source:
     id: RefundOrder
     path: ''
-    startLine: 2025
+    startLine: 2026
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -298,7 +298,7 @@ items:
   source:
     id: ReverseRefund
     path: ''
-    startLine: 2038
+    startLine: 2039
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore

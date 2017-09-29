@@ -494,7 +494,7 @@ items:
   source:
     id: DisposeManagedResources
     path: ''
-    startLine: 847
+    startLine: 848
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore

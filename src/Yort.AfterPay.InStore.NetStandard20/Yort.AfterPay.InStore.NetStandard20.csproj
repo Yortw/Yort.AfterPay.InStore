@@ -17,12 +17,12 @@
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DocumentationFile>bin\Release\netstandard2.0\Yort.AfterPay.InStore.NetStandard20.xml</DocumentationFile>
-    <DefineConstants>TRACE;RELEASE;NETSTANDARD2_0;SUPPORTS_TLS12;SUPPORTS_TASKDELAY</DefineConstants>
+    <DefineConstants>TRACE;RELEASE;NETSTANDARD2_0;SUPPORTS_TASKDELAY;RELEASE;NETSTANDARD2_0</DefineConstants>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>bin\Debug\netstandard2.0\Yort.AfterPay.InStore.NetStandard20.xml</DocumentationFile>
-    <DefineConstants>TRACE;DEBUG;NETSTANDARD2_0;SUPPORTS_TLS12;SUPPORTS_TASKDELAY</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;NETSTANDARD2_0;SUPPORTS_TASKDELAY;NETSTANDARD2_0</DefineConstants>
   </PropertyGroup>
 
   <Import Project="..\Yort.AfterPay.InStore.Shared\Yort.AfterPay.InStore.Shared.projitems" Label="Shared" />

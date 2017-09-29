@@ -17,7 +17,7 @@ items:
   source:
     id: AfterPayEnvironment
     path: ''
-    startLine: 1322
+    startLine: 1323
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -46,7 +46,7 @@ items:
   source:
     id: Sandbox
     path: ''
-    startLine: 1327
+    startLine: 1328
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -76,7 +76,7 @@ items:
   source:
     id: Production
     path: ''
-    startLine: 1331
+    startLine: 1332
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore

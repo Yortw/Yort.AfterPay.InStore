@@ -249,4 +249,5 @@ ModelManifest.xml
 *.nupkg
 
 # Log files
-*.log
+log.txt
+

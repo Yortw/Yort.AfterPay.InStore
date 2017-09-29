@@ -24,7 +24,7 @@ items:
   source:
     id: AfterPayMoney
     path: ''
-    startLine: 1378
+    startLine: 1379
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -65,7 +65,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 1392
+    startLine: 1393
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -107,7 +107,7 @@ items:
   source:
     id: Amount
     path: ''
-    startLine: 1402
+    startLine: 1403
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -143,7 +143,7 @@ items:
   source:
     id: Currency
     path: ''
-    startLine: 1409
+    startLine: 1410
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -179,7 +179,7 @@ items:
   source:
     id: ToString
     path: ''
-    startLine: 1416
+    startLine: 1417
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -213,7 +213,7 @@ items:
   source:
     id: GetHashCode
     path: ''
-    startLine: 1427
+    startLine: 1428
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -247,7 +247,7 @@ items:
   source:
     id: Equals
     path: ''
-    startLine: 1443
+    startLine: 1444
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -286,7 +286,7 @@ items:
   source:
     id: Equals
     path: ''
-    startLine: 1459
+    startLine: 1460
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -322,7 +322,7 @@ items:
   source:
     id: op_Equality
     path: ''
-    startLine: 1473
+    startLine: 1474
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -363,7 +363,7 @@ items:
   source:
     id: op_Inequality
     path: ''
-    startLine: 1486
+    startLine: 1487
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
