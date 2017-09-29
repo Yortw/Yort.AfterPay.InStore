@@ -17,7 +17,7 @@ items:
   source:
     id: AfterPayInviteRequest
     path: ''
-    startLine: 1346
+    startLine: 1458
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -56,7 +56,7 @@ items:
   source:
     id: MobileNumber
     path: ''
-    startLine: 1351
+    startLine: 1463
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -89,7 +89,7 @@ items:
   source:
     id: ExpectedAmount
     path: ''
-    startLine: 1356
+    startLine: 1468
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore

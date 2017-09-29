@@ -16,7 +16,7 @@ items:
   source:
     id: AfterPayTokenRequest
     path: ''
-    startLine: 1907
+    startLine: 2019
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -62,7 +62,7 @@ items:
   source:
     id: Key
     path: ''
-    startLine: 1912
+    startLine: 2024
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore

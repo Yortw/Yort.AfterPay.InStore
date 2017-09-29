@@ -23,7 +23,7 @@ items:
   source:
     id: AfterPayOrder
     path: ''
-    startLine: 1509
+    startLine: 1621
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -69,7 +69,7 @@ items:
   source:
     id: OrderId
     path: ''
-    startLine: 1514
+    startLine: 1626
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -102,7 +102,7 @@ items:
   source:
     id: OrderedAt
     path: ''
-    startLine: 1519
+    startLine: 1631
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -135,7 +135,7 @@ items:
   source:
     id: RequestId
     path: ''
-    startLine: 1524
+    startLine: 1636
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -168,7 +168,7 @@ items:
   source:
     id: RequestedAt
     path: ''
-    startLine: 1529
+    startLine: 1641
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -201,7 +201,7 @@ items:
   source:
     id: PreapprovalCode
     path: ''
-    startLine: 1534
+    startLine: 1646
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -234,7 +234,7 @@ items:
   source:
     id: Amount
     path: ''
-    startLine: 1539
+    startLine: 1651
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -267,7 +267,7 @@ items:
   source:
     id: MerchantReference
     path: ''
-    startLine: 1544
+    startLine: 1656
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -300,7 +300,7 @@ items:
   source:
     id: OrderItems
     path: ''
-    startLine: 1549
+    startLine: 1661
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore

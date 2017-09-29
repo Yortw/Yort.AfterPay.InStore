@@ -16,7 +16,7 @@ items:
   source:
     id: AfterPayCallContext
     path: ''
-    startLine: 387
+    startLine: 499
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -55,7 +55,7 @@ items:
   source:
     id: OperatorId
     path: ''
-    startLine: 392
+    startLine: 504
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore

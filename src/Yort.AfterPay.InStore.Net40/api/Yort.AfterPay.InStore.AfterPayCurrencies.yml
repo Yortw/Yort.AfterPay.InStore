@@ -17,7 +17,7 @@ items:
   source:
     id: AfterPayCurrencies
     path: ''
-    startLine: 1228
+    startLine: 1340
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -57,7 +57,7 @@ items:
   source:
     id: AustralianDollars
     path: ''
-    startLine: 1233
+    startLine: 1345
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -88,7 +88,7 @@ items:
   source:
     id: NewZealandDollars
     path: ''
-    startLine: 1237
+    startLine: 1349
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore

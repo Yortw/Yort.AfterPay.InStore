@@ -24,7 +24,7 @@ items:
   source:
     id: AfterPayApiException
     path: ''
-    startLine: 273
+    startLine: 385
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -57,7 +57,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 279
+    startLine: 391
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -85,7 +85,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 284
+    startLine: 396
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -117,7 +117,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 290
+    startLine: 402
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -152,7 +152,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 301
+    startLine: 413
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -184,7 +184,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 307
+    startLine: 419
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -219,7 +219,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 314
+    startLine: 426
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -254,7 +254,7 @@ items:
   source:
     id: ErrorId
     path: ''
-    startLine: 324
+    startLine: 436
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -290,7 +290,7 @@ items:
   source:
     id: ErrorCode
     path: ''
-    startLine: 339
+    startLine: 451
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -326,7 +326,7 @@ items:
   source:
     id: HttpStatusCode
     path: ''
-    startLine: 354
+    startLine: 466
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore

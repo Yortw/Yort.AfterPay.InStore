@@ -25,7 +25,7 @@ items:
   source:
     id: AfterPayConfiguration
     path: ''
-    startLine: 877
+    startLine: 989
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -66,7 +66,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 901
+    startLine: 1013
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -95,7 +95,7 @@ items:
   source:
     id: Environment
     path: ''
-    startLine: 910
+    startLine: 1022
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -132,7 +132,7 @@ items:
   source:
     id: HttpClient
     path: ''
-    startLine: 929
+    startLine: 1041
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -170,7 +170,7 @@ items:
   source:
     id: ProductName
     path: ''
-    startLine: 947
+    startLine: 1059
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -208,7 +208,7 @@ items:
   source:
     id: ProductVersion
     path: ''
-    startLine: 965
+    startLine: 1077
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -246,7 +246,7 @@ items:
   source:
     id: DeviceId
     path: ''
-    startLine: 983
+    startLine: 1095
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -284,7 +284,7 @@ items:
   source:
     id: DeviceKey
     path: ''
-    startLine: 1001
+    startLine: 1113
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -322,7 +322,7 @@ items:
   source:
     id: MaximumRetries
     path: ''
-    startLine: 1019
+    startLine: 1131
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -360,7 +360,7 @@ items:
   source:
     id: RetryDelaySeconds
     path: ''
-    startLine: 1040
+    startLine: 1152
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -398,7 +398,7 @@ items:
   source:
     id: SystemClock
     path: ''
-    startLine: 1081
+    startLine: 1193
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore

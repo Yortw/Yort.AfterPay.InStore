@@ -33,6 +33,10 @@
         <file src="Yort.AfterPay.InStore.Net40\bin\Release\Yort.AfterPay*.xml" target="lib\net40\" />
         <file src="Yort.AfterPay.InStore.Net40\bin\Release\Yort.AfterPay*.pdb" target="lib\net40\" />
 
+        <file src="Yort.AfterPay.InStore.Net45\bin\Release\Yort.AfterPay*.dll" target="lib\net45\" />
+        <file src="Yort.AfterPay.InStore.Net45\bin\Release\Yort.AfterPay*.xml" target="lib\net45\" />
+        <file src="Yort.AfterPay.InStore.Net45\bin\Release\Yort.AfterPay*.pdb" target="lib\net45\" />
+
         <file src="Yort.AfterPay.InStore.NetStandard20\bin\Release\netstandard2.0\Yort.AfterPay.*.dll" target="lib\netstandard2.0\" />
         <file src="Yort.AfterPay.InStore.NetStandard20\bin\Release\netstandard2.0\Yort.AfterPay.*.xml" target="lib\netstandard2.0\" />
         <file src="Yort.AfterPay.InStore.NetStandard20\bin\Release\netstandard2.0\Yort.AfterPay.*.pdb" target="lib\netstandard2.0\" />

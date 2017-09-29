@@ -17,7 +17,7 @@ items:
   source:
     id: AfterPaySystemClock
     path: ''
-    startLine: 1792
+    startLine: 1904
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -63,7 +63,7 @@ items:
   source:
     id: Now
     path: ''
-    startLine: 1805
+    startLine: 1917
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -101,7 +101,7 @@ items:
   source:
     id: DefaultInstance
     path: ''
-    startLine: 1824
+    startLine: 1936
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
