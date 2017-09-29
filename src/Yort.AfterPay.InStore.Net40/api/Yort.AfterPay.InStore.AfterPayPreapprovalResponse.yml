@@ -18,7 +18,7 @@ items:
   source:
     id: AfterPayPreapprovalResponse
     path: ''
-    startLine: 1644
+    startLine: 1647
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -60,7 +60,7 @@ items:
   source:
     id: Amount
     path: ''
-    startLine: 1649
+    startLine: 1652
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -93,7 +93,7 @@ items:
   source:
     id: Minimum
     path: ''
-    startLine: 1655
+    startLine: 1658
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -126,7 +126,7 @@ items:
   source:
     id: ExpiresAt
     path: ''
-    startLine: 1661
+    startLine: 1664
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore

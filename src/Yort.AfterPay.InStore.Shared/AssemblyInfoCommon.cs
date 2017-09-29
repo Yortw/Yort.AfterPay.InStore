@@ -1,5 +1,6 @@
 using System;
 using System.Reflection;
+using System.Resources;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -14,7 +15,7 @@ using System.Runtime.InteropServices;
 #endif
 [assembly: AssemblyProduct("Yort.AfterPay.InStore")]
 [assembly: AssemblyCopyright("Copyright © 2017")]
-[assembly: AssemblyCulture("en")]
+[assembly: NeutralResourcesLanguage("en")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
 // to COM components.  If you need to access a type in this assembly from

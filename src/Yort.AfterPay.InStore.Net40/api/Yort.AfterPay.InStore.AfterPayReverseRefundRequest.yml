@@ -17,7 +17,7 @@ items:
   source:
     id: AfterPayReverseRefundRequest
     path: ''
-    startLine: 1808
+    startLine: 1764
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -60,11 +60,11 @@ items:
   source:
     id: ReversingRequestId
     path: ''
-    startLine: 1813
+    startLine: 1769
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
-  summary: "\nA unique id for this request. Defaults to a new GUID value.\n"
+  summary: "\nThe unique id of the request previously sent to create the refund.\n"
   example: []
   syntax:
     content: public string ReversingRequestId { get; set; }
@@ -93,7 +93,7 @@ items:
   source:
     id: RequestedAt
     path: ''
-    startLine: 1818
+    startLine: 1774
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore

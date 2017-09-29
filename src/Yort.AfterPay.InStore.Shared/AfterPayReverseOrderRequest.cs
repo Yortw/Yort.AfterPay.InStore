@@ -21,9 +21,9 @@ namespace Yort.AfterPay.InStore
 		[JsonProperty("requestedAt")]
 		public DateTimeOffset RequestedAt { get; set; } = AfterPayConfiguration.SystemClock.Now;
 		/// <summary>
-		/// Represents a unique id for this request. Defaults to a new GUID value.
+		/// The request ID for the previously submitted order request.
 		/// </summary>
 		[JsonProperty("reversingRequestId")]
-		public string ReversingRequestId { get; set; } = System.Guid.NewGuid().ToString();
+		public string ReversingRequestId { get; set; }
 	}
 }

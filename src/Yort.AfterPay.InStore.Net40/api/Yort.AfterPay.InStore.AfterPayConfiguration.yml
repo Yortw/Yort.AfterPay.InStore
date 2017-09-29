@@ -25,7 +25,7 @@ items:
   source:
     id: AfterPayConfiguration
     path: ''
-    startLine: 874
+    startLine: 876
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -66,7 +66,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 898
+    startLine: 900
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -95,7 +95,7 @@ items:
   source:
     id: Environment
     path: ''
-    startLine: 907
+    startLine: 909
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -132,7 +132,7 @@ items:
   source:
     id: HttpClient
     path: ''
-    startLine: 926
+    startLine: 928
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -170,7 +170,7 @@ items:
   source:
     id: ProductName
     path: ''
-    startLine: 944
+    startLine: 946
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -208,7 +208,7 @@ items:
   source:
     id: ProductVersion
     path: ''
-    startLine: 962
+    startLine: 964
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -246,7 +246,7 @@ items:
   source:
     id: DeviceId
     path: ''
-    startLine: 980
+    startLine: 982
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -284,7 +284,7 @@ items:
   source:
     id: DeviceKey
     path: ''
-    startLine: 998
+    startLine: 1000
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -322,12 +322,12 @@ items:
   source:
     id: MaximumRetries
     path: ''
-    startLine: 1016
+    startLine: 1018
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nThe maximum number of automatic retries to perform when a create transaction (order/refund/order reversal/refund reversal etc) times out.\n"
-  remarks: "\n<p>This property defaults to a value of 4.</p>\n"
+  remarks: "\n<p>This property defaults to a value of 4. A value of zero or less is allowed, in which case only the initial attempt will be made - no retries will be performed within the library and any error handling logic will need to be entirely implemented by the application.</p>\n"
   example: []
   syntax:
     content: public int MaximumRetries { get; set; }
@@ -360,12 +360,12 @@ items:
   source:
     id: RetryDelaySeconds
     path: ''
-    startLine: 1036
+    startLine: 1039
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nSets or returns the number of seconds to wait before attempting a retry.\n"
-  remarks: "\n<p>When a transactional call (CreateOrder/Refund etc) times out the system will perform a retry (based on the <xref href=\"Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries\" data-throw-if-not-resolved=\"false\"></xref> setting). \nIf that retry attempt returns a 409 conflict response indicating the first request is still in progres, \nthen the system will wait this many seconds before the next retry. See https://docs.afterpay.com.au/instore-api-v1.html#distributed-state-considerations and https://docs.afterpay.com.au/instore-api-v1.html#create-order for more details.</p>\n"
+  remarks: "\n<p>When a transactional call (CreateOrder/Refund etc) times out the system will perform a retry (based on the <xref href=\"Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries\" data-throw-if-not-resolved=\"false\"></xref> setting). \nIf that retry attempt returns a 409 conflict response indicating the first request is still in progres, \nthen the system will wait this many seconds before the next retry. See https://docs.afterpay.com.au/instore-api-v1.html#distributed-state-considerations and https://docs.afterpay.com.au/instore-api-v1.html#create-order for more details.</p>\n<p>The minimum value is 5 seconds. Any value less than 5 seconds will be ignored, and a 5 second delay will occur instead.</p>\n"
   example: []
   syntax:
     content: public int RetryDelaySeconds { get; set; }
@@ -398,7 +398,7 @@ items:
   source:
     id: SystemClock
     path: ''
-    startLine: 1077
+    startLine: 1080
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore

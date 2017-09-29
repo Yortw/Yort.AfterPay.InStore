@@ -24,7 +24,6 @@ items:
   - Yort.AfterPay.InStore.AfterPayPreapprovalRequest
   - Yort.AfterPay.InStore.AfterPayPreapprovalResponse
   - Yort.AfterPay.InStore.AfterPayRefund
-  - Yort.AfterPay.InStore.AfterPayRefundRequest
   - Yort.AfterPay.InStore.AfterPayRefundReversal
   - Yort.AfterPay.InStore.AfterPayReverseOrderRequest
   - Yort.AfterPay.InStore.AfterPayReverseRefundRequest
@@ -91,6 +90,7 @@ references:
   fullName: Yort.AfterPay.InStore.AfterPayCreateOrderRequest
 - uid: Yort.AfterPay.InStore.AfterPayCreateRefundRequest
   commentId: T:Yort.AfterPay.InStore.AfterPayCreateRefundRequest
+  parent: Yort.AfterPay.InStore
   isExternal: false
   name: AfterPayCreateRefundRequest
   nameWithType: AfterPayCreateRefundRequest
@@ -172,13 +172,6 @@ references:
   name: AfterPayRefund
   nameWithType: AfterPayRefund
   fullName: Yort.AfterPay.InStore.AfterPayRefund
-- uid: Yort.AfterPay.InStore.AfterPayRefundRequest
-  commentId: T:Yort.AfterPay.InStore.AfterPayRefundRequest
-  parent: Yort.AfterPay.InStore
-  isExternal: false
-  name: AfterPayRefundRequest
-  nameWithType: AfterPayRefundRequest
-  fullName: Yort.AfterPay.InStore.AfterPayRefundRequest
 - uid: Yort.AfterPay.InStore.AfterPayRefundReversal
   commentId: T:Yort.AfterPay.InStore.AfterPayRefundReversal
   isExternal: false

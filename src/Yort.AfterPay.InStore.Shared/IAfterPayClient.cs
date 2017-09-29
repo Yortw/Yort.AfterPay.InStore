@@ -64,12 +64,12 @@ namespace Yort.AfterPay.InStore
 		/// <summary>
 		/// Creates a refund against a previously created order.
 		/// </summary>
-		/// <param name="request">A <see cref="AfterPayRefundRequest"/> containing details of the refund to create.</param>
+		/// <param name="request">A <see cref="AfterPayCreateRefundRequest"/> containing details of the refund to create.</param>
 		/// <param name="requestContext">A <see cref="AfterPayCallContext"/> instance containing additional details required to make the request.</param>
 		/// <returns>An <see cref="AfterPayRefund"/> containing details of the refund created within the AfterPay system.</returns>
 		/// <exception cref="AfterPayApiException">Thrown if the request is rejected by the AfterPay API.</exception>
 		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="request"/> or <paramref name="requestContext"/> is null.</exception>
-		Task<AfterPayRefund> RefundOrder(AfterPayRefundRequest request, AfterPayCallContext requestContext);
+		Task<AfterPayRefund> RefundOrder(AfterPayCreateRefundRequest request, AfterPayCallContext requestContext);
 
 		/// <summary>
 		/// Creates a refund reversal against a previously created refund.

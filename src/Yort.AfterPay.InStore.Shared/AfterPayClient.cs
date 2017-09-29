@@ -46,7 +46,6 @@ namespace Yort.AfterPay.InStore
 			ConfigureServicePoint();
 
 			_HttpClient = ConfigureHttpClient(configuration.HttpClient ?? CreateDefaultHttpClient());
-
 		}
 
 		/// <summary>
@@ -77,6 +76,7 @@ namespace Yort.AfterPay.InStore
 		/// <summary>
 		/// Sends a ping request to the AfterPay API to confirm a connection can be made.
 		/// </summary>
+		/// <exception cref="System.Net.Http.HttpRequestException">Thrown if an unexpected exception occurs during sending or receiving the response to the AfterPay API. This includes errors such as connections being dropped, socket errors etc.</exception>
 		public async Task<bool> Ping()
 		{
 			using (var busyToken = ObtainBusyToken())
@@ -95,6 +95,7 @@ namespace Yort.AfterPay.InStore
 		/// <exception cref="AfterPayApiException">Thrown if the request is rejected by the AfterPay API.</exception>
 		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="request"/> or <paramref name="requestContext"/> is null.</exception>
 		/// <exception cref="System.UnauthorizedAccessException">Thrown if the system cannot obtain an authorisation token from AfterPay before making the request.</exception>
+		/// <exception cref="System.Net.Http.HttpRequestException">Thrown if an unexpected exception occurs during sending or receiving the response to the AfterPay API. This includes errors such as connections being dropped, socket errors etc.</exception>
 		public async Task<bool> SendInvite(AfterPayInviteRequest request, AfterPayCallContext requestContext)
 		{
 			request.GuardNull(nameof(request));
@@ -118,6 +119,7 @@ namespace Yort.AfterPay.InStore
 		/// <exception cref="AfterPayApiException">Thrown if the request is rejected by the AfterPay API.</exception>
 		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="request"/> or <paramref name="requestContext"/> is null.</exception>
 		/// <exception cref="System.UnauthorizedAccessException">Thrown if the system cannot obtain an authorisation token from AfterPay before making the request.</exception>
+		/// <exception cref="System.Net.Http.HttpRequestException">Thrown if an unexpected exception occurs during sending or receiving the response to the AfterPay API. This includes errors such as connections being dropped, socket errors etc.</exception>
 		public async Task<AfterPayPreapprovalResponse> PreapprovalEnquiry(AfterPayPreapprovalRequest request, AfterPayCallContext requestContext)
 		{
 			request.GuardNull(nameof(request));
@@ -147,7 +149,8 @@ namespace Yort.AfterPay.InStore
 		/// <exception cref="AfterPayApiException">Thrown if the request is rejected by the AfterPay API.</exception>
 		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="request"/> or <paramref name="requestContext"/> is null.</exception>
 		/// <exception cref="System.UnauthorizedAccessException">Thrown if the system cannot obtain an authorisation token from AfterPay before making the request.</exception>
-		/// <exception cref="System.TimeoutException">Thrown if the request times out on the last retry attempt.</exception>
+		/// <exception cref="System.TimeoutException">Thrown if the request times out on the last retry attempt. If this type of exception is throw a reversal is required.</exception>
+		/// <exception cref="System.Net.Http.HttpRequestException">Thrown if an unexpected exception occurs during sending or receiving the response to the AfterPay API. This includes errors such as connections being dropped, socket errors etc. A reversal should be performed if this type of exception is caught.</exception>
 		public async Task<AfterPayOrder> CreateOrder(AfterPayCreateOrderRequest request, AfterPayCallContext requestContext)
 		{
 			request.GuardNull(nameof(request));
@@ -173,7 +176,7 @@ namespace Yort.AfterPay.InStore
 		/// <exception cref="AfterPayApiException">Thrown if the request is rejected by the AfterPay API.</exception>
 		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="request"/> or <paramref name="requestContext"/> is null.</exception>
 		/// <exception cref="System.UnauthorizedAccessException">Thrown if the system cannot obtain an authorisation token from AfterPay before making the request.</exception>
-		/// <exception cref="System.TimeoutException">Thrown if the request times out on the last retry attempt.</exception>
+		/// <exception cref="System.TimeoutException">Thrown if the request times out on the last retry attempt. . If this type of exception the reversal must be retried later.</exception>
 		public async Task<AfterPayOrderReversal> ReverseOrder(AfterPayReverseOrderRequest request, AfterPayCallContext requestContext)
 		{
 			request.GuardNull(nameof(request));
@@ -192,14 +195,15 @@ namespace Yort.AfterPay.InStore
 		/// <para>This method will keep retrying until success, or a non-409 response error is received. If an exception of any type other than <see cref="AfterPayApiException"/>, <see cref="UnauthorizedAccessException"/>, <see cref="ArgumentNullException"/> is thrown by this method, a reversal should be queued.</para>
 		/// <para>This method will automatically retry on timeout up to <see cref="AfterPayConfiguration.MaximumRetries"/>. If the last retry times out, a <see cref="TimeoutException"/> will be thrown. On a 409 response it will retry until any other error or response is received.</para>
 		/// </remarks>
-		/// <param name="request">A <see cref="AfterPayRefundRequest"/> containing details of the refund to create.</param>
+		/// <param name="request">A <see cref="AfterPayCreateRefundRequest"/> containing details of the refund to create.</param>
 		/// <param name="requestContext">A <see cref="AfterPayCallContext"/> instance containing additional details required to make the request.</param>
 		/// <returns>An <see cref="AfterPayRefund"/> containing details of the refund created within the AfterPay system.</returns>
 		/// <exception cref="AfterPayApiException">Thrown if the request is rejected by the AfterPay API.</exception>
 		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="request"/> or <paramref name="requestContext"/> is null.</exception>
 		/// <exception cref="System.UnauthorizedAccessException">Thrown if the system cannot obtain an authorisation token from AfterPay before making the request.</exception>
-		/// <exception cref="System.TimeoutException">Thrown if the request times out on the last retry attempt.</exception>
-		public async Task<AfterPayRefund> RefundOrder(AfterPayRefundRequest request, AfterPayCallContext requestContext)
+		/// <exception cref="System.TimeoutException">Thrown if the request times out on the last retry attempt. If this type of exception is throw a reversal is required.</exception>
+		/// <exception cref="System.Net.Http.HttpRequestException">Thrown if an unexpected exception occurs during sending or receiving the response to the AfterPay API. This includes errors such as connections being dropped, socket errors etc. A reversal should be performed if this type of exception is caught.</exception>
+		public async Task<AfterPayRefund> RefundOrder(AfterPayCreateRefundRequest request, AfterPayCallContext requestContext)
 		{
 			request.GuardNull(nameof(request));
 			requestContext.GuardNull(nameof(requestContext));
@@ -224,7 +228,7 @@ namespace Yort.AfterPay.InStore
 		/// <exception cref="AfterPayApiException">Thrown if the request is rejected by the AfterPay API.</exception>
 		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="request"/> or <paramref name="requestContext"/> is null.</exception>
 		/// <exception cref="System.UnauthorizedAccessException">Thrown if the system cannot obtain an authorisation token from AfterPay before making the request.</exception>
-		/// <exception cref="System.TimeoutException">Thrown if the request times out on the last retry attempt.</exception>
+		/// <exception cref="System.TimeoutException">Thrown if the request times out on the last retry attempt. If this type of exception is throw the reversal must be retried later.</exception>
 		public async Task<AfterPayRefundReversal> ReverseRefund(AfterPayReverseRefundRequest request, AfterPayCallContext requestContext)
 		{
 			request.GuardNull(nameof(request));
@@ -290,11 +294,11 @@ namespace Yort.AfterPay.InStore
 			return await GetResponse<AfterPayOrderReversal>(httpRequest, timeoutSeconds).ConfigureAwait(false);
 		}
 
-		private async Task<AfterPayRefund> RetryableRefundOrder(AfterPayRefundRequest request, AfterPayCallContext requestContext, int timeoutSeconds)
+		private async Task<AfterPayRefund> RetryableRefundOrder(AfterPayCreateRefundRequest request, AfterPayCallContext requestContext, int timeoutSeconds)
 		{
 			await EnsureToken().ConfigureAwait(false);
 
-			var httpRequest = CreateHttpRequest<AfterPayRefundRequest>(HttpMethod.Post, new Uri(_BaseUrl, "refunds"), request, requestContext);
+			var httpRequest = CreateHttpRequest<AfterPayCreateRefundRequest>(HttpMethod.Post, new Uri(_BaseUrl, "refunds"), request, requestContext);
 			return await GetResponse<AfterPayRefund>(httpRequest, 30).ConfigureAwait(false);
 		}
 

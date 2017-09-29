@@ -10,7 +10,7 @@ items:
   - Yort.AfterPay.InStore.AfterPayClient.DisposeManagedResources
   - Yort.AfterPay.InStore.AfterPayClient.Ping
   - Yort.AfterPay.InStore.AfterPayClient.PreapprovalEnquiry(Yort.AfterPay.InStore.AfterPayPreapprovalRequest,Yort.AfterPay.InStore.AfterPayCallContext)
-  - Yort.AfterPay.InStore.AfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  - Yort.AfterPay.InStore.AfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayCreateRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
   - Yort.AfterPay.InStore.AfterPayClient.RegisterDevice(Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest)
   - Yort.AfterPay.InStore.AfterPayClient.ReverseOrder(Yort.AfterPay.InStore.AfterPayReverseOrderRequest,Yort.AfterPay.InStore.AfterPayCallContext)
   - Yort.AfterPay.InStore.AfterPayClient.ReverseRefund(Yort.AfterPay.InStore.AfterPayReverseRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
@@ -25,7 +25,7 @@ items:
   source:
     id: AfterPayClient
     path: ''
-    startLine: 414
+    startLine: 412
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -64,7 +64,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 434
+    startLine: 432
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -100,7 +100,7 @@ items:
   source:
     id: RegisterDevice
     path: ''
-    startLine: 456
+    startLine: 453
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -141,7 +141,7 @@ items:
   source:
     id: Ping
     path: ''
-    startLine: 476
+    startLine: 474
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -173,7 +173,7 @@ items:
   source:
     id: SendInvite
     path: ''
-    startLine: 494
+    startLine: 493
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -273,7 +273,7 @@ items:
   source:
     id: CreateOrder
     path: ''
-    startLine: 547
+    startLine: 548
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -306,7 +306,7 @@ items:
     description: Thrown if the system cannot obtain an authorisation token from AfterPay before making the request.
   - type: System.TimeoutException
     commentId: T:System.TimeoutException
-    description: Thrown if the request times out on the last retry attempt.
+    description: Thrown if the request times out on the last retry attempt. If this type of exception is throw a reversal is required.
   seealso:
   - linkId: Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries
     commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries
@@ -332,12 +332,12 @@ items:
   source:
     id: ReverseOrder
     path: ''
-    startLine: 573
+    startLine: 574
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nRequests an order previously placed be reversed.\n"
-  remarks: "\n<p>This method is intended to ensure an order is cancelled when it&apos;s status is/was unknown at the time the customer was present. It should not be used for refunds, see <xref href=\"Yort.AfterPay.InStore.AfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest%2cYort.AfterPay.InStore.AfterPayCallContext)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>This method will keep retrying until success, or a non-409 response error is received. If an exception of any type other than <xref href=\"Yort.AfterPay.InStore.AfterPayApiException\" data-throw-if-not-resolved=\"false\"></xref>, <see cref=\"!:UnauthorizedAccessException\"></see>, <see cref=\"!:ArgumentNullException\"></see> is thrown by this method, a reversal should be retried later.</p>\n<p>This method will automatically retry on timeout up to <xref href=\"Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries\" data-throw-if-not-resolved=\"false\"></xref>. If the last retry times out, a <see cref=\"!:TimeoutException\"></see> will be thrown. On a 409 response it will retry until any other error or response is received.</p>\n"
+  remarks: "\n<p>This method is intended to ensure an order is cancelled when it&apos;s status is/was unknown at the time the customer was present. It should not be used for refunds, see <xref href=\"Yort.AfterPay.InStore.AfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayCreateRefundRequest%2cYort.AfterPay.InStore.AfterPayCallContext)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>This method will keep retrying until success, or a non-409 response error is received. If an exception of any type other than <xref href=\"Yort.AfterPay.InStore.AfterPayApiException\" data-throw-if-not-resolved=\"false\"></xref>, <see cref=\"!:UnauthorizedAccessException\"></see>, <see cref=\"!:ArgumentNullException\"></see> is thrown by this method, a reversal should be retried later.</p>\n<p>This method will automatically retry on timeout up to <xref href=\"Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries\" data-throw-if-not-resolved=\"false\"></xref>. If the last retry times out, a <see cref=\"!:TimeoutException\"></see> will be thrown. On a 409 response it will retry until any other error or response is received.</p>\n"
   example: []
   syntax:
     content: public Task<AfterPayOrderReversal> ReverseOrder(AfterPayReverseOrderRequest request, AfterPayCallContext requestContext)
@@ -365,28 +365,28 @@ items:
     description: Thrown if the system cannot obtain an authorisation token from AfterPay before making the request.
   - type: System.TimeoutException
     commentId: T:System.TimeoutException
-    description: Thrown if the request times out on the last retry attempt.
+    description: Thrown if the request times out on the last retry attempt. . If this type of exception the reversal must be retried later.
   implements:
   - Yort.AfterPay.InStore.IAfterPayClient.ReverseOrder(Yort.AfterPay.InStore.AfterPayReverseOrderRequest,Yort.AfterPay.InStore.AfterPayCallContext)
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: Yort.AfterPay.InStore.AfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
-  commentId: M:Yort.AfterPay.InStore.AfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
-  id: RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+- uid: Yort.AfterPay.InStore.AfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayCreateRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  commentId: M:Yort.AfterPay.InStore.AfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayCreateRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  id: RefundOrder(Yort.AfterPay.InStore.AfterPayCreateRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
   parent: Yort.AfterPay.InStore.AfterPayClient
   langs:
   - csharp
   - vb
-  name: RefundOrder(AfterPayRefundRequest, AfterPayCallContext)
-  nameWithType: AfterPayClient.RefundOrder(AfterPayRefundRequest, AfterPayCallContext)
-  fullName: Yort.AfterPay.InStore.AfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest, Yort.AfterPay.InStore.AfterPayCallContext)
+  name: RefundOrder(AfterPayCreateRefundRequest, AfterPayCallContext)
+  nameWithType: AfterPayClient.RefundOrder(AfterPayCreateRefundRequest, AfterPayCallContext)
+  fullName: Yort.AfterPay.InStore.AfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayCreateRefundRequest, Yort.AfterPay.InStore.AfterPayCallContext)
   type: Method
   source:
     id: RefundOrder
     path: ''
-    startLine: 598
+    startLine: 600
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -394,18 +394,18 @@ items:
   remarks: "\n<p>This method will keep retrying until success, or a non-409 response error is received. If an exception of any type other than <xref href=\"Yort.AfterPay.InStore.AfterPayApiException\" data-throw-if-not-resolved=\"false\"></xref>, <see cref=\"!:UnauthorizedAccessException\"></see>, <see cref=\"!:ArgumentNullException\"></see> is thrown by this method, a reversal should be queued.</p>\n<p>This method will automatically retry on timeout up to <xref href=\"Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries\" data-throw-if-not-resolved=\"false\"></xref>. If the last retry times out, a <see cref=\"!:TimeoutException\"></see> will be thrown. On a 409 response it will retry until any other error or response is received.</p>\n"
   example: []
   syntax:
-    content: public Task<AfterPayRefund> RefundOrder(AfterPayRefundRequest request, AfterPayCallContext requestContext)
+    content: public Task<AfterPayRefund> RefundOrder(AfterPayCreateRefundRequest request, AfterPayCallContext requestContext)
     parameters:
     - id: request
-      type: Yort.AfterPay.InStore.AfterPayRefundRequest
-      description: A <xref href="Yort.AfterPay.InStore.AfterPayRefundRequest" data-throw-if-not-resolved="false"></xref> containing details of the refund to create.
+      type: Yort.AfterPay.InStore.AfterPayCreateRefundRequest
+      description: A <xref href="Yort.AfterPay.InStore.AfterPayCreateRefundRequest" data-throw-if-not-resolved="false"></xref> containing details of the refund to create.
     - id: requestContext
       type: Yort.AfterPay.InStore.AfterPayCallContext
       description: A <xref href="Yort.AfterPay.InStore.AfterPayCallContext" data-throw-if-not-resolved="false"></xref> instance containing additional details required to make the request.
     return:
       type: Task{Yort.AfterPay.InStore.AfterPayRefund}
       description: An <xref href="Yort.AfterPay.InStore.AfterPayRefund" data-throw-if-not-resolved="false"></xref> containing details of the refund created within the AfterPay system.
-    content.vb: Public Function RefundOrder(request As AfterPayRefundRequest, requestContext As AfterPayCallContext) As Task(Of AfterPayRefund)
+    content.vb: Public Function RefundOrder(request As AfterPayCreateRefundRequest, requestContext As AfterPayCallContext) As Task(Of AfterPayRefund)
   overload: Yort.AfterPay.InStore.AfterPayClient.RefundOrder*
   exceptions:
   - type: Yort.AfterPay.InStore.AfterPayApiException
@@ -419,9 +419,9 @@ items:
     description: Thrown if the system cannot obtain an authorisation token from AfterPay before making the request.
   - type: System.TimeoutException
     commentId: T:System.TimeoutException
-    description: Thrown if the request times out on the last retry attempt.
+    description: Thrown if the request times out on the last retry attempt. If this type of exception is throw a reversal is required.
   implements:
-  - Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  - Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayCreateRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -440,7 +440,7 @@ items:
   source:
     id: ReverseRefund
     path: ''
-    startLine: 624
+    startLine: 626
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -473,7 +473,7 @@ items:
     description: Thrown if the system cannot obtain an authorisation token from AfterPay before making the request.
   - type: System.TimeoutException
     commentId: T:System.TimeoutException
-    description: Thrown if the request times out on the last retry attempt.
+    description: Thrown if the request times out on the last retry attempt. If this type of exception is throw the reversal must be retried later.
   implements:
   - Yort.AfterPay.InStore.IAfterPayClient.ReverseRefund(Yort.AfterPay.InStore.AfterPayReverseRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
   modifiers.csharp:
@@ -494,7 +494,7 @@ items:
   source:
     id: DisposeManagedResources
     path: ''
-    startLine: 845
+    startLine: 847
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -1084,8 +1084,8 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Yort.AfterPay.InStore.AfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
-  commentId: M:Yort.AfterPay.InStore.AfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+- uid: Yort.AfterPay.InStore.AfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayCreateRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  commentId: M:Yort.AfterPay.InStore.AfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayCreateRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
 - uid: Yort.AfterPay.InStore.AfterPayReverseOrderRequest
   commentId: T:Yort.AfterPay.InStore.AfterPayReverseOrderRequest
   parent: Yort.AfterPay.InStore
@@ -1197,13 +1197,13 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Yort.AfterPay.InStore.AfterPayRefundRequest
-  commentId: T:Yort.AfterPay.InStore.AfterPayRefundRequest
+- uid: Yort.AfterPay.InStore.AfterPayCreateRefundRequest
+  commentId: T:Yort.AfterPay.InStore.AfterPayCreateRefundRequest
   parent: Yort.AfterPay.InStore
   isExternal: false
-  name: AfterPayRefundRequest
-  nameWithType: AfterPayRefundRequest
-  fullName: Yort.AfterPay.InStore.AfterPayRefundRequest
+  name: AfterPayCreateRefundRequest
+  nameWithType: AfterPayCreateRefundRequest
+  fullName: Yort.AfterPay.InStore.AfterPayCreateRefundRequest
 - uid: Yort.AfterPay.InStore.AfterPayRefund
   commentId: T:Yort.AfterPay.InStore.AfterPayRefund
   isExternal: false
@@ -1216,25 +1216,25 @@ references:
   name: RefundOrder
   nameWithType: AfterPayClient.RefundOrder
   fullName: Yort.AfterPay.InStore.AfterPayClient.RefundOrder
-- uid: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
-  commentId: M:Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+- uid: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayCreateRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  commentId: M:Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayCreateRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
   parent: Yort.AfterPay.InStore.IAfterPayClient
   isExternal: false
-  name: RefundOrder(AfterPayRefundRequest, AfterPayCallContext)
-  nameWithType: IAfterPayClient.RefundOrder(AfterPayRefundRequest, AfterPayCallContext)
-  fullName: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest, Yort.AfterPay.InStore.AfterPayCallContext)
+  name: RefundOrder(AfterPayCreateRefundRequest, AfterPayCallContext)
+  nameWithType: IAfterPayClient.RefundOrder(AfterPayCreateRefundRequest, AfterPayCallContext)
+  fullName: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayCreateRefundRequest, Yort.AfterPay.InStore.AfterPayCallContext)
   spec.csharp:
-  - uid: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  - uid: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayCreateRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
     name: RefundOrder
     nameWithType: IAfterPayClient.RefundOrder
     fullName: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder
   - name: (
     nameWithType: (
     fullName: (
-  - uid: Yort.AfterPay.InStore.AfterPayRefundRequest
-    name: AfterPayRefundRequest
-    nameWithType: AfterPayRefundRequest
-    fullName: Yort.AfterPay.InStore.AfterPayRefundRequest
+  - uid: Yort.AfterPay.InStore.AfterPayCreateRefundRequest
+    name: AfterPayCreateRefundRequest
+    nameWithType: AfterPayCreateRefundRequest
+    fullName: Yort.AfterPay.InStore.AfterPayCreateRefundRequest
   - name: ', '
     nameWithType: ', '
     fullName: ', '
@@ -1246,17 +1246,17 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  - uid: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayCreateRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
     name: RefundOrder
     nameWithType: IAfterPayClient.RefundOrder
     fullName: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder
   - name: (
     nameWithType: (
     fullName: (
-  - uid: Yort.AfterPay.InStore.AfterPayRefundRequest
-    name: AfterPayRefundRequest
-    nameWithType: AfterPayRefundRequest
-    fullName: Yort.AfterPay.InStore.AfterPayRefundRequest
+  - uid: Yort.AfterPay.InStore.AfterPayCreateRefundRequest
+    name: AfterPayCreateRefundRequest
+    nameWithType: AfterPayCreateRefundRequest
+    fullName: Yort.AfterPay.InStore.AfterPayCreateRefundRequest
   - name: ', '
     nameWithType: ', '
     fullName: ', '

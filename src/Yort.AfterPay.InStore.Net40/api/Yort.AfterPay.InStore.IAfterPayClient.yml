@@ -8,7 +8,7 @@ items:
   - Yort.AfterPay.InStore.IAfterPayClient.CreateOrder(Yort.AfterPay.InStore.AfterPayCreateOrderRequest,Yort.AfterPay.InStore.AfterPayCallContext)
   - Yort.AfterPay.InStore.IAfterPayClient.Ping
   - Yort.AfterPay.InStore.IAfterPayClient.PreapprovalEnquiry(Yort.AfterPay.InStore.AfterPayPreapprovalRequest,Yort.AfterPay.InStore.AfterPayCallContext)
-  - Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  - Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayCreateRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
   - Yort.AfterPay.InStore.IAfterPayClient.RegisterDevice(Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest)
   - Yort.AfterPay.InStore.IAfterPayClient.ReverseOrder(Yort.AfterPay.InStore.AfterPayReverseOrderRequest,Yort.AfterPay.InStore.AfterPayCallContext)
   - Yort.AfterPay.InStore.IAfterPayClient.ReverseRefund(Yort.AfterPay.InStore.AfterPayReverseRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
@@ -23,7 +23,7 @@ items:
   source:
     id: IAfterPayClient
     path: ''
-    startLine: 2007
+    startLine: 1964
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -52,7 +52,7 @@ items:
   source:
     id: RegisterDevice
     path: ''
-    startLine: 2016
+    startLine: 1973
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -87,7 +87,7 @@ items:
   source:
     id: Ping
     path: ''
-    startLine: 2021
+    startLine: 1978
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -113,7 +113,7 @@ items:
   source:
     id: SendInvite
     path: ''
-    startLine: 2029
+    startLine: 1986
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -147,7 +147,7 @@ items:
   source:
     id: PreapprovalEnquiry
     path: ''
-    startLine: 2037
+    startLine: 1994
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -181,7 +181,7 @@ items:
   source:
     id: CreateOrder
     path: ''
-    startLine: 2045
+    startLine: 2002
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -215,12 +215,12 @@ items:
   source:
     id: ReverseOrder
     path: ''
-    startLine: 2058
+    startLine: 2015
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nRequests an order previously placed be reversed.\n"
-  remarks: "\n<p>This method is intended to ensure an order is cancelled when it&apos;s status is/was unknown at the time the customer was present. It should not be used for refunds, see <xref href=\"Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest%2cYort.AfterPay.InStore.AfterPayCallContext)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  remarks: "\n<p>This method is intended to ensure an order is cancelled when it&apos;s status is/was unknown at the time the customer was present. It should not be used for refunds, see <xref href=\"Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayCreateRefundRequest%2cYort.AfterPay.InStore.AfterPayCallContext)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
   example: []
   syntax:
     content: Task<AfterPayOrderReversal> ReverseOrder(AfterPayReverseOrderRequest request, AfterPayCallContext requestContext)
@@ -243,39 +243,39 @@ items:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
     description: Thrown if <code data-dev-comment-type="paramref" class="paramref">request</code> or <code data-dev-comment-type="paramref" class="paramref">requestContext</code> is null.
-- uid: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
-  commentId: M:Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
-  id: RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+- uid: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayCreateRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  commentId: M:Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayCreateRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  id: RefundOrder(Yort.AfterPay.InStore.AfterPayCreateRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
   parent: Yort.AfterPay.InStore.IAfterPayClient
   langs:
   - csharp
   - vb
-  name: RefundOrder(AfterPayRefundRequest, AfterPayCallContext)
-  nameWithType: IAfterPayClient.RefundOrder(AfterPayRefundRequest, AfterPayCallContext)
-  fullName: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest, Yort.AfterPay.InStore.AfterPayCallContext)
+  name: RefundOrder(AfterPayCreateRefundRequest, AfterPayCallContext)
+  nameWithType: IAfterPayClient.RefundOrder(AfterPayCreateRefundRequest, AfterPayCallContext)
+  fullName: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayCreateRefundRequest, Yort.AfterPay.InStore.AfterPayCallContext)
   type: Method
   source:
     id: RefundOrder
     path: ''
-    startLine: 2068
+    startLine: 2025
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nCreates a refund against a previously created order.\n"
   example: []
   syntax:
-    content: Task<AfterPayRefund> RefundOrder(AfterPayRefundRequest request, AfterPayCallContext requestContext)
+    content: Task<AfterPayRefund> RefundOrder(AfterPayCreateRefundRequest request, AfterPayCallContext requestContext)
     parameters:
     - id: request
-      type: Yort.AfterPay.InStore.AfterPayRefundRequest
-      description: A <xref href="Yort.AfterPay.InStore.AfterPayRefundRequest" data-throw-if-not-resolved="false"></xref> containing details of the refund to create.
+      type: Yort.AfterPay.InStore.AfterPayCreateRefundRequest
+      description: A <xref href="Yort.AfterPay.InStore.AfterPayCreateRefundRequest" data-throw-if-not-resolved="false"></xref> containing details of the refund to create.
     - id: requestContext
       type: Yort.AfterPay.InStore.AfterPayCallContext
       description: A <xref href="Yort.AfterPay.InStore.AfterPayCallContext" data-throw-if-not-resolved="false"></xref> instance containing additional details required to make the request.
     return:
       type: Task{Yort.AfterPay.InStore.AfterPayRefund}
       description: An <xref href="Yort.AfterPay.InStore.AfterPayRefund" data-throw-if-not-resolved="false"></xref> containing details of the refund created within the AfterPay system.
-    content.vb: Function RefundOrder(request As AfterPayRefundRequest, requestContext As AfterPayCallContext) As Task(Of AfterPayRefund)
+    content.vb: Function RefundOrder(request As AfterPayCreateRefundRequest, requestContext As AfterPayCallContext) As Task(Of AfterPayRefund)
   overload: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder*
   exceptions:
   - type: Yort.AfterPay.InStore.AfterPayApiException
@@ -298,7 +298,7 @@ items:
   source:
     id: ReverseRefund
     path: ''
-    startLine: 2081
+    startLine: 2038
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -632,25 +632,25 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
-  commentId: M:Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+- uid: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayCreateRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  commentId: M:Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayCreateRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
   parent: Yort.AfterPay.InStore.IAfterPayClient
   isExternal: false
-  name: RefundOrder(AfterPayRefundRequest, AfterPayCallContext)
-  nameWithType: IAfterPayClient.RefundOrder(AfterPayRefundRequest, AfterPayCallContext)
-  fullName: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest, Yort.AfterPay.InStore.AfterPayCallContext)
+  name: RefundOrder(AfterPayCreateRefundRequest, AfterPayCallContext)
+  nameWithType: IAfterPayClient.RefundOrder(AfterPayCreateRefundRequest, AfterPayCallContext)
+  fullName: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayCreateRefundRequest, Yort.AfterPay.InStore.AfterPayCallContext)
   spec.csharp:
-  - uid: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  - uid: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayCreateRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
     name: RefundOrder
     nameWithType: IAfterPayClient.RefundOrder
     fullName: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder
   - name: (
     nameWithType: (
     fullName: (
-  - uid: Yort.AfterPay.InStore.AfterPayRefundRequest
-    name: AfterPayRefundRequest
-    nameWithType: AfterPayRefundRequest
-    fullName: Yort.AfterPay.InStore.AfterPayRefundRequest
+  - uid: Yort.AfterPay.InStore.AfterPayCreateRefundRequest
+    name: AfterPayCreateRefundRequest
+    nameWithType: AfterPayCreateRefundRequest
+    fullName: Yort.AfterPay.InStore.AfterPayCreateRefundRequest
   - name: ', '
     nameWithType: ', '
     fullName: ', '
@@ -662,17 +662,17 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  - uid: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayCreateRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
     name: RefundOrder
     nameWithType: IAfterPayClient.RefundOrder
     fullName: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder
   - name: (
     nameWithType: (
     fullName: (
-  - uid: Yort.AfterPay.InStore.AfterPayRefundRequest
-    name: AfterPayRefundRequest
-    nameWithType: AfterPayRefundRequest
-    fullName: Yort.AfterPay.InStore.AfterPayRefundRequest
+  - uid: Yort.AfterPay.InStore.AfterPayCreateRefundRequest
+    name: AfterPayCreateRefundRequest
+    nameWithType: AfterPayCreateRefundRequest
+    fullName: Yort.AfterPay.InStore.AfterPayCreateRefundRequest
   - name: ', '
     nameWithType: ', '
     fullName: ', '
@@ -752,13 +752,13 @@ references:
   name: IAfterPayClient
   nameWithType: IAfterPayClient
   fullName: Yort.AfterPay.InStore.IAfterPayClient
-- uid: Yort.AfterPay.InStore.AfterPayRefundRequest
-  commentId: T:Yort.AfterPay.InStore.AfterPayRefundRequest
+- uid: Yort.AfterPay.InStore.AfterPayCreateRefundRequest
+  commentId: T:Yort.AfterPay.InStore.AfterPayCreateRefundRequest
   parent: Yort.AfterPay.InStore
   isExternal: false
-  name: AfterPayRefundRequest
-  nameWithType: AfterPayRefundRequest
-  fullName: Yort.AfterPay.InStore.AfterPayRefundRequest
+  name: AfterPayCreateRefundRequest
+  nameWithType: AfterPayCreateRefundRequest
+  fullName: Yort.AfterPay.InStore.AfterPayCreateRefundRequest
 - uid: Yort.AfterPay.InStore.AfterPayRefund
   commentId: T:Yort.AfterPay.InStore.AfterPayRefund
   isExternal: false

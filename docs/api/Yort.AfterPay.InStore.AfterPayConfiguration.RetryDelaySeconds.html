@@ -457,30 +457,6 @@
                               </ul>  </li>
                           <li class="">
                             <span class="expand-stub"></span>
-                            <a href="Yort.AfterPay.InStore.AfterPayRefundRequest.html" title="AfterPayRefundRequest" class="">AfterPayRefundRequest</a>
-                              
-                              <ul class="nav level3">
-                                <li class="">
-                                  <a href="Yort.AfterPay.InStore.AfterPayRefundRequest.Amount.html" title="Amount" class="">Amount</a>
-                                </li>
-                                <li class="">
-                                  <a href="Yort.AfterPay.InStore.AfterPayRefundRequest.MerchantReference.html" title="MerchantReference" class="">MerchantReference</a>
-                                </li>
-                                <li class="">
-                                  <a href="Yort.AfterPay.InStore.AfterPayRefundRequest.OrderId.html" title="OrderId" class="">OrderId</a>
-                                </li>
-                                <li class="">
-                                  <a href="Yort.AfterPay.InStore.AfterPayRefundRequest.OrderMerchantReference.html" title="OrderMerchantReference" class="">OrderMerchantReference</a>
-                                </li>
-                                <li class="">
-                                  <a href="Yort.AfterPay.InStore.AfterPayRefundRequest.RequestedAt.html" title="RequestedAt" class="">RequestedAt</a>
-                                </li>
-                                <li class="">
-                                  <a href="Yort.AfterPay.InStore.AfterPayRefundRequest.RequestId.html" title="RequestId" class="">RequestId</a>
-                                </li>
-                              </ul>  </li>
-                          <li class="">
-                            <span class="expand-stub"></span>
                             <a href="Yort.AfterPay.InStore.AfterPayRefundReversal.html" title="AfterPayRefundReversal" class="">AfterPayRefundReversal</a>
                               
                               <ul class="nav level3">
@@ -641,6 +617,7 @@
 <div class="markdown level1 remarks"><p>When a transactional call (CreateOrder/Refund etc) times out the system will perform a retry (based on the <a class="xref" href="Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries.html#Yort_AfterPay_InStore_AfterPayConfiguration_MaximumRetries">MaximumRetries</a> setting). 
 If that retry attempt returns a 409 conflict response indicating the first request is still in progres, 
 then the system will wait this many seconds before the next retry. See <a href="https://docs.afterpay.com.au/instore-api-v1.html#distributed-state-considerations">https://docs.afterpay.com.au/instore-api-v1.html#distributed-state-considerations</a> and <a href="https://docs.afterpay.com.au/instore-api-v1.html#create-order">https://docs.afterpay.com.au/instore-api-v1.html#create-order</a> for more details.</p>
+<p>The minimum value is 5 seconds. Any value less than 5 seconds will be ignored, and a 5 second delay will occur instead.</p>
 </div>
 <h5 class="exceptions">Exceptions</h5>
 <table class="table table-bordered table-striped table-condensed">

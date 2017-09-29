@@ -19,7 +19,7 @@ items:
   source:
     id: AfterPayOrderItem
     path: ''
-    startLine: 1563
+    startLine: 1566
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -62,7 +62,7 @@ items:
   source:
     id: Name
     path: ''
-    startLine: 1568
+    startLine: 1571
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -95,7 +95,7 @@ items:
   source:
     id: Sku
     path: ''
-    startLine: 1573
+    startLine: 1576
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -128,7 +128,7 @@ items:
   source:
     id: Quantity
     path: ''
-    startLine: 1578
+    startLine: 1581
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -161,7 +161,7 @@ items:
   source:
     id: Price
     path: ''
-    startLine: 1583
+    startLine: 1586
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore

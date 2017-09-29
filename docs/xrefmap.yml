@@ -229,12 +229,12 @@ references:
   commentId: Overload:Yort.AfterPay.InStore.AfterPayClient.PreapprovalEnquiry
   fullName: Yort.AfterPay.InStore.AfterPayClient.PreapprovalEnquiry
   nameWithType: AfterPayClient.PreapprovalEnquiry
-- uid: Yort.AfterPay.InStore.AfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
-  name: RefundOrder(AfterPayRefundRequest, AfterPayCallContext)
-  href: api/Yort.AfterPay.InStore.AfterPayClient.RefundOrder.html#Yort_AfterPay_InStore_AfterPayClient_RefundOrder_Yort_AfterPay_InStore_AfterPayRefundRequest_Yort_AfterPay_InStore_AfterPayCallContext_
-  commentId: M:Yort.AfterPay.InStore.AfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
-  fullName: Yort.AfterPay.InStore.AfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest, Yort.AfterPay.InStore.AfterPayCallContext)
-  nameWithType: AfterPayClient.RefundOrder(AfterPayRefundRequest, AfterPayCallContext)
+- uid: Yort.AfterPay.InStore.AfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayCreateRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  name: RefundOrder(AfterPayCreateRefundRequest, AfterPayCallContext)
+  href: api/Yort.AfterPay.InStore.AfterPayClient.RefundOrder.html#Yort_AfterPay_InStore_AfterPayClient_RefundOrder_Yort_AfterPay_InStore_AfterPayCreateRefundRequest_Yort_AfterPay_InStore_AfterPayCallContext_
+  commentId: M:Yort.AfterPay.InStore.AfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayCreateRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  fullName: Yort.AfterPay.InStore.AfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayCreateRefundRequest, Yort.AfterPay.InStore.AfterPayCallContext)
+  nameWithType: AfterPayClient.RefundOrder(AfterPayCreateRefundRequest, AfterPayCallContext)
 - uid: Yort.AfterPay.InStore.AfterPayClient.RefundOrder*
   name: RefundOrder
   href: api/Yort.AfterPay.InStore.AfterPayClient.RefundOrder.html
@@ -1117,84 +1117,6 @@ references:
   commentId: Overload:Yort.AfterPay.InStore.AfterPayRefund.RefundId
   fullName: Yort.AfterPay.InStore.AfterPayRefund.RefundId
   nameWithType: AfterPayRefund.RefundId
-- uid: Yort.AfterPay.InStore.AfterPayRefundRequest
-  name: AfterPayRefundRequest
-  href: api/Yort.AfterPay.InStore.AfterPayRefundRequest.html
-  commentId: T:Yort.AfterPay.InStore.AfterPayRefundRequest
-  fullName: Yort.AfterPay.InStore.AfterPayRefundRequest
-  nameWithType: AfterPayRefundRequest
-- uid: Yort.AfterPay.InStore.AfterPayRefundRequest.Amount
-  name: Amount
-  href: api/Yort.AfterPay.InStore.AfterPayRefundRequest.Amount.html#Yort_AfterPay_InStore_AfterPayRefundRequest_Amount
-  commentId: P:Yort.AfterPay.InStore.AfterPayRefundRequest.Amount
-  fullName: Yort.AfterPay.InStore.AfterPayRefundRequest.Amount
-  nameWithType: AfterPayRefundRequest.Amount
-- uid: Yort.AfterPay.InStore.AfterPayRefundRequest.Amount*
-  name: Amount
-  href: api/Yort.AfterPay.InStore.AfterPayRefundRequest.Amount.html
-  commentId: Overload:Yort.AfterPay.InStore.AfterPayRefundRequest.Amount
-  fullName: Yort.AfterPay.InStore.AfterPayRefundRequest.Amount
-  nameWithType: AfterPayRefundRequest.Amount
-- uid: Yort.AfterPay.InStore.AfterPayRefundRequest.MerchantReference
-  name: MerchantReference
-  href: api/Yort.AfterPay.InStore.AfterPayRefundRequest.MerchantReference.html#Yort_AfterPay_InStore_AfterPayRefundRequest_MerchantReference
-  commentId: P:Yort.AfterPay.InStore.AfterPayRefundRequest.MerchantReference
-  fullName: Yort.AfterPay.InStore.AfterPayRefundRequest.MerchantReference
-  nameWithType: AfterPayRefundRequest.MerchantReference
-- uid: Yort.AfterPay.InStore.AfterPayRefundRequest.MerchantReference*
-  name: MerchantReference
-  href: api/Yort.AfterPay.InStore.AfterPayRefundRequest.MerchantReference.html
-  commentId: Overload:Yort.AfterPay.InStore.AfterPayRefundRequest.MerchantReference
-  fullName: Yort.AfterPay.InStore.AfterPayRefundRequest.MerchantReference
-  nameWithType: AfterPayRefundRequest.MerchantReference
-- uid: Yort.AfterPay.InStore.AfterPayRefundRequest.OrderId
-  name: OrderId
-  href: api/Yort.AfterPay.InStore.AfterPayRefundRequest.OrderId.html#Yort_AfterPay_InStore_AfterPayRefundRequest_OrderId
-  commentId: P:Yort.AfterPay.InStore.AfterPayRefundRequest.OrderId
-  fullName: Yort.AfterPay.InStore.AfterPayRefundRequest.OrderId
-  nameWithType: AfterPayRefundRequest.OrderId
-- uid: Yort.AfterPay.InStore.AfterPayRefundRequest.OrderId*
-  name: OrderId
-  href: api/Yort.AfterPay.InStore.AfterPayRefundRequest.OrderId.html
-  commentId: Overload:Yort.AfterPay.InStore.AfterPayRefundRequest.OrderId
-  fullName: Yort.AfterPay.InStore.AfterPayRefundRequest.OrderId
-  nameWithType: AfterPayRefundRequest.OrderId
-- uid: Yort.AfterPay.InStore.AfterPayRefundRequest.OrderMerchantReference
-  name: OrderMerchantReference
-  href: api/Yort.AfterPay.InStore.AfterPayRefundRequest.OrderMerchantReference.html#Yort_AfterPay_InStore_AfterPayRefundRequest_OrderMerchantReference
-  commentId: P:Yort.AfterPay.InStore.AfterPayRefundRequest.OrderMerchantReference
-  fullName: Yort.AfterPay.InStore.AfterPayRefundRequest.OrderMerchantReference
-  nameWithType: AfterPayRefundRequest.OrderMerchantReference
-- uid: Yort.AfterPay.InStore.AfterPayRefundRequest.OrderMerchantReference*
-  name: OrderMerchantReference
-  href: api/Yort.AfterPay.InStore.AfterPayRefundRequest.OrderMerchantReference.html
-  commentId: Overload:Yort.AfterPay.InStore.AfterPayRefundRequest.OrderMerchantReference
-  fullName: Yort.AfterPay.InStore.AfterPayRefundRequest.OrderMerchantReference
-  nameWithType: AfterPayRefundRequest.OrderMerchantReference
-- uid: Yort.AfterPay.InStore.AfterPayRefundRequest.RequestedAt
-  name: RequestedAt
-  href: api/Yort.AfterPay.InStore.AfterPayRefundRequest.RequestedAt.html#Yort_AfterPay_InStore_AfterPayRefundRequest_RequestedAt
-  commentId: P:Yort.AfterPay.InStore.AfterPayRefundRequest.RequestedAt
-  fullName: Yort.AfterPay.InStore.AfterPayRefundRequest.RequestedAt
-  nameWithType: AfterPayRefundRequest.RequestedAt
-- uid: Yort.AfterPay.InStore.AfterPayRefundRequest.RequestedAt*
-  name: RequestedAt
-  href: api/Yort.AfterPay.InStore.AfterPayRefundRequest.RequestedAt.html
-  commentId: Overload:Yort.AfterPay.InStore.AfterPayRefundRequest.RequestedAt
-  fullName: Yort.AfterPay.InStore.AfterPayRefundRequest.RequestedAt
-  nameWithType: AfterPayRefundRequest.RequestedAt
-- uid: Yort.AfterPay.InStore.AfterPayRefundRequest.RequestId
-  name: RequestId
-  href: api/Yort.AfterPay.InStore.AfterPayRefundRequest.RequestId.html#Yort_AfterPay_InStore_AfterPayRefundRequest_RequestId
-  commentId: P:Yort.AfterPay.InStore.AfterPayRefundRequest.RequestId
-  fullName: Yort.AfterPay.InStore.AfterPayRefundRequest.RequestId
-  nameWithType: AfterPayRefundRequest.RequestId
-- uid: Yort.AfterPay.InStore.AfterPayRefundRequest.RequestId*
-  name: RequestId
-  href: api/Yort.AfterPay.InStore.AfterPayRefundRequest.RequestId.html
-  commentId: Overload:Yort.AfterPay.InStore.AfterPayRefundRequest.RequestId
-  fullName: Yort.AfterPay.InStore.AfterPayRefundRequest.RequestId
-  nameWithType: AfterPayRefundRequest.RequestId
 - uid: Yort.AfterPay.InStore.AfterPayRefundReversal
   name: AfterPayRefundReversal
   href: api/Yort.AfterPay.InStore.AfterPayRefundReversal.html
@@ -1447,12 +1369,12 @@ references:
   commentId: Overload:Yort.AfterPay.InStore.IAfterPayClient.PreapprovalEnquiry
   fullName: Yort.AfterPay.InStore.IAfterPayClient.PreapprovalEnquiry
   nameWithType: IAfterPayClient.PreapprovalEnquiry
-- uid: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
-  name: RefundOrder(AfterPayRefundRequest, AfterPayCallContext)
-  href: api/Yort.AfterPay.InStore.IAfterPayClient.RefundOrder.html#Yort_AfterPay_InStore_IAfterPayClient_RefundOrder_Yort_AfterPay_InStore_AfterPayRefundRequest_Yort_AfterPay_InStore_AfterPayCallContext_
-  commentId: M:Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
-  fullName: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest, Yort.AfterPay.InStore.AfterPayCallContext)
-  nameWithType: IAfterPayClient.RefundOrder(AfterPayRefundRequest, AfterPayCallContext)
+- uid: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayCreateRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  name: RefundOrder(AfterPayCreateRefundRequest, AfterPayCallContext)
+  href: api/Yort.AfterPay.InStore.IAfterPayClient.RefundOrder.html#Yort_AfterPay_InStore_IAfterPayClient_RefundOrder_Yort_AfterPay_InStore_AfterPayCreateRefundRequest_Yort_AfterPay_InStore_AfterPayCallContext_
+  commentId: M:Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayCreateRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)
+  fullName: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayCreateRefundRequest, Yort.AfterPay.InStore.AfterPayCallContext)
+  nameWithType: IAfterPayClient.RefundOrder(AfterPayCreateRefundRequest, AfterPayCallContext)
 - uid: Yort.AfterPay.InStore.IAfterPayClient.RefundOrder*
   name: RefundOrder
   href: api/Yort.AfterPay.InStore.IAfterPayClient.RefundOrder.html

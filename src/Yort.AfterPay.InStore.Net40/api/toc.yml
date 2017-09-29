@@ -42,8 +42,6 @@
     name: AfterPayPreapprovalResponse
   - uid: Yort.AfterPay.InStore.AfterPayRefund
     name: AfterPayRefund
-  - uid: Yort.AfterPay.InStore.AfterPayRefundRequest
-    name: AfterPayRefundRequest
   - uid: Yort.AfterPay.InStore.AfterPayRefundReversal
     name: AfterPayRefundReversal
   - uid: Yort.AfterPay.InStore.AfterPayReverseOrderRequest

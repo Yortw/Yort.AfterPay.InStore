@@ -457,30 +457,6 @@
                               </ul>  </li>
                           <li class="">
                             <span class="expand-stub"></span>
-                            <a href="Yort.AfterPay.InStore.AfterPayRefundRequest.html" title="AfterPayRefundRequest" class="">AfterPayRefundRequest</a>
-                              
-                              <ul class="nav level3">
-                                <li class="">
-                                  <a href="Yort.AfterPay.InStore.AfterPayRefundRequest.Amount.html" title="Amount" class="">Amount</a>
-                                </li>
-                                <li class="">
-                                  <a href="Yort.AfterPay.InStore.AfterPayRefundRequest.MerchantReference.html" title="MerchantReference" class="">MerchantReference</a>
-                                </li>
-                                <li class="">
-                                  <a href="Yort.AfterPay.InStore.AfterPayRefundRequest.OrderId.html" title="OrderId" class="">OrderId</a>
-                                </li>
-                                <li class="">
-                                  <a href="Yort.AfterPay.InStore.AfterPayRefundRequest.OrderMerchantReference.html" title="OrderMerchantReference" class="">OrderMerchantReference</a>
-                                </li>
-                                <li class="">
-                                  <a href="Yort.AfterPay.InStore.AfterPayRefundRequest.RequestedAt.html" title="RequestedAt" class="">RequestedAt</a>
-                                </li>
-                                <li class="">
-                                  <a href="Yort.AfterPay.InStore.AfterPayRefundRequest.RequestId.html" title="RequestId" class="">RequestId</a>
-                                </li>
-                              </ul>  </li>
-                          <li class="">
-                            <span class="expand-stub"></span>
                             <a href="Yort.AfterPay.InStore.AfterPayRefundReversal.html" title="AfterPayRefundReversal" class="">AfterPayRefundReversal</a>
                               
                               <ul class="nav level3">
@@ -614,13 +590,13 @@
 
 
 <a id="Yort_AfterPay_InStore_AfterPayClient_RefundOrder_" data-uid="Yort.AfterPay.InStore.AfterPayClient.RefundOrder*"></a>
-<h4 id="Yort_AfterPay_InStore_AfterPayClient_RefundOrder_Yort_AfterPay_InStore_AfterPayRefundRequest_Yort_AfterPay_InStore_AfterPayCallContext_" data-uid="Yort.AfterPay.InStore.AfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)">RefundOrder(AfterPayRefundRequest, AfterPayCallContext)</h4>
+<h4 id="Yort_AfterPay_InStore_AfterPayClient_RefundOrder_Yort_AfterPay_InStore_AfterPayCreateRefundRequest_Yort_AfterPay_InStore_AfterPayCallContext_" data-uid="Yort.AfterPay.InStore.AfterPayClient.RefundOrder(Yort.AfterPay.InStore.AfterPayCreateRefundRequest,Yort.AfterPay.InStore.AfterPayCallContext)">RefundOrder(AfterPayCreateRefundRequest, AfterPayCallContext)</h4>
 <div class="markdown level1 summary"><p>Creates a refund against a previously created order.</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public Task&lt;AfterPayRefund&gt; RefundOrder(AfterPayRefundRequest request, AfterPayCallContext requestContext)</code></pre>
+  <pre><code class="lang-csharp hljs">public Task&lt;AfterPayRefund&gt; RefundOrder(AfterPayCreateRefundRequest request, AfterPayCallContext requestContext)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -633,9 +609,9 @@
   </thead>
   <tbody>
     <tr>
-      <td><a class="xref" href="Yort.AfterPay.InStore.AfterPayRefundRequest.html">AfterPayRefundRequest</a></td>
+      <td><a class="xref" href="Yort.AfterPay.InStore.AfterPayCreateRefundRequest.html">AfterPayCreateRefundRequest</a></td>
       <td><span class="parametername">request</span></td>
-      <td><p>A <a class="xref" href="Yort.AfterPay.InStore.AfterPayRefundRequest.html">AfterPayRefundRequest</a> containing details of the refund to create.</p>
+      <td><p>A <a class="xref" href="Yort.AfterPay.InStore.AfterPayCreateRefundRequest.html">AfterPayCreateRefundRequest</a> containing details of the refund to create.</p>
 </td>
     </tr>
     <tr>
@@ -663,8 +639,8 @@
   </tbody>
 </table>
 <h5 class="implements">Implements</h5>
-    <div><a class="xref" href="Yort.AfterPay.InStore.IAfterPayClient.RefundOrder.html#Yort_AfterPay_InStore_IAfterPayClient_RefundOrder_Yort_AfterPay_InStore_AfterPayRefundRequest_Yort_AfterPay_InStore_AfterPayCallContext_">IAfterPayClient.RefundOrder(AfterPayRefundRequest, AfterPayCallContext)</a></div>
-<h5 id="Yort_AfterPay_InStore_AfterPayClient_RefundOrder_Yort_AfterPay_InStore_AfterPayRefundRequest_Yort_AfterPay_InStore_AfterPayCallContext__remarks">Remarks</h5>
+    <div><a class="xref" href="Yort.AfterPay.InStore.IAfterPayClient.RefundOrder.html#Yort_AfterPay_InStore_IAfterPayClient_RefundOrder_Yort_AfterPay_InStore_AfterPayCreateRefundRequest_Yort_AfterPay_InStore_AfterPayCallContext_">IAfterPayClient.RefundOrder(AfterPayCreateRefundRequest, AfterPayCallContext)</a></div>
+<h5 id="Yort_AfterPay_InStore_AfterPayClient_RefundOrder_Yort_AfterPay_InStore_AfterPayCreateRefundRequest_Yort_AfterPay_InStore_AfterPayCallContext__remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>This method will keep retrying until success, or a non-409 response error is received. If an exception of any type other than <a class="xref" href="Yort.AfterPay.InStore.AfterPayApiException.html">AfterPayApiException</a>, <see cref="!:UnauthorizedAccessException"></see>, <see cref="!:ArgumentNullException"></see> is thrown by this method, a reversal should be queued.</p>
 <p>This method will automatically retry on timeout up to <a class="xref" href="Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries.html#Yort_AfterPay_InStore_AfterPayConfiguration_MaximumRetries">MaximumRetries</a>. If the last retry times out, a <see cref="!:TimeoutException"></see> will be thrown. On a 409 response it will retry until any other error or response is received.</p>
 </div>
@@ -694,7 +670,7 @@
     </tr>
     <tr>
       <td><span class="xref">System.TimeoutException</span></td>
-      <td><p>Thrown if the request times out on the last retry attempt.</p>
+      <td><p>Thrown if the request times out on the last retry attempt. If this type of exception is throw a reversal is required.</p>
 </td>
     </tr>
   </tbody>

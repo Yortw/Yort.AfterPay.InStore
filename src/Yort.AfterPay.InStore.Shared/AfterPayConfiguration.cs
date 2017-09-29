@@ -147,7 +147,7 @@ namespace Yort.AfterPay.InStore
 		/// The maximum number of automatic retries to perform when a create transaction (order/refund/order reversal/refund reversal etc) times out.
 		/// </summary>
 		/// <remarks>
-		/// <para>This property defaults to a value of 4.</para>
+		/// <para>This property defaults to a value of 4. A value of zero or less is allowed, in which case only the initial attempt will be made - no retries will be performed within the library and any error handling logic will need to be entirely implemented by the application.</para>
 		/// </remarks>
 		/// <exception cref="System.InvalidProgramException">Thrown if this property is modified after it has been passed to a <see cref="AfterPayClient"/> instance.</exception>
 		public int MaximumRetries
@@ -168,6 +168,7 @@ namespace Yort.AfterPay.InStore
 		/// <para>When a transactional call (CreateOrder/Refund etc) times out the system will perform a retry (based on the <see cref="MaximumRetries"/> setting). 
 		/// If that retry attempt returns a 409 conflict response indicating the first request is still in progres, 
 		/// then the system will wait this many seconds before the next retry. See https://docs.afterpay.com.au/instore-api-v1.html#distributed-state-considerations and https://docs.afterpay.com.au/instore-api-v1.html#create-order for more details.</para>
+		/// <para>The minimum value is 5 seconds. Any value less than 5 seconds will be ignored, and a 5 second delay will occur instead.</para>
 		/// </remarks>
 		/// <exception cref="System.InvalidProgramException">Thrown if this property is modified after it has been passed to a <see cref="AfterPayClient"/> instance.</exception>
 		public int RetryDelaySeconds

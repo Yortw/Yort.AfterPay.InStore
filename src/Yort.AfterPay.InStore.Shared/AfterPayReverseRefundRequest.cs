@@ -15,10 +15,10 @@ namespace Yort.AfterPay.InStore
 	public class AfterPayReverseRefundRequest
 	{
 		/// <summary>
-		/// A unique id for this request. Defaults to a new GUID value.
+		/// The unique id of the request previously sent to create the refund.
 		/// </summary>
 		[JsonProperty("reversingRequestId")]
-		public string ReversingRequestId { get; set; } = System.Guid.NewGuid().ToString();
+		public string ReversingRequestId { get; set; } 
 		/// <summary>
 		/// The date and time at which this request was created. Defaults to the now property of <see cref="AfterPayConfiguration.SystemClock"/>.
 		/// </summary>

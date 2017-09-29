@@ -17,7 +17,7 @@ items:
   source:
     id: AfterPayRefund
     path: ''
-    startLine: 1677
+    startLine: 1680
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -59,7 +59,7 @@ items:
   source:
     id: RefundId
     path: ''
-    startLine: 1682
+    startLine: 1685
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -92,7 +92,7 @@ items:
   source:
     id: RefundedAt
     path: ''
-    startLine: 1688
+    startLine: 1691
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -114,6 +114,7 @@ items:
 references:
 - uid: Yort.AfterPay.InStore.AfterPayCreateRefundRequest
   commentId: T:Yort.AfterPay.InStore.AfterPayCreateRefundRequest
+  parent: Yort.AfterPay.InStore
   isExternal: false
   name: AfterPayCreateRefundRequest
   nameWithType: AfterPayCreateRefundRequest
