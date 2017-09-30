@@ -77,17 +77,26 @@ namespace Yort.AfterPay.InStore
 		/// Sends a ping request to the AfterPay API to confirm a connection can be made.
 		/// </summary>
 		/// <exception cref="System.Net.Http.HttpRequestException">Thrown if an unexpected exception occurs during sending or receiving the response to the AfterPay API. This includes errors such as connections being dropped, socket errors etc.</exception>
-		public async Task<bool> Ping()
+		/// <exception cref="System.TimeoutException">Thrown if the service does not respond within the expected client timeout.</exception>
+		/// <exception cref="AfterPayApiException">Thrown if a response is received from the API that indicates an error. Most likely a service unavailable or too many requests error.</exception>
+		public async Task Ping()
 		{
 			using (var busyToken = ObtainBusyToken())
 			{
 				var httpRequest = CreateHttpRequest<AfterPayInviteRequest>(HttpMethod.Get, new Uri(_BaseUrl, "/ping"), null, null);
-				return await GetResponse<bool>(httpRequest, 60).ConfigureAwait(false);
+				try
+				{
+					await GetResponse<string>(httpRequest, 60).ConfigureAwait(false);
+				}
+				catch (TaskCanceledException te)
+				{
+					throw new TimeoutException(ErrorMessageResources.RequestTimeout, te);
+				}
 			}
 		}
 
 		/// <summary>
-		/// Sends an invitational SMS message to a customer's mobile phone.
+		/// Sends an invitational SMS message to a customer's mobile phone. If no exception is thrown the request was successful.
 		/// </summary>
 		/// <param name="request">A <see cref="AfterPayInviteRequest"/> instance containing details of the invite to send.</param>
 		/// <param name="requestContext">A <see cref="AfterPayCallContext"/> instance describing additional information for the request.</param>
@@ -96,7 +105,8 @@ namespace Yort.AfterPay.InStore
 		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="request"/> or <paramref name="requestContext"/> is null.</exception>
 		/// <exception cref="System.UnauthorizedAccessException">Thrown if the system cannot obtain an authorisation token from AfterPay before making the request.</exception>
 		/// <exception cref="System.Net.Http.HttpRequestException">Thrown if an unexpected exception occurs during sending or receiving the response to the AfterPay API. This includes errors such as connections being dropped, socket errors etc.</exception>
-		public async Task<bool> SendInvite(AfterPayInviteRequest request, AfterPayCallContext requestContext)
+		/// <exception cref="System.TimeoutException">Thrown if the service does not respond within the expected client timeout.</exception>
+		public async Task SendInvite(AfterPayInviteRequest request, AfterPayCallContext requestContext)
 		{
 			request.GuardNull(nameof(request));
 			requestContext.GuardNull(nameof(requestContext));
@@ -106,7 +116,14 @@ namespace Yort.AfterPay.InStore
 				await EnsureToken().ConfigureAwait(false);
 
 				var httpRequest = CreateHttpRequest<AfterPayInviteRequest>(HttpMethod.Post, new Uri(_BaseUrl, "preapprovals/enquire"), request, requestContext);
-				return await GetResponse<bool>(httpRequest, 30).ConfigureAwait(false);
+				try
+				{
+					await GetResponse<string>(httpRequest, 30).ConfigureAwait(false);
+				}
+				catch (TaskCanceledException te)
+				{
+					throw new TimeoutException(ErrorMessageResources.RequestTimeout, te);
+				}
 			}
 		}
 
@@ -331,7 +348,7 @@ namespace Yort.AfterPay.InStore
 			}
 		}
 
-		private async Task<T> GetResponse<T>(HttpRequestMessage request, int timeoutSeconds)
+		private async Task<T> GetResponse<T>(HttpRequestMessage request, int timeoutSeconds) where T : class
 		{
 			HttpResponseMessage response = null;
 			using (var tcs = new System.Threading.CancellationTokenSource())
@@ -340,26 +357,38 @@ namespace Yort.AfterPay.InStore
 				response = await _HttpClient.SendAsync(request, tcs.Token).ConfigureAwait(false);
 			}
 
-			//TODO: Fix Ugly boxing. For now ok because this won't happen often, because we won't usually be using these return types.
-			if (typeof(T) == typeof(bool))
-				return (T)((object)response.IsSuccessStatusCode);
-			else if (typeof(T) == typeof(HttpResponseMessage))
-				return (T)((object)response);
-
-			if (!response.IsSuccessStatusCode)
+			try
 			{
-				if (response.Content == null || response.Content.Headers?.ContentType?.MediaType != AfterPayConstants.JsonMediaType)
-					throw new AfterPayApiException(new AfterPayApiError() { HttpStatusCode = (int)response.StatusCode, Message = response.ReasonPhrase });
+				//TODO: Fix Ugly boxing. For now ok because this won't happen often, because we won't usually be using these return types.
+				if (typeof(T) == typeof(bool))
+					return (T)((object)response.IsSuccessStatusCode);
+				else if (typeof(T) == typeof(HttpResponseMessage))
+					return (T)((object)response);
+				else if (!response.IsSuccessStatusCode)
+				{
+					if (response.Content == null || response.Content.Headers?.ContentType?.MediaType != AfterPayConstants.JsonMediaType)
+						throw new AfterPayApiException(new AfterPayApiError() { HttpStatusCode = (int)response.StatusCode, Message = response.ReasonPhrase });
 
-				var errorDetails = Newtonsoft.Json.JsonConvert.DeserializeObject<AfterPayApiError>(await response.Content.ReadAsStringAsync().ConfigureAwait(false));
-				//In case we got json that wasn't a valid error, ensure the minimum details are set
-				errorDetails.HttpStatusCode = errorDetails.HttpStatusCode == 0 ? errorDetails.HttpStatusCode : (int)response.StatusCode;
-				errorDetails.Message = errorDetails.Message ?? response.ReasonPhrase;
+					var errorDetails = Newtonsoft.Json.JsonConvert.DeserializeObject<AfterPayApiError>(await response.Content.ReadAsStringAsync().ConfigureAwait(false));
+					//In case we got json that wasn't a valid error, ensure the minimum details are set
+					errorDetails.HttpStatusCode = errorDetails.HttpStatusCode == 0 ? errorDetails.HttpStatusCode : (int)response.StatusCode;
+					errorDetails.Message = errorDetails.Message ?? response.ReasonPhrase;
 
-				throw new AfterPayApiException(errorDetails);
+					throw new AfterPayApiException(errorDetails);
+				}
+
+				if (typeof(T) == typeof(string))
+				{
+					if (response.Content == null) return (T)null;
+					return (T)(object)(await response.Content.ReadAsStringAsync().ConfigureAwait(false));
+				}
+
+				return Newtonsoft.Json.JsonConvert.DeserializeObject<T>(await response.Content.ReadAsStringAsync().ConfigureAwait(false));
 			}
-
-			return Newtonsoft.Json.JsonConvert.DeserializeObject<T>(await response.Content.ReadAsStringAsync().ConfigureAwait(false));
+			finally
+			{
+				response.Dispose();
+			}
 		}
 
 		private HttpRequestMessage CreateHttpRequest<T>(HttpMethod method, Uri url, T requestContent, AfterPayCallContext requestContext)
@@ -371,13 +400,13 @@ namespace Yort.AfterPay.InStore
 			{
 				Content = requestContent == null ? null : new StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(requestContent), System.Text.UTF8Encoding.UTF8, AfterPayConstants.JsonMediaType)
 			};
-			
+
 			if (_Token != null)
 				retVal.Headers.Authorization = new AuthenticationHeaderValue("Bearer", _Token.Token);
 
 			if (requestContext != null)
 				retVal.Headers.TryAddWithoutValidation("Operator", requestContext.OperatorId);
-			
+
 			return retVal;
 		}
 
@@ -444,9 +473,9 @@ namespace Yort.AfterPay.InStore
 			);
 		}
 
-#endregion
+		#endregion
 
-#region Overrides
+		#region Overrides
 
 		/// <summary>
 		/// Disposes the internal <see cref="HttpClient"/> but only if it was created by this class, will not dispose it if it was passed via <see cref="AfterPayConfiguration.HttpClient"/>.
@@ -466,7 +495,7 @@ namespace Yort.AfterPay.InStore
 			}
 		}
 
-#endregion
+		#endregion
 
 	}
 }

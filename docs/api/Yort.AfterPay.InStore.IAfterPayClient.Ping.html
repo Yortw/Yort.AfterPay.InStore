@@ -12,7 +12,7 @@
    | Yort.AfterPay.InStore ">
     <meta name="generator" content="docfx 2.24.0.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../images/YortAfterPayInStoreLibIcon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/YortAfterPayInStoreLibIconSmall.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -413,10 +413,16 @@
                               
                               <ul class="nav level3">
                                 <li class="">
+                                  <a href="Yort.AfterPay.InStore.AfterPayOrderReversal.RequestedAt.html" title="RequestedAt" class="">RequestedAt</a>
+                                </li>
+                                <li class="">
                                   <a href="Yort.AfterPay.InStore.AfterPayOrderReversal.ReversedAt.html" title="ReversedAt" class="">ReversedAt</a>
                                 </li>
                                 <li class="">
                                   <a href="Yort.AfterPay.InStore.AfterPayOrderReversal.ReverseId.html" title="ReverseId" class="">ReverseId</a>
+                                </li>
+                                <li class="">
+                                  <a href="Yort.AfterPay.InStore.AfterPayOrderReversal.ReversingRequestId.html" title="ReversingRequestId" class="">ReversingRequestId</a>
                                 </li>
                               </ul>  </li>
                           <li class="">
@@ -449,10 +455,28 @@
                               
                               <ul class="nav level3">
                                 <li class="">
+                                  <a href="Yort.AfterPay.InStore.AfterPayRefund.Amount.html" title="Amount" class="">Amount</a>
+                                </li>
+                                <li class="">
+                                  <a href="Yort.AfterPay.InStore.AfterPayRefund.MerchantReference.html" title="MerchantReference" class="">MerchantReference</a>
+                                </li>
+                                <li class="">
+                                  <a href="Yort.AfterPay.InStore.AfterPayRefund.OrderId.html" title="OrderId" class="">OrderId</a>
+                                </li>
+                                <li class="">
+                                  <a href="Yort.AfterPay.InStore.AfterPayRefund.OrderMerchantReference.html" title="OrderMerchantReference" class="">OrderMerchantReference</a>
+                                </li>
+                                <li class="">
                                   <a href="Yort.AfterPay.InStore.AfterPayRefund.RefundedAt.html" title="RefundedAt" class="">RefundedAt</a>
                                 </li>
                                 <li class="">
                                   <a href="Yort.AfterPay.InStore.AfterPayRefund.RefundId.html" title="RefundId" class="">RefundId</a>
+                                </li>
+                                <li class="">
+                                  <a href="Yort.AfterPay.InStore.AfterPayRefund.RequestedAt.html" title="RequestedAt" class="">RequestedAt</a>
+                                </li>
+                                <li class="">
+                                  <a href="Yort.AfterPay.InStore.AfterPayRefund.RequestId.html" title="RequestId" class="">RequestId</a>
                                 </li>
                               </ul>  </li>
                           <li class="">
@@ -461,10 +485,16 @@
                               
                               <ul class="nav level3">
                                 <li class="">
+                                  <a href="Yort.AfterPay.InStore.AfterPayRefundReversal.RequestedAt.html" title="RequestedAt" class="">RequestedAt</a>
+                                </li>
+                                <li class="">
                                   <a href="Yort.AfterPay.InStore.AfterPayRefundReversal.ReversedAt.html" title="ReversedAt" class="">ReversedAt</a>
                                 </li>
                                 <li class="">
                                   <a href="Yort.AfterPay.InStore.AfterPayRefundReversal.ReverseId.html" title="ReverseId" class="">ReverseId</a>
+                                </li>
+                                <li class="">
+                                  <a href="Yort.AfterPay.InStore.AfterPayRefundReversal.ReversingRequestId.html" title="ReversingRequestId" class="">ReversingRequestId</a>
                                 </li>
                               </ul>  </li>
                           <li class="">
@@ -591,12 +621,12 @@
 
 <a id="Yort_AfterPay_InStore_IAfterPayClient_Ping_" data-uid="Yort.AfterPay.InStore.IAfterPayClient.Ping*"></a>
 <h4 id="Yort_AfterPay_InStore_IAfterPayClient_Ping" data-uid="Yort.AfterPay.InStore.IAfterPayClient.Ping">Ping()</h4>
-<div class="markdown level1 summary"><p>Sends a ping request to the AfterPay API to confirm a connection can be made.</p>
+<div class="markdown level1 summary"><p>Sends a ping request to the AfterPay API to confirm a connection can be made. If no exception is thrown the ping was successful.</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">Task&lt;bool&gt; Ping()</code></pre>
+  <pre><code class="lang-csharp hljs">Task Ping()</code></pre>
 </div>
 <h5 class="returns">Returns</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -608,7 +638,7 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+      <td><span class="xref">Task</span></td>
       <td></td>
     </tr>
   </tbody>

@@ -141,18 +141,25 @@ items:
   source:
     id: Ping
     path: ''
-    startLine: 586
+    startLine: 588
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
   summary: "\nSends a ping request to the AfterPay API to confirm a connection can be made.\n"
   example: []
   syntax:
-    content: public Task<bool> Ping()
+    content: public Task Ping()
     return:
-      type: Task{System.Boolean}
-    content.vb: Public Function Ping As Task(Of Boolean)
+      type: Task
+    content.vb: Public Function Ping As Task
   overload: Yort.AfterPay.InStore.AfterPayClient.Ping*
+  exceptions:
+  - type: System.TimeoutException
+    commentId: T:System.TimeoutException
+    description: Thrown if the service does not respond within the expected client timeout.
+  - type: Yort.AfterPay.InStore.AfterPayApiException
+    commentId: T:Yort.AfterPay.InStore.AfterPayApiException
+    description: Thrown if a response is received from the API that indicates an error. Most likely a service unavailable or too many requests error.
   implements:
   - Yort.AfterPay.InStore.IAfterPayClient.Ping
   modifiers.csharp:
@@ -173,14 +180,14 @@ items:
   source:
     id: SendInvite
     path: ''
-    startLine: 605
+    startLine: 615
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
-  summary: "\nSends an invitational SMS message to a customer&apos;s mobile phone.\n"
+  summary: "\nSends an invitational SMS message to a customer&apos;s mobile phone. If no exception is thrown the request was successful.\n"
   example: []
   syntax:
-    content: public Task<bool> SendInvite(AfterPayInviteRequest request, AfterPayCallContext requestContext)
+    content: public Task SendInvite(AfterPayInviteRequest request, AfterPayCallContext requestContext)
     parameters:
     - id: request
       type: Yort.AfterPay.InStore.AfterPayInviteRequest
@@ -189,9 +196,9 @@ items:
       type: Yort.AfterPay.InStore.AfterPayCallContext
       description: A <xref href="Yort.AfterPay.InStore.AfterPayCallContext" data-throw-if-not-resolved="false"></xref> instance describing additional information for the request.
     return:
-      type: Task{System.Boolean}
+      type: Task
       description: True if the invite was sent successfully, otherwise false.
-    content.vb: Public Function SendInvite(request As AfterPayInviteRequest, requestContext As AfterPayCallContext) As Task(Of Boolean)
+    content.vb: Public Function SendInvite(request As AfterPayInviteRequest, requestContext As AfterPayCallContext) As Task
   overload: Yort.AfterPay.InStore.AfterPayClient.SendInvite*
   exceptions:
   - type: Yort.AfterPay.InStore.AfterPayApiException
@@ -203,6 +210,9 @@ items:
   - type: System.UnauthorizedAccessException
     commentId: T:System.UnauthorizedAccessException
     description: Thrown if the system cannot obtain an authorisation token from AfterPay before making the request.
+  - type: System.TimeoutException
+    commentId: T:System.TimeoutException
+    description: Thrown if the service does not respond within the expected client timeout.
   implements:
   - Yort.AfterPay.InStore.IAfterPayClient.SendInvite(Yort.AfterPay.InStore.AfterPayInviteRequest,Yort.AfterPay.InStore.AfterPayCallContext)
   modifiers.csharp:
@@ -223,7 +233,7 @@ items:
   source:
     id: PreapprovalEnquiry
     path: ''
-    startLine: 629
+    startLine: 646
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -273,7 +283,7 @@ items:
   source:
     id: CreateOrder
     path: ''
-    startLine: 660
+    startLine: 677
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -332,7 +342,7 @@ items:
   source:
     id: ReverseOrder
     path: ''
-    startLine: 686
+    startLine: 703
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -386,7 +396,7 @@ items:
   source:
     id: RefundOrder
     path: ''
-    startLine: 712
+    startLine: 729
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -440,7 +450,7 @@ items:
   source:
     id: ReverseRefund
     path: ''
-    startLine: 738
+    startLine: 755
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -494,7 +504,7 @@ items:
   source:
     id: DisposeManagedResources
     path: ''
-    startLine: 960
+    startLine: 989
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -740,49 +750,13 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Task{System.Boolean}
-  commentId: '!:Task{System.Boolean}'
-  definition: Task`1
-  name: Task<Boolean>
-  nameWithType: Task<Boolean>
-  fullName: Task<System.Boolean>
-  nameWithType.vb: Task(Of Boolean)
-  fullName.vb: Task(Of System.Boolean)
-  name.vb: Task(Of Boolean)
-  spec.csharp:
-  - uid: Task`1
-    name: Task
-    nameWithType: Task
-    fullName: Task
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: System.Boolean
-    name: Boolean
-    nameWithType: Boolean
-    fullName: System.Boolean
-    isExternal: true
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: Task`1
-    name: Task
-    nameWithType: Task
-    fullName: Task
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: System.Boolean
-    name: Boolean
-    nameWithType: Boolean
-    fullName: System.Boolean
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
+- uid: System.TimeoutException
+  commentId: T:System.TimeoutException
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
 - uid: Yort.AfterPay.InStore.AfterPayInviteRequest
   commentId: T:Yort.AfterPay.InStore.AfterPayInviteRequest
   parent: Yort.AfterPay.InStore
@@ -1041,8 +1015,6 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.TimeoutException
-  commentId: T:System.TimeoutException
 - uid: Task{Yort.AfterPay.InStore.AfterPayOrder}
   commentId: '!:Task{Yort.AfterPay.InStore.AfterPayOrder}'
   definition: Task`1

@@ -20,9 +20,7 @@ namespace Yort.AfterPay.InStore.Tests
 			};
 
 			var client = new AfterPayClient(config);
-			var success = await client.Ping();
-
-			Assert.IsTrue(success);
+			await client.Ping();
 		}
 	}
 }

@@ -16,7 +16,7 @@ items:
   source:
     id: AfterPayPreapprovalRequest
     path: ''
-    startLine: 1739
+    startLine: 1781
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -55,7 +55,7 @@ items:
   source:
     id: PreapprovalCode
     path: ''
-    startLine: 1745
+    startLine: 1787
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore

@@ -5,8 +5,10 @@ items:
   id: AfterPayRefundReversal
   parent: Yort.AfterPay.InStore
   children:
+  - Yort.AfterPay.InStore.AfterPayRefundReversal.RequestedAt
   - Yort.AfterPay.InStore.AfterPayRefundReversal.ReversedAt
   - Yort.AfterPay.InStore.AfterPayRefundReversal.ReverseId
+  - Yort.AfterPay.InStore.AfterPayRefundReversal.ReversingRequestId
   langs:
   - csharp
   - vb
@@ -17,7 +19,7 @@ items:
   source:
     id: AfterPayRefundReversal
     path: ''
-    startLine: 1819
+    startLine: 1898
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -59,7 +61,7 @@ items:
   source:
     id: ReverseId
     path: ''
-    startLine: 1824
+    startLine: 1903
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -92,7 +94,7 @@ items:
   source:
     id: ReversedAt
     path: ''
-    startLine: 1830
+    startLine: 1909
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -105,6 +107,72 @@ items:
       type: DateTimeOffset
     content.vb: Public Property ReversedAt As DateTimeOffset
   overload: Yort.AfterPay.InStore.AfterPayRefundReversal.ReversedAt*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayRefundReversal.ReversingRequestId
+  commentId: P:Yort.AfterPay.InStore.AfterPayRefundReversal.ReversingRequestId
+  id: ReversingRequestId
+  parent: Yort.AfterPay.InStore.AfterPayRefundReversal
+  langs:
+  - csharp
+  - vb
+  name: ReversingRequestId
+  nameWithType: AfterPayRefundReversal.ReversingRequestId
+  fullName: Yort.AfterPay.InStore.AfterPayRefundReversal.ReversingRequestId
+  type: Property
+  source:
+    id: ReversingRequestId
+    path: ''
+    startLine: 1915
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.AfterPay.InStore
+  summary: "\nThe unique id of the request previously sent to create the refund.\n"
+  example: []
+  syntax:
+    content: public string ReversingRequestId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ReversingRequestId As String
+  overload: Yort.AfterPay.InStore.AfterPayRefundReversal.ReversingRequestId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Yort.AfterPay.InStore.AfterPayRefundReversal.RequestedAt
+  commentId: P:Yort.AfterPay.InStore.AfterPayRefundReversal.RequestedAt
+  id: RequestedAt
+  parent: Yort.AfterPay.InStore.AfterPayRefundReversal
+  langs:
+  - csharp
+  - vb
+  name: RequestedAt
+  nameWithType: AfterPayRefundReversal.RequestedAt
+  fullName: Yort.AfterPay.InStore.AfterPayRefundReversal.RequestedAt
+  type: Property
+  source:
+    id: RequestedAt
+    path: ''
+    startLine: 1921
+  assemblies:
+  - cs.temp.dll
+  namespace: Yort.AfterPay.InStore
+  summary: "\nThe date and time at which the request to reverse this refund was created.\n"
+  example: []
+  syntax:
+    content: public DateTimeOffset RequestedAt { get; set; }
+    parameters: []
+    return:
+      type: DateTimeOffset
+    content.vb: Public Property RequestedAt As DateTimeOffset
+  overload: Yort.AfterPay.InStore.AfterPayRefundReversal.RequestedAt*
   modifiers.csharp:
   - public
   - get
@@ -441,3 +509,15 @@ references:
   name: DateTimeOffset
   nameWithType: DateTimeOffset
   fullName: DateTimeOffset
+- uid: Yort.AfterPay.InStore.AfterPayRefundReversal.ReversingRequestId*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayRefundReversal.ReversingRequestId
+  isExternal: false
+  name: ReversingRequestId
+  nameWithType: AfterPayRefundReversal.ReversingRequestId
+  fullName: Yort.AfterPay.InStore.AfterPayRefundReversal.ReversingRequestId
+- uid: Yort.AfterPay.InStore.AfterPayRefundReversal.RequestedAt*
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayRefundReversal.RequestedAt
+  isExternal: false
+  name: RequestedAt
+  nameWithType: AfterPayRefundReversal.RequestedAt
+  fullName: Yort.AfterPay.InStore.AfterPayRefundReversal.RequestedAt

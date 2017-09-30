@@ -21,7 +21,7 @@ items:
   source:
     id: AfterPayToken
     path: ''
-    startLine: 1956
+    startLine: 2048
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -67,7 +67,7 @@ items:
   source:
     id: Token
     path: ''
-    startLine: 1961
+    startLine: 2053
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -100,7 +100,7 @@ items:
   source:
     id: ExpiresIn
     path: ''
-    startLine: 1966
+    startLine: 2058
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -133,7 +133,7 @@ items:
   source:
     id: IssuedAt
     path: ''
-    startLine: 1975
+    startLine: 2067
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -167,7 +167,7 @@ items:
   source:
     id: ExpiresAt
     path: ''
-    startLine: 1980
+    startLine: 2072
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -200,7 +200,7 @@ items:
   source:
     id: IsExpired
     path: ''
-    startLine: 1988
+    startLine: 2080
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore
@@ -231,7 +231,7 @@ items:
   source:
     id: IsExpired
     path: ''
-    startLine: 1998
+    startLine: 2090
   assemblies:
   - cs.temp.dll
   namespace: Yort.AfterPay.InStore

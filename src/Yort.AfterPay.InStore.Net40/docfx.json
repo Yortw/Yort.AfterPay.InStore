@@ -61,10 +61,12 @@
 		],
 		"dest": "../../docs",
 		"globalMetadataFiles": [],
-		"globalMetadata": {
-			"_appTitle": "Yort.AfterPay.InStore",
-			"_appFooter": "Copyright (c) 2017 Troy Willmot"
-		},
+			"globalMetadata": {
+				"_appTitle": "Yort.AfterPay.InStore",
+				"_appFooter": "Copyright (c) 2017 Troy Willmot",
+				"_appFaviconPath": "images/YortAfterPayInStoreLibIcon.ico",
+				"_appLogoPath": "images/YortAfterPayInStoreLibIconSmall.png"
+			},
 		"fileMetadataFiles": [],
 		"template": [ "statictoc", "memberpage/2.24.0/content" ],
 		"postProcessors": [],
