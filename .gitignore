@@ -252,4 +252,4 @@ ModelManifest.xml
 log.txt
 
 # documentation temp files
-src/Yort.AfterPay.InStore.Net40/*.*
+src/Yort.AfterPay.InStore.Net40/api/**
