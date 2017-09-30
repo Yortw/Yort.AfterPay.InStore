@@ -70,13 +70,13 @@ namespace Yort.AfterPay.InStore.Tests
 			mockHandler.AddDynamicResponse(new Http.ClientPipeline.MockResponseHandler()
 			{
 				CanHandleRequest = (request) => request.RequestUri.ToString() == AfterPayConstants.SandboxRootUrl + "/v1/orders" && request.Method == System.Net.Http.HttpMethod.Post,
-				HandleRequest = async (request) =>
+				HandleRequest = (request) =>
 				{
 					callCount++;
 					if (callCount == 3)
-						return new System.Net.Http.HttpResponseMessage(System.Net.HttpStatusCode.OK) { Content = new StringContent(Response_Order) };
+						return Task.FromResult(new System.Net.Http.HttpResponseMessage(System.Net.HttpStatusCode.OK) { Content = new StringContent(Response_Order) });
 					else
-						return new System.Net.Http.HttpResponseMessage(System.Net.HttpStatusCode.Conflict);
+						return Task.FromResult(new System.Net.Http.HttpResponseMessage(System.Net.HttpStatusCode.Conflict));
 				}
 			});
 

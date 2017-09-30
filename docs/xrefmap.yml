@@ -307,6 +307,18 @@ references:
   commentId: Overload:Yort.AfterPay.InStore.AfterPayConfiguration.#ctor
   fullName: Yort.AfterPay.InStore.AfterPayConfiguration.AfterPayConfiguration
   nameWithType: AfterPayConfiguration.AfterPayConfiguration
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.DefaultCurrency
+  name: DefaultCurrency
+  href: api/Yort.AfterPay.InStore.AfterPayConfiguration.DefaultCurrency.html#Yort_AfterPay_InStore_AfterPayConfiguration_DefaultCurrency
+  commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.DefaultCurrency
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.DefaultCurrency
+  nameWithType: AfterPayConfiguration.DefaultCurrency
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.DefaultCurrency*
+  name: DefaultCurrency
+  href: api/Yort.AfterPay.InStore.AfterPayConfiguration.DefaultCurrency.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayConfiguration.DefaultCurrency
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.DefaultCurrency
+  nameWithType: AfterPayConfiguration.DefaultCurrency
 - uid: Yort.AfterPay.InStore.AfterPayConfiguration.DeviceId
   name: DeviceId
   href: api/Yort.AfterPay.InStore.AfterPayConfiguration.DeviceId.html#Yort_AfterPay_InStore_AfterPayConfiguration_DeviceId
@@ -739,6 +751,12 @@ references:
   commentId: T:Yort.AfterPay.InStore.AfterPayMoney
   fullName: Yort.AfterPay.InStore.AfterPayMoney
   nameWithType: AfterPayMoney
+- uid: Yort.AfterPay.InStore.AfterPayMoney.#ctor(System.Decimal)
+  name: AfterPayMoney(Decimal)
+  href: api/Yort.AfterPay.InStore.AfterPayMoney.-ctor.html#Yort_AfterPay_InStore_AfterPayMoney__ctor_System_Decimal_
+  commentId: M:Yort.AfterPay.InStore.AfterPayMoney.#ctor(System.Decimal)
+  fullName: Yort.AfterPay.InStore.AfterPayMoney.AfterPayMoney(System.Decimal)
+  nameWithType: AfterPayMoney.AfterPayMoney(Decimal)
 - uid: Yort.AfterPay.InStore.AfterPayMoney.#ctor(System.Decimal,System.String)
   name: AfterPayMoney(Decimal, String)
   href: api/Yort.AfterPay.InStore.AfterPayMoney.-ctor.html#Yort_AfterPay_InStore_AfterPayMoney__ctor_System_Decimal_System_String_

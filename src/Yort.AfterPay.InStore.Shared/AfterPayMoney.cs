@@ -27,6 +27,18 @@ namespace Yort.AfterPay.InStore
 		/// <summary>
 		/// Constructs a new instance using the specified amount and currency.
 		/// </summary>
+		/// <remarks>
+		/// <para>This constructor uses the <see cref="AfterPayConfiguration.DefaultCurrency"/> value for the <see cref="Currency"/> property of this instance. 
+		/// If <see cref="AfterPayConfiguration.DefaultCurrency"/> is null or empty string then <see cref="AfterPayCurrencies.AustralianDollars"/> will be used.</para>
+		/// </remarks>
+		/// <param name="amount">A decimal value indicating the numeric value of this monetary value.</param>
+		public AfterPayMoney(decimal amount) : this (amount, String.IsNullOrEmpty(AfterPayConfiguration.DefaultCurrency) ? AfterPayCurrencies.AustralianDollars : AfterPayConfiguration.DefaultCurrency)
+		{
+		}
+
+		/// <summary>
+		/// Constructs a new instance using the specified amount and currency.
+		/// </summary>
 		/// <param name="amount">A decimal value indicating the numeric value of this monetary value.</param>
 		/// <param name="currency">A three chracter string that identifies the currency this monetary value is in.</param>
 		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="currency"/> is null.</exception>

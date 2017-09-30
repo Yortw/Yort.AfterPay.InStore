@@ -203,6 +203,7 @@ namespace Yort.AfterPay.InStore
 		#region Static Memebers
 
 		private static IAfterPaySystemClock s_SystemClock;
+		private static string s_DefaultCurrency;
 
 		/// <summary>
 		/// Sets or returns an implementation of <see cref="IAfterPaySystemClock"/> that will be used by the library to determine the current date and time.
@@ -218,6 +219,21 @@ namespace Yort.AfterPay.InStore
 			set
 			{
 				s_SystemClock = value;
+			}
+		}
+
+		/// <summary>
+		/// Sets or returns the default currency for new <see cref="AfterPayMoney"/> instances where the currency is not explicitly provided.
+		/// </summary>
+		/// <remarks>
+		/// <para>If this property is null or an empty string then <see cref="AfterPayCurrencies.AustralianDollars"/> will be used as a default.</para>
+		/// </remarks>
+		public static string DefaultCurrency
+		{
+			get { return s_DefaultCurrency; }
+			set
+			{
+				s_DefaultCurrency = value;
 			}
 		}
 
