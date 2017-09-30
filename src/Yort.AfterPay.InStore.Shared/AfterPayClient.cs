@@ -115,7 +115,7 @@ namespace Yort.AfterPay.InStore
 			{
 				await EnsureToken().ConfigureAwait(false);
 
-				var httpRequest = CreateHttpRequest<AfterPayInviteRequest>(HttpMethod.Post, new Uri(_BaseUrl, "preapprovals/enquire"), request, requestContext);
+				var httpRequest = CreateHttpRequest<AfterPayInviteRequest>(HttpMethod.Post, new Uri(_BaseUrl, "invite"), request, requestContext);
 				try
 				{
 					await GetResponse<string>(httpRequest, 30).ConfigureAwait(false);
@@ -451,7 +451,7 @@ namespace Yort.AfterPay.InStore
 			handler.UseCookies = false;
 
 			handler.UseDefaultCredentials = false;
-
+			
 			return new HttpClient(handler);
 		}
 
@@ -459,7 +459,7 @@ namespace Yort.AfterPay.InStore
 		{
 			client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue(AfterPayConstants.JsonMediaType));
 			client.DefaultRequestHeaders.UserAgent.Add(GetUserAgent());
-			client.Timeout = TimeSpan.FromSeconds(10);
+			client.Timeout = TimeSpan.FromSeconds(90); //Needs to be at least as long as the maximum timeout recommended by any AfterPay endpoint (80 seconds total).
 
 			return client;
 		}

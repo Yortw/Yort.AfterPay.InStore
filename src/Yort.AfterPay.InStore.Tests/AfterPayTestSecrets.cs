@@ -32,5 +32,15 @@ namespace Yort.AfterPay.InStore.Tests
 			get { return Environment.GetEnvironmentVariable("AfterPayTests-DeviceKey"); }
 		}
 
+		public static string UnregisteredDeviceName
+		{
+			get { return Environment.GetEnvironmentVariable("AfterPayTests-UnregisteredDeviceName"); }
+		}
+
+		public static string UnregisteredDeviceSecret
+		{
+			get { return Environment.GetEnvironmentVariable("AfterPayTests-UnregisteredDeviceSecret"); }
+		}
+
 	}
 }
