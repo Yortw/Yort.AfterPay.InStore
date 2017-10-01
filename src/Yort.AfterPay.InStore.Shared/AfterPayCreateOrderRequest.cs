@@ -41,6 +41,7 @@ namespace Yort.AfterPay.InStore
 		/// <summary>
 		/// A set of <see cref="AfterPayOrderItem"/> instances representing the items being purchased on this order.
 		/// </summary>
+		[JsonProperty("orderItems")]
 		public IEnumerable<AfterPayOrderItem> OrderItems { get; set; }
 	}
 }
