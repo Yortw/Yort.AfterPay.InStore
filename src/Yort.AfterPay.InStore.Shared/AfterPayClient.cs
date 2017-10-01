@@ -299,9 +299,9 @@ namespace Yort.AfterPay.InStore
 
 		private async Task<AfterPayOrder> RetryableCreateOrder(AfterPayCreateOrderRequest request, AfterPayCallContext requestContext, int timeoutSeconds)
 		{
-			var httpRequest = CreateHttpRequest(HttpMethod.Post, new Uri(_BaseUrl, "orders"), request, requestContext);
-
 			await EnsureToken().ConfigureAwait(false);
+
+			var httpRequest = CreateHttpRequest(HttpMethod.Post, new Uri(_BaseUrl, "orders"), request, requestContext);
 
 			return await GetResponse<AfterPayOrder>(httpRequest, timeoutSeconds).ConfigureAwait(false);
 		}
