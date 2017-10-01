@@ -17,7 +17,8 @@ namespace Yort.AfterPay.InStore
 	/// <para>Instances created using the default construtor will return a zero value with the <see cref="Currency"/> property returning the value of <see cref="AfterPayCurrencies.AustralianDollars"/>.</para>
 	/// <para>See https://docs.afterpay.com.au/instore-api-v1.html#money-object for more information.</para>
 	/// </remarks>
-	[DebuggerDisplay("{Currency}{Amount}")]
+	[DebuggerDisplay("{Amount}{Currency}")]
+	[JsonConverter(typeof(AfterPayMoneyJsonConverter))]
 	public struct AfterPayMoney : IEquatable<AfterPayMoney>
 	{
 
@@ -31,7 +32,7 @@ namespace Yort.AfterPay.InStore
 		/// <para>This constructor uses the <see cref="AfterPayConfiguration.DefaultCurrency"/> value for the <see cref="Currency"/> property of this instance. 
 		/// If <see cref="AfterPayConfiguration.DefaultCurrency"/> is null or empty string then <see cref="AfterPayCurrencies.AustralianDollars"/> will be used.</para>
 		/// </remarks>
-		/// <param name="amount">A decimal value indicating the numeric value of this monetary value.</param>
+		/// <param name="amount">A decimal value indicating the numeric value of this monetary value. This value should be rounded to the appropriate number of decimal places associated with the currency specified by <see cref="Currency"/>.</param>
 		public AfterPayMoney(decimal amount) : this (amount, String.IsNullOrEmpty(AfterPayConfiguration.DefaultCurrency) ? AfterPayCurrencies.AustralianDollars : AfterPayConfiguration.DefaultCurrency)
 		{
 		}
@@ -39,7 +40,7 @@ namespace Yort.AfterPay.InStore
 		/// <summary>
 		/// Constructs a new instance using the specified amount and currency.
 		/// </summary>
-		/// <param name="amount">A decimal value indicating the numeric value of this monetary value.</param>
+		/// <param name="amount">A decimal value indicating the numeric value of this monetary value. This value should be rounded to the appropriate number of decimal places associated with the currency specified by <see cref="Currency"/>.</param>
 		/// <param name="currency">A three chracter string that identifies the currency this monetary value is in.</param>
 		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="currency"/> is null.</exception>
 		/// <exception cref="System.ArgumentException">Thrown if <paramref name="currency"/> is an empty string or contains only whitespace, or has a length other than 3.</exception>
@@ -52,6 +53,9 @@ namespace Yort.AfterPay.InStore
 		/// <summary>
 		/// Returns the numeric amount of this monetary value in the currency specified by <see cref="Currency"/>.
 		/// </summary>
+		/// <remarks>
+		/// <para>This value should be rounded to the appropriate number of decimal places associated with the currency specified by <see cref="Currency"/>.</para>
+		/// </remarks>
 		/// <seealso cref="Currency"/>
 		[JsonProperty("amount")]
 		public decimal Amount { get { return _Amount; } }

@@ -17,6 +17,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)AfterPayConstants.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AfterPayCreateOrderRequest.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AfterPayCreateRefundRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AfterPayMoneyJsonConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AfterPayOrder.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AfterPayCurrencies.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AfterPayDeviceRegistration.cs" />

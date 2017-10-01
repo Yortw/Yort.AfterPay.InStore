@@ -77,8 +77,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AfterPayApiExceptionTests.cs" />
-    <Compile Include="AfterPayClientErrrorHandlerTests.cs" />
+    <Compile Include="AfterPayClientErrrorHandlingTests.cs" />
     <Compile Include="AfterPayConfigurationTests.cs" />
+    <Compile Include="AfterPayMoneyJsonConverterTests.cs" />
     <Compile Include="AfterPayMoneyTests.cs" />
     <Compile Include="AfterPayTestSecrets.cs" />
     <Compile Include="AfterPayTokenTests.cs" />
