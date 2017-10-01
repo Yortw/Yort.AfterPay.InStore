@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Property Price
+    <title>Method ReadJson
    | Yort.AfterPay.InStore </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Property Price
+    <meta name="title" content="Method ReadJson
    | Yort.AfterPay.InStore ">
     <meta name="generator" content="docfx 2.24.0.0">
     
@@ -370,8 +370,8 @@
                                 <li class="">
                                   <a href="Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.CanConvert.html" title="CanConvert" class="">CanConvert</a>
                                 </li>
-                                <li class="">
-                                  <a href="Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.ReadJson.html" title="ReadJson" class="">ReadJson</a>
+                                <li class="active">
+                                  <a href="Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.ReadJson.html" title="ReadJson" class="active">ReadJson</a>
                                 </li>
                                 <li class="">
                                   <a href="Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.WriteJson.html" title="WriteJson" class="">WriteJson</a>
@@ -415,8 +415,8 @@
                                 <li class="">
                                   <a href="Yort.AfterPay.InStore.AfterPayOrderItem.Name.html" title="Name" class="">Name</a>
                                 </li>
-                                <li class="active">
-                                  <a href="Yort.AfterPay.InStore.AfterPayOrderItem.Price.html" title="Price" class="active">Price</a>
+                                <li class="">
+                                  <a href="Yort.AfterPay.InStore.AfterPayOrderItem.Price.html" title="Price" class="">Price</a>
                                 </li>
                                 <li class="">
                                   <a href="Yort.AfterPay.InStore.AfterPayOrderItem.Quantity.html" title="Quantity" class="">Quantity</a>
@@ -628,25 +628,61 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Yort.AfterPay.InStore.AfterPayOrderItem.Price*">
+            <article class="content wrap" id="_content" data-uid="Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.ReadJson*">
 
-<h1 id="Yort_AfterPay_InStore_AfterPayOrderItem_Price_" data-uid="Yort.AfterPay.InStore.AfterPayOrderItem.Price*">Property Price
+<h1 id="Yort_AfterPay_InStore_AfterPayMoneyJsonConverter_ReadJson_" data-uid="Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.ReadJson*">Method ReadJson
 </h1>
 <div class="markdown level0 summary"></div>
 <div class="markdown level0 conceptual"></div>
 
 
 
-<a id="Yort_AfterPay_InStore_AfterPayOrderItem_Price_" data-uid="Yort.AfterPay.InStore.AfterPayOrderItem.Price*"></a>
-<h4 id="Yort_AfterPay_InStore_AfterPayOrderItem_Price" data-uid="Yort.AfterPay.InStore.AfterPayOrderItem.Price">Price</h4>
-<div class="markdown level1 summary"><p>The unit price of a whole unit of this item.</p>
+<a id="Yort_AfterPay_InStore_AfterPayMoneyJsonConverter_ReadJson_" data-uid="Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.ReadJson*"></a>
+<h4 id="Yort_AfterPay_InStore_AfterPayMoneyJsonConverter_ReadJson_JsonReader_Type_System_Object_JsonSerializer_" data-uid="Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.ReadJson(JsonReader,Type,System.Object,JsonSerializer)">ReadJson(JsonReader, Type, Object, JsonSerializer)</h4>
+<div class="markdown level1 summary"><p>Reads an <a class="xref" href="Yort.AfterPay.InStore.AfterPayMoney.html">AfterPayMoney</a> from the current reader at the current position.</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public AfterPayMoney Price { get; set; }</code></pre>
+  <pre><code class="lang-csharp hljs">public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)</code></pre>
 </div>
-<h5 class="propertyValue">Property Value</h5>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">JsonReader</span></td>
+      <td><span class="parametername">reader</span></td>
+      <td><p>The reader to read from.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">Type</span></td>
+      <td><span class="parametername">objectType</span></td>
+      <td><p>The type of object to return, should be <a class="xref" href="Yort.AfterPay.InStore.AfterPayMoney.html">AfterPayMoney</a>.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Object</span></td>
+      <td><span class="parametername">existingValue</span></td>
+      <td><p>Not used.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">JsonSerializer</span></td>
+      <td><span class="parametername">serializer</span></td>
+      <td><p>The serializer being used with this converter.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
 <table class="table table-bordered table-striped table-condensed">
   <thead>
     <tr>
@@ -656,7 +692,7 @@
   </thead>
   <tbody>
     <tr>
-      <td><a class="xref" href="Yort.AfterPay.InStore.AfterPayMoney.html">AfterPayMoney</a></td>
+      <td><span class="xref">System.Object</span></td>
       <td></td>
     </tr>
   </tbody>

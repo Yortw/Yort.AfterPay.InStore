@@ -273,6 +273,9 @@ namespace Yort.AfterPay.InStore
 				catch (TaskCanceledException)
 				{
 					retries++;
+					//No need to wait the full timeout period on subsequent retries, 30 seconds is fine
+					//according to AfterPay docs.
+					timeoutSeconds = Math.Min(30, timeoutSeconds);
 				}
 				catch (AfterPayApiException apex)
 				{
@@ -351,20 +354,15 @@ namespace Yort.AfterPay.InStore
 		private async Task<T> GetResponse<T>(HttpRequestMessage request, int timeoutSeconds) where T : class
 		{
 			HttpResponseMessage response = null;
-			using (var tcs = new System.Threading.CancellationTokenSource())
-			{
-				tcs.CancelAfter(timeoutSeconds * 1000);
-				response = await _HttpClient.SendAsync(request, tcs.Token).ConfigureAwait(false);
-			}
-
 			try
 			{
-				//TODO: Fix Ugly boxing. For now ok because this won't happen often, because we won't usually be using these return types.
-				if (typeof(T) == typeof(bool))
-					return (T)((object)response.IsSuccessStatusCode);
-				else if (typeof(T) == typeof(HttpResponseMessage))
-					return (T)((object)response);
-				else if (!response.IsSuccessStatusCode)
+				using (var tcs = new System.Threading.CancellationTokenSource())
+				{
+					tcs.CancelAfter(timeoutSeconds * 1000);
+					response = await _HttpClient.SendAsync(request, tcs.Token).ConfigureAwait(false);
+				}
+
+				if (!response.IsSuccessStatusCode)
 				{
 					if (response.Content == null || response.Content.Headers?.ContentType?.MediaType != AfterPayConstants.JsonMediaType)
 						throw new AfterPayApiException(new AfterPayApiError() { HttpStatusCode = (int)response.StatusCode, Message = response.ReasonPhrase });
@@ -387,7 +385,7 @@ namespace Yort.AfterPay.InStore
 			}
 			finally
 			{
-				response.Dispose();
+				response?.Dispose();
 			}
 		}
 
@@ -451,7 +449,7 @@ namespace Yort.AfterPay.InStore
 			handler.UseCookies = false;
 
 			handler.UseDefaultCredentials = false;
-			
+
 			return new HttpClient(handler);
 		}
 

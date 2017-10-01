@@ -10,11 +10,15 @@ using System.Threading;
 namespace Yort.AfterPay.InStore.Tests
 {
 	[TestClass]
-	public class AfterPayClientErrrorHandlerTests
+	public class AfterPayClientErrrorHandlingTests
 	{
+
+		#region Response Constants
 
 		private const string Response_Token = "{ \"token\":\"86bc8b2b973d5046d82432862254dfb5967a6db7c844bf615ab8eba17082105b\", \"expiresIn\":14400 }";
 
+		//This is just a sample order response, it won't actually match
+		//the requests sent for tests in detail, but that isn't important for these tests.
 		private const string Response_Order = @"{
     ""requestId"":""61cdad2d-8e10-42ec-a97b-8712dd7a8ca9"",
     ""requestedAt"":""2015-07-14T10:08:14.123Z"",
@@ -48,6 +52,7 @@ namespace Yort.AfterPay.InStore.Tests
      ]
   }";
 
+		#endregion
 
 		[TestMethod]
 		public async Task Client_ErrorHandling_RetriesOnConflict()
@@ -110,6 +115,97 @@ namespace Yort.AfterPay.InStore.Tests
 			Assert.AreEqual(3, callCount);
 			Assert.IsNotNull(result);
 		}
+
+		[TestMethod]
+		[ExpectedException(typeof(System.TimeoutException))]
+		public async Task Client_ErrorHandling_RetriesOnTimeout()
+		{
+			int callCount = 0;
+
+			var mockHandler = new Yort.Http.ClientPipeline.MockMessageHandler();
+
+			mockHandler.AddDynamicResponse
+			(
+				new Http.ClientPipeline.MockResponseHandler()
+				{
+					CanHandleRequest = (request) => request.RequestUri.ToString() == AfterPayConstants.SandboxRootUrl + "/v1/devices/123/token" && request.Method == System.Net.Http.HttpMethod.Post,
+					HandleRequest = (request) =>
+					{
+						return Task.FromResult(new System.Net.Http.HttpResponseMessage(System.Net.HttpStatusCode.OK) { Content = new System.Net.Http.StringContent(Response_Token) });
+					}
+				}
+			);
+
+			mockHandler.AddDynamicResponse(new Http.ClientPipeline.MockResponseHandler()
+			{
+				CanHandleRequest = (request) => request.RequestUri.ToString() == AfterPayConstants.SandboxRootUrl + "/v1/orders" && request.Method == System.Net.Http.HttpMethod.Post,
+				HandleRequest = async (request) =>
+				{
+					callCount++;
+					return new System.Net.Http.HttpResponseMessage(System.Net.HttpStatusCode.ServiceUnavailable);
+				}
+			});
+
+			var httpClient = new System.Net.Http.HttpClient(new DelayingTimeoutHandler(90000, mockHandler, new string[] { AfterPayConstants.SandboxRootUrl + "/v1/devices/123/token" }));
+
+			var config = new AfterPayConfiguration()
+			{
+				HttpClient = httpClient,
+				Environment = AfterPayEnvironment.Sandbox,
+				DeviceId = "123",
+				DeviceKey = "ABC"
+			};
+
+			var client = new AfterPayClient(config);
+
+			try
+			{
+				var result = await client.CreateOrder
+				(
+					new AfterPayCreateOrderRequest()
+					{
+						Amount = new AfterPayMoney(200, AfterPayCurrencies.AustralianDollars),
+						PreapprovalCode = "ABCDEFGHIJKLMNOP",
+						MerchantReference = "SSDS2",
+						OrderItems = new AfterPayOrderItem[]
+						{
+						new AfterPayOrderItem() { Name = "Navy Check Jacket", Quantity = 1, Sku = "20000332", Price = new AfterPayMoney(200, AfterPayCurrencies.AustralianDollars) }
+						}
+					},
+					new AfterPayCallContext() { OperatorId = "Randal Graves" }
+				);
+			}
+			catch (System.TimeoutException)
+			{
+				Assert.AreEqual(4, callCount);
+				throw;
+			}
+
+			Assert.Fail("Expected System.TimeoutException");
+		}
+
 	}
+
+	internal class DelayingTimeoutHandler : DelegatingHandler
+	{
+		private int _DelayMilliseconds;
+		private IEnumerable<string> _IgnoredUrls;
+
+		public DelayingTimeoutHandler(int delayMilliseconds, HttpMessageHandler innerHandler, IEnumerable<string> ignoredUrls) : base(innerHandler)
+		{
+			_DelayMilliseconds = delayMilliseconds;
+			_IgnoredUrls = ignoredUrls;
+		}
+
+		protected async override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+		{
+			var response =  await base.SendAsync(request, cancellationToken);
+			if (_DelayMilliseconds > 0 && (_IgnoredUrls == null || !_IgnoredUrls.Contains(request.RequestUri.ToString(), StringComparer.OrdinalIgnoreCase)))
+				await Task.Delay(_DelayMilliseconds, cancellationToken);
+
+			return response;
+		}
+	}
+
 
 }

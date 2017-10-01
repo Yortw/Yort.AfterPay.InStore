@@ -859,6 +859,48 @@ references:
   commentId: Overload:Yort.AfterPay.InStore.AfterPayMoney.ToString
   fullName: Yort.AfterPay.InStore.AfterPayMoney.ToString
   nameWithType: AfterPayMoney.ToString
+- uid: Yort.AfterPay.InStore.AfterPayMoneyJsonConverter
+  name: AfterPayMoneyJsonConverter
+  href: api/Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.html
+  commentId: T:Yort.AfterPay.InStore.AfterPayMoneyJsonConverter
+  fullName: Yort.AfterPay.InStore.AfterPayMoneyJsonConverter
+  nameWithType: AfterPayMoneyJsonConverter
+- uid: Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.CanConvert(Type)
+  name: CanConvert(Type)
+  href: api/Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.CanConvert.html#Yort_AfterPay_InStore_AfterPayMoneyJsonConverter_CanConvert_Type_
+  commentId: M:Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.CanConvert(Type)
+  fullName: Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.CanConvert(Type)
+  nameWithType: AfterPayMoneyJsonConverter.CanConvert(Type)
+- uid: Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.CanConvert*
+  name: CanConvert
+  href: api/Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.CanConvert.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.CanConvert
+  fullName: Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.CanConvert
+  nameWithType: AfterPayMoneyJsonConverter.CanConvert
+- uid: Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.ReadJson(JsonReader,Type,System.Object,JsonSerializer)
+  name: ReadJson(JsonReader, Type, Object, JsonSerializer)
+  href: api/Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.ReadJson.html#Yort_AfterPay_InStore_AfterPayMoneyJsonConverter_ReadJson_JsonReader_Type_System_Object_JsonSerializer_
+  commentId: M:Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.ReadJson(JsonReader,Type,System.Object,JsonSerializer)
+  fullName: Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.ReadJson(JsonReader, Type, System.Object, JsonSerializer)
+  nameWithType: AfterPayMoneyJsonConverter.ReadJson(JsonReader, Type, Object, JsonSerializer)
+- uid: Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.ReadJson*
+  name: ReadJson
+  href: api/Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.ReadJson.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.ReadJson
+  fullName: Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.ReadJson
+  nameWithType: AfterPayMoneyJsonConverter.ReadJson
+- uid: Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.WriteJson(JsonWriter,System.Object,JsonSerializer)
+  name: WriteJson(JsonWriter, Object, JsonSerializer)
+  href: api/Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.WriteJson.html#Yort_AfterPay_InStore_AfterPayMoneyJsonConverter_WriteJson_JsonWriter_System_Object_JsonSerializer_
+  commentId: M:Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.WriteJson(JsonWriter,System.Object,JsonSerializer)
+  fullName: Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.WriteJson(JsonWriter, System.Object, JsonSerializer)
+  nameWithType: AfterPayMoneyJsonConverter.WriteJson(JsonWriter, Object, JsonSerializer)
+- uid: Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.WriteJson*
+  name: WriteJson
+  href: api/Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.WriteJson.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.WriteJson
+  fullName: Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.WriteJson
+  nameWithType: AfterPayMoneyJsonConverter.WriteJson
 - uid: Yort.AfterPay.InStore.AfterPayOrder
   name: AfterPayOrder
   href: api/Yort.AfterPay.InStore.AfterPayOrder.html

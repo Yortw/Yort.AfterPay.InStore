@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Property Price
+    <title>Method WriteJson
    | Yort.AfterPay.InStore </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Property Price
+    <meta name="title" content="Method WriteJson
    | Yort.AfterPay.InStore ">
     <meta name="generator" content="docfx 2.24.0.0">
     
@@ -373,8 +373,8 @@
                                 <li class="">
                                   <a href="Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.ReadJson.html" title="ReadJson" class="">ReadJson</a>
                                 </li>
-                                <li class="">
-                                  <a href="Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.WriteJson.html" title="WriteJson" class="">WriteJson</a>
+                                <li class="active">
+                                  <a href="Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.WriteJson.html" title="WriteJson" class="active">WriteJson</a>
                                 </li>
                               </ul>  </li>
                           <li class="">
@@ -415,8 +415,8 @@
                                 <li class="">
                                   <a href="Yort.AfterPay.InStore.AfterPayOrderItem.Name.html" title="Name" class="">Name</a>
                                 </li>
-                                <li class="active">
-                                  <a href="Yort.AfterPay.InStore.AfterPayOrderItem.Price.html" title="Price" class="active">Price</a>
+                                <li class="">
+                                  <a href="Yort.AfterPay.InStore.AfterPayOrderItem.Price.html" title="Price" class="">Price</a>
                                 </li>
                                 <li class="">
                                   <a href="Yort.AfterPay.InStore.AfterPayOrderItem.Quantity.html" title="Quantity" class="">Quantity</a>
@@ -628,36 +628,51 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Yort.AfterPay.InStore.AfterPayOrderItem.Price*">
+            <article class="content wrap" id="_content" data-uid="Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.WriteJson*">
 
-<h1 id="Yort_AfterPay_InStore_AfterPayOrderItem_Price_" data-uid="Yort.AfterPay.InStore.AfterPayOrderItem.Price*">Property Price
+<h1 id="Yort_AfterPay_InStore_AfterPayMoneyJsonConverter_WriteJson_" data-uid="Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.WriteJson*">Method WriteJson
 </h1>
 <div class="markdown level0 summary"></div>
 <div class="markdown level0 conceptual"></div>
 
 
 
-<a id="Yort_AfterPay_InStore_AfterPayOrderItem_Price_" data-uid="Yort.AfterPay.InStore.AfterPayOrderItem.Price*"></a>
-<h4 id="Yort_AfterPay_InStore_AfterPayOrderItem_Price" data-uid="Yort.AfterPay.InStore.AfterPayOrderItem.Price">Price</h4>
-<div class="markdown level1 summary"><p>The unit price of a whole unit of this item.</p>
+<a id="Yort_AfterPay_InStore_AfterPayMoneyJsonConverter_WriteJson_" data-uid="Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.WriteJson*"></a>
+<h4 id="Yort_AfterPay_InStore_AfterPayMoneyJsonConverter_WriteJson_JsonWriter_System_Object_JsonSerializer_" data-uid="Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.WriteJson(JsonWriter,System.Object,JsonSerializer)">WriteJson(JsonWriter, Object, JsonSerializer)</h4>
+<div class="markdown level1 summary"><p>Writes an <a class="xref" href="Yort.AfterPay.InStore.AfterPayMoney.html">AfterPayMoney</a> instance to the specified writer, ensuring the <a class="xref" href="Yort.AfterPay.InStore.AfterPayMoney.Amount.html#Yort_AfterPay_InStore_AfterPayMoney_Amount">Amount</a> value is written as a string.</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public AfterPayMoney Price { get; set; }</code></pre>
+  <pre><code class="lang-csharp hljs">public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)</code></pre>
 </div>
-<h5 class="propertyValue">Property Value</h5>
+<h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
   <thead>
     <tr>
       <th>Type</th>
+      <th>Name</th>
       <th>Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><a class="xref" href="Yort.AfterPay.InStore.AfterPayMoney.html">AfterPayMoney</a></td>
-      <td></td>
+      <td><span class="xref">JsonWriter</span></td>
+      <td><span class="parametername">writer</span></td>
+      <td><p>The writer to write to.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Object</span></td>
+      <td><span class="parametername">value</span></td>
+      <td><p>The <a class="xref" href="Yort.AfterPay.InStore.AfterPayMoney.html">AfterPayMoney</a> instance to be written.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">JsonSerializer</span></td>
+      <td><span class="parametername">serializer</span></td>
+      <td><p>The serializer being used with this converter.</p>
+</td>
     </tr>
   </tbody>
 </table>

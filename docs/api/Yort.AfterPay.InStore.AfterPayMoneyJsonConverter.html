@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Property Price
+    <title>Class AfterPayMoneyJsonConverter
    | Yort.AfterPay.InStore </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Property Price
+    <meta name="title" content="Class AfterPayMoneyJsonConverter
    | Yort.AfterPay.InStore ">
     <meta name="generator" content="docfx 2.24.0.0">
     
@@ -362,9 +362,9 @@
                                   <a href="Yort.AfterPay.InStore.AfterPayMoney.ToString.html" title="ToString" class="">ToString</a>
                                 </li>
                               </ul>  </li>
-                          <li class="">
+                          <li class="active">
                             <span class="expand-stub"></span>
-                            <a href="Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.html" title="AfterPayMoneyJsonConverter" class="">AfterPayMoneyJsonConverter</a>
+                            <a href="Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.html" title="AfterPayMoneyJsonConverter" class="active">AfterPayMoneyJsonConverter</a>
                               
                               <ul class="nav level3">
                                 <li class="">
@@ -415,8 +415,8 @@
                                 <li class="">
                                   <a href="Yort.AfterPay.InStore.AfterPayOrderItem.Name.html" title="Name" class="">Name</a>
                                 </li>
-                                <li class="active">
-                                  <a href="Yort.AfterPay.InStore.AfterPayOrderItem.Price.html" title="Price" class="active">Price</a>
+                                <li class="">
+                                  <a href="Yort.AfterPay.InStore.AfterPayOrderItem.Price.html" title="Price" class="">Price</a>
                                 </li>
                                 <li class="">
                                   <a href="Yort.AfterPay.InStore.AfterPayOrderItem.Quantity.html" title="Quantity" class="">Quantity</a>
@@ -628,39 +628,61 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Yort.AfterPay.InStore.AfterPayOrderItem.Price*">
-
-<h1 id="Yort_AfterPay_InStore_AfterPayOrderItem_Price_" data-uid="Yort.AfterPay.InStore.AfterPayOrderItem.Price*">Property Price
-</h1>
-<div class="markdown level0 summary"></div>
-<div class="markdown level0 conceptual"></div>
-
-
-
-<a id="Yort_AfterPay_InStore_AfterPayOrderItem_Price_" data-uid="Yort.AfterPay.InStore.AfterPayOrderItem.Price*"></a>
-<h4 id="Yort_AfterPay_InStore_AfterPayOrderItem_Price" data-uid="Yort.AfterPay.InStore.AfterPayOrderItem.Price">Price</h4>
-<div class="markdown level1 summary"><p>The unit price of a whole unit of this item.</p>
+            <article class="content wrap" id="_content" data-uid="Yort.AfterPay.InStore.AfterPayMoneyJsonConverter">
+  
+  
+  <h1 id="Yort_AfterPay_InStore_AfterPayMoneyJsonConverter" data-uid="Yort.AfterPay.InStore.AfterPayMoneyJsonConverter" class="text-break">Class AfterPayMoneyJsonConverter
+  </h1>
+  <div class="markdown level0 summary"><p>Ensures <a class="xref" href="Yort.AfterPay.InStore.AfterPayMoney.html">AfterPayMoney</a> instances are serialized according to the AfterPay rules.</p>
 </div>
-<div class="markdown level1 conceptual"></div>
-<h5 class="decalaration">Declaration</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public AfterPayMoney Price { get; set; }</code></pre>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">AfterPayMoneyJsonConverter</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Yort.AfterPay.InStore.html">Yort.AfterPay.InStore</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Yort_AfterPay_InStore_AfterPayMoneyJsonConverter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AfterPayMoneyJsonConverter : JsonConverter</code></pre>
+  </div>
+  <h5 id="Yort_AfterPay_InStore_AfterPayMoneyJsonConverter_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>In particular this class ensures the <a class="xref" href="Yort.AfterPay.InStore.AfterPayMoney.Amount.html#Yort_AfterPay_InStore_AfterPayMoney_Amount">Amount</a> value is (de)serialised as a string.</p>
 </div>
-<h5 class="propertyValue">Property Value</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a class="xref" href="Yort.AfterPay.InStore.AfterPayMoney.html">AfterPayMoney</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  <h3 id="methods">Methods
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="Yort_AfterPay_InStore_AfterPayMoneyJsonConverter_CanConvert_Type_" data-uid="Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.CanConvert(Type)">
+          <a class="xref" href="Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.CanConvert.html#Yort_AfterPay_InStore_AfterPayMoneyJsonConverter_CanConvert_Type_">CanConvert(Type)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns true if <code data-dev-comment-type="paramref" class="paramref">objectType</code> is <a class="xref" href="Yort.AfterPay.InStore.AfterPayMoney.html">AfterPayMoney</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Yort_AfterPay_InStore_AfterPayMoneyJsonConverter_ReadJson_JsonReader_Type_System_Object_JsonSerializer_" data-uid="Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.ReadJson(JsonReader,Type,System.Object,JsonSerializer)">
+          <a class="xref" href="Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.ReadJson.html#Yort_AfterPay_InStore_AfterPayMoneyJsonConverter_ReadJson_JsonReader_Type_System_Object_JsonSerializer_">ReadJson(JsonReader, Type, Object, JsonSerializer)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Reads an <a class="xref" href="Yort.AfterPay.InStore.AfterPayMoney.html">AfterPayMoney</a> from the current reader at the current position.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Yort_AfterPay_InStore_AfterPayMoneyJsonConverter_WriteJson_JsonWriter_System_Object_JsonSerializer_" data-uid="Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.WriteJson(JsonWriter,System.Object,JsonSerializer)">
+          <a class="xref" href="Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.WriteJson.html#Yort_AfterPay_InStore_AfterPayMoneyJsonConverter_WriteJson_JsonWriter_System_Object_JsonSerializer_">WriteJson(JsonWriter, Object, JsonSerializer)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Writes an <a class="xref" href="Yort.AfterPay.InStore.AfterPayMoney.html">AfterPayMoney</a> instance to the specified writer, ensuring the <a class="xref" href="Yort.AfterPay.InStore.AfterPayMoney.Amount.html#Yort_AfterPay_InStore_AfterPayMoney_Amount">Amount</a> value is written as a string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
