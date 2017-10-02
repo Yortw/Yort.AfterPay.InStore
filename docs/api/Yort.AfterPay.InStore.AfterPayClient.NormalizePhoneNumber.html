@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Method ReverseOrder
+    <title>Method NormalizePhoneNumber
    | Yort.AfterPay.InStore </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Method ReverseOrder
+    <meta name="title" content="Method NormalizePhoneNumber
    | Yort.AfterPay.InStore ">
     <meta name="generator" content="docfx 2.24.0.0">
     
@@ -145,8 +145,8 @@
                                 <li class="">
                                   <a href="Yort.AfterPay.InStore.AfterPayClient.DisposeManagedResources.html" title="DisposeManagedResources" class="">DisposeManagedResources</a>
                                 </li>
-                                <li class="">
-                                  <a href="Yort.AfterPay.InStore.AfterPayClient.NormalizePhoneNumber.html" title="NormalizePhoneNumber" class="">NormalizePhoneNumber</a>
+                                <li class="active">
+                                  <a href="Yort.AfterPay.InStore.AfterPayClient.NormalizePhoneNumber.html" title="NormalizePhoneNumber" class="active">NormalizePhoneNumber</a>
                                 </li>
                                 <li class="">
                                   <a href="Yort.AfterPay.InStore.AfterPayClient.Ping.html" title="Ping" class="">Ping</a>
@@ -160,8 +160,8 @@
                                 <li class="">
                                   <a href="Yort.AfterPay.InStore.AfterPayClient.RegisterDevice.html" title="RegisterDevice" class="">RegisterDevice</a>
                                 </li>
-                                <li class="active">
-                                  <a href="Yort.AfterPay.InStore.AfterPayClient.ReverseOrder.html" title="ReverseOrder" class="active">ReverseOrder</a>
+                                <li class="">
+                                  <a href="Yort.AfterPay.InStore.AfterPayClient.ReverseOrder.html" title="ReverseOrder" class="">ReverseOrder</a>
                                 </li>
                                 <li class="">
                                   <a href="Yort.AfterPay.InStore.AfterPayClient.ReverseRefund.html" title="ReverseRefund" class="">ReverseRefund</a>
@@ -634,23 +634,23 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Yort.AfterPay.InStore.AfterPayClient.ReverseOrder*">
+            <article class="content wrap" id="_content" data-uid="Yort.AfterPay.InStore.AfterPayClient.NormalizePhoneNumber*">
 
-<h1 id="Yort_AfterPay_InStore_AfterPayClient_ReverseOrder_" data-uid="Yort.AfterPay.InStore.AfterPayClient.ReverseOrder*">Method ReverseOrder
+<h1 id="Yort_AfterPay_InStore_AfterPayClient_NormalizePhoneNumber_" data-uid="Yort.AfterPay.InStore.AfterPayClient.NormalizePhoneNumber*">Method NormalizePhoneNumber
 </h1>
 <div class="markdown level0 summary"></div>
 <div class="markdown level0 conceptual"></div>
 
 
 
-<a id="Yort_AfterPay_InStore_AfterPayClient_ReverseOrder_" data-uid="Yort.AfterPay.InStore.AfterPayClient.ReverseOrder*"></a>
-<h4 id="Yort_AfterPay_InStore_AfterPayClient_ReverseOrder_Yort_AfterPay_InStore_AfterPayReverseOrderRequest_Yort_AfterPay_InStore_AfterPayCallContext_" data-uid="Yort.AfterPay.InStore.AfterPayClient.ReverseOrder(Yort.AfterPay.InStore.AfterPayReverseOrderRequest,Yort.AfterPay.InStore.AfterPayCallContext)">ReverseOrder(AfterPayReverseOrderRequest, AfterPayCallContext)</h4>
-<div class="markdown level1 summary"><p>Requests an order previously placed be reversed.</p>
+<a id="Yort_AfterPay_InStore_AfterPayClient_NormalizePhoneNumber_" data-uid="Yort.AfterPay.InStore.AfterPayClient.NormalizePhoneNumber*"></a>
+<h4 id="Yort_AfterPay_InStore_AfterPayClient_NormalizePhoneNumber_System_String_" data-uid="Yort.AfterPay.InStore.AfterPayClient.NormalizePhoneNumber(System.String)">NormalizePhoneNumber(String)</h4>
+<div class="markdown level1 summary"><p>Removes any non-digit characters from <code data-dev-comment-type="paramref" class="paramref">phoneNumber</code> and returns a new string containing the result.</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public Task&lt;AfterPayOrderReversal&gt; ReverseOrder(AfterPayReverseOrderRequest request, AfterPayCallContext requestContext)</code></pre>
+  <pre><code class="lang-csharp hljs">public string NormalizePhoneNumber(string phoneNumber)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -663,15 +663,9 @@
   </thead>
   <tbody>
     <tr>
-      <td><a class="xref" href="Yort.AfterPay.InStore.AfterPayReverseOrderRequest.html">AfterPayReverseOrderRequest</a></td>
-      <td><span class="parametername">request</span></td>
-      <td><p>A <a class="xref" href="Yort.AfterPay.InStore.AfterPayReverseOrderRequest.html">AfterPayReverseOrderRequest</a> containing details of the order to be reversed.</p>
-</td>
-    </tr>
-    <tr>
-      <td><a class="xref" href="Yort.AfterPay.InStore.AfterPayCallContext.html">AfterPayCallContext</a></td>
-      <td><span class="parametername">requestContext</span></td>
-      <td><p>A <a class="xref" href="Yort.AfterPay.InStore.AfterPayCallContext.html">AfterPayCallContext</a> instance containing additional details required to make the request.</p>
+      <td><span class="xref">System.String</span></td>
+      <td><span class="parametername">phoneNumber</span></td>
+      <td><p>The value to have non-numeric characters removed.</p>
 </td>
     </tr>
   </tbody>
@@ -686,50 +680,17 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">Task</span>&lt;<a class="xref" href="Yort.AfterPay.InStore.AfterPayOrderReversal.html">AfterPayOrderReversal</a>&gt;</td>
-      <td><p>An <a class="xref" href="Yort.AfterPay.InStore.AfterPayOrderReversal.html">AfterPayOrderReversal</a> containing details of the reversed order within the AfterPay system.</p>
+      <td><span class="xref">System.String</span></td>
+      <td><p>A new string containing the value of <code data-dev-comment-type="paramref" class="paramref">phoneNumber</code> with all non-numeric characters removed.</p>
 </td>
     </tr>
   </tbody>
 </table>
 <h5 class="implements">Implements</h5>
-    <div><a class="xref" href="Yort.AfterPay.InStore.IAfterPayClient.ReverseOrder.html#Yort_AfterPay_InStore_IAfterPayClient_ReverseOrder_Yort_AfterPay_InStore_AfterPayReverseOrderRequest_Yort_AfterPay_InStore_AfterPayCallContext_">IAfterPayClient.ReverseOrder(AfterPayReverseOrderRequest, AfterPayCallContext)</a></div>
-<h5 id="Yort_AfterPay_InStore_AfterPayClient_ReverseOrder_Yort_AfterPay_InStore_AfterPayReverseOrderRequest_Yort_AfterPay_InStore_AfterPayCallContext__remarks">Remarks</h5>
-<div class="markdown level1 remarks"><p>This method is intended to ensure an order is cancelled when it&apos;s status is/was unknown at the time the customer was present. It should not be used for refunds, see <a class="xref" href="Yort.AfterPay.InStore.AfterPayClient.RefundOrder.html#Yort_AfterPay_InStore_AfterPayClient_RefundOrder_Yort_AfterPay_InStore_AfterPayCreateRefundRequest_Yort_AfterPay_InStore_AfterPayCallContext_">RefundOrder(AfterPayCreateRefundRequest, AfterPayCallContext)</a>.</p>
-<p>This method will keep retrying until success, or a non-409 response error is received. If an exception of any type other than <a class="xref" href="Yort.AfterPay.InStore.AfterPayApiException.html">AfterPayApiException</a>, <see cref="!:UnauthorizedAccessException"></see>, <see cref="!:ArgumentNullException"></see> is thrown by this method, a reversal should be retried later.</p>
-<p>This method will automatically retry on timeout up to <a class="xref" href="Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries.html#Yort_AfterPay_InStore_AfterPayConfiguration_MaximumRetries">MaximumRetries</a>. If the last retry times out, a <see cref="!:TimeoutException"></see> will be thrown. On a 409 response it will retry until any other error or response is received.</p>
+    <div><a class="xref" href="Yort.AfterPay.InStore.IAfterPayClient.NormalizePhoneNumber.html#Yort_AfterPay_InStore_IAfterPayClient_NormalizePhoneNumber_System_String_">IAfterPayClient.NormalizePhoneNumber(String)</a></div>
+<h5 id="Yort_AfterPay_InStore_AfterPayClient_NormalizePhoneNumber_System_String__remarks">Remarks</h5>
+<div class="markdown level1 remarks"><p>If <code data-dev-comment-type="paramref" class="paramref">phoneNumber</code> is null or empty string, the same value is returned without modification.</p>
 </div>
-<h5 class="exceptions">Exceptions</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Condition</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a class="xref" href="Yort.AfterPay.InStore.AfterPayApiException.html">AfterPayApiException</a></td>
-      <td><p>Thrown if the request is rejected by the AfterPay API.</p>
-</td>
-    </tr>
-    <tr>
-      <td><span class="xref">System.ArgumentNullException</span></td>
-      <td><p>Thrown if <code data-dev-comment-type="paramref" class="paramref">request</code> or <code data-dev-comment-type="paramref" class="paramref">requestContext</code> is null.</p>
-</td>
-    </tr>
-    <tr>
-      <td><span class="xref">System.UnauthorizedAccessException</span></td>
-      <td><p>Thrown if the system cannot obtain an authorisation token from AfterPay before making the request.</p>
-</td>
-    </tr>
-    <tr>
-      <td><span class="xref">System.TimeoutException</span></td>
-      <td><p>Thrown if the request times out on the last retry attempt. . If this type of exception the reversal must be retried later.</p>
-</td>
-    </tr>
-  </tbody>
-</table>
 </article>
           </div>
           

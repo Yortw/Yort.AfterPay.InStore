@@ -85,6 +85,7 @@
     <Compile Include="AfterPayTokenTests.cs" />
     <Compile Include="IntegrationTests.cs" />
     <Compile Include="MockClock.cs" />
+    <Compile Include="NormalizePhoneNumberTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

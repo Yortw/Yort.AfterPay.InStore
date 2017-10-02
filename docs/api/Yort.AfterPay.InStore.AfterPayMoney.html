@@ -146,6 +146,9 @@
                                   <a href="Yort.AfterPay.InStore.AfterPayClient.DisposeManagedResources.html" title="DisposeManagedResources" class="">DisposeManagedResources</a>
                                 </li>
                                 <li class="">
+                                  <a href="Yort.AfterPay.InStore.AfterPayClient.NormalizePhoneNumber.html" title="NormalizePhoneNumber" class="">NormalizePhoneNumber</a>
+                                </li>
+                                <li class="">
                                   <a href="Yort.AfterPay.InStore.AfterPayClient.Ping.html" title="Ping" class="">Ping</a>
                                 </li>
                                 <li class="">
@@ -590,6 +593,9 @@
                                   <a href="Yort.AfterPay.InStore.IAfterPayClient.CreateOrder.html" title="CreateOrder" class="">CreateOrder</a>
                                 </li>
                                 <li class="">
+                                  <a href="Yort.AfterPay.InStore.IAfterPayClient.NormalizePhoneNumber.html" title="NormalizePhoneNumber" class="">NormalizePhoneNumber</a>
+                                </li>
+                                <li class="">
                                   <a href="Yort.AfterPay.InStore.IAfterPayClient.Ping.html" title="Ping" class="">Ping</a>
                                 </li>
                                 <li class="">
@@ -661,6 +667,16 @@
   <h5 id="Yort_AfterPay_InStore_AfterPayMoney_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>This is an immutable value type. To set the value or currency you must use the <a class="xref" href="Yort.AfterPay.InStore.AfterPayMoney.-ctor.html#Yort_AfterPay_InStore_AfterPayMoney__ctor_System_Decimal_System_String_">AfterPayMoney(Decimal, String)</a> constructor.</p>
 <p>Instances created using the default construtor will return a zero value with the <a class="xref" href="Yort.AfterPay.InStore.AfterPayMoney.Currency.html#Yort_AfterPay_InStore_AfterPayMoney_Currency">Currency</a> property returning the value of <a class="xref" href="Yort.AfterPay.InStore.AfterPayCurrencies.AustralianDollars.html#Yort_AfterPay_InStore_AfterPayCurrencies_AustralianDollars">AustralianDollars</a>.</p>
+<p>Note it is important the <a class="xref" href="Yort.AfterPay.InStore.AfterPayMoney.Amount.html#Yort_AfterPay_InStore_AfterPayMoney_Amount">Amount</a> property be set with the correct number of decimals. Using too many decimal places (more than 2 for AUD or NZD) will result in a 400 - bad request, invalid json response from the server. 
+You can use the <see cref="!:Math.Round(decimal, int)"></see> function when setting the amount to ensure the maximum number of decimal places used.</p>
+<p>
+<pre><code> //Assuming you have an variable called payment with a &apos;value&apos; property containing the decimal amount 
+    //you want to send to after pay.
+    var amount = new AfterPayMoney(Math.Round(payment.Value, 2));
+
+    //This sample uses a literal value for illustration purposes
+    var amount = new AfterPayMoney(Math.Round(99.9900, 2));</code></pre>
+</p>
 <p>See <a href="https://docs.afterpay.com.au/instore-api-v1.html#money-object">https://docs.afterpay.com.au/instore-api-v1.html#money-object</a> for more information.</p>
 </div>
   <h3 id="constructors">Constructors

@@ -15,6 +15,18 @@ namespace Yort.AfterPay.InStore
 	/// <remarks>
 	/// <para>This is an immutable value type. To set the value or currency you must use the <see cref="AfterPayMoney(decimal, string)"/> constructor.</para>
 	/// <para>Instances created using the default construtor will return a zero value with the <see cref="Currency"/> property returning the value of <see cref="AfterPayCurrencies.AustralianDollars"/>.</para>
+	/// <para>Note it is important the <see cref="Amount"/> property be set with the correct number of decimals. Using too many decimal places (more than 2 for AUD or NZD) will result in a 400 - bad request, invalid json response from the server. 
+	/// You can use the <see cref="Math.Round(decimal, int)"/> function when setting the amount to ensure the maximum number of decimal places used.</para>
+	/// <para>
+	/// <code>
+	///		//Assuming you have an variable called payment with a 'value' property containing the decimal amount 
+	///		//you want to send to after pay.
+	///		var amount = new AfterPayMoney(Math.Round(payment.Value, 2));
+	///		
+	///		//This sample uses a literal value for illustration purposes
+	///		var amount = new AfterPayMoney(Math.Round(99.9900, 2));
+	/// </code>
+	/// </para>
 	/// <para>See https://docs.afterpay.com.au/instore-api-v1.html#money-object for more information.</para>
 	/// </remarks>
 	[DebuggerDisplay("{Amount}{Currency}")]
