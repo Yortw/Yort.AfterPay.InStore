@@ -24,7 +24,7 @@ namespace Yort.AfterPay.InStore
 		public DateTimeOffset ReversedAt { get; set; }
 
 		/// <summary>
-		/// The unique id of the request previously sent to create the refund.
+		/// The unique id of the request that created the order that has now been reversed.
 		/// </summary>
 		[JsonProperty("reversingRequestId")]
 		public string ReversingRequestId { get; set; }
