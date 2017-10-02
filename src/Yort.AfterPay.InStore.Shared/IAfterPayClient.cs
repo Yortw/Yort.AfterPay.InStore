@@ -83,11 +83,5 @@ namespace Yort.AfterPay.InStore
 		/// <exception cref="System.ArgumentNullException">Thrown if <paramref name="request"/> or <paramref name="requestContext"/> is null.</exception>
 		Task<AfterPayRefundReversal> ReverseRefund(AfterPayReverseRefundRequest request, AfterPayCallContext requestContext);
 
-		/// <summary>
-		/// Removes any non-digit characters from <paramref name="phoneNumber"/> and returns a new string containing the result.
-		/// </summary>
-		/// <param name="phoneNumber">The value to have non-numeric characters removed.</param>
-		/// <returns>A new string containing the value of <paramref name="phoneNumber"/> with all non-numeric characters removed.</returns>
-		string NormalizePhoneNumber(string phoneNumber);
 	}
 }

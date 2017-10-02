@@ -205,18 +205,6 @@ references:
   commentId: Overload:Yort.AfterPay.InStore.AfterPayClient.DisposeManagedResources
   fullName: Yort.AfterPay.InStore.AfterPayClient.DisposeManagedResources
   nameWithType: AfterPayClient.DisposeManagedResources
-- uid: Yort.AfterPay.InStore.AfterPayClient.NormalizePhoneNumber(System.String)
-  name: NormalizePhoneNumber(String)
-  href: api/Yort.AfterPay.InStore.AfterPayClient.NormalizePhoneNumber.html#Yort_AfterPay_InStore_AfterPayClient_NormalizePhoneNumber_System_String_
-  commentId: M:Yort.AfterPay.InStore.AfterPayClient.NormalizePhoneNumber(System.String)
-  fullName: Yort.AfterPay.InStore.AfterPayClient.NormalizePhoneNumber(System.String)
-  nameWithType: AfterPayClient.NormalizePhoneNumber(String)
-- uid: Yort.AfterPay.InStore.AfterPayClient.NormalizePhoneNumber*
-  name: NormalizePhoneNumber
-  href: api/Yort.AfterPay.InStore.AfterPayClient.NormalizePhoneNumber.html
-  commentId: Overload:Yort.AfterPay.InStore.AfterPayClient.NormalizePhoneNumber
-  fullName: Yort.AfterPay.InStore.AfterPayClient.NormalizePhoneNumber
-  nameWithType: AfterPayClient.NormalizePhoneNumber
 - uid: Yort.AfterPay.InStore.AfterPayClient.Ping
   name: Ping()
   href: api/Yort.AfterPay.InStore.AfterPayClient.Ping.html#Yort_AfterPay_InStore_AfterPayClient_Ping
@@ -757,6 +745,18 @@ references:
   commentId: Overload:Yort.AfterPay.InStore.AfterPayInviteRequest.MobileNumber
   fullName: Yort.AfterPay.InStore.AfterPayInviteRequest.MobileNumber
   nameWithType: AfterPayInviteRequest.MobileNumber
+- uid: Yort.AfterPay.InStore.AfterPayInviteRequest.NormalizePhoneNumber(System.String)
+  name: NormalizePhoneNumber(String)
+  href: api/Yort.AfterPay.InStore.AfterPayInviteRequest.NormalizePhoneNumber.html#Yort_AfterPay_InStore_AfterPayInviteRequest_NormalizePhoneNumber_System_String_
+  commentId: M:Yort.AfterPay.InStore.AfterPayInviteRequest.NormalizePhoneNumber(System.String)
+  fullName: Yort.AfterPay.InStore.AfterPayInviteRequest.NormalizePhoneNumber(System.String)
+  nameWithType: AfterPayInviteRequest.NormalizePhoneNumber(String)
+- uid: Yort.AfterPay.InStore.AfterPayInviteRequest.NormalizePhoneNumber*
+  name: NormalizePhoneNumber
+  href: api/Yort.AfterPay.InStore.AfterPayInviteRequest.NormalizePhoneNumber.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayInviteRequest.NormalizePhoneNumber
+  fullName: Yort.AfterPay.InStore.AfterPayInviteRequest.NormalizePhoneNumber
+  nameWithType: AfterPayInviteRequest.NormalizePhoneNumber
 - uid: Yort.AfterPay.InStore.AfterPayMoney
   name: AfterPayMoney
   href: api/Yort.AfterPay.InStore.AfterPayMoney.html
@@ -1537,18 +1537,6 @@ references:
   commentId: Overload:Yort.AfterPay.InStore.IAfterPayClient.CreateOrder
   fullName: Yort.AfterPay.InStore.IAfterPayClient.CreateOrder
   nameWithType: IAfterPayClient.CreateOrder
-- uid: Yort.AfterPay.InStore.IAfterPayClient.NormalizePhoneNumber(System.String)
-  name: NormalizePhoneNumber(String)
-  href: api/Yort.AfterPay.InStore.IAfterPayClient.NormalizePhoneNumber.html#Yort_AfterPay_InStore_IAfterPayClient_NormalizePhoneNumber_System_String_
-  commentId: M:Yort.AfterPay.InStore.IAfterPayClient.NormalizePhoneNumber(System.String)
-  fullName: Yort.AfterPay.InStore.IAfterPayClient.NormalizePhoneNumber(System.String)
-  nameWithType: IAfterPayClient.NormalizePhoneNumber(String)
-- uid: Yort.AfterPay.InStore.IAfterPayClient.NormalizePhoneNumber*
-  name: NormalizePhoneNumber
-  href: api/Yort.AfterPay.InStore.IAfterPayClient.NormalizePhoneNumber.html
-  commentId: Overload:Yort.AfterPay.InStore.IAfterPayClient.NormalizePhoneNumber
-  fullName: Yort.AfterPay.InStore.IAfterPayClient.NormalizePhoneNumber
-  nameWithType: IAfterPayClient.NormalizePhoneNumber
 - uid: Yort.AfterPay.InStore.IAfterPayClient.Ping
   name: Ping()
   href: api/Yort.AfterPay.InStore.IAfterPayClient.Ping.html#Yort_AfterPay_InStore_IAfterPayClient_Ping

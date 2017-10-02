@@ -13,29 +13,25 @@ namespace Yort.AfterPay.InStore.Tests
 		[TestMethod]
 		public void NormalizePhoneNumber_ReturnsNullForNull()
 		{
-			var client = new AfterPayClient(new AfterPayConfiguration());
-			Assert.AreEqual(null, client.NormalizePhoneNumber(null));
+			Assert.AreEqual(null, AfterPayInviteRequest.NormalizePhoneNumber(null));
 		}
 
 		[TestMethod]
 		public void NormalizePhoneNumber_ReturnsEmptyForEmpty()
 		{
-			var client = new AfterPayClient(new AfterPayConfiguration());
-			Assert.AreEqual(String.Empty, client.NormalizePhoneNumber(String.Empty));
+			Assert.AreEqual(String.Empty, AfterPayInviteRequest.NormalizePhoneNumber(String.Empty));
 		}
 
 		[TestMethod]
 		public void NormalizePhoneNumber_ReturnsUnmodifiedStringWhenAllNumeric()
 		{
-			var client = new AfterPayClient(new AfterPayConfiguration());
-			Assert.AreEqual("1234567890", client.NormalizePhoneNumber("1234567890"));
+			Assert.AreEqual("1234567890", AfterPayInviteRequest.NormalizePhoneNumber("1234567890"));
 		}
 
 		[TestMethod]
 		public void NormalizePhoneNumber_RemoveNonNumericDigits()
 		{
-			var client = new AfterPayClient(new AfterPayConfiguration());
-			Assert.AreEqual("1234567890", client.NormalizePhoneNumber("+1-2 3(4)5A6B7#890."));
+			Assert.AreEqual("1234567890", AfterPayInviteRequest.NormalizePhoneNumber("+1-2 3(4)5A6B7#890."));
 		}
 
 	}

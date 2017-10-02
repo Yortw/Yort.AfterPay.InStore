@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Field JsonMediaType
+    <title>Method NormalizePhoneNumber
    | Yort.AfterPay.InStore </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Field JsonMediaType
+    <meta name="title" content="Method NormalizePhoneNumber
    | Yort.AfterPay.InStore ">
     <meta name="generator" content="docfx 2.24.0.0">
     
@@ -331,8 +331,8 @@
                                 <li class="">
                                   <a href="Yort.AfterPay.InStore.AfterPayInviteRequest.MobileNumber.html" title="MobileNumber" class="">MobileNumber</a>
                                 </li>
-                                <li class="">
-                                  <a href="Yort.AfterPay.InStore.AfterPayInviteRequest.NormalizePhoneNumber.html" title="NormalizePhoneNumber" class="">NormalizePhoneNumber</a>
+                                <li class="active">
+                                  <a href="Yort.AfterPay.InStore.AfterPayInviteRequest.NormalizePhoneNumber.html" title="NormalizePhoneNumber" class="active">NormalizePhoneNumber</a>
                                 </li>
                               </ul>  </li>
                           <li class="">
@@ -631,20 +631,42 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Yort.AfterPay.InStore.AfterPayConstants.JsonMediaType">
+            <article class="content wrap" id="_content" data-uid="Yort.AfterPay.InStore.AfterPayInviteRequest.NormalizePhoneNumber*">
 
-
-<h1 id="Yort_AfterPay_InStore_AfterPayConstants_JsonMediaType" data-uid="Yort.AfterPay.InStore.AfterPayConstants.JsonMediaType" class="text-break">Field JsonMediaType
+<h1 id="Yort_AfterPay_InStore_AfterPayInviteRequest_NormalizePhoneNumber_" data-uid="Yort.AfterPay.InStore.AfterPayInviteRequest.NormalizePhoneNumber*">Method NormalizePhoneNumber
 </h1>
-<div class="markdown level0 summary"><p>Returns &quot;application/json&quot; which is the media type accepted and returned by the AfterPay API.</p>
-</div>
+<div class="markdown level0 summary"></div>
 <div class="markdown level0 conceptual"></div>
-<h6><strong>Namespace</strong>: <a class="xref" href="Yort.AfterPay.InStore.html">Yort.AfterPay.InStore</a></h6>
-<h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-<h5 id="Yort_AfterPay_InStore_AfterPayConstants_JsonMediaType_syntax">Syntax</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public const string JsonMediaType = &quot;application/json&quot;</code></pre>
+
+
+
+<a id="Yort_AfterPay_InStore_AfterPayInviteRequest_NormalizePhoneNumber_" data-uid="Yort.AfterPay.InStore.AfterPayInviteRequest.NormalizePhoneNumber*"></a>
+<h4 id="Yort_AfterPay_InStore_AfterPayInviteRequest_NormalizePhoneNumber_System_String_" data-uid="Yort.AfterPay.InStore.AfterPayInviteRequest.NormalizePhoneNumber(System.String)">NormalizePhoneNumber(String)</h4>
+<div class="markdown level1 summary"><p>Removes any non-digit characters from <code data-dev-comment-type="paramref" class="paramref">phoneNumber</code> and returns a new string containing the result.</p>
 </div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static string NormalizePhoneNumber(string phoneNumber)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.String</span></td>
+      <td><span class="parametername">phoneNumber</span></td>
+      <td><p>The value to have non-numeric characters removed.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
 <h5 class="returns">Returns</h5>
 <table class="table table-bordered table-striped table-condensed">
   <thead>
@@ -656,10 +678,14 @@
   <tbody>
     <tr>
       <td><span class="xref">System.String</span></td>
-      <td></td>
+      <td><p>A new string containing the value of <code data-dev-comment-type="paramref" class="paramref">phoneNumber</code> with all non-numeric characters removed.</p>
+</td>
     </tr>
   </tbody>
 </table>
+<h5 id="Yort_AfterPay_InStore_AfterPayInviteRequest_NormalizePhoneNumber_System_String__remarks">Remarks</h5>
+<div class="markdown level1 remarks"><p>If <code data-dev-comment-type="paramref" class="paramref">phoneNumber</code> is null or empty string, the same value is returned without modification.</p>
+</div>
 </article>
           </div>
           
