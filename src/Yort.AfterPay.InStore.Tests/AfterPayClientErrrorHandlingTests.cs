@@ -139,10 +139,10 @@ namespace Yort.AfterPay.InStore.Tests
 			mockHandler.AddDynamicResponse(new Http.ClientPipeline.MockResponseHandler()
 			{
 				CanHandleRequest = (request) => request.RequestUri.ToString() == AfterPayConstants.SandboxRootUrl + "/v1/orders" && request.Method == System.Net.Http.HttpMethod.Post,
-				HandleRequest = async (request) =>
+				HandleRequest = (request) =>
 				{
 					callCount++;
-					return new System.Net.Http.HttpResponseMessage(System.Net.HttpStatusCode.ServiceUnavailable);
+					return Task.FromResult(new System.Net.Http.HttpResponseMessage(System.Net.HttpStatusCode.ServiceUnavailable));
 				}
 			});
 
