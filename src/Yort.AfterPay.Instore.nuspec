@@ -8,9 +8,9 @@
         <owners>Yortw</owners>
         <requireLicenseAcceptance>true</requireLicenseAcceptance>
         <description>An *unofficial*, light-weight wrapper for .Net, around the After Pay In-Store API (https://docs.afterpay.com.au/instore-api-v1.html).</description>
-	<licenseUrl>https://github.com/Yortw/Yort-AfterPay-InStore/blob/master/LICENSE</licenseUrl>
-	<projectUrl>https://github.com/Yortw/Yort-AfterPay-InStore</projectUrl>
-	<iconUrl>https://raw.githubusercontent.com/Yortw/Yort-AfterPay-InStore/master/YortAfterPayInStoreLibIcon.png</iconUrl>
+	<licenseUrl>https://github.com/Yortw/Yort.AfterPay.InStore/blob/master/LICENSE.md</licenseUrl>
+	<projectUrl>https://github.com/Yortw/Yort.AfterPay.InStore</projectUrl>
+	<iconUrl>https://github.com/Yortw/Yort.AfterPay.InStore/raw/master/YortAfterPayInStoreLibIcon.png</iconUrl>
 	<language>en-AU</language>
         <tags>afterpay store instore net40 netstandard20</tags>
         <dependencies>
