@@ -22,7 +22,7 @@ namespace Yort.AfterPay.InStore
 		private string _DeviceKey;
 		private int _RetryDelay;
 
-		private int _MaximumRetries;
+		private int _MinimumRetries;
 
 		private bool _Locked;
 
@@ -34,7 +34,7 @@ namespace Yort.AfterPay.InStore
 		/// </remarks>
 		public AfterPayConfiguration()
 		{
-			_MaximumRetries = 2;
+			_MinimumRetries = 2;
 		}
 
 		/// <summary>
@@ -153,12 +153,12 @@ namespace Yort.AfterPay.InStore
 		/// <exception cref="System.InvalidProgramException">Thrown if this property is modified after it has been passed to a <see cref="AfterPayClient"/> instance.</exception>
 		public int MinimumRetries
 		{
-			get { return _MaximumRetries; }
+			get { return _MinimumRetries; }
 			set
 			{
 				ThrowIfLocked();
 
-				_MaximumRetries = value;
+				_MinimumRetries = value;
 			}
 		}
 
