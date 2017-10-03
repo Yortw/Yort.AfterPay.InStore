@@ -57,6 +57,9 @@ namespace Yort.AfterPay.InStore.Tests
 		[TestMethod]
 		public async Task Client_ErrorHandling_RetriesOnConflict()
 		{
+
+			#region Test Setup
+
 			int callCount = 0;
 
 			var mockHandler = new Yort.Http.ClientPipeline.MockMessageHandler();
@@ -86,6 +89,8 @@ namespace Yort.AfterPay.InStore.Tests
 			});
 
 			var httpClient = new System.Net.Http.HttpClient(mockHandler);
+
+			#endregion
 
 			var config = new AfterPayConfiguration()
 			{
@@ -118,8 +123,11 @@ namespace Yort.AfterPay.InStore.Tests
 
 		[TestMethod]
 		[ExpectedException(typeof(System.TimeoutException))]
-		public async Task Client_ErrorHandling_RetriesOnTimeout()
+		public async Task Client_ErrorHandling_ThrowsTimeoutExceptionAfterLastAttemptTimesOut()
 		{
+
+			#region Test Setup
+
 			int callCount = 0;
 
 			var mockHandler = new Yort.Http.ClientPipeline.MockMessageHandler();
@@ -148,12 +156,15 @@ namespace Yort.AfterPay.InStore.Tests
 
 			var httpClient = new System.Net.Http.HttpClient(new DelayingTimeoutHandler(90000, mockHandler, new string[] { AfterPayConstants.SandboxRootUrl + "/v1/devices/123/token" }));
 
+			#endregion
+
 			var config = new AfterPayConfiguration()
 			{
 				HttpClient = httpClient,
 				Environment = AfterPayEnvironment.Sandbox,
 				DeviceId = "123",
-				DeviceKey = "ABC"
+				DeviceKey = "ABC",
+				MinimumRetries = 2
 			};
 
 			var client = new AfterPayClient(config);
@@ -177,7 +188,155 @@ namespace Yort.AfterPay.InStore.Tests
 			}
 			catch (System.TimeoutException)
 			{
-				Assert.AreEqual(4, callCount);
+				Assert.IsTrue(callCount >= config.MinimumRetries);
+				throw;
+			}
+
+			Assert.Fail("Expected System.TimeoutException");
+		}
+
+		[TestMethod]
+		[ExpectedException(typeof(System.TimeoutException))]
+		public async Task Client_ErrorHandling_RetriesAtLeastMinTimesWithHighMinRetries()
+		{
+
+			#region Test Setup
+
+			int callCount = 0;
+
+			var mockHandler = new Yort.Http.ClientPipeline.MockMessageHandler();
+
+			mockHandler.AddDynamicResponse
+			(
+				new Http.ClientPipeline.MockResponseHandler()
+				{
+					CanHandleRequest = (request) => request.RequestUri.ToString() == AfterPayConstants.SandboxRootUrl + "/v1/devices/123/token" && request.Method == System.Net.Http.HttpMethod.Post,
+					HandleRequest = (request) =>
+					{
+						return Task.FromResult(new System.Net.Http.HttpResponseMessage(System.Net.HttpStatusCode.OK) { Content = new System.Net.Http.StringContent(Response_Token) });
+					}
+				}
+			);
+
+			mockHandler.AddDynamicResponse(new Http.ClientPipeline.MockResponseHandler()
+			{
+				CanHandleRequest = (request) => request.RequestUri.ToString() == AfterPayConstants.SandboxRootUrl + "/v1/orders" && request.Method == System.Net.Http.HttpMethod.Post,
+				HandleRequest = (request) =>
+				{
+					callCount++;
+					return Task.FromResult(new System.Net.Http.HttpResponseMessage(System.Net.HttpStatusCode.ServiceUnavailable));
+				}
+			});
+
+			var httpClient = new System.Net.Http.HttpClient(new DelayingTimeoutHandler(90000, mockHandler, new string[] { AfterPayConstants.SandboxRootUrl + "/v1/devices/123/token" }));
+
+			#endregion
+
+			var config = new AfterPayConfiguration()
+			{
+				HttpClient = httpClient,
+				Environment = AfterPayEnvironment.Sandbox,
+				DeviceId = "123",
+				DeviceKey = "ABC",
+				MinimumRetries = 4
+			};
+
+			var client = new AfterPayClient(config);
+
+			try
+			{
+				var result = await client.CreateOrder
+				(
+					new AfterPayCreateOrderRequest()
+					{
+						Amount = new AfterPayMoney(200, AfterPayCurrencies.AustralianDollars),
+						PreapprovalCode = "ABCDEFGHIJKLMNOP",
+						MerchantReference = "SSDS2",
+						OrderItems = new AfterPayOrderItem[]
+						{
+						new AfterPayOrderItem() { Name = "Navy Check Jacket", Quantity = 1, Sku = "20000332", Price = new AfterPayMoney(200, AfterPayCurrencies.AustralianDollars) }
+						}
+					},
+					new AfterPayCallContext() { OperatorId = "Randal Graves" }
+				);
+			}
+			catch (System.TimeoutException)
+			{
+				Assert.IsTrue(callCount >= 4);
+				throw;
+			}
+
+			Assert.Fail("Expected System.TimeoutException");
+		}
+
+		[TestMethod]
+		[ExpectedException(typeof(System.TimeoutException))]
+		public async Task Client_ErrorHandling_RetriesUntilMinTimeoutWithLowRetries()
+		{
+
+			#region Tet Setup
+
+			int callCount = 0;
+
+			var mockHandler = new Yort.Http.ClientPipeline.MockMessageHandler();
+
+			mockHandler.AddDynamicResponse
+			(
+				new Http.ClientPipeline.MockResponseHandler()
+				{
+					CanHandleRequest = (request) => request.RequestUri.ToString() == AfterPayConstants.SandboxRootUrl + "/v1/devices/123/token" && request.Method == System.Net.Http.HttpMethod.Post,
+					HandleRequest = (request) =>
+					{
+						return Task.FromResult(new System.Net.Http.HttpResponseMessage(System.Net.HttpStatusCode.OK) { Content = new System.Net.Http.StringContent(Response_Token) });
+					}
+				}
+			);
+
+			mockHandler.AddDynamicResponse(new Http.ClientPipeline.MockResponseHandler()
+			{
+				CanHandleRequest = (request) => request.RequestUri.ToString() == AfterPayConstants.SandboxRootUrl + "/v1/orders" && request.Method == System.Net.Http.HttpMethod.Post,
+				HandleRequest = (request) =>
+				{
+					callCount++;
+					return Task.FromResult(new System.Net.Http.HttpResponseMessage(System.Net.HttpStatusCode.ServiceUnavailable));
+				}
+			});
+
+			var httpClient = new System.Net.Http.HttpClient(new DelayingTimeoutHandler(90000, mockHandler, new string[] { AfterPayConstants.SandboxRootUrl + "/v1/devices/123/token" }));
+
+			#endregion
+
+			var config = new AfterPayConfiguration()
+			{
+				HttpClient = httpClient,
+				Environment = AfterPayEnvironment.Sandbox,
+				DeviceId = "123",
+				DeviceKey = "ABC",
+				MinimumRetries = 1
+			};
+
+			var client = new AfterPayClient(config);
+
+			try
+			{
+				var result = await client.CreateOrder
+				(
+					new AfterPayCreateOrderRequest()
+					{
+						Amount = new AfterPayMoney(200, AfterPayCurrencies.AustralianDollars),
+						PreapprovalCode = "ABCDEFGHIJKLMNOP",
+						MerchantReference = "SSDS2",
+						OrderItems = new AfterPayOrderItem[]
+						{
+						new AfterPayOrderItem() { Name = "Navy Check Jacket", Quantity = 1, Sku = "20000332", Price = new AfterPayMoney(200, AfterPayCurrencies.AustralianDollars) }
+						}
+					},
+					new AfterPayCallContext() { OperatorId = "Randal Graves" }
+				);
+			}
+			catch (System.TimeoutException)
+			{
+				Assert.IsTrue(callCount > 1);
 				throw;
 			}
 

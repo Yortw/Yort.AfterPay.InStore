@@ -34,7 +34,7 @@ namespace Yort.AfterPay.InStore
 		/// </remarks>
 		public AfterPayConfiguration()
 		{
-			_MaximumRetries = 4;
+			_MaximumRetries = 2;
 		}
 
 		/// <summary>
@@ -144,13 +144,14 @@ namespace Yort.AfterPay.InStore
 		}
 
 		/// <summary>
-		/// The maximum number of automatic retries to perform when a create transaction (order/refund/order reversal/refund reversal etc) times out.
+		/// The minumum number of automatic retries to perform when a create transaction (order/refund/order reversal/refund reversal etc) times out.
 		/// </summary>
 		/// <remarks>
-		/// <para>This property defaults to a value of 4. A value of zero or less is allowed, in which case only the initial attempt will be made - no retries will be performed within the library and any error handling logic will need to be entirely implemented by the application.</para>
+		/// <para>This property defaults to a value of 2. A value of zero or less is allowed, in which case only the initial attempt will be made - no retries will be performed within the library and any error handling logic will need to be entirely implemented by the application.</para>
+		/// <para>The library may attempt more retries than specified if the total time since the initial call is less than the (full, AfterPay) recommended timeout for the endpoint being called.</para>
 		/// </remarks>
 		/// <exception cref="System.InvalidProgramException">Thrown if this property is modified after it has been passed to a <see cref="AfterPayClient"/> instance.</exception>
-		public int MaximumRetries
+		public int MinimumRetries
 		{
 			get { return _MaximumRetries; }
 			set
@@ -165,7 +166,7 @@ namespace Yort.AfterPay.InStore
 		/// Sets or returns the number of seconds to wait before attempting a retry.
 		/// </summary>
 		/// <remarks>
-		/// <para>When a transactional call (CreateOrder/Refund etc) times out the system will perform a retry (based on the <see cref="MaximumRetries"/> setting). 
+		/// <para>When a transactional call (CreateOrder/Refund etc) times out the system will perform a retry (based on the <see cref="MinimumRetries"/> setting). 
 		/// If that retry attempt returns a 409 conflict response indicating the first request is still in progres, 
 		/// then the system will wait this many seconds before the next retry. See https://docs.afterpay.com.au/instore-api-v1.html#distributed-state-considerations and https://docs.afterpay.com.au/instore-api-v1.html#create-order for more details.</para>
 		/// <para>The minimum value is 5 seconds. Any value less than 5 seconds will be ignored, and a 5 second delay will occur instead.</para>

@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Property RequestId
+    <title>Property MinimumRetries
    | Yort.AfterPay.InStore </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Property RequestId
+    <meta name="title" content="Property MinimumRetries
    | Yort.AfterPay.InStore ">
     <meta name="generator" content="docfx 2.24.0.0">
     
@@ -190,8 +190,8 @@
                                 <li class="">
                                   <a href="Yort.AfterPay.InStore.AfterPayConfiguration.HttpClient.html" title="HttpClient" class="">HttpClient</a>
                                 </li>
-                                <li class="">
-                                  <a href="Yort.AfterPay.InStore.AfterPayConfiguration.MinimumRetries.html" title="MinimumRetries" class="">MinimumRetries</a>
+                                <li class="active">
+                                  <a href="Yort.AfterPay.InStore.AfterPayConfiguration.MinimumRetries.html" title="MinimumRetries" class="active">MinimumRetries</a>
                                 </li>
                                 <li class="">
                                   <a href="Yort.AfterPay.InStore.AfterPayConfiguration.ProductName.html" title="ProductName" class="">ProductName</a>
@@ -496,8 +496,8 @@
                                 <li class="">
                                   <a href="Yort.AfterPay.InStore.AfterPayRefund.RequestedAt.html" title="RequestedAt" class="">RequestedAt</a>
                                 </li>
-                                <li class="active">
-                                  <a href="Yort.AfterPay.InStore.AfterPayRefund.RequestId.html" title="RequestId" class="active">RequestId</a>
+                                <li class="">
+                                  <a href="Yort.AfterPay.InStore.AfterPayRefund.RequestId.html" title="RequestId" class="">RequestId</a>
                                 </li>
                               </ul>  </li>
                           <li class="">
@@ -631,23 +631,23 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Yort.AfterPay.InStore.AfterPayRefund.RequestId*">
+            <article class="content wrap" id="_content" data-uid="Yort.AfterPay.InStore.AfterPayConfiguration.MinimumRetries*">
 
-<h1 id="Yort_AfterPay_InStore_AfterPayRefund_RequestId_" data-uid="Yort.AfterPay.InStore.AfterPayRefund.RequestId*">Property RequestId
+<h1 id="Yort_AfterPay_InStore_AfterPayConfiguration_MinimumRetries_" data-uid="Yort.AfterPay.InStore.AfterPayConfiguration.MinimumRetries*">Property MinimumRetries
 </h1>
 <div class="markdown level0 summary"></div>
 <div class="markdown level0 conceptual"></div>
 
 
 
-<a id="Yort_AfterPay_InStore_AfterPayRefund_RequestId_" data-uid="Yort.AfterPay.InStore.AfterPayRefund.RequestId*"></a>
-<h4 id="Yort_AfterPay_InStore_AfterPayRefund_RequestId" data-uid="Yort.AfterPay.InStore.AfterPayRefund.RequestId">RequestId</h4>
-<div class="markdown level1 summary"><p>The unique id for the request that created this refund.</p>
+<a id="Yort_AfterPay_InStore_AfterPayConfiguration_MinimumRetries_" data-uid="Yort.AfterPay.InStore.AfterPayConfiguration.MinimumRetries*"></a>
+<h4 id="Yort_AfterPay_InStore_AfterPayConfiguration_MinimumRetries" data-uid="Yort.AfterPay.InStore.AfterPayConfiguration.MinimumRetries">MinimumRetries</h4>
+<div class="markdown level1 summary"><p>The minumum number of automatic retries to perform when a create transaction (order/refund/order reversal/refund reversal etc) times out.</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public string RequestId { get; set; }</code></pre>
+  <pre><code class="lang-csharp hljs">public int MinimumRetries { get; set; }</code></pre>
 </div>
 <h5 class="propertyValue">Property Value</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -659,8 +659,28 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.String</span></td>
+      <td><span class="xref">System.Int32</span></td>
       <td></td>
+    </tr>
+  </tbody>
+</table>
+<h5 id="Yort_AfterPay_InStore_AfterPayConfiguration_MinimumRetries_remarks">Remarks</h5>
+<div class="markdown level1 remarks"><p>This property defaults to a value of 2. A value of zero or less is allowed, in which case only the initial attempt will be made - no retries will be performed within the library and any error handling logic will need to be entirely implemented by the application.</p>
+<p>The library may attempt more retries than specified if the total time since the initial call is less than the (full, AfterPay) recommended timeout for the endpoint being called.</p>
+</div>
+<h5 class="exceptions">Exceptions</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Condition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.InvalidProgramException</span></td>
+      <td><p>Thrown if this property is modified after it has been passed to a <a class="xref" href="Yort.AfterPay.InStore.AfterPayClient.html">AfterPayClient</a> instance.</p>
+</td>
     </tr>
   </tbody>
 </table>

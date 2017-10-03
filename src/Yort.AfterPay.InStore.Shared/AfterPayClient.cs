@@ -156,9 +156,9 @@ namespace Yort.AfterPay.InStore
 		/// </summary>
 		/// <remarks>
 		/// <para>This method will keep retrying until success, or a non-409 response error is received. If an exception of any type other than <see cref="AfterPayApiException"/>, <see cref="UnauthorizedAccessException"/>, <see cref="ArgumentNullException"/> is thrown by this method, a reversal should be queued.</para>
-		/// <para>This method will automatically retry on timeout up to <see cref="AfterPayConfiguration.MaximumRetries"/>. If the last retry times out, a <see cref="TimeoutException"/> will be thrown. On a 409 response it will retry until any other error or response is received.</para>
+		/// <para>This method will automatically retry on timeout up to <see cref="AfterPayConfiguration.MinimumRetries"/>. If the last retry times out, a <see cref="TimeoutException"/> will be thrown. On a 409 response it will retry until any other error or response is received.</para>
 		/// </remarks>
-		/// <seealso cref="AfterPayConfiguration.MaximumRetries"/>
+		/// <seealso cref="AfterPayConfiguration.MinimumRetries"/>
 		/// <seealso cref="AfterPayConfiguration.RetryDelaySeconds"/>
 		/// <param name="request">A <see cref="AfterPayCreateOrderRequest"/> containing details of the order to be created.</param>
 		/// <param name="requestContext">A <see cref="AfterPayCallContext"/> instance containing additional details required to make the request.</param>
@@ -185,7 +185,7 @@ namespace Yort.AfterPay.InStore
 		/// <remarks>
 		/// <para>This method is intended to ensure an order is cancelled when it's status is/was unknown at the time the customer was present. It should not be used for refunds, see <see cref="RefundOrder"/>.</para>
 		/// <para>This method will keep retrying until success, or a non-409 response error is received. If an exception of any type other than <see cref="AfterPayApiException"/>, <see cref="UnauthorizedAccessException"/>, <see cref="ArgumentNullException"/> is thrown by this method, a reversal should be retried later.</para>
-		/// <para>This method will automatically retry on timeout up to <see cref="AfterPayConfiguration.MaximumRetries"/>. If the last retry times out, a <see cref="TimeoutException"/> will be thrown. On a 409 response it will retry until any other error or response is received.</para>
+		/// <para>This method will automatically retry on timeout up to <see cref="AfterPayConfiguration.MinimumRetries"/>. If the last retry times out, a <see cref="TimeoutException"/> will be thrown. On a 409 response it will retry until any other error or response is received.</para>
 		/// </remarks>
 		/// <param name="request">A <see cref="AfterPayReverseOrderRequest"/> containing details of the order to be reversed.</param>
 		/// <param name="requestContext">A <see cref="AfterPayCallContext"/> instance containing additional details required to make the request.</param>
@@ -210,7 +210,7 @@ namespace Yort.AfterPay.InStore
 		/// </summary>
 		/// <remarks>
 		/// <para>This method will keep retrying until success, or a non-409 response error is received. If an exception of any type other than <see cref="AfterPayApiException"/>, <see cref="UnauthorizedAccessException"/>, <see cref="ArgumentNullException"/> is thrown by this method, a reversal should be queued.</para>
-		/// <para>This method will automatically retry on timeout up to <see cref="AfterPayConfiguration.MaximumRetries"/>. If the last retry times out, a <see cref="TimeoutException"/> will be thrown. On a 409 response it will retry until any other error or response is received.</para>
+		/// <para>This method will automatically retry on timeout up to <see cref="AfterPayConfiguration.MinimumRetries"/>. If the last retry times out, a <see cref="TimeoutException"/> will be thrown. On a 409 response it will retry until any other error or response is received.</para>
 		/// </remarks>
 		/// <param name="request">A <see cref="AfterPayCreateRefundRequest"/> containing details of the refund to create.</param>
 		/// <param name="requestContext">A <see cref="AfterPayCallContext"/> instance containing additional details required to make the request.</param>
@@ -237,7 +237,7 @@ namespace Yort.AfterPay.InStore
 		/// <remarks>
 		/// <para>This method is intended to ensure a refuund is cancelled when it's status is/was unknown at the time the customer was present. For more information see https://docs.afterpay.com.au/instore-api-v1.html#refund-reversal </para>
 		/// <para>This method will keep retrying until success, or a non-409 response error is received. If an exception of any type other than <see cref="AfterPayApiException"/>, <see cref="UnauthorizedAccessException"/>, <see cref="ArgumentNullException"/> is thrown by this method, a reversal should be retried later.</para>
-		/// <para>This method will automatically retry on timeout up to <see cref="AfterPayConfiguration.MaximumRetries"/>. If the last retry times out, a <see cref="TimeoutException"/> will be thrown. On a 409 response it will retry until any other error or response is received.</para>
+		/// <para>This method will automatically retry on timeout up to <see cref="AfterPayConfiguration.MinimumRetries"/>. If the last retry times out, a <see cref="TimeoutException"/> will be thrown. On a 409 response it will retry until any other error or response is received.</para>
 		/// </remarks>
 		/// <param name="request">A <see cref="AfterPayReverseRefundRequest"/> containing details of the refund reversal to create.</param>
 		/// <param name="requestContext">A <see cref="AfterPayCallContext"/> instance containing additional details required to make the request.</param>
@@ -264,29 +264,33 @@ namespace Yort.AfterPay.InStore
 		private async Task<TResult> ExecuteWithRetries<TRequest, TResult>(Func<TRequest, AfterPayCallContext, int, Task<TResult>> retryableOperation, TRequest request, AfterPayCallContext callContext, int timeoutSeconds)
 		{
 			var retries = 0;
-			while (retries < _Configuration.MaximumRetries)
+			var initialRequestTime = AfterPayConfiguration.SystemClock.Now.LocalDateTime;
+			var lastRequestBeginTime = AfterPayConfiguration.SystemClock.Now.LocalDateTime;
+			int thisAttemptTimeoutSeconds = 30;
+			while (retries <= _Configuration.MinimumRetries || SecondsSince(initialRequestTime) < timeoutSeconds)
 			{
 				try
 				{
-					return await retryableOperation(request, callContext, timeoutSeconds).ConfigureAwait(false);
+					lastRequestBeginTime = AfterPayConfiguration.SystemClock.Now.LocalDateTime;
+					return await retryableOperation(request, callContext, thisAttemptTimeoutSeconds).ConfigureAwait(false);
 				}
 				catch (TaskCanceledException)
 				{
 					retries++;
 					//No need to wait the full timeout period on subsequent retries, 30 seconds is fine
 					//according to AfterPay docs.
-					timeoutSeconds = Math.Min(30, timeoutSeconds);
+					thisAttemptTimeoutSeconds = timeoutSeconds - SecondsSince(initialRequestTime);
+					if (thisAttemptTimeoutSeconds <= 0) thisAttemptTimeoutSeconds = 30;
 				}
 				catch (AfterPayApiException apex)
 				{
 					//409 - Conflict, indicates a prior request is in progress and we should retry.
 					//Anything else is a failure (https://docs.afterpay.com.au/instore-api-v1.html#distributed-state-considerations).
 					if (apex.HttpStatusCode != 409) throw;
-#if SUPPORTS_TASKDELAY
-					await Task.Delay(Math.Max(5, _Configuration.RetryDelaySeconds) * 1000);
-#else
-					await TaskEx.Delay(Math.Max(5, _Configuration.RetryDelaySeconds) * 1000);
-#endif
+
+					//409 errors often come back immediately, let's not DoS the AfterPay servers,
+					//so wait a brief interval before trying again.
+					await DoRetryDelay(retries, lastRequestBeginTime).ConfigureAwait(false);
 				}
 				catch
 				{
@@ -295,6 +299,24 @@ namespace Yort.AfterPay.InStore
 			}
 
 			throw new TimeoutException(ErrorMessageResources.RequestTimeout);
+		}
+
+		private async Task DoRetryDelay(int retries, DateTime lastRequestBeginTime)
+		{
+			int delaySeconds = Math.Max(5, _Configuration.RetryDelaySeconds) - SecondsSince(lastRequestBeginTime);
+			if (retries > 0 && delaySeconds > 0)
+			{
+#if SUPPORTS_TASKDELAY
+				await Task.Delay(delaySeconds * 1000);
+#else
+						await TaskEx.Delay(delaySeconds * 1000);
+#endif
+			}
+		}
+
+		private static int SecondsSince(DateTime initialRequestTime)
+		{
+			return Convert.ToInt32(AfterPayConfiguration.SystemClock.Now.LocalDateTime.Subtract(initialRequestTime).TotalSeconds);
 		}
 
 		private async Task<AfterPayOrder> RetryableCreateOrder(AfterPayCreateOrderRequest request, AfterPayCallContext requestContext, int timeoutSeconds)
@@ -457,7 +479,7 @@ namespace Yort.AfterPay.InStore
 		{
 			client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue(AfterPayConstants.JsonMediaType));
 			client.DefaultRequestHeaders.UserAgent.Add(GetUserAgent());
-			client.Timeout = TimeSpan.FromSeconds(90); //Needs to be at least as long as the maximum timeout recommended by any AfterPay endpoint (80 seconds total).
+			client.Timeout = TimeSpan.FromSeconds(30); //Advice from AfterPay is always retry at 30 second intervals regardless of recommended endpoint timeout.
 
 			return client;
 		}

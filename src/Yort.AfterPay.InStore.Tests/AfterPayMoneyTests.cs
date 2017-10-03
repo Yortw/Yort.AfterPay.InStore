@@ -47,5 +47,76 @@ namespace Yort.AfterPay.InStore.Tests
 			var m1 = new AfterPayMoney(10);
 			Assert.AreEqual(m1.Currency, AfterPayCurrencies.AustralianDollars);
 		}
+		
+		[TestMethod]
+		public void Money_Equals_EqualWhenSubPropertiesMatch()
+		{
+			var m1 = new AfterPayMoney(10M, AfterPayCurrencies.AustralianDollars);
+			var m2 = new AfterPayMoney(10M, AfterPayCurrencies.AustralianDollars);
+
+			Assert.AreEqual(m1, m2);
+			Assert.IsTrue(m1 == m2);
+			Assert.IsFalse(m1 != m2);
+		}
+
+		[TestMethod]
+		public void Money_Equals_NotEqualWhenSubPropertiesDoNotMatch()
+		{
+			var m1 = new AfterPayMoney(10M, AfterPayCurrencies.AustralianDollars);
+			var m2 = new AfterPayMoney(20M, AfterPayCurrencies.NewZealandDollars);
+
+			Assert.AreNotEqual(m1, m2);
+			Assert.IsFalse(m1 == m2);
+			Assert.IsTrue(m1 != m2);
+		}
+
+		[TestMethod]
+		public void Money_Equals_NotEqualWhenCurrenciesDoNotMatch()
+		{
+			var m1 = new AfterPayMoney(10M, AfterPayCurrencies.AustralianDollars);
+			var m2 = new AfterPayMoney(10M, AfterPayCurrencies.NewZealandDollars);
+
+			Assert.AreNotEqual(m1, m2);
+			Assert.IsFalse(m1 == m2);
+			Assert.IsTrue(m1 != m2);
+		}
+
+		[TestMethod]
+		public void Money_Equals_NotEqualWhenAmountsDoNotMatch()
+		{
+			var m1 = new AfterPayMoney(10M, AfterPayCurrencies.AustralianDollars);
+			var m2 = new AfterPayMoney(20M, AfterPayCurrencies.AustralianDollars);
+
+			Assert.AreNotEqual(m1, m2);
+			Assert.IsFalse(m1 == m2);
+			Assert.IsTrue(m1 != m2);
+		}
+
+		[TestMethod]
+		public void Money_GetHashCode_MatchWhenValuesEqual()
+		{
+			var m1 = new AfterPayMoney(10M, AfterPayCurrencies.AustralianDollars);
+			var m2 = new AfterPayMoney(10M, AfterPayCurrencies.AustralianDollars);
+
+			Assert.AreEqual(m1.GetHashCode(), m2.GetHashCode());
+		}
+
+		[TestMethod]
+		public void Money_GetHashCode_DoNotMatchWhenAmountsDiffer()
+		{
+			var m1 = new AfterPayMoney(10M, AfterPayCurrencies.AustralianDollars);
+			var m2 = new AfterPayMoney(20M, AfterPayCurrencies.AustralianDollars);
+
+			Assert.AreNotEqual(m1.GetHashCode(), m2.GetHashCode());
+		}
+
+		[TestMethod]
+		public void Money_GetHashCode_DoNotMatchWhenCurrenciesDiffer()
+		{
+			var m1 = new AfterPayMoney(10M, AfterPayCurrencies.AustralianDollars);
+			var m2 = new AfterPayMoney(10M, AfterPayCurrencies.NewZealandDollars);
+
+			Assert.AreNotEqual(m1.GetHashCode(), m2.GetHashCode());
+		}
 	}
 }

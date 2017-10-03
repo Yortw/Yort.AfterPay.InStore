@@ -191,7 +191,7 @@
                                   <a href="Yort.AfterPay.InStore.AfterPayConfiguration.HttpClient.html" title="HttpClient" class="">HttpClient</a>
                                 </li>
                                 <li class="">
-                                  <a href="Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries.html" title="MaximumRetries" class="">MaximumRetries</a>
+                                  <a href="Yort.AfterPay.InStore.AfterPayConfiguration.MinimumRetries.html" title="MinimumRetries" class="">MinimumRetries</a>
                                 </li>
                                 <li class="">
                                   <a href="Yort.AfterPay.InStore.AfterPayConfiguration.ProductName.html" title="ProductName" class="">ProductName</a>
@@ -694,7 +694,7 @@
 <h5 id="Yort_AfterPay_InStore_AfterPayClient_ReverseRefund_Yort_AfterPay_InStore_AfterPayReverseRefundRequest_Yort_AfterPay_InStore_AfterPayCallContext__remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>This method is intended to ensure a refuund is cancelled when it&apos;s status is/was unknown at the time the customer was present. For more information see <a href="https://docs.afterpay.com.au/instore-api-v1.html#refund-reversal">https://docs.afterpay.com.au/instore-api-v1.html#refund-reversal</a> </p>
 <p>This method will keep retrying until success, or a non-409 response error is received. If an exception of any type other than <a class="xref" href="Yort.AfterPay.InStore.AfterPayApiException.html">AfterPayApiException</a>, <see cref="!:UnauthorizedAccessException"></see>, <see cref="!:ArgumentNullException"></see> is thrown by this method, a reversal should be retried later.</p>
-<p>This method will automatically retry on timeout up to <a class="xref" href="Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries.html#Yort_AfterPay_InStore_AfterPayConfiguration_MaximumRetries">MaximumRetries</a>. If the last retry times out, a <see cref="!:TimeoutException"></see> will be thrown. On a 409 response it will retry until any other error or response is received.</p>
+<p>This method will automatically retry on timeout up to <a class="xref" href="Yort.AfterPay.InStore.AfterPayConfiguration.MinimumRetries.html#Yort_AfterPay_InStore_AfterPayConfiguration_MinimumRetries">MinimumRetries</a>. If the last retry times out, a <see cref="!:TimeoutException"></see> will be thrown. On a 409 response it will retry until any other error or response is received.</p>
 </div>
 <h5 class="exceptions">Exceptions</h5>
 <table class="table table-bordered table-striped table-condensed">

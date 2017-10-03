@@ -43,7 +43,7 @@ namespace Yort.AfterPay.InStore.Tests
 				DeviceId = "123",
 				Environment = AfterPayEnvironment.Sandbox,
 				DeviceKey = "ABC",
-				MaximumRetries = 5,
+				MinimumRetries = 5,
 				ProductName = "Test",
 				ProductVersion = "2.0",
 				RetryDelaySeconds = 7
@@ -54,7 +54,7 @@ namespace Yort.AfterPay.InStore.Tests
 			Assert.ThrowsException<InvalidOperationException>(() => config.DeviceId = "ABC");
 			Assert.ThrowsException<InvalidOperationException>(() => config.Environment = AfterPayEnvironment.Sandbox);
 			Assert.ThrowsException<InvalidOperationException>(() => config.DeviceKey = "123");
-			Assert.ThrowsException<InvalidOperationException>(() => config.MaximumRetries = 2);
+			Assert.ThrowsException<InvalidOperationException>(() => config.MinimumRetries = 2);
 			Assert.ThrowsException<InvalidOperationException>(() => config.ProductName = "testPOS");
 			Assert.ThrowsException<InvalidOperationException>(() => config.ProductVersion = "1.0");
 			Assert.ThrowsException<InvalidOperationException>(() => config.RetryDelaySeconds = 3);
@@ -62,7 +62,7 @@ namespace Yort.AfterPay.InStore.Tests
 			Assert.AreEqual("123", config.DeviceId);
 			Assert.AreEqual(AfterPayEnvironment.Sandbox, config.Environment);
 			Assert.AreEqual("ABC", config.DeviceKey);
-			Assert.AreEqual(5, config.MaximumRetries);
+			Assert.AreEqual(5, config.MinimumRetries);
 			Assert.AreEqual("Test", config.ProductName);
 			Assert.AreEqual("2.0", config.ProductVersion);
 			Assert.AreEqual(7, config.RetryDelaySeconds);

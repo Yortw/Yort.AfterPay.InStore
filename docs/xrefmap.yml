@@ -367,18 +367,18 @@ references:
   commentId: Overload:Yort.AfterPay.InStore.AfterPayConfiguration.HttpClient
   fullName: Yort.AfterPay.InStore.AfterPayConfiguration.HttpClient
   nameWithType: AfterPayConfiguration.HttpClient
-- uid: Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries
-  name: MaximumRetries
-  href: api/Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries.html#Yort_AfterPay_InStore_AfterPayConfiguration_MaximumRetries
-  commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries
-  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries
-  nameWithType: AfterPayConfiguration.MaximumRetries
-- uid: Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries*
-  name: MaximumRetries
-  href: api/Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries.html
-  commentId: Overload:Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries
-  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries
-  nameWithType: AfterPayConfiguration.MaximumRetries
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.MinimumRetries
+  name: MinimumRetries
+  href: api/Yort.AfterPay.InStore.AfterPayConfiguration.MinimumRetries.html#Yort_AfterPay_InStore_AfterPayConfiguration_MinimumRetries
+  commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.MinimumRetries
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.MinimumRetries
+  nameWithType: AfterPayConfiguration.MinimumRetries
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.MinimumRetries*
+  name: MinimumRetries
+  href: api/Yort.AfterPay.InStore.AfterPayConfiguration.MinimumRetries.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayConfiguration.MinimumRetries
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.MinimumRetries
+  nameWithType: AfterPayConfiguration.MinimumRetries
 - uid: Yort.AfterPay.InStore.AfterPayConfiguration.ProductName
   name: ProductName
   href: api/Yort.AfterPay.InStore.AfterPayConfiguration.ProductName.html#Yort_AfterPay_InStore_AfterPayConfiguration_ProductName

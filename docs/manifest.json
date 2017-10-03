@@ -152,56 +152,8 @@
       "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayClient.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayClient.-ctor.html",
-          "hash": "6pLYYNmfGaxA/mvlf0x5VQ=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayClient.RegisterDevice.html",
-          "hash": "ZugApngP3cbS7k0VCdxv3g=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayClient.Ping.html",
-          "hash": "drnEHggzMNsJNG+6pP5HMw=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayClient.SendInvite.html",
-          "hash": "GRsFQK6h+bWDx6F5/O0FLg=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayClient.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayClient.PreapprovalEnquiry.html",
-          "hash": "ZJhAMdst8xXtLIPHPIlK+w=="
+          "hash": "wECLgGlpOc8vuVqwi5gtkQ=="
         }
       },
       "is_incremental": true,
@@ -213,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayClient.CreateOrder.html",
-          "hash": "aOLE08waWLNIPqAxXiCCFQ=="
+          "hash": "1sYgl4wG4INVBsrD+zzQCQ=="
         }
       },
       "is_incremental": true,
@@ -225,43 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayClient.ReverseOrder.html",
-          "hash": "My3hCG6GkbJyEt/GW9ax2Q=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayClient.RefundOrder.html",
-          "hash": "4rSjBrclM+/kW6XNvl82jQ=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayClient.ReverseRefund.html",
-          "hash": "605KLBzNsyYWFRg9P/GgJQ=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayClient.DisposeManagedResources.html",
-          "hash": "Spn1kM6smDOSwnF1xSeBvg=="
+          "hash": "rMyT3sCxovJfj6TryhWNnQ=="
         }
       },
       "is_incremental": true,
@@ -273,7 +189,91 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayClient.html",
-          "hash": "cib2e74EVfFTfyIjzFgtjA=="
+          "hash": "t7kEYRK0nr3rfzMglQpmEg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayClient.-ctor.html",
+          "hash": "1QdkT2xG8e7hTgowkHd/Ww=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayClient.RegisterDevice.html",
+          "hash": "tfIzuJAoB09yv0sZRd1q6A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayClient.Ping.html",
+          "hash": "OrGL5lNJVkW+PG2HFUagWw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayClient.SendInvite.html",
+          "hash": "GhY0qHi2288jJbBN+7bhHw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayClient.RefundOrder.html",
+          "hash": "zbDEOD5SsbaU+VC7ifpJEw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayClient.ReverseRefund.html",
+          "hash": "rwc6wJe3iMQnB0TdU6M43g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayClient.DisposeManagedResources.html",
+          "hash": "yHQe9XVD0yqJQFvPONI3dg=="
         }
       },
       "is_incremental": true,
@@ -284,104 +284,8 @@
       "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.html",
-          "hash": "nf6nDg/hl2IuQixgwsJUqA=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.-ctor.html",
-          "hash": "yKZCyJWMlFK4IhmBkDoWrg=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.Environment.html",
-          "hash": "q3iIETuEWnQRD7RwHyYqiw=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.HttpClient.html",
-          "hash": "U0aFcfgZt0PAKqnhmWlNFA=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.ProductName.html",
-          "hash": "kCSiuWSoKdpewFWAoKwtnA=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.ProductVersion.html",
-          "hash": "Qn7AR1Yw+iBa5QJk1cfIRg=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.DeviceId.html",
-          "hash": "UrF62SsdP7H7L7UCJqsJtg=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.DeviceKey.html",
-          "hash": "xC6y+yIqydHSj0mluROkjw=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.MaximumRetries.html",
-          "hash": "jVG8LgdGLUG9dtZgBij3mw=="
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.MinimumRetries.html",
+          "hash": "FD4tHjj8YaSarU/W3RUqig=="
         }
       },
       "is_incremental": true,
@@ -393,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.RetryDelaySeconds.html",
-          "hash": "iWxWOEyWNahGUCZudLPcEA=="
+          "hash": "vDxrbHLSImEIxw3Lk6CP0Q=="
         }
       },
       "is_incremental": true,
@@ -405,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.SystemClock.html",
-          "hash": "gIaZ3I5gdXplPh+MmZzt3w=="
+          "hash": "oKa31CQ1qLI07r8HLB0ZlA=="
         }
       },
       "is_incremental": true,
@@ -417,7 +321,103 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.DefaultCurrency.html",
-          "hash": "xyTUmNFNbZuqif4ujcr8FA=="
+          "hash": "bmoF0AGDxa46QTkebCioLA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.html",
+          "hash": "3Z2caOV9rqTvFueHa0tu4g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.-ctor.html",
+          "hash": "V80AGAp+CwwiVaCW6B4Xaw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.Environment.html",
+          "hash": "XGfXKrqt5jIU/YIeHPt5Ig=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.HttpClient.html",
+          "hash": "0vVHjIm1w6AGwV25syRs1g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.ProductName.html",
+          "hash": "aLctXiUligfLjjmDnL5Opg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.ProductVersion.html",
+          "hash": "NwLJ4jKdvD1ypKfj0dV1hQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.DeviceId.html",
+          "hash": "GhbUtwbWZkTvkrF6mMn9ow=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayConfiguration.DeviceKey.html",
+          "hash": "AJeHBPtgvZ3rM6ZPO04GZA=="
         }
       },
       "is_incremental": true,
@@ -429,7 +429,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayConstants.html",
-          "hash": "EeQcanvr8ESNXoXKB8NCPg=="
+          "hash": "EtFjru8WudcJvNe/EAiyWQ=="
         }
       },
       "is_incremental": true,
@@ -441,7 +441,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayConstants.ProductionRootUrl.html",
-          "hash": "yqNYZuz7wPJExv1fW7TGMQ=="
+          "hash": "biSok8LCTcuJyQ7meZnJnA=="
         }
       },
       "is_incremental": true,
@@ -453,7 +453,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayConstants.SandboxRootUrl.html",
-          "hash": "OUOKJwvFdM7GfC2W8RHuug=="
+          "hash": "69SIN2iQkDoJ8wVb5QGefw=="
         }
       },
       "is_incremental": true,
@@ -465,79 +465,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayConstants.JsonMediaType.html",
-          "hash": "2yhqYPudhrbfUPgKGkO8rA=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateOrderRequest.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateOrderRequest.RequestId.html",
-          "hash": "lqFvWlCoXQHsporksz3PaQ=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateOrderRequest.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateOrderRequest.RequestedAt.html",
-          "hash": "70EGIsE89oHlJ0HwFeo42g=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateOrderRequest.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateOrderRequest.MerchantReference.html",
-          "hash": "OwYYVofbXepTv3e2yrxyLw=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateOrderRequest.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateOrderRequest.PreapprovalCode.html",
-          "hash": "6FeEkT8oKFvZnDMcVPFIDg=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateOrderRequest.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateOrderRequest.Amount.html",
-          "hash": "ykDqj2NdbXMxHDiCgC8AGA=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateOrderRequest.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateOrderRequest.OrderItems.html",
-          "hash": "d1yVHcQ9C1f/yLCB5vm/TA=="
+          "hash": "Ist2dqFOH5wtyaBc1tpnEw=="
         }
       },
       "is_incremental": true,
@@ -549,7 +477,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateOrderRequest.html",
-          "hash": "9fTfOwvaBl5fS9HlgIudPg=="
+          "hash": "nMZ8wy7MSk0t53YC7p6UBQ=="
         }
       },
       "is_incremental": true,
@@ -557,11 +485,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateRefundRequest.yml",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateOrderRequest.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateRefundRequest.RequestedAt.html",
-          "hash": "5rMzaY/eTtTVCDSYDhATWA=="
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateOrderRequest.RequestId.html",
+          "hash": "wBqniewcpyeySw3H8oo5lg=="
         }
       },
       "is_incremental": true,
@@ -569,11 +497,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateRefundRequest.yml",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateOrderRequest.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateRefundRequest.MerchantReference.html",
-          "hash": "eGcTz2IOYW7YL3GR+b80rQ=="
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateOrderRequest.RequestedAt.html",
+          "hash": "tSoGPaiksczf9kJicado8g=="
         }
       },
       "is_incremental": true,
@@ -581,11 +509,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateRefundRequest.yml",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateOrderRequest.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateRefundRequest.OrderId.html",
-          "hash": "LuvhJ1nW9a8uhU/DcaViTg=="
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateOrderRequest.MerchantReference.html",
+          "hash": "kbbVdqxcK/Xrfg/9lhtLkQ=="
         }
       },
       "is_incremental": true,
@@ -593,11 +521,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateRefundRequest.yml",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateOrderRequest.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateRefundRequest.OrderMerchantReference.html",
-          "hash": "mN2WUDYgetHu0SpGviQxFw=="
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateOrderRequest.PreapprovalCode.html",
+          "hash": "+ovaqUJtQWbbAh5GH52W5w=="
         }
       },
       "is_incremental": true,
@@ -605,11 +533,23 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateRefundRequest.yml",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateOrderRequest.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateRefundRequest.Amount.html",
-          "hash": "ZtZUH1e51olI05FQ6xx1rA=="
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateOrderRequest.Amount.html",
+          "hash": "YJjKu9r160uksYcytYWuaw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateOrderRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateOrderRequest.OrderItems.html",
+          "hash": "ygQO8hSDEswkyyE7NRHKoA=="
         }
       },
       "is_incremental": true,
@@ -621,7 +561,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateRefundRequest.html",
-          "hash": "c6pN1m/oJ5VeWBd19U7p9Q=="
+          "hash": "XjsFPjlm/7hW6t1OjGWbzQ=="
         }
       },
       "is_incremental": true,
@@ -633,7 +573,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateRefundRequest.RequestId.html",
-          "hash": "vOZOXoTtKuN35lXsyUuOIw=="
+          "hash": "G6vZkFfgUyhzxwZGWxht2Q=="
         }
       },
       "is_incremental": true,
@@ -641,11 +581,59 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayCurrencies.yml",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateRefundRequest.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayCurrencies.html",
-          "hash": "HZBTcYSOHKyj39QoI7ZOTg=="
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateRefundRequest.RequestedAt.html",
+          "hash": "kJ1sNsueF6AUTr8gzN5W0g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateRefundRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateRefundRequest.MerchantReference.html",
+          "hash": "qiJdCepaKnMHAN+e66EnUQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateRefundRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateRefundRequest.OrderId.html",
+          "hash": "sQdgRQn4nUZyWwlbbdNqcw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateRefundRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateRefundRequest.OrderMerchantReference.html",
+          "hash": "UDhXH/rPqDXEmzhYlwTo2A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateRefundRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayCreateRefundRequest.Amount.html",
+          "hash": "HkqMOmA/6IsVK4S9IuPJsg=="
         }
       },
       "is_incremental": true,
@@ -657,7 +645,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayCurrencies.AustralianDollars.html",
-          "hash": "88BQ7dioGKBY1figxvx1ZA=="
+          "hash": "S9EX6W1Xe7XILKx8LQmueQ=="
         }
       },
       "is_incremental": true,
@@ -669,7 +657,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayCurrencies.NewZealandDollars.html",
-          "hash": "OW/oDB16tn1M8wyZR29Pqg=="
+          "hash": "RMq63TSEU4baDtGGe623kA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayCurrencies.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayCurrencies.html",
+          "hash": "arHAgK/UnavYaeCrSFR2Lg=="
         }
       },
       "is_incremental": true,
@@ -681,7 +681,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayDeviceRegistration.DeviceId.html",
-          "hash": "Ew4o2OtYL/FlE13lP9kiyw=="
+          "hash": "2eXJfIDkZPQpevwRFHXG9Q=="
         }
       },
       "is_incremental": true,
@@ -693,7 +693,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayDeviceRegistration.Key.html",
-          "hash": "P5gHbY6b6M0luWSQF9hzzA=="
+          "hash": "+m83g5olnGlB2SL6QBvVXg=="
         }
       },
       "is_incremental": true,
@@ -705,7 +705,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayDeviceRegistration.html",
-          "hash": "nZJLf0brRlgj+q5YbassIQ=="
+          "hash": "EkF5s4NOjyRsBSmqMHseWA=="
         }
       },
       "is_incremental": true,
@@ -717,7 +717,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest.html",
-          "hash": "m71vnSBT0IWp/jY2+Cl2qQ=="
+          "hash": "MixHNAKEc71SCbnnmse6pg=="
         }
       },
       "is_incremental": true,
@@ -729,7 +729,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest.Secret.html",
-          "hash": "WBWPw4jEiTD3ZB/94WbUIA=="
+          "hash": "6ZfAR1Oq7Gcba33JygTuWA=="
         }
       },
       "is_incremental": true,
@@ -741,7 +741,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest.Name.html",
-          "hash": "8pX+z/Z8Cldd4ctDw+QGuA=="
+          "hash": "iHdub4EX47vHHldca0U5pQ=="
         }
       },
       "is_incremental": true,
@@ -753,7 +753,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayDeviceRegistrationRequest.Attributes.html",
-          "hash": "hYq6jPofS3i3+vTEm62NkA=="
+          "hash": "9qOlBv05AjR40WNqOr7J7Q=="
         }
       },
       "is_incremental": true,
@@ -765,7 +765,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayEnvironment.Sandbox.html",
-          "hash": "wCCjnGfuB//3k776dQb5mg=="
+          "hash": "ganQmC0b9e0Seu2vJB+Ptg=="
         }
       },
       "is_incremental": true,
@@ -777,7 +777,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayEnvironment.Production.html",
-          "hash": "29PPyb2ImDYhzVaVFCOHcw=="
+          "hash": "rE1u4aat3v+d8QBQuao9cw=="
         }
       },
       "is_incremental": true,
@@ -789,7 +789,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayEnvironment.html",
-          "hash": "FA/bk8/UVr2q5Tli5Atnmg=="
+          "hash": "mSbD8WmPgKtkk5cLs7n8xg=="
         }
       },
       "is_incremental": true,
@@ -801,7 +801,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayInviteRequest.MobileNumber.html",
-          "hash": "HIApMzo5mfDN4UyPyJjwzA=="
+          "hash": "h4a+34vj3c0mkVqNRqQkGw=="
         }
       },
       "is_incremental": true,
@@ -813,7 +813,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayInviteRequest.ExpectedAmount.html",
-          "hash": "AjfF5nEECOeyzvUDsrz/Xg=="
+          "hash": "sSgVG3SST+eImuGy0hmeew=="
         }
       },
       "is_incremental": true,
@@ -825,7 +825,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayInviteRequest.NormalizePhoneNumber.html",
-          "hash": "WNsrbWGpsLP+1ifyy4KaOA=="
+          "hash": "FS1ZMh6S4VBcxAIWUd6UaA=="
         }
       },
       "is_incremental": true,
@@ -837,7 +837,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayInviteRequest.html",
-          "hash": "gqvqyXLladHQ0KRJ7DySPA=="
+          "hash": "qjTIUfKHf4HTCI45cOx+Og=="
         }
       },
       "is_incremental": true,
@@ -849,55 +849,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayMoney.html",
-          "hash": "CTLf7+EaJcVnZ2e9NMzaPQ=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayMoney.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayMoney.GetHashCode.html",
-          "hash": "sOns1zsL0j3Y63xti1dRsQ=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayMoney.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayMoney.Equals.html",
-          "hash": "1AGKO8NK3PeP1kB4Mj0UOQ=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayMoney.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayMoney.op_Equality.html",
-          "hash": "cTjQ6GZcDL2xfXamPJSAEw=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayMoney.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayMoney.op_Inequality.html",
-          "hash": "cLc9RfPr76ft2BHOSZLPtg=="
+          "hash": "JAwh9kbnps4YX1vLAILJ/g=="
         }
       },
       "is_incremental": true,
@@ -909,7 +861,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayMoney.-ctor.html",
-          "hash": "//jpBmdhARJCBEvHb3PcxQ=="
+          "hash": "DzyVkVCzzT2yzFA5fE5NkA=="
         }
       },
       "is_incremental": true,
@@ -921,7 +873,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayMoney.Amount.html",
-          "hash": "RxidI3fygse/anfr35p8wQ=="
+          "hash": "T+xmfFTHgDwFtlXF43W1bQ=="
         }
       },
       "is_incremental": true,
@@ -933,7 +885,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayMoney.Currency.html",
-          "hash": "4SIRogMEjyJH7yL5be17Rw=="
+          "hash": "vXK0if6zy/LxWT8fDeCegg=="
         }
       },
       "is_incremental": true,
@@ -945,7 +897,55 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayMoney.ToString.html",
-          "hash": "NM9//o8vhfVIp7cJYXJXBA=="
+          "hash": "HUkzLcajl4/jYdL+M5qfrg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayMoney.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayMoney.GetHashCode.html",
+          "hash": "PCitVxj3gD9cd/jlnayTJQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayMoney.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayMoney.Equals.html",
+          "hash": "GorUJFX6vvTJzUa7hoboHQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayMoney.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayMoney.op_Equality.html",
+          "hash": "KbBu8MQ+mSqS096ZB9rhrQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayMoney.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayMoney.op_Inequality.html",
+          "hash": "iiOZ3tmkjySTEY6Iq1iQ4g=="
         }
       },
       "is_incremental": true,
@@ -957,7 +957,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.CanConvert.html",
-          "hash": "X0ijSVL32SgKzPdjd8C1/w=="
+          "hash": "9TadpWA5iz5lJCFcVAWv0A=="
         }
       },
       "is_incremental": true,
@@ -969,7 +969,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.ReadJson.html",
-          "hash": "OBIiuOUd51v0XZ1TFvm3ng=="
+          "hash": "BtXjpO0YdexX57O5+BydEQ=="
         }
       },
       "is_incremental": true,
@@ -981,7 +981,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.WriteJson.html",
-          "hash": "DtrhCc9z739WRAyCZwLgxg=="
+          "hash": "+iSHnNi8rEJqryPERmQ+OA=="
         }
       },
       "is_incremental": true,
@@ -993,7 +993,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayMoneyJsonConverter.html",
-          "hash": "ZBB7aDZUpkUP2FDz13MIFA=="
+          "hash": "c7t/swvD1JH7m6WpyvKFHA=="
         }
       },
       "is_incremental": true,
@@ -1005,7 +1005,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayOrder.OrderId.html",
-          "hash": "c4WHUPpIKXQ2qbC2L9Bt/w=="
+          "hash": "Tpm4u+DLTDk7gffeJvPZgg=="
         }
       },
       "is_incremental": true,
@@ -1017,79 +1017,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayOrder.OrderedAt.html",
-          "hash": "+ssAIpzSn+pR9jHqmZn3RQ=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayOrder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayOrder.RequestId.html",
-          "hash": "ny8tsK5nt2k4XX/8aU3yKw=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayOrder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayOrder.RequestedAt.html",
-          "hash": "ViFxRWZqeJXi/OAmghpFSA=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayOrder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayOrder.PreapprovalCode.html",
-          "hash": "HguGYZOaWHWqC1+YVHgIhw=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayOrder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayOrder.Amount.html",
-          "hash": "3q5MlTOSVu+jUp5yNPFAyg=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayOrder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayOrder.MerchantReference.html",
-          "hash": "5QZYeQ0Azzh5M2YvPSJMXA=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayOrder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayOrder.OrderItems.html",
-          "hash": "h/Wn2yUPezuz88Krk0OJYQ=="
+          "hash": "E7hy9hgyO18Y+dn87e3BxA=="
         }
       },
       "is_incremental": true,
@@ -1101,7 +1029,79 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayOrder.html",
-          "hash": "vWBw5KhIEiidP5ThdI8UPQ=="
+          "hash": "oE/NckyyRBN4jtsdOIx2zg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayOrder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayOrder.RequestId.html",
+          "hash": "EKmkT/7TDoaOFHLd4E0Mbg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayOrder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayOrder.RequestedAt.html",
+          "hash": "IH6ZdVNC4ns46v2anE3O1g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayOrder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayOrder.PreapprovalCode.html",
+          "hash": "awxUVUeGq+MBFrNAhp8zYw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayOrder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayOrder.Amount.html",
+          "hash": "Uq81hYfIP+Ra0missxNJsw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayOrder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayOrder.MerchantReference.html",
+          "hash": "NLe5xdMyzK95D5Tb5PE32g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayOrder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayOrder.OrderItems.html",
+          "hash": "+yEp/7BKQPgjfw8bqIiC5g=="
         }
       },
       "is_incremental": true,
@@ -1113,7 +1113,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayOrderItem.html",
-          "hash": "JjNSXGsz/NGNLjXb2I+9vQ=="
+          "hash": "gs6/3leMuedOO1xdhHxpXQ=="
         }
       },
       "is_incremental": true,
@@ -1125,7 +1125,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayOrderItem.Name.html",
-          "hash": "Z0KZtypMJfHq/YMkQNKkWw=="
+          "hash": "rh8E9ieVacI+tpWPG4uOFQ=="
         }
       },
       "is_incremental": true,
@@ -1137,7 +1137,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayOrderItem.Sku.html",
-          "hash": "DXOI0ypVUwPjjnSdYEUjDg=="
+          "hash": "BmRDADIGMq2780ldXFG/LQ=="
         }
       },
       "is_incremental": true,
@@ -1149,7 +1149,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayOrderItem.Quantity.html",
-          "hash": "NBPS5kcnu2Z+YdOgy/tObQ=="
+          "hash": "4s7RPRS6TSbsQNAZVOcJkQ=="
         }
       },
       "is_incremental": true,
@@ -1161,7 +1161,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayOrderItem.Price.html",
-          "hash": "YAOgKDTrQaxpS4Q6JFSwKA=="
+          "hash": "FcioDlWhtdCWkhQqBozGBg=="
         }
       },
       "is_incremental": true,
@@ -1173,7 +1173,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayOrderReversal.ReverseId.html",
-          "hash": "x5xRLPBd6OP33Fv3AU5F7A=="
+          "hash": "v3nr8ujuKt3W/CObjNoyyw=="
         }
       },
       "is_incremental": true,
@@ -1185,7 +1185,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayOrderReversal.ReversedAt.html",
-          "hash": "M5C/80V15n8OVT5CNRtTWQ=="
+          "hash": "RWahNcNh8QhWNMZOsJMVBQ=="
         }
       },
       "is_incremental": true,
@@ -1197,7 +1197,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayOrderReversal.RequestedAt.html",
-          "hash": "JOf6vmgWLy8G/l4qsYGY2w=="
+          "hash": "HfJmwpLyjFfRVNHBSwpU3A=="
         }
       },
       "is_incremental": true,
@@ -1209,7 +1209,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayOrderReversal.ReversingRequestId.html",
-          "hash": "xIQ4XUHSqSizkbTzV6BoBA=="
+          "hash": "xBTu3P6rB/Z4kTRCw+UX4w=="
         }
       },
       "is_incremental": true,
@@ -1221,7 +1221,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayOrderReversal.html",
-          "hash": "IJKQaaoREIR4Q91b0j7i6g=="
+          "hash": "CfgceQ4D00b8qvW0VKMwNQ=="
         }
       },
       "is_incremental": true,
@@ -1233,7 +1233,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayPreapprovalRequest.PreapprovalCode.html",
-          "hash": "pp+Xse67C3gEptw2k23vVg=="
+          "hash": "VpfBxIF5EvKAx/ZLxRv4Wg=="
         }
       },
       "is_incremental": true,
@@ -1245,7 +1245,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayPreapprovalRequest.html",
-          "hash": "4rgaXk7bl6bpfFv5+buWhg=="
+          "hash": "74I4FwsSHXnZfkql52fGFg=="
         }
       },
       "is_incremental": true,
@@ -1257,7 +1257,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayPreapprovalResponse.html",
-          "hash": "Wgz50xHKkFuSrJXav+aDRw=="
+          "hash": "PU939VVEPnJcSSc2NsVciA=="
         }
       },
       "is_incremental": true,
@@ -1269,7 +1269,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayPreapprovalResponse.Amount.html",
-          "hash": "Wej0e7b72ZLKwgKyGlRXyw=="
+          "hash": "w8ajHn7B/1i33LmGQZfIXg=="
         }
       },
       "is_incremental": true,
@@ -1281,7 +1281,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayPreapprovalResponse.Minimum.html",
-          "hash": "PBv4W33Ta0cLsopDVYzzbg=="
+          "hash": "zvVs/Wx1iVM/6RujXTu4WQ=="
         }
       },
       "is_incremental": true,
@@ -1293,19 +1293,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayPreapprovalResponse.ExpiresAt.html",
-          "hash": "NLULgZgdI5kmXbJmxd04sQ=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayRefund.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPayRefund.html",
-          "hash": "1mYdDRapmE9jfxiv6rB2KQ=="
+          "hash": "btnunq7ZaCIGiS2wHC7LGQ=="
         }
       },
       "is_incremental": true,
@@ -1317,7 +1305,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayRefund.RefundId.html",
-          "hash": "F8/4CmD8ARLw+oyJkrZ3ww=="
+          "hash": "oRd83hWbYuvmUxathf4imQ=="
         }
       },
       "is_incremental": true,
@@ -1329,7 +1317,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayRefund.RefundedAt.html",
-          "hash": "nUyC9lItNV4+LHw6Lj46sg=="
+          "hash": "wVkmb0aJuDp1l3ajkoOi6g=="
         }
       },
       "is_incremental": true,
@@ -1341,7 +1329,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayRefund.RequestId.html",
-          "hash": "EEgCEYxx9beZnJaJd1kBXg=="
+          "hash": "0136H0xyWWklnNOhnwVh6w=="
         }
       },
       "is_incremental": true,
@@ -1353,7 +1341,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayRefund.RequestedAt.html",
-          "hash": "1rfcFjVG60fuBPTPR4FHRg=="
+          "hash": "BsEEBO/9qlxbSe7Ff08THw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPayRefund.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPayRefund.html",
+          "hash": "bpHMIl1w+WJvBy8ZiRJsGA=="
         }
       },
       "is_incremental": true,
@@ -1365,7 +1365,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayRefund.MerchantReference.html",
-          "hash": "a5bj9JFxZX8hR/8ivHnzFw=="
+          "hash": "B1KM7zeMV8nlVtXsfygCnw=="
         }
       },
       "is_incremental": true,
@@ -1377,7 +1377,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayRefund.OrderId.html",
-          "hash": "qsAYliifaVQHYXJbXlVjjw=="
+          "hash": "Hwo5pb+svwgKVbCTOWgbnQ=="
         }
       },
       "is_incremental": true,
@@ -1389,7 +1389,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayRefund.OrderMerchantReference.html",
-          "hash": "613FemcdedSPdeEMPwcIyw=="
+          "hash": "zB4X6MP9d2kvieP7OzKpAg=="
         }
       },
       "is_incremental": true,
@@ -1401,7 +1401,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayRefund.Amount.html",
-          "hash": "pBEBZnJsC2TTJE3zL40CyA=="
+          "hash": "pP0+nYdsqJtYCPUleU7/vg=="
         }
       },
       "is_incremental": true,
@@ -1413,7 +1413,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayRefundReversal.html",
-          "hash": "Zzgl0j8gDyXrQEaNVIaK0g=="
+          "hash": "Hiq8JjEYM7/LdczIMSvs7g=="
         }
       },
       "is_incremental": true,
@@ -1425,7 +1425,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayRefundReversal.ReverseId.html",
-          "hash": "lKY3GfJ+YRceX3qp5Xc88w=="
+          "hash": "LZnExaE6cBmLiqznZOrDbQ=="
         }
       },
       "is_incremental": true,
@@ -1437,7 +1437,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayRefundReversal.ReversedAt.html",
-          "hash": "adg3Hc5ZYWyRyQhQyPgf4Q=="
+          "hash": "v77j1KfDn2gOBp0bftEYtA=="
         }
       },
       "is_incremental": true,
@@ -1449,7 +1449,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayRefundReversal.ReversingRequestId.html",
-          "hash": "dcvwYJss5yCqNfsHH/7PHg=="
+          "hash": "EGI7MSvtGVu6BWBV03V4cQ=="
         }
       },
       "is_incremental": true,
@@ -1461,7 +1461,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayRefundReversal.RequestedAt.html",
-          "hash": "zwthUsIQTbF5JEdRt+fgQQ=="
+          "hash": "II/0XKFrvBvpOFbrqjBwDQ=="
         }
       },
       "is_incremental": true,
@@ -1473,7 +1473,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayReverseOrderRequest.html",
-          "hash": "pPx8mjjD7kO81wGNUWmjoQ=="
+          "hash": "+eKSb/734fF5SvzsosPMpA=="
         }
       },
       "is_incremental": true,
@@ -1485,7 +1485,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayReverseOrderRequest.RequestedAt.html",
-          "hash": "d/3T9vTB8mVdllE/MdGs9g=="
+          "hash": "Znn5CgLoOzlumqTPfs97pQ=="
         }
       },
       "is_incremental": true,
@@ -1497,7 +1497,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayReverseOrderRequest.ReversingRequestId.html",
-          "hash": "Wl0XGkOlW6INqj8nIIuHsg=="
+          "hash": "iuFVbEzUs4Q0Fpe4j2igzg=="
         }
       },
       "is_incremental": true,
@@ -1509,7 +1509,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayReverseRefundRequest.ReversingRequestId.html",
-          "hash": "Jj2h3p758K13fvlLQUiFOQ=="
+          "hash": "uTqNIE5h5teUd0JdUiBHoQ=="
         }
       },
       "is_incremental": true,
@@ -1521,7 +1521,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayReverseRefundRequest.RequestedAt.html",
-          "hash": "s9YFA5CHlFXugbQNDG7DsQ=="
+          "hash": "f37F/sVdrQIqZAsnBBMmuQ=="
         }
       },
       "is_incremental": true,
@@ -1533,31 +1533,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayReverseRefundRequest.html",
-          "hash": "Sn54IQ/VUkl+d6jQqoBRFA=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPaySystemClock.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPaySystemClock.Now.html",
-          "hash": "TlqsUDHAEllTs19B7NaWyg=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPaySystemClock.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.AfterPaySystemClock.DefaultInstance.html",
-          "hash": "XC6jvR1O6BE3Xsvoldphhg=="
+          "hash": "RwsQiY3bHSaa/0iFt3pEMA=="
         }
       },
       "is_incremental": true,
@@ -1569,7 +1545,31 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPaySystemClock.html",
-          "hash": "PTAJU6YGUfrQU4sLFMgGGg=="
+          "hash": "DCXqF3YAK8x/BPcdvry7pw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPaySystemClock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPaySystemClock.Now.html",
+          "hash": "GtWk9BV3fCLDC3JU0/F5XQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.AfterPaySystemClock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.AfterPaySystemClock.DefaultInstance.html",
+          "hash": "vOA0QJ3iQlvC5hddGhC2dg=="
         }
       },
       "is_incremental": true,
@@ -1581,7 +1581,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayToken.Token.html",
-          "hash": "V/pe+q3Jlo9NDLG9Ihjt7g=="
+          "hash": "9yELHNiQU8PLNK9vaRwTeQ=="
         }
       },
       "is_incremental": true,
@@ -1593,7 +1593,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayToken.ExpiresIn.html",
-          "hash": "XFwgS0K1fydqv36yaYcm2g=="
+          "hash": "aebw5n9466XFRoqO4mT2KQ=="
         }
       },
       "is_incremental": true,
@@ -1605,7 +1605,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayToken.IssuedAt.html",
-          "hash": "vdr0B8Iuf61905VgdXQbCw=="
+          "hash": "ABgIHeSoYn44eyDiUemNlg=="
         }
       },
       "is_incremental": true,
@@ -1617,7 +1617,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayToken.ExpiresAt.html",
-          "hash": "GL3mvU8z4fsXaaVbAg37TA=="
+          "hash": "g4AlxFBNDcwsv6JZiHujpQ=="
         }
       },
       "is_incremental": true,
@@ -1629,7 +1629,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayToken.IsExpired.html",
-          "hash": "HdNhYi6O947ilF0XenIbFg=="
+          "hash": "4vYazArUSlDEcdNqwGTMWw=="
         }
       },
       "is_incremental": true,
@@ -1641,7 +1641,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayToken.html",
-          "hash": "pr2f/OD6Tj/59p9i6RBMKg=="
+          "hash": "sZz/gyXm1b0DexoliYSFIA=="
         }
       },
       "is_incremental": true,
@@ -1653,7 +1653,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayTokenRequest.html",
-          "hash": "689k+PWWilbP6pchSoY3gA=="
+          "hash": "tVWLrVxQooFbDEGk5JUxdg=="
         }
       },
       "is_incremental": true,
@@ -1665,91 +1665,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.AfterPayTokenRequest.Key.html",
-          "hash": "9ucocX/QLZLRd0jQy3ac6A=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.IAfterPayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.IAfterPayClient.html",
-          "hash": "WPVMh4ezRuCpwlhunOU51w=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.IAfterPayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.IAfterPayClient.RegisterDevice.html",
-          "hash": "SfN+OWBDl5VgurjXJoBqrA=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.IAfterPayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.IAfterPayClient.Ping.html",
-          "hash": "3GkkjY0mXyFlE8S4kXLECg=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.IAfterPayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.IAfterPayClient.SendInvite.html",
-          "hash": "BfiJ3WgEGi+QxQDQgHTg9A=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.IAfterPayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.IAfterPayClient.PreapprovalEnquiry.html",
-          "hash": "eEWvyQVx9PUtzvqejzz65w=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.IAfterPayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.IAfterPayClient.CreateOrder.html",
-          "hash": "vJDDjAhnR3WVg6BS+EfU/A=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Yort.AfterPay.InStore.IAfterPayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Yort.AfterPay.InStore.IAfterPayClient.ReverseOrder.html",
-          "hash": "jv6nGG9uxyI1dgihATHNRA=="
+          "hash": "LLFvpRh33Mod88krq2SRiw=="
         }
       },
       "is_incremental": true,
@@ -1761,7 +1677,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.IAfterPayClient.RefundOrder.html",
-          "hash": "msKE+Sw2/6ae5MDGSA+nLQ=="
+          "hash": "bTLKJJfxhQJTph0wHXI1XQ=="
         }
       },
       "is_incremental": true,
@@ -1773,7 +1689,91 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.IAfterPayClient.ReverseRefund.html",
-          "hash": "8/LhFvq8jPzM0O7RSFvdjg=="
+          "hash": "gxwCLVGs5FlqoYRfoNs2ew=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.IAfterPayClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.IAfterPayClient.html",
+          "hash": "UlBfdUggsiLENQK5oKrsCw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.IAfterPayClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.IAfterPayClient.RegisterDevice.html",
+          "hash": "bhF/aLr73C5CxRPeYzNWlQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.IAfterPayClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.IAfterPayClient.Ping.html",
+          "hash": "ELLf0ggjjutTOP8V2oDUyQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.IAfterPayClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.IAfterPayClient.SendInvite.html",
+          "hash": "xF/KaecuWC7Bv9QuhmBlfA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.IAfterPayClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.IAfterPayClient.PreapprovalEnquiry.html",
+          "hash": "RMDVFiJU0Sq3UOxU7MVJdg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.IAfterPayClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.IAfterPayClient.CreateOrder.html",
+          "hash": "BCdaDlFTnko5BgdWIIm4+g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Yort.AfterPay.InStore.IAfterPayClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Yort.AfterPay.InStore.IAfterPayClient.ReverseOrder.html",
+          "hash": "nkGXtenbcM5farSBmP3U5Q=="
         }
       },
       "is_incremental": true,
@@ -1785,7 +1785,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.IAfterPaySystemClock.html",
-          "hash": "ocwA5Ouy/xNolnnBTo0oig=="
+          "hash": "bdPEWK/KSqxB72wNq04uHg=="
         }
       },
       "is_incremental": true,
@@ -1797,7 +1797,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.IAfterPaySystemClock.Now.html",
-          "hash": "TwIOyEhob6ISsUGtZqgKJw=="
+          "hash": "fJy+m3EdcuRgeZqnQYWsnA=="
         }
       },
       "is_incremental": true,
@@ -1809,7 +1809,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Yort.AfterPay.InStore.html",
-          "hash": "vAEz/5NC8GpxrRUzFS6CGA=="
+          "hash": "N6Ba99k1fszZWWi5YVcUkQ=="
         }
       },
       "is_incremental": true,
@@ -1881,6 +1881,11 @@
         "incrementalPhase": "build"
       },
       "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "RestApiDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -1889,11 +1894,6 @@
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
