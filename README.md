@@ -27,7 +27,7 @@ You **really** need to read the [AfterPay API documentation](https://docs.afterp
 
 ## How do I use it?
 
-Quick start and full [API reference documentation here](docs/index.html)
+Quick start and full [API reference documentation here](https://yortw.github.io/Yort.AfterPay.InStore/)
 
 Make sure you read the [AfterPay API documentation](https://docs.afterpay.com.au/instore-api-v1.html) too.
 
