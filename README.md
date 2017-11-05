@@ -3,9 +3,6 @@ An **unofficial**, light-weight wrapper for .Net, around the After Pay In-Store 
 
 [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/Yortw/Yort.AfterPay.InStore/blob/master/LICENSE.md) [![Build status](https://ci.appveyor.com/api/projects/status/waxmch4c6sm96vaa?svg=true)](https://ci.appveyor.com/project/Yortw/Yort.AfterPay.InStore) [![NuGet Badge](https://buildstats.info/nuget/Yort.AfterPay.InStore)](https://www.nuget.org/packages/Yort.AfterPay.InStore/)
 
-# THIS SAUSAGE IS STILL BEING MADE - DON'T LOOK.
-This is a work in progress. Nothing to see here for now. Moving along.
-
 ## Supported Platforms
 Currently;
 
