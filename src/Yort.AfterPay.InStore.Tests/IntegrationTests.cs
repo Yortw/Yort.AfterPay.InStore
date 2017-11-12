@@ -121,7 +121,7 @@ namespace Yort.AfterPay.InStore.Tests
 
 		[TestMethod]
 		[TestCategory("Integration")]
-		[Ignore("Requires environment variables set with valid credentials.")]
+		//[Ignore("Requires environment variables set with valid credentials.")]
 		public async Task SendInvite_CanSendInvite()
 		{
 			var config = new AfterPayConfiguration()

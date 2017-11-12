@@ -2,13 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>Yort.AfterPay.Instore</id>
-        <version>1.0.1</version>
+        <version>1.0.2</version>
         <title>Yort.AfterPay.Instore</title>
         <authors>Yortw</authors>
         <owners>Yortw</owners>
         <requireLicenseAcceptance>true</requireLicenseAcceptance>
         <description>An *unofficial*, light-weight wrapper for .Net, around the After Pay In-Store API (https://docs.afterpay.com.au/instore-api-v1.html).</description>
-	<releaseNotes>Ensure .Net 4 assembly targets .Net 4 instead of .Net 4.03.</releaseNotes>
+	<releaseNotes>Fix for default user-agent header.</releaseNotes>
 	<licenseUrl>https://github.com/Yortw/Yort.AfterPay.InStore/blob/master/LICENSE.md</licenseUrl>
 	<projectUrl>https://github.com/Yortw/Yort.AfterPay.InStore</projectUrl>
 	<iconUrl>https://github.com/Yortw/Yort.AfterPay.InStore/raw/master/YortAfterPayInStoreLibIcon.png</iconUrl>
@@ -20,13 +20,13 @@
                 <dependency id="Microsoft.Bcl" version="1.1.10" />
                 <dependency id="Microsoft.Bcl.Async" version="1.0.168" />
                 <dependency id="Microsoft.Bcl.Build" version="1.0.21" />
-                <dependency id="Mozzarella" version="1.0.1" />
+                <dependency id="Mozzarella" version="2.0.0" />
                 <dependency id="Yort.Trashy" version="1.0.0" />
                 <dependency id="Ladon.Net" version="1.0.1" />
                 <dependency id="Newtonsoft.Json" version="10.0.3" />
             </group>
             <group>
-                <dependency id="Mozzarella" version="1.0.1" />
+                <dependency id="Mozzarella" version="2.0.0" />
                 <dependency id="Yort.Trashy" version="1.0.0" />
                 <dependency id="Ladon.Net" version="1.0.1" />
                 <dependency id="Newtonsoft.Json" version="10.0.3" />

@@ -67,5 +67,50 @@ namespace Yort.AfterPay.InStore.Tests
 			Assert.AreEqual("2.0", config.ProductVersion);
 			Assert.AreEqual(7, config.RetryDelaySeconds);
 		}
+
+		[TestMethod]
+		public async Task Configuration_UserAgent_UsesAppropriateDefault()
+		{
+			string userAgent = null;
+
+			var handler = new Yort.Http.ClientPipeline.MockMessageHandler();
+			handler.AddDynamicResponse(new Http.ClientPipeline.MockResponseHandler()
+			{
+				CanHandleRequest = (request) => true,
+				HandleRequest = (request) =>
+				{
+					userAgent = request.Headers.UserAgent.ToString();
+					return Task.FromResult(new System.Net.Http.HttpResponseMessage(System.Net.HttpStatusCode.NotFound));
+				}
+			});
+
+			var config = new AfterPayConfiguration()
+			{
+				DeviceId = "123",
+				DeviceKey = "123",
+				Environment = AfterPayEnvironment.Sandbox,
+				HttpClient = new System.Net.Http.HttpClient(handler)
+			};
+			var client = new AfterPayClient(config);
+
+			try
+			{
+				await client.SendInvite
+				(
+					new AfterPayInviteRequest()
+					{
+						ExpectedAmount = new AfterPayMoney(10M, AfterPayCurrencies.AustralianDollars),
+						MobileNumber = "555-5555"
+					},
+					new AfterPayCallContext() { OperatorId = "Yort" }
+				);
+			}
+			catch { }
+			finally
+			{
+				Assert.IsTrue(userAgent.StartsWith("Yort.AfterPay.InStore/"));
+				Assert.IsTrue(userAgent.EndsWith(typeof(AfterPayClient).Assembly.GetName().Version.ToString()));
+			}
+		}
 	}
 }

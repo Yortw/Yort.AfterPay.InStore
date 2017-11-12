@@ -489,7 +489,7 @@ namespace Yort.AfterPay.InStore
 			var assemblyName = System.Reflection.Assembly.GetAssembly(typeof(AfterPayClient)).GetName();
 			return new ProductInfoHeaderValue(
 				String.IsNullOrWhiteSpace(_Configuration.ProductName) ? assemblyName.Name : _Configuration.ProductName,
-				String.IsNullOrWhiteSpace(_Configuration.ProductVersion) ? assemblyName.Name : _Configuration.ProductVersion
+				String.IsNullOrWhiteSpace(_Configuration.ProductVersion) ? assemblyName.Version.ToString() : _Configuration.ProductVersion
 			);
 		}
 
