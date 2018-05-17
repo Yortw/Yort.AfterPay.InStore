@@ -253,3 +253,4 @@ log.txt
 
 # documentation temp files
 src/Yort.AfterPay.InStore.Net40/api/**
+/src/codealike.json

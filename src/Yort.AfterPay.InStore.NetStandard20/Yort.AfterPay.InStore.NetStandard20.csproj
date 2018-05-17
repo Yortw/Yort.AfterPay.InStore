@@ -28,10 +28,10 @@
   <Import Project="..\Yort.AfterPay.InStore.Shared\Yort.AfterPay.InStore.Shared.projitems" Label="Shared" />
 
   <ItemGroup>
-    <PackageReference Include="Ladon.Net" Version="1.0.1" />
-    <PackageReference Include="Mozzarella" Version="1.0.1" />
+    <PackageReference Include="Ladon.Net" Version="1.0.2" />
+    <PackageReference Include="Mozzarella" Version="2.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
-    <PackageReference Include="Yort.Trashy" Version="1.0.0" />
+    <PackageReference Include="Yort.Trashy" Version="1.0.2" />
   </ItemGroup>
 
   <ItemGroup>

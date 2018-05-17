@@ -71,8 +71,8 @@
     <Reference Include="Yort.Http.ClientPipeline, Version=1.0.0.5, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Yort.Http.ClientPipeline.1.0.0.7\lib\net45\Yort.Http.ClientPipeline.dll</HintPath>
     </Reference>
-    <Reference Include="Yort.Trashy, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Yort.Trashy.1.0.0\lib\net40\Yort.Trashy.dll</HintPath>
+    <Reference Include="Yort.Trashy, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Yort.Trashy.1.0.2\lib\net40\Yort.Trashy.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -89,6 +89,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
