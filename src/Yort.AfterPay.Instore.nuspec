@@ -2,13 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>Yort.AfterPay.Instore</id>
-        <version>1.0.3</version>
+        <version>1.0.4</version>
         <title>Yort.AfterPay.Instore</title>
         <authors>Yortw</authors>
         <owners>Yortw</owners>
         <requireLicenseAcceptance>true</requireLicenseAcceptance>
         <description>An *unofficial*, light-weight wrapper for .Net, around the After Pay In-Store API (https://docs.afterpay.com.au/instore-api-v1.html).</description>
-	<releaseNotes>Updated some dependencies to newer versions.</releaseNotes>
+	<releaseNotes>Fixed bait and switch implementation for .Net 4.5 projects (assembly name now the same for all platforms).
+Removed dependencies on Microsoft BCL/Http packages for .Net 4.5.</releaseNotes>
 	<licenseUrl>https://github.com/Yortw/Yort.AfterPay.InStore/blob/master/LICENSE.md</licenseUrl>
 	<projectUrl>https://github.com/Yortw/Yort.AfterPay.InStore</projectUrl>
 	<iconUrl>https://github.com/Yortw/Yort.AfterPay.InStore/raw/master/YortAfterPayInStoreLibIcon.png</iconUrl>
@@ -23,6 +24,18 @@
                 <dependency id="Mozzarella" version="2.0.0" />
                 <dependency id="Yort.Trashy" version="1.0.0" />
                 <dependency id="Ladon.Net" version="1.0.1" />
+                <dependency id="Newtonsoft.Json" version="10.0.3" />
+            </group>
+            <group targetFramework=".NETFramework4.5">
+                <dependency id="Mozzarella" version="2.0.0" />
+                <dependency id="Yort.Trashy" version="1.0.0" />
+                <dependency id="Ladon.Net" version="1.0.1" />
+                <dependency id="Newtonsoft.Json" version="10.0.3" />
+            </group>
+            <group targetFramework="netstandard2.0">
+                <dependency id="Mozzarella" version="2.0.0" />
+                <dependency id="Yort.Trashy" version="1.0.2" />
+                <dependency id="Ladon.Net" version="1.0.2" />
                 <dependency id="Newtonsoft.Json" version="10.0.3" />
             </group>
             <group>
