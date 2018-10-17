@@ -367,6 +367,18 @@ references:
   commentId: Overload:Yort.AfterPay.InStore.AfterPayConfiguration.HttpClient
   fullName: Yort.AfterPay.InStore.AfterPayConfiguration.HttpClient
   nameWithType: AfterPayConfiguration.HttpClient
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.MerchantId
+  name: MerchantId
+  href: api/Yort.AfterPay.InStore.AfterPayConfiguration.MerchantId.html#Yort_AfterPay_InStore_AfterPayConfiguration_MerchantId
+  commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.MerchantId
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.MerchantId
+  nameWithType: AfterPayConfiguration.MerchantId
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.MerchantId*
+  name: MerchantId
+  href: api/Yort.AfterPay.InStore.AfterPayConfiguration.MerchantId.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayConfiguration.MerchantId
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.MerchantId
+  nameWithType: AfterPayConfiguration.MerchantId
 - uid: Yort.AfterPay.InStore.AfterPayConfiguration.MinimumRetries
   name: MinimumRetries
   href: api/Yort.AfterPay.InStore.AfterPayConfiguration.MinimumRetries.html#Yort_AfterPay_InStore_AfterPayConfiguration_MinimumRetries
@@ -391,6 +403,18 @@ references:
   commentId: Overload:Yort.AfterPay.InStore.AfterPayConfiguration.ProductName
   fullName: Yort.AfterPay.InStore.AfterPayConfiguration.ProductName
   nameWithType: AfterPayConfiguration.ProductName
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.ProductVendor
+  name: ProductVendor
+  href: api/Yort.AfterPay.InStore.AfterPayConfiguration.ProductVendor.html#Yort_AfterPay_InStore_AfterPayConfiguration_ProductVendor
+  commentId: P:Yort.AfterPay.InStore.AfterPayConfiguration.ProductVendor
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.ProductVendor
+  nameWithType: AfterPayConfiguration.ProductVendor
+- uid: Yort.AfterPay.InStore.AfterPayConfiguration.ProductVendor*
+  name: ProductVendor
+  href: api/Yort.AfterPay.InStore.AfterPayConfiguration.ProductVendor.html
+  commentId: Overload:Yort.AfterPay.InStore.AfterPayConfiguration.ProductVendor
+  fullName: Yort.AfterPay.InStore.AfterPayConfiguration.ProductVendor
+  nameWithType: AfterPayConfiguration.ProductVendor
 - uid: Yort.AfterPay.InStore.AfterPayConfiguration.ProductVersion
   name: ProductVersion
   href: api/Yort.AfterPay.InStore.AfterPayConfiguration.ProductVersion.html#Yort_AfterPay_InStore_AfterPayConfiguration_ProductVersion

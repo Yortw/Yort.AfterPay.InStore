@@ -46,7 +46,9 @@ namespace Yort.AfterPay.InStore.Tests
 				MinimumRetries = 5,
 				ProductName = "Test",
 				ProductVersion = "2.0",
-				RetryDelaySeconds = 7
+				RetryDelaySeconds = 7,
+				MerchantId = "5467",
+				ProductVendor = "Yort"
 			};
 
 			var client = new AfterPayClient(config);
@@ -57,6 +59,8 @@ namespace Yort.AfterPay.InStore.Tests
 			Assert.ThrowsException<InvalidOperationException>(() => config.MinimumRetries = 2);
 			Assert.ThrowsException<InvalidOperationException>(() => config.ProductName = "testPOS");
 			Assert.ThrowsException<InvalidOperationException>(() => config.ProductVersion = "1.0");
+			Assert.ThrowsException<InvalidOperationException>(() => config.MerchantId = "1234");
+			Assert.ThrowsException<InvalidOperationException>(() => config.ProductVendor = "Test");
 			Assert.ThrowsException<InvalidOperationException>(() => config.RetryDelaySeconds = 3);
 
 			Assert.AreEqual("123", config.DeviceId);
@@ -66,6 +70,8 @@ namespace Yort.AfterPay.InStore.Tests
 			Assert.AreEqual("Test", config.ProductName);
 			Assert.AreEqual("2.0", config.ProductVersion);
 			Assert.AreEqual(7, config.RetryDelaySeconds);
+			Assert.AreEqual("Yort", config.ProductVendor);
+			Assert.AreEqual("5467", config.MerchantId);
 		}
 
 		[TestMethod]
@@ -89,6 +95,56 @@ namespace Yort.AfterPay.InStore.Tests
 				DeviceId = "123",
 				DeviceKey = "123",
 				Environment = AfterPayEnvironment.Sandbox,
+				HttpClient = new System.Net.Http.HttpClient(handler),
+				MerchantId = "1234"
+			};
+			var client = new AfterPayClient(config);
+
+			try
+			{
+				await client.SendInvite
+				(
+					new AfterPayInviteRequest()
+					{
+						ExpectedAmount = new AfterPayMoney(10M, AfterPayCurrencies.AustralianDollars),
+						MobileNumber = "555-5555"
+					},
+					new AfterPayCallContext() { OperatorId = "Yort" }
+				);
+			}
+			catch { }
+			finally
+			{
+				Assert.IsTrue(userAgent.StartsWith("Yort/Yort.AfterPay.InStore/"));
+				Assert.IsTrue(userAgent.Contains(typeof(AfterPayClient).Assembly.GetName().Version.ToString()));
+			}
+		}
+
+		[TestMethod]
+		public async Task Configuration_UserAgent_GeneratesExpectedFormat()
+		{
+			string userAgent = null;
+
+			var handler = new Yort.Http.ClientPipeline.MockMessageHandler();
+			handler.AddDynamicResponse(new Http.ClientPipeline.MockResponseHandler()
+			{
+				CanHandleRequest = (request) => true,
+				HandleRequest = (request) =>
+				{
+					userAgent = request.Headers.UserAgent.ToString();
+					return Task.FromResult(new System.Net.Http.HttpResponseMessage(System.Net.HttpStatusCode.NotFound));
+				}
+			});
+
+			var config = new AfterPayConfiguration()
+			{
+				ProductVendor = "TestVendor",
+				ProductName = "TestProduct",
+				ProductVersion = "1.0",
+				MerchantId = "1234",
+				DeviceId = "123",
+				DeviceKey = "123",
+				Environment = AfterPayEnvironment.Sandbox,
 				HttpClient = new System.Net.Http.HttpClient(handler)
 			};
 			var client = new AfterPayClient(config);
@@ -108,8 +164,7 @@ namespace Yort.AfterPay.InStore.Tests
 			catch { }
 			finally
 			{
-				Assert.IsTrue(userAgent.StartsWith("Yort.AfterPay.InStore/"));
-				Assert.IsTrue(userAgent.EndsWith(typeof(AfterPayClient).Assembly.GetName().Version.ToString()));
+				Assert.AreEqual<string>(userAgent, "TestVendor/TestProduct/1.0/MerchantID: 1234");
 			}
 		}
 	}

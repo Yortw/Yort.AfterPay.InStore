@@ -68,8 +68,8 @@
       <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http.WebRequest" />
-    <Reference Include="Yort.Http.ClientPipeline, Version=1.0.0.5, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Yort.Http.ClientPipeline.1.0.0.7\lib\net45\Yort.Http.ClientPipeline.dll</HintPath>
+    <Reference Include="Yort.Http.ClientPipeline, Version=1.0.0.8, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Yort.Http.ClientPipeline.1.0.0.8\lib\net45\Yort.Http.ClientPipeline.dll</HintPath>
     </Reference>
     <Reference Include="Yort.Trashy, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Yort.Trashy.1.0.2\lib\net40\Yort.Trashy.dll</HintPath>
@@ -89,6 +89,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

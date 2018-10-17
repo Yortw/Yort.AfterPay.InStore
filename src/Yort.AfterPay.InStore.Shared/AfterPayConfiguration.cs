@@ -18,6 +18,8 @@ namespace Yort.AfterPay.InStore
 
 		private string _ProductName;
 		private string _ProductVersion;
+		private string _ProductVendor;
+		private string _MerchantId;
 		private string _DeviceId;
 		private string _DeviceKey;
 		private int _RetryDelay;
@@ -104,6 +106,39 @@ namespace Yort.AfterPay.InStore
 				ThrowIfLocked();
 
 				_ProductVersion = value;
+			}
+		}
+
+		/// <summary>
+		/// Sets or returns the name of the vendor that will be used as part of the user agent string when calling the AfterPay API.
+		/// </summary>
+		/// <remarks>
+		/// <para>If null, empty string or only whitespace, "Yort" assembly being used will be substituted as a default.</para>
+		/// </remarks>
+		/// <exception cref="System.InvalidProgramException">Thrown if this property is modified after it has been passed to a <see cref="AfterPayClient"/> instance.</exception>
+		public string ProductVendor
+		{
+			get { return _ProductVendor; }
+			set
+			{
+				ThrowIfLocked();
+
+				_ProductVendor = value;
+			}
+		}
+
+		/// <summary>
+		/// Sets or returns the merchant ID that will be used as part of the user agent string when calling the AfterPay API.
+		/// </summary>
+		/// <exception cref="System.InvalidProgramException">Thrown if this property is modified after it has been passed to a <see cref="AfterPayClient"/> instance.</exception>
+		public string MerchantId
+		{
+			get { return _MerchantId; }
+			set
+			{
+				ThrowIfLocked();
+
+				_MerchantId = value;
 			}
 		}
 

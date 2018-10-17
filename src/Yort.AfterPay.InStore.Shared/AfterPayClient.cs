@@ -450,7 +450,11 @@ namespace Yort.AfterPay.InStore
 				//to the enum type works, so long as either a later .Net version is installed, or the machine 
 				//has had registry edits & patches to enable that protocol. Either way, we need to ensure TLS 1.2 is turned on
 				//in System.Net.ServicePointManager.SecurityProtocol.
-				System.Net.ServicePointManager.SecurityProtocol = System.Net.ServicePointManager.SecurityProtocol | (System.Net.SecurityProtocolType)3072;
+				var tls12 = (System.Net.SecurityProtocolType)3072;
+				if ((System.Net.ServicePointManager.SecurityProtocol & tls12) != tls12)
+				{
+					System.Net.ServicePointManager.SecurityProtocol = (System.Net.ServicePointManager.SecurityProtocol | tls12);
+				}
 			}
 			//Ignore any exceptions that might be thrown from poorly/partially implemented Net Standard 2.0.
 			catch (PlatformNotSupportedException) { }
@@ -478,18 +482,25 @@ namespace Yort.AfterPay.InStore
 		private HttpClient ConfigureHttpClient(HttpClient client)
 		{
 			client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue(AfterPayConstants.JsonMediaType));
-			client.DefaultRequestHeaders.UserAgent.Add(GetUserAgent());
+			client.DefaultRequestHeaders.UserAgent.Clear();
+			client.DefaultRequestHeaders.TryAddWithoutValidation("User-Agent", GetUserAgent());
+
 			client.Timeout = TimeSpan.FromSeconds(30); //Advice from AfterPay is always retry at 30 second intervals regardless of recommended endpoint timeout.
 
 			return client;
 		}
 
-		private ProductInfoHeaderValue GetUserAgent()
+		private string GetUserAgent()
 		{
 			var assemblyName = System.Reflection.Assembly.GetAssembly(typeof(AfterPayClient)).GetName();
-			return new ProductInfoHeaderValue(
+
+			// Requirements from AP 17/10/2018;
+			// {Vendor}/{Platform}/{PlatformVersion}/MerchantID: {MerchantID}
+			return String.Format("{0}/{1}/{2}/MerchantID: {3}",
+				String.IsNullOrWhiteSpace(_Configuration.ProductVendor) ? "Yort" : _Configuration.ProductVendor,
 				String.IsNullOrWhiteSpace(_Configuration.ProductName) ? assemblyName.Name : _Configuration.ProductName,
-				String.IsNullOrWhiteSpace(_Configuration.ProductVersion) ? assemblyName.Version.ToString() : _Configuration.ProductVersion
+				String.IsNullOrWhiteSpace(_Configuration.ProductVersion) ? assemblyName.Version.ToString() : _Configuration.ProductVersion,
+				_Configuration.MerchantId
 			);
 		}
 
