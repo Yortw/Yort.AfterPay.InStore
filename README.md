@@ -1,3 +1,6 @@
+# This package is archived
+Afterpay no longer offer their services via API, instead integration via EFTPOS/payment pinpads is required. This package is no longer maintained as a result.
+
 # Yort.AfterPay.InStore
 An **unofficial**, light-weight wrapper for .Net, around the After Pay In-Store API (https://docs.afterpay.com.au/instore-api-v1.html).
 
